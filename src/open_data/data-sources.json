@@ -1,103 +1,365 @@
 {
-  "projects": [
+  "schema_version": "1.1",
+  "generated_from_chat": "2026-01-22",
+  "items": [
     {
       "name": "OpenOUSD",
       "url": "https://openousd.org",
-      "domains": ["education", "transparency"],
       "type": "web_app",
+      "domains": ["education", "transparency", "politics"],
       "scope": "local",
-      "geography": "Oakland, CA",
-      "description": "School-by-school spending and staffing transparency"
+      "geography": "Oakland, CA, USA",
+      "description": "School-by-school spending and staffing transparency for Oakland USD",
+      "related_urls": [
+        {
+          "label": "GitHub (site code)",
+          "url": "https://github.com/openoakland/openousd-site"
+        }
+      ]
     },
     {
-      "name": "Giga",
+      "name": "Giga – Global School Map",
       "url": "https://giga.global",
-      "domains": ["education", "infrastructure"],
       "type": "platform",
+      "domains": ["education", "world-affairs", "infrastructure", "ai"],
       "scope": "global",
-      "description": "Global map of school connectivity and internet access"
+      "description": "Maps schools worldwide and tracks connectivity to close the digital divide",
+      "related_urls": [
+        {
+          "label": "GitHub (UNICEF publications org)",
+          "url": "https://github.com/orgs/UNICEF/publications"
+        }
+      ]
     },
     {
       "name": "OpenSpending",
       "url": "https://openspending.org",
-      "domains": ["budget", "transparency"],
       "type": "platform",
+      "domains": ["politics", "world-affairs", "transparency", "economics"],
       "scope": "global",
-      "description": "Government budget and expenditure visualization"
+      "description": "Open platform to collect and visualize public financial (budget/expenditure) data",
+      "related_urls": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/openspending/openspending"
+        }
+      ]
     },
     {
       "name": "Open Budgets India",
       "url": "https://openbudgetsindia.org",
-      "domains": ["budget", "civic-tech"],
       "type": "portal",
+      "domains": ["politics", "world-affairs", "transparency", "economics"],
       "scope": "national",
       "geography": "India",
-      "description": "Unified machine-readable government budget data"
+      "description": "Curated machine-readable Indian government budget datasets and learning resources"
     },
     {
       "name": "Vulekamali",
       "url": "https://vulekamali.gov.za",
-      "domains": ["budget", "government"],
       "type": "portal",
+      "domains": ["politics", "world-affairs", "transparency", "economics"],
       "scope": "national",
       "geography": "South Africa",
-      "description": "Official open budget portal with public visualizations"
+      "description": "Official open budget portal for South Africa with datasets and visualizations"
     },
     {
-      "name": "Open Contracting Data Standard",
+      "name": "Open Budget Oakland",
+      "url": "https://openbudgetoakland.org",
+      "type": "web_app",
+      "domains": ["politics", "transparency", "economics"],
+      "scope": "local",
+      "geography": "Oakland, CA, USA",
+      "description": "Interactive exploration of Oakland city budget with comparisons and drill-downs",
+      "related_urls": [
+        {
+          "label": "GitHub (API)",
+          "url": "https://github.com/openoakland/budget"
+        }
+      ]
+    },
+    {
+      "name": "Open Contracting Data Standard (OCDS)",
       "url": "https://www.open-contracting.org/data-standard/",
-      "domains": ["infrastructure", "procurement"],
       "type": "standard",
+      "domains": ["politics", "world-affairs", "transparency", "infrastructure"],
       "scope": "global",
-      "description": "Open standard for publishing procurement and contract data"
+      "description": "Open data standard for publishing public procurement across the contracting lifecycle",
+      "related_urls": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/open-contracting"
+        }
+      ]
     },
     {
-      "name": "SISOCS",
+      "name": "SISOCS (CoST Infrastructure Transparency)",
       "url": "https://sisocs.org",
-      "domains": ["infrastructure", "transparency"],
       "type": "platform",
+      "domains": ["world-affairs", "transparency", "infrastructure", "politics"],
       "scope": "international",
-      "description": "Infrastructure project lifecycle transparency platform"
+      "description": "Platforms for disclosing public infrastructure project data across the full lifecycle",
+      "related_urls": [
+        {
+          "label": "App",
+          "url": "https://app.sisocs.org"
+        }
+      ]
+    },
+    {
+      "name": "Asheville Capital Projects Dashboard (SimpliCity)",
+      "url": "https://dashboards.ashevillenc.gov/capital_projects",
+      "type": "dashboard",
+      "domains": ["infrastructure", "politics", "transparency"],
+      "scope": "local",
+      "geography": "Asheville, NC, USA",
+      "description": "Municipal dashboard for capital project budgets, timelines, and status",
+      "related_urls": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/cityofasheville/simplicity2"
+        }
+      ]
     },
     {
       "name": "OpenAQ",
       "url": "https://openaq.org",
-      "domains": ["environment", "health"],
       "type": "platform",
+      "domains": ["health", "world-affairs", "environment", "ai"],
       "scope": "global",
-      "description": "Global open air quality data aggregation"
+      "description": "Open air quality data platform aggregating monitoring data globally",
+      "related_urls": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/openaq"
+        }
+      ]
     },
     {
-      "name": "Sensor.Community",
+      "name": "Sensor.Community (Luftdaten)",
       "url": "https://sensor.community/en/",
-      "domains": ["environment", "health"],
-      "type": "sensor_network",
+      "type": "network",
+      "domains": ["health", "environment", "world-affairs"],
       "scope": "global",
-      "description": "Citizen-driven environmental sensor network"
+      "description": "Citizen-driven open sensor network for air quality and environmental data",
+      "related_urls": [
+        {
+          "label": "Maps",
+          "url": "https://maps.sensor.community"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/opendata-stuttgart"
+        }
+      ]
     },
+
+    {
+      "name": "Data.Healthcare.gov",
+      "url": "https://data.healthcare.gov/",
+      "type": "portal",
+      "domains": ["health", "politics"],
+      "scope": "national",
+      "geography": "United States",
+      "description": "US government portal for healthcare-related open datasets"
+    },
+    {
+      "name": "CDC Data & Statistics",
+      "url": "https://www.cdc.gov/datastatistics",
+      "type": "portal",
+      "domains": ["health"],
+      "scope": "national",
+      "geography": "United States",
+      "description": "CDC data and statistics for public health"
+    },
+    {
+      "name": "FDA FAERS",
+      "url": "https://www.fda.gov/drugs/questions-and-answers-fda-adverse-event-reporting-system-faers",
+      "type": "dataset",
+      "domains": ["health"],
+      "scope": "national",
+      "geography": "United States",
+      "description": "Adverse event reporting data for drugs and therapeutics (FAERS)"
+    },
+    {
+      "name": "ClinicalTrials.gov",
+      "url": "https://clinicaltrials.gov/",
+      "type": "registry",
+      "domains": ["health", "world-affairs"],
+      "scope": "global",
+      "description": "Public registry of clinical studies and trial metadata"
+    },
+
     {
       "name": "UCI Machine Learning Repository",
       "url": "https://archive.ics.uci.edu/ml/index.php",
-      "domains": ["ai", "machine-learning"],
       "type": "repository",
+      "domains": ["ai"],
       "scope": "global",
-      "description": "Benchmark datasets for machine learning research"
+      "description": "Classic ML datasets for benchmarking and teaching"
     },
     {
-      "name": "CoinGecko API",
-      "url": "https://www.coingecko.com/en/api",
-      "domains": ["crypto", "finance"],
-      "type": "api",
+      "name": "Kaggle Datasets",
+      "url": "https://www.kaggle.com/datasets",
+      "type": "platform",
+      "domains": ["ai", "education"],
       "scope": "global",
-      "description": "Cryptocurrency market and pricing data"
+      "description": "Large catalog of datasets commonly used for ML projects"
+    },
+    {
+      "name": "TensorFlow Datasets",
+      "url": "https://www.tensorflow.org/datasets",
+      "type": "repository",
+      "domains": ["ai"],
+      "scope": "global",
+      "description": "Curated, ML-ready datasets maintained for TensorFlow workflows"
+    },
+    {
+      "name": "Academic Torrents",
+      "url": "https://academictorrents.com/",
+      "type": "repository",
+      "domains": ["ai", "world-affairs", "education"],
+      "scope": "global",
+      "description": "Distribution platform for large research datasets"
+    },
+    {
+      "name": "Data Commons",
+      "url": "https://datacommons.org/",
+      "type": "knowledge_graph",
+      "domains": ["ai", "world-affairs", "education", "health"],
+      "scope": "global",
+      "description": "Open knowledge graph that integrates public datasets with an API"
+    },
+
+    {
+      "name": "NCES (National Center for Education Statistics)",
+      "url": "https://nces.ed.gov/",
+      "type": "portal",
+      "domains": ["education", "politics"],
+      "scope": "national",
+      "geography": "United States",
+      "description": "Official US education statistics and datasets"
+    },
+    {
+      "name": "UNESCO Institute for Statistics (UIS)",
+      "url": "https://uis.unesco.org/",
+      "type": "portal",
+      "domains": ["education", "world-affairs"],
+      "scope": "global",
+      "description": "International education (and other) indicators and statistics"
+    },
+    {
+      "name": "Data.gov – Education topic",
+      "url": "https://data.gov/education",
+      "type": "portal",
+      "domains": ["education", "politics"],
+      "scope": "national",
+      "geography": "United States",
+      "description": "US federal open data filtered to education-related datasets"
+    },
+
+    {
+      "name": "Data.gov (US Open Data)",
+      "url": "https://data.gov/",
+      "type": "portal",
+      "domains": ["world-affairs", "politics", "health", "education"],
+      "scope": "national",
+      "geography": "United States",
+      "description": "US federal open data catalog across agencies and topics"
+    },
+    {
+      "name": "Data.gov.uk (UK Open Data)",
+      "url": "https://www.data.gov.uk/",
+      "type": "portal",
+      "domains": ["world-affairs", "politics", "health", "education"],
+      "scope": "national",
+      "geography": "United Kingdom",
+      "description": "UK government open data catalog"
+    },
+    {
+      "name": "Open.data.gov.sa",
+      "url": "https://open.data.gov.sa",
+      "type": "portal",
+      "domains": ["world-affairs", "politics"],
+      "scope": "national",
+      "geography": "Saudi Arabia",
+      "description": "Saudi government open data portal"
     },
     {
       "name": "World Bank Open Data",
       "url": "https://data.worldbank.org/",
-      "domains": ["world-affairs", "economics"],
       "type": "portal",
+      "domains": ["world-affairs", "politics", "education", "health"],
       "scope": "global",
-      "description": "Global development and economic indicators"
+      "description": "Global development indicators and economic datasets"
+    },
+    {
+      "name": "UN Data",
+      "url": "https://data.un.org/",
+      "type": "portal",
+      "domains": ["world-affairs", "politics", "education", "health"],
+      "scope": "global",
+      "description": "United Nations global statistics and indicators"
+    },
+    {
+      "name": "Data.gov – Government topic",
+      "url": "https://data.gov/government",
+      "type": "portal",
+      "domains": ["politics", "world-affairs"],
+      "scope": "national",
+      "geography": "United States",
+      "description": "US federal open data filtered to government/civic datasets"
+    },
+    {
+      "name": "Data.gov.uk – Government topic search",
+      "url": "https://www.data.gov.uk/search?topic=Government",
+      "type": "portal",
+      "domains": ["politics", "world-affairs"],
+      "scope": "national",
+      "geography": "United Kingdom",
+      "description": "UK open data filtered to government topic"
+    },
+
+    {
+      "name": "CoinGecko API",
+      "url": "https://www.coingecko.com/en/api",
+      "type": "api",
+      "domains": ["crypto"],
+      "scope": "global",
+      "description": "Crypto market and token pricing data API"
+    },
+    {
+      "name": "Binance Public Data",
+      "url": "https://data.binance.vision/",
+      "type": "dataset",
+      "domains": ["crypto"],
+      "scope": "global",
+      "description": "Exchange-provided historical market/trade data downloads"
+    },
+    {
+      "name": "Google Dataset Search",
+      "url": "https://datasetsearch.research.google.com/",
+      "type": "search_tool",
+      "domains": ["health", "ai", "education", "world-affairs", "politics", "crypto"],
+      "scope": "global",
+      "description": "Search engine to discover datasets across the web"
+    },
+
+    {
+      "name": "Data.World",
+      "url": "https://data.world/",
+      "type": "platform",
+      "domains": ["health", "ai", "education", "world-affairs", "politics", "crypto"],
+      "scope": "global",
+      "description": "Community and organization dataset hosting and discovery"
+    },
+    {
+      "name": "Internet Archive – Datasets",
+      "url": "https://archive.org/details/datasets",
+      "type": "archive",
+      "domains": ["health", "ai", "education", "world-affairs", "politics", "crypto"],
+      "scope": "global",
+      "description": "Long-term preservation and distribution of datasets"
     }
   ]
 }
