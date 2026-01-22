@@ -1,4 +1,4 @@
-"""CLI entry point for validating dataset metadata."""
+"""CLI entry point for validating minimal dataset metadata."""
 
 from __future__ import annotations
 
@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from open_data.metadata import ValidationError, load_dataset, validate_many
+from open_data.metadata import ValidationError, load_dataset, summarize_dataset, validate_many
 
 
 def _load_json(path: Path) -> Any:
@@ -15,16 +15,9 @@ def _load_json(path: Path) -> Any:
         return json.load(handle)
 
 
-def _write_summary(payload: dict) -> None:
-    dataset = load_dataset(payload)
-    from open_data.metadata import summarize_dataset
-
-    print(summarize_dataset(dataset))
-
-
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Validate dataset metadata against the Open Data catalog schema."
+        description="Validate dataset metadata against the minimal Open Data schema."
     )
     parser.add_argument("path", type=Path, help="Path to a dataset JSON file")
     parser.add_argument(
@@ -39,19 +32,18 @@ def main() -> int:
         errors = validate_many(payload)
     else:
         try:
-            load_dataset(payload)
+            dataset = load_dataset(payload)
         except ValidationError as exc:
             errors = str(exc).split("\n")
         else:
             errors = []
+            if args.summary:
+                print(summarize_dataset(dataset))
 
     if errors:
         for message in errors:
             print(message)
         return 1
-
-    if args.summary and not isinstance(payload, list):
-        _write_summary(payload)
 
     print("Metadata validation passed.")
     return 0
