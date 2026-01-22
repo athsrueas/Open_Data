@@ -1,135 +1,103 @@
 {
-  "health": [
+  "projects": [
     {
-      "name": "Data.Healthcare.gov",
-      "url": "https://data.healthcare.gov/",
-      "type": "portal",
-      "notes": "US healthcare utilization, claims, providers"
+      "name": "OpenOUSD",
+      "url": "https://openousd.org",
+      "domains": ["education", "transparency"],
+      "type": "web_app",
+      "scope": "local",
+      "geography": "Oakland, CA",
+      "description": "School-by-school spending and staffing transparency"
     },
     {
-      "name": "CDC Public Use Datasets",
-      "url": "https://www.cdc.gov/datastatistics",
-      "type": "portal",
-      "notes": "Disease surveillance and public health"
+      "name": "Giga",
+      "url": "https://giga.global",
+      "domains": ["education", "infrastructure"],
+      "type": "platform",
+      "scope": "global",
+      "description": "Global map of school connectivity and internet access"
     },
     {
-      "name": "FAERS",
-      "url": "https://www.fda.gov/drugs/questions-and-answers-fda-adverse-event-reporting-system-faers",
-      "type": "dataset",
-      "notes": "Drug adverse event reporting"
+      "name": "OpenSpending",
+      "url": "https://openspending.org",
+      "domains": ["budget", "transparency"],
+      "type": "platform",
+      "scope": "global",
+      "description": "Government budget and expenditure visualization"
     },
     {
-      "name": "ClinicalTrials.gov",
-      "url": "https://clinicaltrials.gov/",
+      "name": "Open Budgets India",
+      "url": "https://openbudgetsindia.org",
+      "domains": ["budget", "civic-tech"],
       "type": "portal",
-      "notes": "Global clinical trial registry"
-    }
-  ],
-  "ai": [
+      "scope": "national",
+      "geography": "India",
+      "description": "Unified machine-readable government budget data"
+    },
+    {
+      "name": "Vulekamali",
+      "url": "https://vulekamali.gov.za",
+      "domains": ["budget", "government"],
+      "type": "portal",
+      "scope": "national",
+      "geography": "South Africa",
+      "description": "Official open budget portal with public visualizations"
+    },
+    {
+      "name": "Open Contracting Data Standard",
+      "url": "https://www.open-contracting.org/data-standard/",
+      "domains": ["infrastructure", "procurement"],
+      "type": "standard",
+      "scope": "global",
+      "description": "Open standard for publishing procurement and contract data"
+    },
+    {
+      "name": "SISOCS",
+      "url": "https://sisocs.org",
+      "domains": ["infrastructure", "transparency"],
+      "type": "platform",
+      "scope": "international",
+      "description": "Infrastructure project lifecycle transparency platform"
+    },
+    {
+      "name": "OpenAQ",
+      "url": "https://openaq.org",
+      "domains": ["environment", "health"],
+      "type": "platform",
+      "scope": "global",
+      "description": "Global open air quality data aggregation"
+    },
+    {
+      "name": "Sensor.Community",
+      "url": "https://sensor.community/en/",
+      "domains": ["environment", "health"],
+      "type": "sensor_network",
+      "scope": "global",
+      "description": "Citizen-driven environmental sensor network"
+    },
     {
       "name": "UCI Machine Learning Repository",
       "url": "https://archive.ics.uci.edu/ml/index.php",
-      "type": "portal"
+      "domains": ["ai", "machine-learning"],
+      "type": "repository",
+      "scope": "global",
+      "description": "Benchmark datasets for machine learning research"
     },
     {
-      "name": "Kaggle Datasets",
-      "url": "https://www.kaggle.com/datasets",
-      "type": "portal"
-    },
-    {
-      "name": "TensorFlow Datasets",
-      "url": "https://www.tensorflow.org/datasets",
-      "type": "portal"
-    },
-    {
-      "name": "Academic Torrents",
-      "url": "https://academictorrents.com/",
-      "type": "portal"
-    },
-    {
-      "name": "Data Commons",
-      "url": "https://datacommons.org/",
-      "type": "knowledge_graph"
-    }
-  ],
-  "education": [
-    {
-      "name": "NCES",
-      "url": "https://nces.ed.gov/",
-      "type": "portal"
-    },
-    {
-      "name": "UNESCO Institute for Statistics",
-      "url": "https://uis.unesco.org/",
-      "type": "portal"
-    },
-    {
-      "name": "Education Data (Data.gov)",
-      "url": "https://data.gov/education",
-      "type": "portal"
-    }
-  ],
-  "world_affairs": [
-    {
-      "name": "Data.gov",
-      "url": "https://data.gov/",
-      "type": "portal"
-    },
-    {
-      "name": "Data.gov.uk",
-      "url": "https://www.data.gov.uk/",
-      "type": "portal"
+      "name": "CoinGecko API",
+      "url": "https://www.coingecko.com/en/api",
+      "domains": ["crypto", "finance"],
+      "type": "api",
+      "scope": "global",
+      "description": "Cryptocurrency market and pricing data"
     },
     {
       "name": "World Bank Open Data",
       "url": "https://data.worldbank.org/",
-      "type": "portal"
-    },
-    {
-      "name": "UN Data",
-      "url": "https://data.un.org/",
-      "type": "portal"
-    }
-  ],
-  "politics": [
-    {
-      "name": "Government Data (US)",
-      "url": "https://data.gov/government",
-      "type": "portal"
-    },
-    {
-      "name": "UK Government Data",
-      "url": "https://www.data.gov.uk/search?topic=Government",
-      "type": "portal"
-    }
-  ],
-  "crypto": [
-    {
-      "name": "CoinGecko API",
-      "url": "https://www.coingecko.com/en/api",
-      "type": "api"
-    },
-    {
-      "name": "Binance Public Data",
-      "url": "https://data.binance.vision/",
-      "type": "dataset"
-    },
-    {
-      "name": "Google Dataset Search",
-      "url": "https://datasetsearch.research.google.com/",
-      "type": "search_tool"
-    }
-  ],
-  "cross_domain": [
-    {
-      "name": "Data.World",
-      "url": "https://data.world/",
-      "type": "platform"
-    },
-    {
-      "name": "Internet Archive Datasets",
-      "url": "https://archive.org/details/datasets",
-      "type": "archive"
+      "domains": ["world-affairs", "economics"],
+      "type": "portal",
+      "scope": "global",
+      "description": "Global development and economic indicators"
     }
   ]
 }
