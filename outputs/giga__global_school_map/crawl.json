@@ -1,0 +1,31 @@
+{
+  "error": null,
+  "fetched_at": "2026-01-22T05:55:18.627711+00:00",
+  "filtered_link_count": 1,
+  "item": {
+    "description": "Maps schools worldwide and tracks connectivity to close the digital divide",
+    "domains": [
+      "education",
+      "world-affairs",
+      "infrastructure",
+      "ai"
+    ],
+    "name": "Giga \u2013 Global School Map",
+    "related_urls": [
+      {
+        "label": "GitHub (UNICEF publications org)",
+        "url": "https://github.com/orgs/UNICEF/publications"
+      }
+    ],
+    "scope": "global",
+    "type": "platform",
+    "url": "https://giga.global"
+  },
+  "link_count": 46,
+  "links": [
+    {
+      "text": "Global Digital Development: What the Stats Say",
+      "url": "https://giga.global/global-digital-development-what-the-stats-say-2/"
+    }
+  ]
+}

@@ -99,7 +99,13 @@ def filter_links(links: list[dict[str, str]]) -> list[dict[str, str]]:
 
 
 def slugify(name: str) -> str:
-    return name.lower().replace(" ", "_").replace("-", "_").replace("–", "_")
+    return (
+        name.lower()
+        .replace(" ", "_")
+        .replace("-", "_")
+        .encode("ascii", "ignore")
+        .decode("ascii")
+    )
 
 
 def run() -> None:
