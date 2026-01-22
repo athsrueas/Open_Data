@@ -1,0 +1,135 @@
+{
+  "health": [
+    {
+      "name": "Data.Healthcare.gov",
+      "url": "https://data.healthcare.gov/",
+      "type": "portal",
+      "notes": "US healthcare utilization, claims, providers"
+    },
+    {
+      "name": "CDC Public Use Datasets",
+      "url": "https://www.cdc.gov/datastatistics",
+      "type": "portal",
+      "notes": "Disease surveillance and public health"
+    },
+    {
+      "name": "FAERS",
+      "url": "https://www.fda.gov/drugs/questions-and-answers-fda-adverse-event-reporting-system-faers",
+      "type": "dataset",
+      "notes": "Drug adverse event reporting"
+    },
+    {
+      "name": "ClinicalTrials.gov",
+      "url": "https://clinicaltrials.gov/",
+      "type": "portal",
+      "notes": "Global clinical trial registry"
+    }
+  ],
+  "ai": [
+    {
+      "name": "UCI Machine Learning Repository",
+      "url": "https://archive.ics.uci.edu/ml/index.php",
+      "type": "portal"
+    },
+    {
+      "name": "Kaggle Datasets",
+      "url": "https://www.kaggle.com/datasets",
+      "type": "portal"
+    },
+    {
+      "name": "TensorFlow Datasets",
+      "url": "https://www.tensorflow.org/datasets",
+      "type": "portal"
+    },
+    {
+      "name": "Academic Torrents",
+      "url": "https://academictorrents.com/",
+      "type": "portal"
+    },
+    {
+      "name": "Data Commons",
+      "url": "https://datacommons.org/",
+      "type": "knowledge_graph"
+    }
+  ],
+  "education": [
+    {
+      "name": "NCES",
+      "url": "https://nces.ed.gov/",
+      "type": "portal"
+    },
+    {
+      "name": "UNESCO Institute for Statistics",
+      "url": "https://uis.unesco.org/",
+      "type": "portal"
+    },
+    {
+      "name": "Education Data (Data.gov)",
+      "url": "https://data.gov/education",
+      "type": "portal"
+    }
+  ],
+  "world_affairs": [
+    {
+      "name": "Data.gov",
+      "url": "https://data.gov/",
+      "type": "portal"
+    },
+    {
+      "name": "Data.gov.uk",
+      "url": "https://www.data.gov.uk/",
+      "type": "portal"
+    },
+    {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org/",
+      "type": "portal"
+    },
+    {
+      "name": "UN Data",
+      "url": "https://data.un.org/",
+      "type": "portal"
+    }
+  ],
+  "politics": [
+    {
+      "name": "Government Data (US)",
+      "url": "https://data.gov/government",
+      "type": "portal"
+    },
+    {
+      "name": "UK Government Data",
+      "url": "https://www.data.gov.uk/search?topic=Government",
+      "type": "portal"
+    }
+  ],
+  "crypto": [
+    {
+      "name": "CoinGecko API",
+      "url": "https://www.coingecko.com/en/api",
+      "type": "api"
+    },
+    {
+      "name": "Binance Public Data",
+      "url": "https://data.binance.vision/",
+      "type": "dataset"
+    },
+    {
+      "name": "Google Dataset Search",
+      "url": "https://datasetsearch.research.google.com/",
+      "type": "search_tool"
+    }
+  ],
+  "cross_domain": [
+    {
+      "name": "Data.World",
+      "url": "https://data.world/",
+      "type": "platform"
+    },
+    {
+      "name": "Internet Archive Datasets",
+      "url": "https://archive.org/details/datasets",
+      "type": "archive"
+    }
+  ]
+}
