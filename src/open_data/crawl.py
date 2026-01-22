@@ -13,7 +13,7 @@ from urllib.parse import urljoin, urldefrag, urlparse
 import requests
 from bs4 import BeautifulSoup
 
-from open_data.tasks import load_json, write_json, write_csv
+from tasks import load_json, write_json, write_csv
 
 
 DATA_SOURCES_PATH = Path("src/open_data/data-sources.json")
