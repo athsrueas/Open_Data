@@ -1,0 +1,23 @@
+{
+  "error": null,
+  "fetched_at": "2026-01-22T05:46:20.404572+00:00",
+  "filtered_link_count": 1,
+  "link_count": 46,
+  "links": [
+    {
+      "text": "Global Digital Development: What the Stats Say",
+      "url": "https://giga.global/global-digital-development-what-the-stats-say-2/"
+    }
+  ],
+  "project": {
+    "description": "Global map of school connectivity and internet access",
+    "domains": [
+      "education",
+      "infrastructure"
+    ],
+    "name": "Giga",
+    "scope": "global",
+    "type": "platform",
+    "url": "https://giga.global"
+  }
+}
