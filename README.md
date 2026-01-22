@@ -47,7 +47,7 @@ an extensible foundation for dataset discovery, ingestion, and cataloging.
 ### Try it locally
 
 ```bash
-PYTHONPATH=src python -m open_data.validate examples/sample_dataset.json --summary
+insert code here [I haven't actually written much working scraping scripting or anything yet]
 ```
 
 ### Schema location
