@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/dataset.schema.json",
+  "title": "Open Data Dataset Metadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "description", "publisher", "license", "resources"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable dataset identifier"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {"type": "string"},
+        "url": {"type": "string", "format": "uri"},
+        "email": {"type": "string"}
+      }
+    },
+    "license": {
+      "type": "string"
+    },
+    "keywords": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "themes": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "issued": {
+      "type": "string",
+      "description": "ISO-8601 date",
+      "format": "date"
+    },
+    "modified": {
+      "type": "string",
+      "description": "ISO-8601 date",
+      "format": "date"
+    },
+    "landing_page": {
+      "type": "string",
+      "format": "uri"
+    },
+    "spatial": {
+      "type": "string"
+    },
+    "temporal": {
+      "type": "string"
+    },
+    "resources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "access_url", "media_type"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {"type": "string"},
+          "description": {"type": "string"},
+          "access_url": {"type": "string", "format": "uri"},
+          "download_url": {"type": "string", "format": "uri"},
+          "media_type": {"type": "string"},
+          "size_bytes": {"type": "integer", "minimum": 0}
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source": {"type": "string"},
+        "retrieved_at": {"type": "string", "format": "date-time"}
+      }
+    }
+  }
+}
