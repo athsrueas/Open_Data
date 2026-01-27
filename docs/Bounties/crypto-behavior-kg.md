@@ -1,4 +1,4 @@
-# crypto-behavior-kg.md
+# Crypto Behavior Knowledge Graph
 
 ## Goal
 
