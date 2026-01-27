@@ -10,3 +10,4 @@ Each file should document a single bounty, including:
 - Reward details (if applicable)
 
 Use clear filenames so each bounty is easy to identify and reference.
+Utilize the included template if you need a starting point
