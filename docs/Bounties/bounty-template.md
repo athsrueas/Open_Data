@@ -1,4 +1,3 @@
-```md
 # Work Outline (Generic Template): Curated Knowledge Graph with Stable Ontology + Reproducible ETL
 
 ## Goal
@@ -155,4 +154,3 @@ Provenance reference (optional):
 - Governance: reviewer checklist + conflict resolution workflow
 
 ---
-```
