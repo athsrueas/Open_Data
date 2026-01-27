@@ -2,7 +2,7 @@
 
 ## Goal
 
-Build an open, continuously-augmented **Crypto Behavior Knowledge Graph** that connects **on-chain activity + labels + entity attribution** across **multiple chains** to enable **behavioral insights and detection** (fraud, sybil patterns, laundering, and altruistic flows like donations/public goods funding).
+Build an open, continuously-augmented **Crypto Behavior Knowledge Graph** that connects **on-chain activity + labels + entity attribution** across **multiple chains** to enable **behavioral insights and detection** (fraud, sybil patterns, laundering, and altruistic flows like donations/public goods funding). Could be helpful in determining the true reputation of a contributor.
 
 Primary success criteria:
 - **Stable ontology** (versioned, backwards-compatible)
