@@ -1,6 +1,6 @@
 # X Space Governance & Knowledge Graph Questions (Answer Log)
 
-**Context:** There will be an X Space coming soon.  
+**AMA:**  https://x.com/i/spaces/1eaJbjgdQrdJX?s=20
 **Intro video:** https://www.youtube.com/watch?v=50RFTBm7reU
 
 Use this file to append answers as you find them (during the X Space, in follow-up docs, or from team members).  
