@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from open_data.metadata import ValidationError, load_dataset, summarize_dataset, validate_many
+from .metadata import ValidationError, load_dataset, summarize_dataset, validate_many
 
 
 def _load_json(path: Path) -> Any:

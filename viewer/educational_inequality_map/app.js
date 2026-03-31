@@ -14,6 +14,7 @@
   };
 
   const dom = {
+    map: document.getElementById("map"),
     metricSelect: document.getElementById("metric-select"),
     primaryCountry: document.getElementById("primary-country"),
     secondaryCountry: document.getElementById("secondary-country"),
@@ -31,44 +32,70 @@
     tabPanels: Array.from(document.querySelectorAll(".tab-panel")),
   };
 
-  const map = new maplibregl.Map({
-    container: "map",
-    style: {
-      version: 8,
-      sources: {
-        osm: {
-          type: "raster",
-          tiles: [
-            "https://a.tile.openstreetmap.org/{z}/{x}/{y}.png",
-            "https://b.tile.openstreetmap.org/{z}/{x}/{y}.png",
-          ],
-          tileSize: 256,
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-        },
-      },
-      layers: [
-        {
-          id: "osm",
-          type: "raster",
-          source: "osm",
-          paint: {
-            "raster-opacity": 0.12,
-            "raster-saturation": -1,
-            "raster-brightness-max": 0.9,
+  let map = null;
+  let popup;
+
+  function renderMapFallback(message) {
+    dom.map.innerHTML = `
+      <div class="map-fallback">
+        <div class="map-fallback-card">
+          <p class="eyebrow">Map unavailable</p>
+          <h2>The viewer data loaded, but the map library did not.</h2>
+          <p>${message}</p>
+          <p class="muted">The compare, ranking, and source-note panels still work below.</p>
+        </div>
+      </div>
+    `;
+  }
+
+  function createMap() {
+    if (!window.maplibregl) {
+      renderMapFallback(
+        "This page currently depends on the external MapLibre CDN. If that script is blocked, the rest of the viewer now falls back gracefully."
+      );
+      return null;
+    }
+
+    const instance = new maplibregl.Map({
+      container: "map",
+      style: {
+        version: 8,
+        sources: {
+          osm: {
+            type: "raster",
+            tiles: [
+              "https://a.tile.openstreetmap.org/{z}/{x}/{y}.png",
+              "https://b.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            ],
+            tileSize: 256,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
           },
         },
-      ],
-    },
-    center: [0, 8],
-    zoom: 0.9,
-    minZoom: 0.35,
-    maxZoom: 7,
-    attributionControl: false,
-  });
+        layers: [
+          {
+            id: "osm",
+            type: "raster",
+            source: "osm",
+            paint: {
+              "raster-opacity": 0.12,
+              "raster-saturation": -1,
+              "raster-brightness-max": 0.9,
+            },
+          },
+        ],
+      },
+      center: [0, 8],
+      zoom: 0.9,
+      minZoom: 0.35,
+      maxZoom: 7,
+      attributionControl: false,
+    });
 
-  map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
-  map.addControl(new maplibregl.AttributionControl({ compact: true }), "bottom-right");
-  map.touchZoomRotate.disableRotation();
+    instance.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
+    instance.addControl(new maplibregl.AttributionControl({ compact: true }), "bottom-right");
+    instance.touchZoomRotate.disableRotation();
+    return instance;
+  }
 
   function rampColors() {
     return ["#f2c572", "#e39a4f", "#cf6e34", "#9f4328", "#662317"];
@@ -340,7 +367,7 @@
   }
 
   function highlightCountry(iso3) {
-    if (map.getLayer("country-highlight")) {
+    if (map && map.getLayer("country-highlight")) {
       map.setFilter("country-highlight", ["==", ["get", "iso3"], iso3]);
     }
   }
@@ -375,9 +402,9 @@
 
   function updateMapMetric() {
     const metricKey = state.mapMetricKey;
-    const hydrated = hydrateGeojson(metricKey);
     const stops = buildStops(metricKey);
-    if (map.getSource("countries")) {
+    if (map && map.getSource("countries")) {
+      const hydrated = hydrateGeojson(metricKey);
       map.getSource("countries").setData(hydrated);
       map.setPaintProperty("country-fills", "fill-color", stops.expression);
     }
@@ -386,9 +413,8 @@
     updateHeroStats(metricKey);
   }
 
-  let popup;
-
-  map.on("load", () => {
+  function initializeMapLayers() {
+    if (!map) return;
     map.addSource("countries", {
       type: "geojson",
       data: hydrateGeojson(state.mapMetricKey),
@@ -462,5 +488,16 @@
     updateGraphPanel();
     updateSourceNotes();
     highlightCountry(state.primaryIso3);
-  });
+  }
+
+  installControls();
+  updateMapMetric();
+  updateComparePanel();
+  updateGraphPanel();
+  updateSourceNotes();
+
+  map = createMap();
+  if (map) {
+    map.on("load", initializeMapLayers);
+  }
 })();

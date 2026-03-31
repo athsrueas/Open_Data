@@ -1,0 +1,16 @@
+{
+  "description": "Population estimates by county for 2022.",
+  "id": "us-census-population-2022",
+  "license": "Public Domain",
+  "resources": [
+    {
+      "access_url": "https://example.org/census/population/2022",
+      "description": "Downloadable CSV file.",
+      "download_url": "https://example.org/census/population/2022.csv",
+      "media_type": "text/csv",
+      "name": "County population estimates CSV",
+      "size_bytes": 102400
+    }
+  ],
+  "title": "US Census Population Estimates 2022"
+}

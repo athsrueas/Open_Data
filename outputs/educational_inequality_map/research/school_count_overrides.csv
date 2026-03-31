@@ -1,0 +1,2 @@
+iso3,country_name,source_system,year,schools_total,indicator,comparability_flag,quality_flag,display_note,source_url
+ISL,Iceland,Statistics Iceland compulsory schools release,2024,174,compulsory_schools_operating,proxy,published,"Official count of compulsory schools operating in Iceland in the 2024-2025 school year. Used as a country-level school-availability fallback because the staged Giga country feed currently reports zero mapped schools for Iceland.",https://statice.is/publications/news-archive/education/pupils-in-compulsory-schools-2024/

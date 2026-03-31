@@ -36,6 +36,38 @@ body {
   inset: 0;
 }
 
+.map-fallback {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background:
+    radial-gradient(circle at top, rgba(242, 197, 114, 0.22), transparent 32%),
+    linear-gradient(180deg, rgba(235, 226, 209, 0.9), rgba(225, 214, 194, 0.96));
+}
+
+.map-fallback-card {
+  max-width: 38rem;
+  padding: 1.4rem 1.5rem;
+  border-radius: 24px;
+  background: rgba(244, 238, 228, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow: var(--shadow);
+}
+
+.map-fallback-card h2 {
+  margin: 0 0 0.5rem;
+  font-family: "Fraunces", serif;
+  font-size: clamp(1.4rem, 2.8vw, 2rem);
+  line-height: 1;
+}
+
+.map-fallback-card p {
+  margin: 0.45rem 0 0;
+  line-height: 1.45;
+}
+
 .topbar,
 .legend-card,
 .bottom-sheet {

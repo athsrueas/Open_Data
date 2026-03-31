@@ -22,6 +22,7 @@ VIEWER_DIR = ROOT / "viewer" / "educational_inequality_map"
 DATA_JS_PATH = VIEWER_DIR / "data.js"
 ADULT_SKILLS_BACKFILL_PATH = ROOT / "outputs" / "educational_inequality_map" / "research" / "adult_skills_equivalent_backfill_seed.csv"
 LITERACY_CAVEATS_PATH = ROOT / "outputs" / "educational_inequality_map" / "research" / "literacy_caveats.csv"
+SCHOOL_COUNT_OVERRIDE_PATH = ROOT / "outputs" / "educational_inequality_map" / "research" / "school_count_overrides.csv"
 RESEARCH_DIR = ROOT / "outputs" / "educational_inequality_map" / "research"
 MISSING_METRICS_CSV_PATH = RESEARCH_DIR / "viewer_missing_metrics_audit.csv"
 MISSING_METRICS_MD_PATH = RESEARCH_DIR / "viewer_missing_metrics_audit.md"
@@ -438,6 +439,67 @@ def load_giga_metrics(countries: dict[str, dict[str, Any]]) -> None:
         }
 
 
+def load_school_count_overrides(countries: dict[str, dict[str, Any]]) -> None:
+    if not SCHOOL_COUNT_OVERRIDE_PATH.exists():
+        return
+
+    with SCHOOL_COUNT_OVERRIDE_PATH.open(encoding="utf-8", newline="") as handle:
+        reader = csv.DictReader(handle)
+        for row in reader:
+            iso3 = row.get("iso3", "").strip()
+            country = countries.get(iso3)
+            if not country:
+                continue
+
+            schools_total_raw = row.get("schools_total", "").strip()
+            if not schools_total_raw:
+                continue
+
+            schools_total = float(schools_total_raw)
+            population_payload = country["metrics"].get("population")
+            population = population_payload["value"] if population_payload else None
+            schools_per_million = None
+            if population:
+                schools_per_million = (schools_total / float(population)) * 1_000_000
+
+            year = int(row["year"]) if row.get("year") else None
+            dataset = row.get("source_system", "Official school-count override")
+            indicator = row.get("indicator", "schools_total")
+            comparability = row.get("comparability_flag", "proxy") or "proxy"
+            quality = row.get("quality_flag", "published") or "published"
+            display_note = row.get("display_note", "").strip()
+            source_url = row.get("source_url", "").strip()
+
+            country["metrics"]["schoolAvailabilityTotal"] = {
+                "value": schools_total,
+                "year": year,
+                "label": "Mapped schools",
+                "unit": "schools",
+            }
+            country["metrics"]["schoolAvailabilityPerMillion"] = {
+                "value": schools_per_million,
+                "year": year,
+                "label": "Schools per million residents",
+                "unit": "schools / 1M people",
+            }
+            country["sources"]["schoolAvailabilityTotal"] = {
+                "dataset": dataset,
+                "indicator": indicator,
+                "comparability": comparability,
+                "quality": quality,
+                **({"displayNote": display_note} if display_note else {}),
+                **({"sourceUrl": source_url} if source_url else {}),
+            }
+            country["sources"]["schoolAvailabilityPerMillion"] = {
+                "dataset": f"{dataset} + World Bank population",
+                "indicator": f"{indicator} / population",
+                "comparability": comparability,
+                "quality": quality,
+                **({"displayNote": display_note} if display_note else {}),
+                **({"sourceUrl": source_url} if source_url else {}),
+            }
+
+
 def load_learning_poverty(countries: dict[str, dict[str, Any]]) -> None:
     workbook = xlrd.open_workbook(
         str(RAW_DIR / "worldbank_research" / "downloads" / "lpv_edstats_1303_2024.xls"),
@@ -724,6 +786,7 @@ def build_payload() -> dict[str, Any]:
     load_adult_skills_equivalent_backfills(countries)
     load_uis_backfills(countries)
     load_giga_metrics(countries)
+    load_school_count_overrides(countries)
     load_learning_poverty(countries)
     load_hlo(countries)
     apply_literacy_caveats(countries)

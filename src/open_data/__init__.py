@@ -1,7 +1,7 @@
 """Open Data tooling for cataloging and validating public datasets."""
 
-from open_data.metadata import Dataset, Resource, ValidationError
-from open_data.tasks import (
+from .metadata import Dataset, Resource, ValidationError
+from .tasks import (
     audit_missing_fields,
     build_index_rows,
     load_json,

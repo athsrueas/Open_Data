@@ -96,7 +96,13 @@ Build the current education viewer payload and coverage audit:
 python src/open_data/build_education_viewer_data.py
 ```
 
-Serve the current viewer locally:
+Serve the current viewer locally from the repository root:
+
+```bash
+python -m server 8787
+```
+
+Or, if you prefer the standard library server directly:
 
 ```bash
 cd viewer/educational_inequality_map

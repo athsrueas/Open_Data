@@ -1,9 +1,9 @@
 # Viewer Missing Metrics Audit
 
-Generated at: 2026-03-31T03:51:58.027405+00:00
+Generated at: 2026-03-31T14:58:55.875571+00:00
 
 - Countries in payload: 217
-- Countries with at least one missing viewer metric: 115
+- Countries with at least one missing viewer metric: 108
 
 ## Highest-priority remaining gaps
 
@@ -13,13 +13,13 @@ Generated at: 2026-03-31T03:51:58.027405+00:00
 | Isle of Man | `IMN` | 5 | 7 |
 | Kosovo | `XKX` | 4 | 5 |
 | Curacao | `CUW` | 4 | 5 |
-| Greenland | `GRL` | 4 | 6 |
 | Faroe Islands | `FRO` | 4 | 6 |
 | Northern Mariana Islands | `MNP` | 4 | 6 |
 | St. Martin (French part) | `MAF` | 4 | 7 |
 | French Polynesia | `PYF` | 3 | 5 |
 | Guam | `GUM` | 3 | 5 |
 | Virgin Islands (U.S.) | `VIR` | 3 | 5 |
+| Greenland | `GRL` | 3 | 5 |
 | American Samoa | `ASM` | 3 | 7 |
 | Gibraltar | `GIB` | 3 | 5 |
 | Korea, Dem. People's Rep. | `PRK` | 2 | 4 |
