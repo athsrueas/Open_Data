@@ -1,35 +1,127 @@
 {
-  "generated_at": "2026-03-31T01:21:20.087996+00:00",
-  "source": "OECD PISA 2022 direct webfs index",
+  "generated_at": "2026-03-31T02:35:55.687156+00:00",
+  "group": "oecd_pisa",
   "status": "provisional_pending_armando_review",
   "resources": [
     {
-      "name": "index_html",
+      "name": "oecd_pisa_index_page",
       "url": "https://webfs.oecd.org/pisa2022/index.html",
       "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/oecd_pisa/index.html",
+      "bytes": 35764,
       "status": "skipped_existing",
-      "bytes": 35764
+      "kind": "html"
     },
     {
-      "name": "school_questionnaire_sas",
+      "name": "oecd_pisa_school_questionnaire_sas",
       "url": "https://webfs.oecd.org/pisa2022/SCH_QQQ_SAS.zip",
       "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/oecd_pisa/downloads/SCH_QQQ_SAS.zip",
+      "bytes": 7586157,
       "status": "skipped_existing",
-      "bytes": 7586157
+      "kind": "binary"
     },
     {
-      "name": "student_questionnaire_sas",
+      "name": "oecd_pisa_student_questionnaire_sas",
       "url": "https://webfs.oecd.org/pisa2022/STU_QQQ_SAS.zip",
       "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/oecd_pisa/downloads/STU_QQQ_SAS.zip",
+      "bytes": 773382315,
       "status": "skipped_existing",
-      "bytes": 773382315
+      "kind": "binary"
     },
     {
-      "name": "teacher_questionnaire_sas",
+      "name": "oecd_pisa_teacher_questionnaire_sas",
       "url": "https://webfs.oecd.org/pisa2022/TCH_QQQ_SAS.zip",
       "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/oecd_pisa/downloads/TCH_QQQ_SAS.zip",
+      "bytes": 30654669,
       "status": "skipped_existing",
-      "bytes": 30654669
+      "kind": "binary"
+    },
+    {
+      "name": "oecd_pisa_student_cognitive_sas",
+      "url": "https://webfs.oecd.org/pisa2022/STU_COG_SAS.zip",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/oecd_pisa/downloads/STU_COG_SAS.zip",
+      "bytes": 57425920,
+      "status": "skipped_existing",
+      "kind": "binary"
+    },
+    {
+      "name": "oecd_pisa_student_timing_sas",
+      "url": "https://webfs.oecd.org/pisa2022/STU_TIM_SAS.zip",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/oecd_pisa/downloads/STU_TIM_SAS.zip",
+      "bytes": 48611328,
+      "status": "skipped_existing",
+      "kind": "binary"
+    },
+    {
+      "name": "oecd_pisa_creative_thinking_sas",
+      "url": "https://webfs.oecd.org/pisa2022/CRT_SAS.zip",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/oecd_pisa/downloads/CRT_SAS.zip",
+      "bytes": 55164928,
+      "status": "skipped_existing",
+      "kind": "binary"
+    },
+    {
+      "name": "oecd_pisa_financial_literacy_sas",
+      "url": "https://webfs.oecd.org/pisa2022/FLT_SAS.zip",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/oecd_pisa/downloads/FLT_SAS.zip",
+      "bytes": 245012322,
+      "status": "skipped_existing",
+      "kind": "binary"
+    },
+    {
+      "name": "oecd_pisa_codebook",
+      "url": "https://webfs.oecd.org/pisa2022/CY08MSP_CODEBOOK_27thJune24.xlsx",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/oecd_pisa/downloads/CY08MSP_CODEBOOK_27thJune24.xlsx",
+      "bytes": 3880763,
+      "status": "skipped_existing",
+      "kind": "binary"
+    },
+    {
+      "name": "oecd_pisa_questionnaire_compendia",
+      "url": "https://webfs.oecd.org/pisa2022/PISA2022_FinalRelease_Compendia_18thJune24.zip",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/oecd_pisa/downloads/PISA2022_FinalRelease_Compendia_18thJune24.zip",
+      "bytes": 61344345,
+      "status": "skipped_existing",
+      "kind": "binary"
+    },
+    {
+      "name": "oecd_pisa_cognitive_compendia",
+      "url": "https://webfs.oecd.org/pisa2022/PISA2022_FinalRelease_Compendia_18thJune24_cog.zip",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/oecd_pisa/downloads/PISA2022_FinalRelease_Compendia_18thJune24_cog.zip",
+      "bytes": 21422587,
+      "status": "skipped_existing",
+      "kind": "binary"
+    },
+    {
+      "name": "oecd_pisa_creative_thinking_compendia",
+      "url": "https://webfs.oecd.org/pisa2022/PISA2022_FinalRelease_CrT_Compendia_18thJune24.zip",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/oecd_pisa/downloads/PISA2022_FinalRelease_CrT_Compendia_18thJune24.zip",
+      "bytes": 13008777,
+      "status": "skipped_existing",
+      "kind": "binary"
+    },
+    {
+      "name": "oecd_pisa_financial_literacy_compendia",
+      "url": "https://webfs.oecd.org/pisa2022/PISA2022_FinalRelease_FLT_Compendia_27thJune24.zip",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/oecd_pisa/downloads/PISA2022_FinalRelease_FLT_Compendia_27thJune24.zip",
+      "bytes": 29600213,
+      "status": "skipped_existing",
+      "kind": "binary"
+    },
+    {
+      "name": "oecd_pisa_public_codes_zip",
+      "url": "https://webfs.oecd.org/pisa2022/PISA2022_Stata_PublicCodes.zip",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/oecd_pisa/downloads/PISA2022_Stata_PublicCodes.zip",
+      "bytes": 141062,
+      "status": "skipped_existing",
+      "kind": "binary"
+    },
+    {
+      "name": "oecd_pisa_rescaled_indices_zip",
+      "url": "https://webfs.oecd.org/pisa2022/escs_trend.zip",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/oecd_pisa/downloads/escs_trend.zip",
+      "bytes": 22392854,
+      "status": "skipped_existing",
+      "kind": "binary"
     }
   ]
 }

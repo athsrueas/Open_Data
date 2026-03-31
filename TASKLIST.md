@@ -9,6 +9,8 @@ Use this checklist to pick small, discrete tasks inspired by `docs/PD-Initiative
 - [ ] Build `docs/Bounties/educational-inequality-map-sources.md` into a Phase 1 ingest plan.
 - [ ] Define the minimum country-year schema for access, funding, literacy, and outcomes.
 - [ ] Choose the first comparison-ready indicator set and extraction order.
+- [ ] Turn the staged source bundle into a map-ready Phase 1 visualization contract.
+- [ ] Define the first country detail and compare-panel UX around Phase 1 metrics.
 
 ## Metadata & Cataloging
 - [ ] Normalize a dataset catalog to a minimal metadata shape (`id`, `title`, `description`, `license`, `resources`).
@@ -33,6 +35,9 @@ Use this checklist to pick small, discrete tasks inspired by `docs/PD-Initiative
 - [ ] Add OECD PISA and World Bank learning-poverty/HLO sources for outcomes coverage.
 - [ ] Add UNICEF MICS-EAGLE or DHS survey sources for equity and within-country disparity slices.
 - [ ] Add boundary and school-age population layers for map denominators and choropleths.
+- [ ] Evaluate `MapLibre GL JS` + `deck.gl` as the preferred map stack for the Educational Inequality Map.
+- [ ] Build a Phase 1 choropleth-first concept with a country detail drawer and compare mode.
+- [ ] Decide the first visual metric switcher set for access, funding, outcomes, and context.
 - [ ] Gather public construction datasets (USASpending construction awards, State DOT/school capital plans, municipal open data capital project lists) in `construction-sources.md`.
 
 ## World Affairs

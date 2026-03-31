@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-30T23:45:16.506257+00:00",
+  "generated_at": "2026-03-31T02:35:54.835775+00:00",
   "group": "unesco_uis",
   "status": "provisional_pending_armando_review",
   "resources": [
@@ -8,23 +8,23 @@
       "url": "https://databrowser.uis.unesco.org/resources/bulk",
       "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/unesco_uis/bulk_page.html",
       "bytes": 53760,
-      "status": "downloaded",
+      "status": "skipped_existing",
       "kind": "html"
     },
     {
-      "name": "uis_bulk_uis_zip",
-      "url": "https://download.uis.unesco.org/bdds/202602/UIS",
-      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/unesco_uis/downloads/UIS_202602.zip",
-      "status": "error",
-      "error": "HTTP Error 404: The requested content does not exist.",
-      "kind": "binary"
+      "name": "uis_background_doc_pdf",
+      "url": "https://download.uis.unesco.org/bdds/202602/UIS - Data Release Background Doc -EN-Feb 2026.pdf",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/unesco_uis/downloads/UIS_background_doc_EN_Feb_2026.pdf",
+      "bytes": 924923,
+      "status": "skipped_existing",
+      "kind": "pdf"
     },
     {
       "name": "uis_bulk_sdg_zip",
       "url": "https://download.uis.unesco.org/bdds/202602/SDG.zip",
       "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/unesco_uis/downloads/SDG_202602.zip",
       "bytes": 34253921,
-      "status": "downloaded",
+      "status": "skipped_existing",
       "kind": "binary"
     },
     {
@@ -32,7 +32,7 @@
       "url": "https://download.uis.unesco.org/bdds/202602/OPRI.zip",
       "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/unesco_uis/downloads/OPRI_202602.zip",
       "bytes": 68287949,
-      "status": "downloaded",
+      "status": "skipped_existing",
       "kind": "binary"
     }
   ]

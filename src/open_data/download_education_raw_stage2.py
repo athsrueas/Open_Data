@@ -11,11 +11,13 @@ import datetime as dt
 import json
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote, urlsplit, urlunsplit
 from urllib.request import Request, urlopen
 
 
 RAW_ROOT = Path("outputs") / "educational_inequality_map" / "raw"
 USER_AGENT = "Mozilla/5.0"
+GEOBOUNDARIES_METADATA_URL = "https://www.geoboundaries.org/api/current/gbOpen/ALL/ADM0/"
 
 
 UIS_RESOURCES = [
@@ -80,6 +82,16 @@ GIGA_RESOURCES = [
 ]
 
 
+GEOBOUNDARIES_RESOURCES = [
+    {
+        "name": "geoboundaries_adm0_metadata",
+        "url": GEOBOUNDARIES_METADATA_URL,
+        "relative_path": Path("geoboundaries") / "api" / "gbOpen_ALL_ADM0.json",
+        "kind": "json",
+    }
+]
+
+
 WORLD_BANK_EXTRA_RESOURCES = [
     {
         "name": "worldbank_hlo_catalog_page",
@@ -132,132 +144,154 @@ OECD_RESOURCES = [
         "url": "https://webfs.oecd.org/pisa2022/index.html",
         "relative_path": Path("oecd_pisa") / "index.html",
         "kind": "html",
+        "group": "docs",
     },
     {
         "name": "oecd_pisa_school_questionnaire_sas",
         "url": "https://webfs.oecd.org/pisa2022/SCH_QQQ_SAS.zip",
         "relative_path": Path("oecd_pisa") / "downloads" / "SCH_QQQ_SAS.zip",
         "kind": "binary",
+        "group": "sas",
     },
     {
         "name": "oecd_pisa_student_questionnaire_sas",
         "url": "https://webfs.oecd.org/pisa2022/STU_QQQ_SAS.zip",
         "relative_path": Path("oecd_pisa") / "downloads" / "STU_QQQ_SAS.zip",
         "kind": "binary",
+        "group": "sas",
     },
     {
         "name": "oecd_pisa_teacher_questionnaire_sas",
         "url": "https://webfs.oecd.org/pisa2022/TCH_QQQ_SAS.zip",
         "relative_path": Path("oecd_pisa") / "downloads" / "TCH_QQQ_SAS.zip",
         "kind": "binary",
+        "group": "sas",
     },
     {
         "name": "oecd_pisa_student_cognitive_sas",
         "url": "https://webfs.oecd.org/pisa2022/STU_COG_SAS.zip",
         "relative_path": Path("oecd_pisa") / "downloads" / "STU_COG_SAS.zip",
         "kind": "binary",
+        "group": "sas",
     },
     {
         "name": "oecd_pisa_student_timing_sas",
         "url": "https://webfs.oecd.org/pisa2022/STU_TIM_SAS.zip",
         "relative_path": Path("oecd_pisa") / "downloads" / "STU_TIM_SAS.zip",
         "kind": "binary",
+        "group": "sas",
     },
     {
         "name": "oecd_pisa_creative_thinking_sas",
         "url": "https://webfs.oecd.org/pisa2022/CRT_SAS.zip",
         "relative_path": Path("oecd_pisa") / "downloads" / "CRT_SAS.zip",
         "kind": "binary",
+        "group": "sas",
     },
     {
         "name": "oecd_pisa_financial_literacy_sas",
         "url": "https://webfs.oecd.org/pisa2022/FLT_SAS.zip",
         "relative_path": Path("oecd_pisa") / "downloads" / "FLT_SAS.zip",
         "kind": "binary",
+        "group": "sas",
     },
     {
         "name": "oecd_pisa_school_questionnaire_spss",
         "url": "https://webfs.oecd.org/pisa2022/SCH_QQQ_SPSS.zip",
         "relative_path": Path("oecd_pisa") / "downloads" / "SCH_QQQ_SPSS.zip",
         "kind": "binary",
+        "group": "spss",
     },
     {
         "name": "oecd_pisa_student_questionnaire_spss",
         "url": "https://webfs.oecd.org/pisa2022/STU_QQQ_SPSS.zip",
         "relative_path": Path("oecd_pisa") / "downloads" / "STU_QQQ_SPSS.zip",
         "kind": "binary",
+        "group": "spss",
     },
     {
         "name": "oecd_pisa_teacher_questionnaire_spss",
         "url": "https://webfs.oecd.org/pisa2022/TCH_QQQ_SPSS.zip",
         "relative_path": Path("oecd_pisa") / "downloads" / "TCH_QQQ_SPSS.zip",
         "kind": "binary",
+        "group": "spss",
     },
     {
         "name": "oecd_pisa_student_cognitive_spss",
         "url": "https://webfs.oecd.org/pisa2022/STU_COG_SPSS.zip",
         "relative_path": Path("oecd_pisa") / "downloads" / "STU_COG_SPSS.zip",
         "kind": "binary",
+        "group": "spss",
     },
     {
         "name": "oecd_pisa_student_timing_spss",
         "url": "https://webfs.oecd.org/pisa2022/STU_TIM_SPSS.zip",
         "relative_path": Path("oecd_pisa") / "downloads" / "STU_TIM_SPSS.zip",
         "kind": "binary",
+        "group": "spss",
     },
     {
         "name": "oecd_pisa_creative_thinking_spss",
         "url": "https://webfs.oecd.org/pisa2022/CRT_SPSS.zip",
         "relative_path": Path("oecd_pisa") / "downloads" / "CRT_SPSS.zip",
         "kind": "binary",
+        "group": "spss",
     },
     {
         "name": "oecd_pisa_financial_literacy_spss",
         "url": "https://webfs.oecd.org/pisa2022/FLT_SPSS.zip",
         "relative_path": Path("oecd_pisa") / "downloads" / "FLT_SPSS.zip",
         "kind": "binary",
+        "group": "spss",
     },
     {
         "name": "oecd_pisa_codebook",
         "url": "https://webfs.oecd.org/pisa2022/CY08MSP_CODEBOOK_27thJune24.xlsx",
         "relative_path": Path("oecd_pisa") / "downloads" / "CY08MSP_CODEBOOK_27thJune24.xlsx",
         "kind": "binary",
+        "group": "docs",
     },
     {
         "name": "oecd_pisa_questionnaire_compendia",
         "url": "https://webfs.oecd.org/pisa2022/PISA2022_FinalRelease_Compendia_18thJune24.zip",
         "relative_path": Path("oecd_pisa") / "downloads" / "PISA2022_FinalRelease_Compendia_18thJune24.zip",
         "kind": "binary",
+        "group": "docs",
     },
     {
         "name": "oecd_pisa_cognitive_compendia",
         "url": "https://webfs.oecd.org/pisa2022/PISA2022_FinalRelease_Compendia_18thJune24_cog.zip",
         "relative_path": Path("oecd_pisa") / "downloads" / "PISA2022_FinalRelease_Compendia_18thJune24_cog.zip",
         "kind": "binary",
+        "group": "docs",
     },
     {
         "name": "oecd_pisa_creative_thinking_compendia",
         "url": "https://webfs.oecd.org/pisa2022/PISA2022_FinalRelease_CrT_Compendia_18thJune24.zip",
         "relative_path": Path("oecd_pisa") / "downloads" / "PISA2022_FinalRelease_CrT_Compendia_18thJune24.zip",
         "kind": "binary",
+        "group": "docs",
     },
     {
         "name": "oecd_pisa_financial_literacy_compendia",
         "url": "https://webfs.oecd.org/pisa2022/PISA2022_FinalRelease_FLT_Compendia_27thJune24.zip",
         "relative_path": Path("oecd_pisa") / "downloads" / "PISA2022_FinalRelease_FLT_Compendia_27thJune24.zip",
         "kind": "binary",
+        "group": "docs",
     },
     {
         "name": "oecd_pisa_public_codes_zip",
         "url": "https://webfs.oecd.org/pisa2022/PISA2022_Stata_PublicCodes.zip",
         "relative_path": Path("oecd_pisa") / "downloads" / "PISA2022_Stata_PublicCodes.zip",
         "kind": "binary",
+        "group": "docs",
     },
     {
         "name": "oecd_pisa_rescaled_indices_zip",
         "url": "https://webfs.oecd.org/pisa2022/escs_trend.zip",
         "relative_path": Path("oecd_pisa") / "downloads" / "escs_trend.zip",
         "kind": "binary",
+        "group": "docs",
     },
 ]
 
@@ -273,6 +307,7 @@ OECD_PROFILE_GROUPS = {
 GROUP_RESOURCES = {
     "unesco_uis": UIS_RESOURCES,
     "giga": GIGA_RESOURCES,
+    "geoboundaries": GEOBOUNDARIES_RESOURCES,
     "worldbank_research": WORLD_BANK_EXTRA_RESOURCES,
     "oecd_pisa": OECD_RESOURCES,
 }
@@ -284,7 +319,7 @@ def parse_args() -> argparse.Namespace:
         "--groups",
         nargs="+",
         choices=sorted(GROUP_RESOURCES),
-        default=["unesco_uis", "giga", "worldbank_research", "oecd_pisa"],
+        default=["unesco_uis", "giga", "geoboundaries", "worldbank_research", "oecd_pisa"],
         help="Source groups to stage. OECD PISA defaults to the lighter Phase 1 profile unless you override it.",
     )
     parser.add_argument(
@@ -305,9 +340,23 @@ def get_resources_for_group(group_name: str, args: argparse.Namespace) -> list[d
 
 
 def fetch_bytes(url: str) -> bytes:
-    request = Request(url, headers={"User-Agent": USER_AGENT, "Accept-Language": "en-US,en;q=0.9"})
+    parts = urlsplit(url)
+    safe_url = urlunsplit(
+        (
+            parts.scheme,
+            parts.netloc,
+            quote(parts.path),
+            parts.query,
+            parts.fragment,
+        )
+    )
+    request = Request(safe_url, headers={"User-Agent": USER_AGENT, "Accept-Language": "en-US,en;q=0.9"})
     with urlopen(request, timeout=120) as response:
         return response.read()
+
+
+def fetch_json(url: str) -> Any:
+    return json.loads(fetch_bytes(url).decode("utf-8"))
 
 
 def write_bytes(path: Path, payload: bytes) -> None:
@@ -412,6 +461,123 @@ def download_group(base_dir: Path, group_name: str, resources: list[dict[str, st
     return [existing_by_name[item["name"]] for item in resources if item["name"] in existing_by_name]
 
 
+def download_geoboundaries_group(base_dir: Path) -> list[dict[str, Any]]:
+    group_name = "geoboundaries"
+    manifest_path = base_dir / group_name / "manifest.json"
+    results: list[dict[str, Any]] = []
+
+    if manifest_path.exists():
+        try:
+            existing_manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            if isinstance(existing_manifest.get("resources"), list):
+                results = existing_manifest["resources"]
+        except json.JSONDecodeError:
+            pass
+
+    existing_by_name = {result.get("name"): result for result in results if isinstance(result, dict)}
+
+    metadata_target = base_dir / group_name / "api" / "gbOpen_ALL_ADM0.json"
+    print(f"[{group_name} 1/2] geoboundaries_adm0_metadata -> {metadata_target}")
+    if metadata_target.exists():
+        metadata_payload = json.loads(metadata_target.read_text(encoding="utf-8"))
+        metadata_result = {
+            "name": "geoboundaries_adm0_metadata",
+            "url": GEOBOUNDARIES_METADATA_URL,
+            "saved_to": str(metadata_target).replace("\\", "/"),
+            "bytes": metadata_target.stat().st_size,
+            "status": "skipped_existing",
+            "kind": "json",
+            "feature_count": len(metadata_payload) if isinstance(metadata_payload, list) else 0,
+        }
+        print(f"  skipped existing ({metadata_result['bytes']:,} bytes)")
+    else:
+        metadata_payload = fetch_json(GEOBOUNDARIES_METADATA_URL)
+        write_json(metadata_target, metadata_payload)
+        metadata_result = {
+            "name": "geoboundaries_adm0_metadata",
+            "url": GEOBOUNDARIES_METADATA_URL,
+            "saved_to": str(metadata_target).replace("\\", "/"),
+            "bytes": metadata_target.stat().st_size,
+            "status": "downloaded",
+            "kind": "json",
+            "feature_count": len(metadata_payload) if isinstance(metadata_payload, list) else 0,
+        }
+        print(f"  downloaded {metadata_result['bytes']:,} bytes")
+
+    existing_by_name["geoboundaries_adm0_metadata"] = metadata_result
+    write_json(
+        manifest_path,
+        build_group_manifest(
+            group_name,
+            [existing_by_name["geoboundaries_adm0_metadata"]],
+        ),
+    )
+
+    if not isinstance(metadata_payload, list):
+        return [existing_by_name["geoboundaries_adm0_metadata"]]
+
+    downloads_dir = base_dir / group_name / "downloads" / "ADM0_simplified"
+    downloaded_count = 0
+    skipped_count = 0
+    error_count = 0
+
+    print(f"[{group_name} 2/2] geoboundaries_adm0_simplified_geojsons -> {downloads_dir}")
+    for index, record in enumerate(metadata_payload, start=1):
+        boundary_iso = record.get("boundaryISO", f"unknown_{index}")
+        source_url = record.get("simplifiedGeometryGeoJSON") or record.get("gjDownloadURL")
+        if not source_url:
+            error_count += 1
+            continue
+
+        target = downloads_dir / f"{boundary_iso}.geojson"
+        if target.exists():
+            skipped_count += 1
+            continue
+
+        try:
+            payload = fetch_bytes(source_url)
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(payload)
+            downloaded_count += 1
+        except Exception:
+            error_count += 1
+
+    geometries_result = {
+        "name": "geoboundaries_adm0_simplified_geojsons",
+        "url": GEOBOUNDARIES_METADATA_URL,
+        "saved_to": str(downloads_dir).replace("\\", "/"),
+        "status": "downloaded" if error_count == 0 else "partial",
+        "kind": "geojson_collection",
+        "files_total": len(metadata_payload),
+        "files_downloaded_now": downloaded_count,
+        "files_skipped_existing": skipped_count,
+        "files_error": error_count,
+    }
+    print(
+        "  "
+        f"downloaded_now={downloaded_count:,}, "
+        f"skipped_existing={skipped_count:,}, "
+        f"errors={error_count:,}"
+    )
+
+    existing_by_name["geoboundaries_adm0_simplified_geojsons"] = geometries_result
+    write_json(
+        manifest_path,
+        build_group_manifest(
+            group_name,
+            [
+                existing_by_name["geoboundaries_adm0_metadata"],
+                existing_by_name["geoboundaries_adm0_simplified_geojsons"],
+            ],
+        ),
+    )
+
+    return [
+        existing_by_name["geoboundaries_adm0_metadata"],
+        existing_by_name["geoboundaries_adm0_simplified_geojsons"],
+    ]
+
+
 def write_oecd_notes(base_dir: Path) -> None:
     notes = {
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
@@ -442,6 +608,10 @@ def run() -> None:
     }
 
     for group_name in args.groups:
+        if group_name == "geoboundaries":
+            summary["groups"][group_name] = download_geoboundaries_group(base_dir)
+            continue
+
         resources = get_resources_for_group(group_name, args)
         summary["groups"][group_name] = download_group(base_dir, group_name, resources)
 

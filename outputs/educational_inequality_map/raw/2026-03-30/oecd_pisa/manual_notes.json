@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-03-31T02:35:55.717353+00:00",
+  "source": "OECD PISA 2022",
+  "status": "direct_index_available",
+  "notes": [
+    "The direct OECD file index at https://webfs.oecd.org/pisa2022/index.html was used for raw staging.",
+    "PISA 2022 SAS and SPSS raw file archives are directly downloadable from that index.",
+    "The original survey landing page still exists at https://survey.oecd.org/index.php?r=survey/index&sid=197663&lang=en and may document terms or user tracking expectations."
+  ]
+}

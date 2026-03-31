@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-03-31T02:35:55.038139+00:00",
+  "group": "geoboundaries",
+  "status": "provisional_pending_armando_review",
+  "resources": [
+    {
+      "name": "geoboundaries_adm0_metadata",
+      "url": "https://www.geoboundaries.org/api/current/gbOpen/ALL/ADM0/",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/geoboundaries/api/gbOpen_ALL_ADM0.json",
+      "bytes": 449131,
+      "status": "skipped_existing",
+      "kind": "json",
+      "feature_count": 230
+    },
+    {
+      "name": "geoboundaries_adm0_simplified_geojsons",
+      "url": "https://www.geoboundaries.org/api/current/gbOpen/ALL/ADM0/",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/geoboundaries/downloads/ADM0_simplified",
+      "status": "downloaded",
+      "kind": "geojson_collection",
+      "files_total": 230,
+      "files_downloaded_now": 0,
+      "files_skipped_existing": 230,
+      "files_error": 0
+    }
+  ]
+}
