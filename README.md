@@ -1,13 +1,135 @@
 # Open Data
 
-Tools for collecting and organizing open data.
+Tools for collecting, staging, and organizing open datasets for public-interest
+projects. The current active bounty is the Educational Inequality Map, with a
+focus on building a reusable country-year foundation before the ontology is
+finalized.
 
-## Catalog metadata foundation
+## Current focus
 
-This repository now ships a lightweight metadata schema and validator to provide
-an extensible foundation for dataset discovery, ingestion, and cataloging.
+- Active bounty: Educational Inequality Map
+- Goal: build a reusable education-access dataset for global disparity mapping
+- Safe work before ontology lock-in: source discovery, raw staging, indicator
+  inventory, provisional schema work, and reversible ingestion experiments
+
+Key project references:
+
+- `AGENTS.md`
+- `TASKLIST.md`
+- `docs/Bounties/educational-inequality-map.md`
+- `docs/Bounties/educational-inequality-map-sources.md`
+- `docs/Bounties/educational-inequality-map-ontology.md`
+- `docs/Bounties/education-knowledge-graph-outline.md`
+
+## What is included
+
+- A JSON schema describing core dataset metadata fields
+- Python dataclasses that mirror the schema and provide validation helpers
+- A CLI to validate dataset metadata files and print a short summary
+- Education-source download scripts for raw landing-zone staging
+- A provisional Phase 1 World Bank extract that writes ontology-shaped CSVs
+
+## Education workflows
+
+The repo now has a few concrete scripts under `src/open_data/` for education
+source collection:
+
+- `download_education_raw.py`
+  - Pulls a small raw World Bank landing zone into
+    `outputs/educational_inequality_map/raw/worldbank/<date>/`
+- `download_education_raw_stage2.py`
+  - Stages additional education sources including UNESCO UIS, Giga, World Bank
+    research files, and OECD PISA source manifests into
+    `outputs/educational_inequality_map/raw/<date>/`
+  - Uses incremental manifests and `.part` files so interrupted runs are easier
+    to inspect and resume
+- `download_oecd_pisa_raw.py`
+  - Downloads OECD PISA 2022 assets into
+    `outputs/educational_inequality_map/raw/<date>/oecd_pisa/`
+  - Supports smaller download profiles so Phase 1 work can avoid duplicate SAS
+    and SPSS payloads
+  - Streams large files to disk, retries failures, and resumes from partial
+    `.part` downloads
+- `fetch_education_phase1.py`
+  - Builds a conservative country-year Phase 1 extract from the World Bank API
+    into `outputs/educational_inequality_map/phase1_world_bank/`
+
+## Try it locally
+
+The commands below assume you are running from the repository root.
+
+Validate the metadata schema tooling:
+
+```bash
+python -m src.open_data.validate schemas/dataset.schema.json
+```
+
+Stage a small World Bank raw landing zone:
+
+```bash
+python src/open_data/download_education_raw.py
+```
+
+Stage the broader education source landing zone:
+
+```bash
+python src/open_data/download_education_raw_stage2.py
+```
+
+Fetch the provisional Phase 1 World Bank extract:
+
+```bash
+python src/open_data/fetch_education_phase1.py
+```
+
+Download OECD PISA 2022 files with the default Phase 1 profile
+(`SAS + docs`, no duplicate SPSS bundle):
+
+```bash
+python -u src/open_data/download_oecd_pisa_raw.py --profile phase1 --workers 3
+```
+
+Other useful OECD PISA download modes:
+
+```bash
+python -u src/open_data/download_oecd_pisa_raw.py --profile docs-only
+python -u src/open_data/download_oecd_pisa_raw.py --profile phase1-spss
+python -u src/open_data/download_oecd_pisa_raw.py --profile full
+```
+
+If the OECD host starts refusing concurrent connections, reduce workers:
+
+```bash
+python -u src/open_data/download_oecd_pisa_raw.py --profile phase1 --workers 2
+```
+
+## Output locations
+
+Current education outputs are written under:
+
+- `outputs/educational_inequality_map/raw/worldbank/<date>/`
+- `outputs/educational_inequality_map/raw/<date>/unesco_uis/`
+- `outputs/educational_inequality_map/raw/<date>/giga/`
+- `outputs/educational_inequality_map/raw/<date>/worldbank_research/`
+- `outputs/educational_inequality_map/raw/<date>/oecd_pisa/`
+- `outputs/educational_inequality_map/phase1_world_bank/`
+
+Most download scripts write a `manifest.json` alongside staged files so you can
+inspect progress and confirm what was fetched.
+
+## OECD PISA notes
+
+- `SAS` files are SAS-native packages and typically contain `.sas7bdat` data
+  plus SAS format/setup files
+- `SPSS` files are the parallel IBM SPSS packaging of similar data
+- For Phase 1 work, the default downloader profile prefers one analysis format
+  plus documentation to avoid downloading both parallel copies up front
+- Large OECD assets can exceed several gigabytes in total, so the downloader is
+  optimized for streaming and resume behavior rather than loading files fully
+  into memory
 
 ## Example data sources
+
 | Name | URL | Type | Domains | Scope | Geography | Short description | Related URLs |
 |---|---|---|---|---|---|---|---|
 | OpenOUSD | https://openousd.org | web_app | education, transparency, politics | local | Oakland, CA, USA | School-by-school spending and staffing transparency for Oakland USD | GitHub (site code): https://github.com/openoakland/openousd-site |
@@ -46,21 +168,7 @@ an extensible foundation for dataset discovery, ingestion, and cataloging.
 | Data.World | https://data.world/ | platform | health, ai, education, world-affairs, politics, crypto | global |  | Community and organization dataset hosting and discovery |  |
 | Internet Archive – Datasets | https://archive.org/details/datasets | archive | health, ai, education, world-affairs, politics, crypto | global |  | Long-term preservation and distribution of datasets |  |
 
-
-
-### What is included
-
-- A JSON schema describing core dataset metadata fields.
-- Python dataclasses that mirror the schema and provide validation helpers.
-- A CLI to validate dataset metadata files and print a short summary.
-
-### Try it locally
-
-```bash
-insert code here [I haven't actually written much working scraping scripting or anything yet]
-```
-
-### Schema location
+## Schema location
 
 The schema lives in `schemas/dataset.schema.json` and can be used by other tools
 that understand JSON Schema.
