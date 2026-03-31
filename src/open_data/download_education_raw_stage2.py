@@ -262,6 +262,14 @@ OECD_RESOURCES = [
 ]
 
 
+OECD_PROFILE_GROUPS = {
+    "phase1": {"docs", "sas"},
+    "phase1-spss": {"docs", "spss"},
+    "docs-only": {"docs"},
+    "full": {"docs", "sas", "spss"},
+}
+
+
 GROUP_RESOURCES = {
     "unesco_uis": UIS_RESOURCES,
     "giga": GIGA_RESOURCES,
@@ -276,10 +284,24 @@ def parse_args() -> argparse.Namespace:
         "--groups",
         nargs="+",
         choices=sorted(GROUP_RESOURCES),
-        default=["unesco_uis", "giga", "worldbank_research"],
-        help="Source groups to stage. OECD PISA is opt-in to avoid duplicate large downloads by default.",
+        default=["unesco_uis", "giga", "worldbank_research", "oecd_pisa"],
+        help="Source groups to stage. OECD PISA defaults to the lighter Phase 1 profile unless you override it.",
+    )
+    parser.add_argument(
+        "--oecd-profile",
+        choices=sorted(OECD_PROFILE_GROUPS),
+        default="phase1",
+        help="Subset of OECD PISA resources to stage when oecd_pisa is included.",
     )
     return parser.parse_args()
+
+
+def get_resources_for_group(group_name: str, args: argparse.Namespace) -> list[dict[str, str]]:
+    if group_name != "oecd_pisa":
+        return GROUP_RESOURCES[group_name]
+
+    allowed_groups = OECD_PROFILE_GROUPS[args.oecd_profile]
+    return [resource for resource in OECD_RESOURCES if resource["group"] in allowed_groups]
 
 
 def fetch_bytes(url: str) -> bytes:
@@ -415,11 +437,13 @@ def run() -> None:
         "mode": "raw_landing_zone_stage2",
         "status": "provisional_pending_armando_review",
         "groups_requested": args.groups,
+        "oecd_profile": args.oecd_profile if "oecd_pisa" in args.groups else "",
         "groups": {},
     }
 
     for group_name in args.groups:
-        summary["groups"][group_name] = download_group(base_dir, group_name, GROUP_RESOURCES[group_name])
+        resources = get_resources_for_group(group_name, args)
+        summary["groups"][group_name] = download_group(base_dir, group_name, resources)
 
     if "oecd_pisa" in args.groups:
         write_oecd_notes(base_dir)
