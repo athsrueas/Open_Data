@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educational Inequality Map</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=20260331b" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <div id="map"></div>
+
+      <section class="topbar">
+        <div class="title-block">
+          <p class="eyebrow">Educational Inequality Map</p>
+          <h1>Compare access, funding, and outcomes across countries.</h1>
+          <p class="lede">
+            A real first viewer built from staged World Bank, HLO, Giga, and
+            geoBoundaries data.
+          </p>
+        </div>
+
+        <div class="controls">
+          <label class="control">
+            <span>Map metric</span>
+            <select id="metric-select"></select>
+          </label>
+          <label class="control">
+            <span>Primary country</span>
+            <select id="primary-country"></select>
+          </label>
+          <label class="control">
+            <span>Compare with</span>
+            <select id="secondary-country"></select>
+          </label>
+        </div>
+      </section>
+
+      <section class="legend-card">
+        <div class="legend-header">
+          <span id="legend-title">Metric</span>
+          <span id="legend-unit"></span>
+        </div>
+        <div class="legend-ramp" id="legend-ramp"></div>
+        <div class="legend-values">
+          <span id="legend-min">Low</span>
+          <span id="legend-max">High</span>
+        </div>
+      </section>
+
+      <section class="bottom-sheet">
+        <nav class="tab-row">
+          <button class="tab-button is-active" data-tab="overview">Overview</button>
+          <button class="tab-button" data-tab="compare">Compare</button>
+          <button class="tab-button" data-tab="graph">Graph advantage</button>
+          <button class="tab-button" data-tab="notes">Notes</button>
+        </nav>
+
+        <div class="sheet-content">
+          <section class="tab-panel is-active" data-panel="overview">
+            <div id="hero-stats" class="hero-stats"></div>
+            <div class="overview-grid">
+              <div>
+                <p class="panel-kicker">Highest values</p>
+                <div id="ranking-list" class="ranking-list"></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="tab-panel" data-panel="compare">
+            <div id="compare-content" class="compare-content"></div>
+          </section>
+
+          <section class="tab-panel" data-panel="graph">
+            <div id="graph-examples" class="graph-examples"></div>
+          </section>
+
+          <section class="tab-panel" data-panel="notes">
+            <div id="source-notes" class="source-notes"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="./data.js?v=20260331b"></script>
+    <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+    <script src="./app.js?v=20260331b"></script>
+  </body>
+</html>

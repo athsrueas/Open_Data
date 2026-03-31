@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-03-31T03:17:50.892118+00:00",
+  "group": "nces_piaac_us",
+  "status": "provisional_pending_armando_review",
+  "resources": [
+    {
+      "name": "nces_piaac_2023_national_results",
+      "url": "https://nces.ed.gov/surveys/piaac/2023/national_results.asp",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/nces_piaac_us/national_results_2023.html",
+      "bytes": 137961,
+      "status": "downloaded",
+      "kind": "html"
+    },
+    {
+      "name": "nces_piaac_faq",
+      "url": "https://nces.ed.gov/surveys/piaac/faq.asp",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/nces_piaac_us/faq.html",
+      "bytes": 135351,
+      "status": "downloaded",
+      "kind": "html"
+    }
+  ]
+}

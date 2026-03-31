@@ -1,0 +1,399 @@
+:root {
+  --paper: rgba(244, 238, 228, 0.92);
+  --ink: #132020;
+  --muted: #5c655d;
+  --line: rgba(19, 32, 32, 0.12);
+  --accent: #bf5f38;
+  --teal: #3c8f8d;
+  --shadow: 0 24px 50px rgba(18, 24, 22, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: #ebe2d1;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: var(--ink);
+}
+
+body {
+  overflow: hidden;
+}
+
+.app-shell {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#map {
+  position: absolute;
+  inset: 0;
+}
+
+.topbar,
+.legend-card,
+.bottom-sheet {
+  position: absolute;
+  z-index: 2;
+  backdrop-filter: blur(18px);
+}
+
+.topbar {
+  top: 0.7rem;
+  left: 0.7rem;
+  right: 0.7rem;
+  display: grid;
+  grid-template-columns: minmax(220px, 1.1fr) minmax(360px, 0.95fr);
+  gap: 0.7rem;
+  align-items: start;
+}
+
+.title-block,
+.controls,
+.legend-card,
+.bottom-sheet {
+  background: var(--paper);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: var(--shadow);
+}
+
+.title-block {
+  border-radius: 28px;
+  padding: 0.7rem 0.9rem 0.8rem;
+}
+
+.controls {
+  border-radius: 28px;
+  padding: 0.65rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.55rem;
+}
+
+.eyebrow,
+.panel-kicker,
+.control span {
+  display: block;
+  margin: 0 0 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.62rem;
+  color: var(--muted);
+}
+
+.title-block h1 {
+  margin: 0;
+  font-family: "Fraunces", serif;
+  font-size: clamp(1.25rem, 2.4vw, 2.35rem);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  max-width: 12ch;
+}
+
+.lede {
+  margin: 0.45rem 0 0;
+  max-width: 46ch;
+  color: var(--muted);
+  line-height: 1.35;
+  font-size: 0.86rem;
+}
+
+.control select {
+  width: 100%;
+}
+
+select {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+  padding: 0.58rem 0.82rem;
+  font: inherit;
+  font-size: 0.9rem;
+  color: var(--ink);
+  outline: none;
+}
+
+.legend-card {
+  left: 0.7rem;
+  bottom: 9rem;
+  width: 220px;
+  border-radius: 18px;
+  padding: 0.65rem 0.75rem 0.7rem;
+}
+
+.legend-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.45rem;
+  font-weight: 600;
+  font-size: 0.86rem;
+}
+
+.legend-ramp {
+  height: 9px;
+  border-radius: 999px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.legend-ramp span {
+  display: block;
+}
+
+.legend-values {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-size: 0.74rem;
+}
+
+.bottom-sheet {
+  left: 0.7rem;
+  right: 0.7rem;
+  bottom: 0.7rem;
+  border-radius: 22px;
+  overflow: hidden;
+  max-height: min(27vh, 240px);
+}
+
+.tab-row {
+  display: flex;
+  gap: 0.35rem;
+  padding: 0.45rem 0.5rem 0;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.tab-button {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tab-button.is-active {
+  background: rgba(19, 32, 32, 0.9);
+  color: #f6f2ea;
+}
+
+.sheet-content {
+  padding: 0.55rem 0.7rem 0.75rem;
+  max-height: calc(min(27vh, 240px) - 44px);
+  overflow: auto;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.is-active {
+  display: block;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.45rem;
+  margin-bottom: 0.55rem;
+}
+
+.hero-stat {
+  padding: 0.45rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.hero-stat strong {
+  display: block;
+  font-family: "Fraunces", serif;
+  font-size: 1.05rem;
+}
+
+.hero-stat span {
+  font-size: 0.76rem;
+}
+
+.hero-stat span,
+.muted,
+.country-meta,
+.source-notes p {
+  color: var(--muted);
+}
+
+.overview-grid,
+.compare-content,
+.graph-examples,
+.source-notes {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.ranking-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.ranking-item,
+.country-card,
+.graph-edge,
+.source-note {
+  border-top: 1px solid var(--line);
+  padding-top: 0.45rem;
+}
+
+.ranking-item {
+  display: grid;
+  grid-template-columns: 2rem 1fr auto;
+  gap: 0.45rem;
+  align-items: baseline;
+  font-size: 0.86rem;
+}
+
+.country-card {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.country-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.country-head h3 {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem 0.7rem;
+}
+
+.metric-row {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.metric-note {
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.metric-row header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  font-size: 0.82rem;
+}
+
+.metric-bar-track {
+  height: 6px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(19, 32, 32, 0.08);
+}
+
+.metric-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent) 0%, #f2cf8d 100%);
+}
+
+.graph-path {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+
+.graph-node,
+.graph-link {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.22rem 0.52rem;
+  font-size: 0.76rem;
+}
+
+.graph-node {
+  background: rgba(19, 32, 32, 0.08);
+}
+
+.graph-link {
+  background: rgba(191, 95, 56, 0.16);
+  color: #8a4629;
+}
+
+.maplibregl-popup-content {
+  background: rgba(23, 28, 26, 0.94);
+  color: #f6f2ea;
+  border-radius: 16px;
+  padding: 0.8rem 0.95rem;
+  box-shadow: var(--shadow);
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.maplibregl-popup-close-button {
+  color: #f6f2ea;
+}
+
+@media (max-width: 1100px) {
+  body {
+    overflow: auto;
+  }
+
+  .app-shell {
+    min-height: 100svh;
+  }
+
+  .topbar {
+    position: relative;
+    inset: auto;
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem 0;
+  }
+
+  #map {
+    position: relative;
+    height: 62vh;
+  }
+
+  .legend-card,
+  .bottom-sheet {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: auto;
+    margin: 0 1rem 1rem;
+  }
+
+  .controls {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stats,
+  .ranking-list,
+  .metric-grid {
+    grid-template-columns: 1fr;
+  }
+}

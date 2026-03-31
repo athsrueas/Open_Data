@@ -92,6 +92,98 @@ GEOBOUNDARIES_RESOURCES = [
 ]
 
 
+OECD_PIAAC_ADULT_SKILLS_RESOURCES = [
+    {
+        "name": "oecd_piaac_country_material_index",
+        "url": "https://www.oecd.org/en/about/programmes/piaac/country-specific-material.html",
+        "relative_path": Path("oecd_adult_skills") / "country_specific_material.html",
+        "kind": "html",
+    },
+    {
+        "name": "oecd_education_at_a_glance_2025_pdf",
+        "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/09/education-at-a-glance-2025_c58fc9ae/1c0d9c79-en.pdf",
+        "relative_path": Path("oecd_adult_skills") / "education_at_a_glance_2025.pdf",
+        "kind": "pdf",
+    },
+    {
+        "name": "oecd_piaac_canada_2023_country_note",
+        "url": "https://www.oecd.org/en/publications/survey-of-adults-skills-2023-country-notes_ab4f6b8c-en/canada_5ecab9d9-en.html",
+        "relative_path": Path("oecd_adult_skills") / "canada_2023_country_note.html",
+        "kind": "html",
+    },
+    {
+        "name": "oecd_piaac_japan_2023_country_note",
+        "url": "https://www.oecd.org/en/publications/2024/12/survey-of-adults-skills-2023-country-notes_df7b4a60/japan_c63b2ef1.html",
+        "relative_path": Path("oecd_adult_skills") / "japan_2023_country_note.html",
+        "kind": "html",
+    },
+    {
+        "name": "oecd_piaac_france_2023_country_note",
+        "url": "https://www.oecd.org/en/publications/2024/12/survey-of-adults-skills-2023-country-notes_df7b4a60/france_ba42b6a4.html",
+        "relative_path": Path("oecd_adult_skills") / "france_2023_country_note.html",
+        "kind": "html",
+    },
+    {
+        "name": "oecd_piaac_germany_2023_country_note",
+        "url": "https://www.oecd.org/en/publications/2024/12/survey-of-adults-skills-2023-country-notes_df7b4a60/germany_264dd624.html",
+        "relative_path": Path("oecd_adult_skills") / "germany_2023_country_note.html",
+        "kind": "html",
+    },
+    {
+        "name": "oecd_piaac_england_2023_country_note",
+        "url": "https://www.oecd.org/en/publications/survey-of-adults-skills-2023-country-notes_ab4f6b8c-en/united-kingdom_02bc78e4-en.html",
+        "relative_path": Path("oecd_adult_skills") / "england_2023_country_note.html",
+        "kind": "html",
+    },
+    {
+        "name": "oecd_piaac_netherlands_2023_country_note",
+        "url": "https://www.oecd.org/en/publications/survey-of-adults-skills-2023-country-notes_ab4f6b8c-en/netherlands_bdaa68d1-en.html",
+        "relative_path": Path("oecd_adult_skills") / "netherlands_2023_country_note.html",
+        "kind": "html",
+    },
+    {
+        "name": "oecd_piaac_czechia_2023_country_note",
+        "url": "https://www.oecd.org/en/publications/survey-of-adults-skills-2023-country-notes_ab4f6b8c-en/czechia_7ed38300-en.html",
+        "relative_path": Path("oecd_adult_skills") / "czechia_2023_country_note.html",
+        "kind": "html",
+    },
+    {
+        "name": "oecd_piaac_sweden_2023_country_note",
+        "url": "https://www.oecd.org/en/publications/survey-of-adults-skills-2023-country-notes_ab4f6b8c-en/sweden_743ccd1f-en.html",
+        "relative_path": Path("oecd_adult_skills") / "sweden_2023_country_note.html",
+        "kind": "html",
+    },
+    {
+        "name": "oecd_piaac_belgium_flemish_2023_country_note",
+        "url": "https://www.oecd.org/en/publications/survey-of-adults-skills-2023-country-notes_ab4f6b8c-en/belgium_7187249a-en.html",
+        "relative_path": Path("oecd_adult_skills") / "belgium_flemish_2023_country_note.html",
+        "kind": "html",
+    },
+    {
+        "name": "oecd_piaac_australia_cycle1_country_note_pdf",
+        "url": "https://www.oecd.org/content/dam/oecd/en/about/programmes/edu/piaac/country-specific-material/cycle-1/Australia-Country-Note.pdf",
+        "relative_path": Path("oecd_adult_skills") / "australia_cycle1_country_note.pdf",
+        "kind": "pdf",
+    },
+]
+
+
+NCES_PIAAC_US_RESOURCES = [
+    {
+        "name": "nces_piaac_2023_national_results",
+        "url": "https://nces.ed.gov/surveys/piaac/2023/national_results.asp",
+        "relative_path": Path("nces_piaac_us") / "national_results_2023.html",
+        "kind": "html",
+    },
+    {
+        "name": "nces_piaac_faq",
+        "url": "https://nces.ed.gov/surveys/piaac/faq.asp",
+        "relative_path": Path("nces_piaac_us") / "faq.html",
+        "kind": "html",
+    },
+]
+
+
 WORLD_BANK_EXTRA_RESOURCES = [
     {
         "name": "worldbank_hlo_catalog_page",
@@ -308,6 +400,8 @@ GROUP_RESOURCES = {
     "unesco_uis": UIS_RESOURCES,
     "giga": GIGA_RESOURCES,
     "geoboundaries": GEOBOUNDARIES_RESOURCES,
+    "oecd_piaac_adult_skills": OECD_PIAAC_ADULT_SKILLS_RESOURCES,
+    "nces_piaac_us": NCES_PIAAC_US_RESOURCES,
     "worldbank_research": WORLD_BANK_EXTRA_RESOURCES,
     "oecd_pisa": OECD_RESOURCES,
 }
@@ -319,7 +413,7 @@ def parse_args() -> argparse.Namespace:
         "--groups",
         nargs="+",
         choices=sorted(GROUP_RESOURCES),
-        default=["unesco_uis", "giga", "geoboundaries", "worldbank_research", "oecd_pisa"],
+        default=["unesco_uis", "giga", "geoboundaries", "oecd_piaac_adult_skills", "nces_piaac_us", "worldbank_research", "oecd_pisa"],
         help="Source groups to stage. OECD PISA defaults to the lighter Phase 1 profile unless you override it.",
     )
     parser.add_argument(

@@ -11,6 +11,10 @@ Use this checklist to pick small, discrete tasks inspired by `docs/PD-Initiative
 - [ ] Choose the first comparison-ready indicator set and extraction order.
 - [ ] Turn the staged source bundle into a map-ready Phase 1 visualization contract.
 - [ ] Define the first country detail and compare-panel UX around Phase 1 metrics.
+- [ ] Backfill adult literacy equivalents for major countries still missing direct literacy values in the viewer: Japan, Germany, United Kingdom, France, Canada, Australia, Netherlands, Belgium, Czechia, and Sweden.
+- [ ] Stage official adult-skills sources for those countries, starting with OECD PIAAC / Survey of Adult Skills materials and falling back to national statistical agencies where OECD country-level extracts are easier to retrieve.
+- [ ] Define one reusable `adult_literacy_equivalent` derivation method for PIAAC-style sources so the USA, Canada, Germany, Japan, France, United Kingdom, Australia, Netherlands, Belgium, Czechia, and Sweden are treated consistently.
+- [ ] Add explicit comparability metadata for `adult_literacy_equivalent` so the viewer distinguishes direct literacy rates from adult-skills-based proxies.
 
 ## Metadata & Cataloging
 - [ ] Normalize a dataset catalog to a minimal metadata shape (`id`, `title`, `description`, `license`, `resources`).
@@ -38,6 +42,7 @@ Use this checklist to pick small, discrete tasks inspired by `docs/PD-Initiative
 - [ ] Evaluate `MapLibre GL JS` + `deck.gl` as the preferred map stack for the Educational Inequality Map.
 - [ ] Build a Phase 1 choropleth-first concept with a country detail drawer and compare mode.
 - [ ] Decide the first visual metric switcher set for access, funding, outcomes, and context.
+- [ ] Add a missing-vs-stale-vs-equivalent legend treatment to the viewer so proxy literacy values and true no-data states are visually distinct.
 - [ ] Gather public construction datasets (USASpending construction awards, State DOT/school capital plans, municipal open data capital project lists) in `construction-sources.md`.
 
 ## World Affairs

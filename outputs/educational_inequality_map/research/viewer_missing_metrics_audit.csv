@@ -1,0 +1,119 @@
+iso3,name,region,income_group,population,missing_metric_count,missing_metrics,missing_map_metric_count,missing_map_metrics
+CHI,Channel Islands,Europe & Central Asia,High income,168126.0,9,literacyRate;primaryCompletionRate;educationSpendPctGdp;educationSpendPctGovt;learningPovertyRate;schoolAvailabilityTotal;schoolAvailabilityPerMillion;schoolsWithDataPct;hloReadingScore,5,literacyRate;primaryCompletionRate;educationSpendPctGdp;learningPovertyRate;schoolAvailabilityPerMillion
+IMN,Isle of Man,Europe & Central Asia,High income,84160.0,7,literacyRate;primaryCompletionRate;educationSpendPctGdp;educationSpendPctGovt;learningPovertyRate;schoolAvailabilityPerMillion;hloReadingScore,5,literacyRate;primaryCompletionRate;educationSpendPctGdp;learningPovertyRate;schoolAvailabilityPerMillion
+XKX,Kosovo,Europe & Central Asia,Upper middle income,1594353.0,5,literacyRate;primaryCompletionRate;educationSpendPctGdp;educationSpendPctGovt;schoolAvailabilityPerMillion,4,literacyRate;primaryCompletionRate;educationSpendPctGdp;schoolAvailabilityPerMillion
+CUW,Curacao,Latin America & Caribbean,High income,155967.0,5,literacyRate;primaryCompletionRate;learningPovertyRate;schoolAvailabilityPerMillion;hloReadingScore,4,literacyRate;primaryCompletionRate;learningPovertyRate;schoolAvailabilityPerMillion
+GRL,Greenland,Europe & Central Asia,High income,56836.0,6,literacyRate;primaryCompletionRate;educationSpendPctGdp;educationSpendPctGovt;learningPovertyRate;hloReadingScore,4,literacyRate;primaryCompletionRate;educationSpendPctGdp;learningPovertyRate
+FRO,Faroe Islands,Europe & Central Asia,High income,54681.0,6,literacyRate;primaryCompletionRate;educationSpendPctGdp;educationSpendPctGovt;learningPovertyRate;hloReadingScore,4,literacyRate;primaryCompletionRate;educationSpendPctGdp;learningPovertyRate
+MNP,Northern Mariana Islands,East Asia & Pacific,High income,44278.0,6,literacyRate;primaryCompletionRate;educationSpendPctGdp;educationSpendPctGovt;learningPovertyRate;hloReadingScore,4,literacyRate;primaryCompletionRate;educationSpendPctGdp;learningPovertyRate
+MAF,St. Martin (French part),Latin America & Caribbean,High income,26129.0,7,literacyRate;primaryCompletionRate;educationSpendPctGdp;educationSpendPctGovt;gdpPerCapita;learningPovertyRate;hloReadingScore,4,literacyRate;primaryCompletionRate;educationSpendPctGdp;learningPovertyRate
+SOM,"Somalia, Fed. Rep.",Sub-Saharan Africa,Low income,19009151.0,4,primaryCompletionRate;learningPovertyRate;schoolAvailabilityPerMillion;hloReadingScore,3,primaryCompletionRate;learningPovertyRate;schoolAvailabilityPerMillion
+DJI,Djibouti,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,1168722.0,4,literacyRate;primaryCompletionRate;learningPovertyRate;hloReadingScore,3,literacyRate;primaryCompletionRate;learningPovertyRate
+PYF,French Polynesia,East Asia & Pacific,High income,281807.0,5,literacyRate;educationSpendPctGdp;educationSpendPctGovt;learningPovertyRate;hloReadingScore,3,literacyRate;educationSpendPctGdp;learningPovertyRate
+GUM,Guam,East Asia & Pacific,High income,167777.0,5,primaryCompletionRate;educationSpendPctGdp;educationSpendPctGovt;learningPovertyRate;hloReadingScore,3,primaryCompletionRate;educationSpendPctGdp;learningPovertyRate
+VIR,Virgin Islands (U.S.),Latin America & Caribbean,High income,104377.0,5,literacyRate;educationSpendPctGdp;educationSpendPctGovt;learningPovertyRate;hloReadingScore,3,literacyRate;educationSpendPctGdp;learningPovertyRate
+ASM,American Samoa,East Asia & Pacific,High income,46765.0,7,primaryCompletionRate;educationSpendPctGovt;learningPovertyRate;schoolAvailabilityTotal;schoolAvailabilityPerMillion;schoolsWithDataPct;hloReadingScore,3,primaryCompletionRate;learningPovertyRate;schoolAvailabilityPerMillion
+GIB,Gibraltar,Europe & Central Asia,High income,39329.0,5,literacyRate;educationSpendPctGdp;gdpPerCapita;learningPovertyRate;hloReadingScore,3,literacyRate;educationSpendPctGdp;learningPovertyRate
+PRK,"Korea, Dem. People's Rep.",East Asia & Pacific,Low income,26498823.0,4,educationSpendPctGdp;gdpPerCapita;learningPovertyRate;hloReadingScore,2,educationSpendPctGdp;learningPovertyRate
+CHE,Switzerland,Europe & Central Asia,High income,9005582.0,2,literacyRate;learningPovertyRate,2,literacyRate;learningPovertyRate
+LBN,Lebanon,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,5805962.0,2,learningPovertyRate;schoolAvailabilityPerMillion,2,learningPovertyRate;schoolAvailabilityPerMillion
+NZL,New Zealand,East Asia & Pacific,High income,5287500.0,2,literacyRate;primaryCompletionRate,2,literacyRate;primaryCompletionRate
+GMB,"Gambia, The",Sub-Saharan Africa,Low income,2759988.0,2,learningPovertyRate;schoolAvailabilityPerMillion,2,learningPovertyRate;schoolAvailabilityPerMillion
+GNB,Guinea-Bissau,Sub-Saharan Africa,Low income,2201352.0,3,learningPovertyRate;schoolAvailabilityPerMillion;hloReadingScore,2,learningPovertyRate;schoolAvailabilityPerMillion
+FJI,Fiji,East Asia & Pacific,Upper middle income,928784.0,3,literacyRate;learningPovertyRate;hloReadingScore,2,literacyRate;learningPovertyRate
+GUY,Guyana,Latin America & Caribbean,High income,831087.0,2,learningPovertyRate;schoolAvailabilityPerMillion,2,learningPovertyRate;schoolAvailabilityPerMillion
+MDV,Maldives,South Asia,Upper middle income,527799.0,3,learningPovertyRate;schoolAvailabilityPerMillion;hloReadingScore,2,learningPovertyRate;schoolAvailabilityPerMillion
+BRN,Brunei Darussalam,East Asia & Pacific,High income,462721.0,3,learningPovertyRate;schoolAvailabilityPerMillion;hloReadingScore,2,learningPovertyRate;schoolAvailabilityPerMillion
+BHS,"Bahamas, The",Latin America & Caribbean,High income,401283.0,3,literacyRate;learningPovertyRate;hloReadingScore,2,literacyRate;learningPovertyRate
+ISL,Iceland,Europe & Central Asia,High income,386506.0,2,literacyRate;schoolAvailabilityPerMillion,2,literacyRate;schoolAvailabilityPerMillion
+NCL,New Caledonia,East Asia & Pacific,High income,292639.0,4,educationSpendPctGdp;educationSpendPctGovt;learningPovertyRate;hloReadingScore,2,educationSpendPctGdp;learningPovertyRate
+LCA,St. Lucia,Latin America & Caribbean,Upper middle income,179744.0,3,literacyRate;learningPovertyRate;hloReadingScore,2,literacyRate;learningPovertyRate
+FSM,"Micronesia, Fed. Sts.",East Asia & Pacific,Lower middle income,113160.0,3,literacyRate;learningPovertyRate;hloReadingScore,2,literacyRate;learningPovertyRate
+AND,Andorra,Europe & Central Asia,High income,81938.0,3,literacyRate;learningPovertyRate;hloReadingScore,2,literacyRate;learningPovertyRate
+DMA,Dominica,Latin America & Caribbean,Upper middle income,66205.0,3,literacyRate;learningPovertyRate;hloReadingScore,2,literacyRate;learningPovertyRate
+BMU,Bermuda,North America,High income,64636.0,3,literacyRate;learningPovertyRate;hloReadingScore,2,literacyRate;learningPovertyRate
+KNA,St. Kitts and Nevis,Latin America & Caribbean,High income,46843.0,3,literacyRate;learningPovertyRate;hloReadingScore,2,literacyRate;learningPovertyRate
+TCA,Turks and Caicos Islands,Latin America & Caribbean,High income,46535.0,3,literacyRate;learningPovertyRate;hloReadingScore,2,literacyRate;learningPovertyRate
+SXM,Sint Maarten (Dutch part),Latin America & Caribbean,High income,43350.0,3,literacyRate;learningPovertyRate;hloReadingScore,2,literacyRate;learningPovertyRate
+LIE,Liechtenstein,Europe & Central Asia,High income,40450.0,3,literacyRate;educationSpendPctGovt;learningPovertyRate,2,literacyRate;learningPovertyRate
+VGB,British Virgin Islands,Latin America & Caribbean,High income,39471.0,4,literacyRate;gdpPerCapita;learningPovertyRate;hloReadingScore,2,literacyRate;learningPovertyRate
+MCO,Monaco,Europe & Central Asia,High income,38631.0,3,literacyRate;learningPovertyRate;hloReadingScore,2,literacyRate;learningPovertyRate
+MHL,Marshall Islands,East Asia & Pacific,Upper middle income,37548.0,3,learningPovertyRate;schoolAvailabilityPerMillion;hloReadingScore,2,learningPovertyRate;schoolAvailabilityPerMillion
+NGA,Nigeria,Sub-Saharan Africa,Lower middle income,232679478.0,1,learningPovertyRate,1,learningPovertyRate
+BRA,Brazil,Latin America & Caribbean,Upper middle income,211998573.0,1,primaryCompletionRate,1,primaryCompletionRate
+JPN,Japan,East Asia & Pacific,High income,123975371.0,1,primaryCompletionRate,1,primaryCompletionRate
+TZA,Tanzania,Sub-Saharan Africa,Lower middle income,68560157.0,1,learningPovertyRate,1,learningPovertyRate
+SDN,Sudan,Sub-Saharan Africa,Low income,50448963.0,1,learningPovertyRate,1,learningPovertyRate
+IRQ,Iraq,"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,46042015.0,2,educationSpendPctGovt;learningPovertyRate,1,learningPovertyRate
+YEM,"Yemen, Rep.","Middle East, North Africa, Afghanistan & Pakistan",Low income,40583164.0,1,schoolAvailabilityPerMillion,1,schoolAvailabilityPerMillion
+AGO,Angola,Sub-Saharan Africa,Lower middle income,37885849.0,1,learningPovertyRate,1,learningPovertyRate
+MOZ,Mozambique,Sub-Saharan Africa,Low income,34631766.0,1,learningPovertyRate,1,learningPovertyRate
+GHA,Ghana,Sub-Saharan Africa,Lower middle income,34427414.0,1,learningPovertyRate,1,learningPovertyRate
+NPL,Nepal,South Asia,Lower middle income,29651054.0,1,learningPovertyRate,1,learningPovertyRate
+VEN,"Venezuela, RB",Latin America & Caribbean,Not classified,28405543.0,1,learningPovertyRate,1,learningPovertyRate
+AUS,Australia,East Asia & Pacific,High income,27196812.0,1,primaryCompletionRate,1,primaryCompletionRate
+SYR,Syrian Arab Republic,"Middle East, North Africa, Afghanistan & Pakistan",Low income,24672760.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+MWI,Malawi,Sub-Saharan Africa,Low income,21655286.0,1,learningPovertyRate,1,learningPovertyRate
+NLD,Netherlands,Europe & Central Asia,High income,17993485.0,1,primaryCompletionRate,1,primaryCompletionRate
+ZWE,Zimbabwe,Sub-Saharan Africa,Lower middle income,16634373.0,1,learningPovertyRate,1,learningPovertyRate
+RWA,Rwanda,Sub-Saharan Africa,Low income,14256567.0,1,learningPovertyRate,1,learningPovertyRate
+BOL,Bolivia,Latin America & Caribbean,Lower middle income,12413315.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+SSD,South Sudan,Sub-Saharan Africa,Low income,11943408.0,1,learningPovertyRate,1,learningPovertyRate
+BEL,Belgium,Europe & Central Asia,High income,11858610.0,1,primaryCompletionRate,1,primaryCompletionRate
+HTI,Haiti,Latin America & Caribbean,Lower middle income,11772557.0,1,learningPovertyRate,1,learningPovertyRate
+CUB,Cuba,Latin America & Caribbean,Upper middle income,10979783.0,1,learningPovertyRate,1,learningPovertyRate
+TJK,Tajikistan,Europe & Central Asia,Lower middle income,10590927.0,1,learningPovertyRate,1,learningPovertyRate
+PNG,Papua New Guinea,East Asia & Pacific,Lower middle income,10576502.0,1,learningPovertyRate,1,learningPovertyRate
+AUT,Austria,Europe & Central Asia,High income,9177982.0,1,literacyRate,1,literacyRate
+BLR,Belarus,Europe & Central Asia,Upper middle income,9132629.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+SLE,Sierra Leone,Sub-Saharan Africa,Low income,8642022.0,1,learningPovertyRate,1,learningPovertyRate
+LAO,Lao PDR,East Asia & Pacific,Lower middle income,7769819.0,1,schoolAvailabilityPerMillion,1,schoolAvailabilityPerMillion
+HKG,"Hong Kong SAR, China",East Asia & Pacific,High income,7524100.0,1,literacyRate,1,literacyRate
+TKM,Turkmenistan,Europe & Central Asia,Upper middle income,7494498.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+LBY,Libya,"Middle East, North Africa, Afghanistan & Pakistan",Upper middle income,7381023.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+DNK,Denmark,Europe & Central Asia,High income,5976992.0,1,literacyRate,1,literacyRate
+FIN,Finland,Europe & Central Asia,High income,5619911.0,1,literacyRate,1,literacyRate
+LBR,Liberia,Sub-Saharan Africa,Low income,5612817.0,1,learningPovertyRate,1,learningPovertyRate
+NOR,Norway,Europe & Central Asia,High income,5572279.0,1,literacyRate,1,literacyRate
+SVK,Slovak Republic,Europe & Central Asia,High income,5422069.0,1,literacyRate,1,literacyRate
+IRL,Ireland,Europe & Central Asia,High income,5395790.0,1,literacyRate,1,literacyRate
+CAF,Central African Republic,Sub-Saharan Africa,Low income,5330690.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+PSE,West Bank and Gaza,"Middle East, North Africa, Afghanistan & Pakistan",Lower middle income,5289152.0,3,educationSpendPctGovt;learningPovertyRate;hloReadingScore,1,learningPovertyRate
+ERI,Eritrea,Sub-Saharan Africa,Low income,3535603.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+PRI,Puerto Rico (US),Latin America & Caribbean,High income,3203295.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+BIH,Bosnia and Herzegovina,Europe & Central Asia,Upper middle income,3164253.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+NAM,Namibia,Sub-Saharan Africa,Lower middle income,3030131.0,1,learningPovertyRate,1,learningPovertyRate
+JAM,Jamaica,Latin America & Caribbean,Upper middle income,2839175.0,1,learningPovertyRate,1,learningPovertyRate
+GNQ,Equatorial Guinea,Sub-Saharan Africa,Upper middle income,1892516.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+MKD,North Macedonia,Europe & Central Asia,Upper middle income,1824359.0,1,schoolAvailabilityPerMillion,1,schoolAvailabilityPerMillion
+TLS,Timor-Leste,East Asia & Pacific,Lower middle income,1400638.0,1,learningPovertyRate,1,learningPovertyRate
+EST,Estonia,Europe & Central Asia,High income,1372341.0,1,learningPovertyRate,1,learningPovertyRate
+SWZ,Eswatini,Sub-Saharan Africa,Lower middle income,1242822.0,1,learningPovertyRate,1,learningPovertyRate
+SLB,Solomon Islands,East Asia & Pacific,Lower middle income,819198.0,1,learningPovertyRate,1,learningPovertyRate
+BTN,Bhutan,South Asia,Lower middle income,791524.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+LUX,Luxembourg,Europe & Central Asia,High income,677012.0,1,literacyRate,1,literacyRate
+SUR,Suriname,Latin America & Caribbean,Upper middle income,634431.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+MNE,Montenegro,Europe & Central Asia,Upper middle income,623525.0,2,educationSpendPctGdp;educationSpendPctGovt,1,educationSpendPctGdp
+CPV,Cabo Verde,Sub-Saharan Africa,Upper middle income,524877.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+VUT,Vanuatu,East Asia & Pacific,Lower middle income,327777.0,1,learningPovertyRate,1,learningPovertyRate
+BRB,Barbados,Latin America & Caribbean,High income,282467.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+STP,Sao Tome and Principe,Sub-Saharan Africa,Lower middle income,235536.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+WSM,Samoa,East Asia & Pacific,Upper middle income,218019.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+KIR,Kiribati,East Asia & Pacific,Lower middle income,134518.0,1,learningPovertyRate,1,learningPovertyRate
+SYC,Seychelles,Sub-Saharan Africa,High income,121354.0,1,learningPovertyRate,1,learningPovertyRate
+GRD,Grenada,Latin America & Caribbean,Upper middle income,117207.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+ABW,Aruba,Latin America & Caribbean,High income,107995.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+TON,Tonga,East Asia & Pacific,Upper middle income,104175.0,1,learningPovertyRate,1,learningPovertyRate
+VCT,St. Vincent and the Grenadines,Latin America & Caribbean,Upper middle income,100616.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+ATG,Antigua and Barbuda,Latin America & Caribbean,High income,93772.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+CYM,Cayman Islands,Latin America & Caribbean,High income,74457.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+SMR,San Marino,Europe & Central Asia,High income,33977.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+PLW,Palau,East Asia & Pacific,High income,17695.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+NRU,Nauru,East Asia & Pacific,High income,11947.0,2,learningPovertyRate;hloReadingScore,1,learningPovertyRate
+TUV,Tuvalu,East Asia & Pacific,Upper middle income,9646.0,1,learningPovertyRate,1,learningPovertyRate
+KOR,"Korea, Rep.",East Asia & Pacific,High income,51751065.0,1,educationSpendPctGovt,0,
+UKR,Ukraine,Europe & Central Asia,Upper middle income,37860221.0,1,hloReadingScore,0,
+UZB,Uzbekistan,Europe & Central Asia,Lower middle income,36361859.0,1,hloReadingScore,0,
+LKA,Sri Lanka,South Asia,Lower middle income,21916000.0,1,hloReadingScore,0,
+MNG,Mongolia,East Asia & Pacific,Upper middle income,3524788.0,1,hloReadingScore,0,
+ARM,Armenia,Europe & Central Asia,Upper middle income,3033500.0,1,hloReadingScore,0,

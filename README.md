@@ -28,6 +28,7 @@ Key project references:
 - A CLI to validate dataset metadata files and print a short summary
 - Education-source download scripts for raw landing-zone staging
 - A provisional Phase 1 World Bank extract that writes ontology-shaped CSVs
+- A first interactive education viewer under `viewer/educational_inequality_map/`
 
 ## Education workflows
 
@@ -53,6 +54,13 @@ source collection:
 - `fetch_education_phase1.py`
   - Builds a conservative country-year Phase 1 extract from the World Bank API
     into `outputs/educational_inequality_map/phase1_world_bank/`
+- `build_education_viewer_data.py`
+  - Builds the viewer payload for the education map into
+    `viewer/educational_inequality_map/data.js`
+  - Merges staged World Bank, World Bank research, Giga, geoBoundaries, NCES
+    PIAAC, and provisional adult-skills backfill artifacts
+  - Writes a missing-country coverage audit into
+    `outputs/educational_inequality_map/research/`
 
 ## Try it locally
 
@@ -80,6 +88,25 @@ Fetch the provisional Phase 1 World Bank extract:
 
 ```bash
 python src/open_data/fetch_education_phase1.py
+```
+
+Build the current education viewer payload and coverage audit:
+
+```bash
+python src/open_data/build_education_viewer_data.py
+```
+
+Serve the current viewer locally:
+
+```bash
+cd viewer/educational_inequality_map
+python -m http.server 8787
+```
+
+Then open:
+
+```text
+http://localhost:8787
 ```
 
 Download OECD PISA 2022 files with the default Phase 1 profile
@@ -110,12 +137,63 @@ Current education outputs are written under:
 - `outputs/educational_inequality_map/raw/worldbank/<date>/`
 - `outputs/educational_inequality_map/raw/<date>/unesco_uis/`
 - `outputs/educational_inequality_map/raw/<date>/giga/`
+- `outputs/educational_inequality_map/raw/<date>/geoboundaries/`
+- `outputs/educational_inequality_map/raw/<date>/nces_piaac_us/`
+- `outputs/educational_inequality_map/raw/<date>/oecd_adult_skills/`
 - `outputs/educational_inequality_map/raw/<date>/worldbank_research/`
 - `outputs/educational_inequality_map/raw/<date>/oecd_pisa/`
 - `outputs/educational_inequality_map/phase1_world_bank/`
+- `outputs/educational_inequality_map/research/`
+- `viewer/educational_inequality_map/`
 
 Most download scripts write a `manifest.json` alongside staged files so you can
 inspect progress and confirm what was fetched.
+
+## Viewer
+
+The repo now includes a real first web viewer for the Educational Inequality
+Map in `viewer/educational_inequality_map/`.
+
+Current viewer characteristics:
+
+- Choropleth-first world map
+- Country comparison mode for cost, access, funding, and outcomes
+- Source notes and caveat-aware literacy handling
+- Real staged data from:
+  - World Bank EdStats Phase 1 extract
+  - World Bank learning poverty and HLO files
+  - Giga country metadata
+  - geoBoundaries ADM0 geometries
+  - NCES PIAAC U.S. literacy equivalent
+  - provisional OECD adult-skills equivalents for selected missing countries
+
+The viewer payload now carries:
+
+- `dataModel`
+- `coverageSummary`
+- `metricCatalog`
+- `countries`
+- `geojson`
+- `graphExamples`
+- `sourceNotes`
+
+Key generated viewer artifacts:
+
+- `viewer/educational_inequality_map/data.js`
+- `outputs/educational_inequality_map/research/viewer_missing_metrics_audit.csv`
+- `outputs/educational_inequality_map/research/viewer_missing_metrics_audit.md`
+- `outputs/educational_inequality_map/research/adult_skills_equivalent_backfill_seed.csv`
+- `outputs/educational_inequality_map/research/literacy_caveats.csv`
+
+Important caveats:
+
+- School availability is still a proxy based on Giga mapped-school counts.
+- Some literacy values are direct World Bank literacy-rate observations, while
+  others are explicit `adult literacy equivalent` backfills from adult-skills
+  sources and are marked as not directly comparable.
+- Some OECD adult-skills country-note pages are protected by Cloudflare, so a
+  few backfills are currently seeded from official OECD web results rather than
+  fully staged local HTML.
 
 ## OECD PISA notes
 
