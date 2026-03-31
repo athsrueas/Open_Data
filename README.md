@@ -183,6 +183,170 @@ The viewer payload now carries:
 - `graphExamples`
 - `sourceNotes`
 
+How the payload is organized:
+
+- `dataModel`
+  - Describes the contract the front-end expects.
+  - Declares the primary entity as `country`.
+  - Lists the fields present on each country record:
+    - `iso3`, `name`, `region`, `incomeGroup`, `capital`
+    - `longitude`, `latitude`
+    - `metrics`
+    - `sources`
+    - `giga`
+  - Declares the per-metric payload shape:
+    - `value`
+    - `year`
+    - `label`
+    - `unit`
+  - Declares the per-source payload shape:
+    - `dataset`
+    - `indicator`
+    - `comparability`
+    - `quality`
+    - `displayNote`
+    - `sourceUrl`
+    - `caveatSourceUrl`
+  - Separates:
+    - `mapMetricKeys` for the small set of metrics used in the choropleth UI
+    - `metricKeys` for the full set of viewer metrics available to comparison and detail views
+
+- `metricCatalog`
+  - Defines each metric once, independent of any country.
+  - For each metric, it stores:
+    - stable key, such as `literacyRate` or `educationSpendPctGdp`
+    - human label
+    - broad category
+    - unit
+    - whether higher values are generally better
+    - whether the metric is eligible for the map selector
+  - This is the front-end's lookup table for labels, units, and category semantics.
+
+- `countries`
+  - This is the main fact table the viewer uses.
+  - Each country row is keyed by ISO3 and combines:
+    - identity and map-label fields
+    - metric observations in `metrics`
+    - provenance and caveats in `sources`
+    - Giga-specific coverage metadata in `giga`
+  - The `metrics` object is sparse by design:
+    - metrics only appear when the pipeline found or derived a value
+    - missing metrics are omitted or stored with `null` values rather than being forced into placeholder values
+  - The `sources` object mirrors the `metrics` keys:
+    - if `metrics.literacyRate` exists, `sources.literacyRate` explains where that value came from and how trustworthy or comparable it is
+
+- `geojson`
+  - Holds the country polygons used by the choropleth.
+  - Geometry comes from staged `geoBoundaries` ADM0 files.
+  - Each feature's properties include:
+    - `iso3`
+    - `name`
+    - `region`
+    - `incomeGroup`
+    - geometry source metadata
+  - The front-end joins `geojson.features[*].properties.iso3` to `countries[*].iso3`.
+  - Metric values are not stored permanently inside the geometry files; the browser hydrates the selected map metric into the feature properties at runtime.
+
+- `coverageSummary`
+  - Precomputed coverage counts so the viewer can summarize completeness without recomputing it in the browser.
+  - Tracks:
+    - total country count
+    - countries with data for each metric
+    - countries missing data for each metric
+    - countries with caveats or equivalent/backfill notes for each metric
+
+- `graphExamples`
+  - Small explanatory records that connect the viewer to the broader knowledge-graph framing of the project.
+  - These are not edge lists for a live graph database.
+  - They are interpretive examples that show relationships such as:
+    - school availability serving population
+    - jurisdictions receiving funding
+    - jurisdictions producing outcomes
+
+- `sourceNotes`
+  - Viewer-wide caveats that apply across many countries or metrics.
+  - These are used to explain modeling choices such as proxy school counts or literacy-equivalent backfills.
+
+How the metric families relate:
+
+- `context`
+  - `population`
+  - `gdpPerCapita`
+  - These are denominator and comparison metrics that help normalize or interpret other values.
+
+- `access`
+  - `primaryCompletionRate`
+  - `schoolAvailabilityTotal`
+  - `schoolAvailabilityPerMillion`
+  - `schoolsWithDataPct`
+  - These describe whether people appear to reach or be served by the education system.
+
+- `funding`
+  - `educationSpendPctGdp`
+  - `educationSpendPctGovt`
+  - These indicate how much public resource is flowing into education, either relative to the full economy or the government budget.
+
+- `outcomes`
+  - `literacyRate`
+  - `learningPovertyRate`
+  - `hloReadingScore`
+  - These capture performance from different angles:
+    - administrative literacy rates
+    - foundational learning shortfall
+    - harmonized learning outcomes
+
+How the metrics are related in practice:
+
+- `schoolAvailabilityTotal` and `schoolAvailabilityPerMillion`
+  - `schoolAvailabilityPerMillion` is derived from school counts divided by population.
+  - It is intended to be more comparable across countries of different sizes than raw counts alone.
+
+- `educationSpendPctGdp` and `educationSpendPctGovt`
+  - These are complementary rather than interchangeable.
+  - `% of GDP` shows system scale relative to the economy.
+  - `% of government spending` shows priority within public budgets.
+
+- `literacyRate`, `learningPovertyRate`, and `hloReadingScore`
+  - These all speak to educational outcomes, but they are not the same construct.
+  - `literacyRate` is the broadest and often the most administratively reported.
+  - `learningPovertyRate` is focused on foundational reading failure among children.
+  - `hloReadingScore` is a harmonized assessment-based performance score.
+
+How provenance and caveats work:
+
+- Direct source observations
+  - Many Phase 1 values come straight from World Bank / UIS styled country-year series.
+
+- Derived or proxy observations
+  - Some values are intentionally derived:
+    - `schoolAvailabilityPerMillion`
+    - adult-skills-based `literacyRate` equivalents for high-income gaps
+  - Derived values keep the same metric key when the goal is a reversible Phase 1 viewer, but their source record is marked with a comparability or quality flag.
+
+- Country-specific fallbacks
+  - The pipeline also supports small research override files in
+    `outputs/educational_inequality_map/research/` when an official country source is needed to close a gap that the default staged feeds miss.
+  - Current examples include:
+    - adult-skills literacy-equivalent seeds
+    - literacy caveat records
+    - school-count overrides
+
+How the front-end uses the payload:
+
+- The map selector chooses one of the `mapMetricKeys`.
+- The browser copies that metric into the GeoJSON features for coloring.
+- The legend reads the unit and label from `metricCatalog`.
+- Country comparison panels read the detailed values from `countries[*].metrics`.
+- Tooltips, notes, and caveat messaging come from `countries[*].sources` plus top-level `sourceNotes`.
+
+The overall design intent is to keep geometry, metric values, and provenance
+loosely coupled:
+
+- geometry can be replaced later without changing the metric schema
+- metric definitions can evolve without rewriting the front-end layout
+- backfills and caveats can be revised country by country without locking in a
+  premature final ontology
+
 Key generated viewer artifacts:
 
 - `viewer/educational_inequality_map/data.js`
