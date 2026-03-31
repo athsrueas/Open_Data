@@ -6,6 +6,9 @@
   --accent: #bf5f38;
   --teal: #3c8f8d;
   --shadow: 0 24px 50px rgba(18, 24, 22, 0.16);
+  --shell-gap: 0.7rem;
+  --sheet-max-height: clamp(210px, 28vh, 300px);
+  --legend-width: clamp(220px, 24vw, 280px);
 }
 
 * {
@@ -77,9 +80,9 @@ body {
 }
 
 .topbar {
-  top: 0.7rem;
-  left: 0.7rem;
-  right: 0.7rem;
+  top: var(--shell-gap);
+  left: var(--shell-gap);
+  right: var(--shell-gap);
   display: grid;
   grid-template-columns: minmax(220px, 1.1fr) minmax(360px, 0.95fr);
   gap: 0.7rem;
@@ -106,6 +109,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.55rem;
+  align-items: end;
 }
 
 .eyebrow,
@@ -138,6 +142,7 @@ body {
 
 .control select {
   width: 100%;
+  min-width: 0;
 }
 
 select {
@@ -153,9 +158,10 @@ select {
 }
 
 .legend-card {
-  left: 0.7rem;
-  bottom: 9rem;
-  width: 220px;
+  left: var(--shell-gap);
+  bottom: calc(var(--sheet-max-height) + (var(--shell-gap) * 2));
+  width: var(--legend-width);
+  max-width: calc(100vw - (var(--shell-gap) * 2));
   border-radius: 18px;
   padding: 0.65rem 0.75rem 0.7rem;
 }
@@ -190,16 +196,18 @@ select {
 }
 
 .bottom-sheet {
-  left: 0.7rem;
-  right: 0.7rem;
-  bottom: 0.7rem;
+  left: var(--shell-gap);
+  right: var(--shell-gap);
+  bottom: var(--shell-gap);
   border-radius: 22px;
   overflow: hidden;
-  max-height: min(27vh, 240px);
+  max-height: var(--sheet-max-height);
+  min-height: 170px;
 }
 
 .tab-row {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.35rem;
   padding: 0.45rem 0.5rem 0;
   background: rgba(255, 255, 255, 0.18);
@@ -224,7 +232,7 @@ select {
 
 .sheet-content {
   padding: 0.55rem 0.7rem 0.75rem;
-  max-height: calc(min(27vh, 240px) - 44px);
+  max-height: calc(var(--sheet-max-height) - 56px);
   overflow: auto;
 }
 
@@ -293,6 +301,7 @@ select {
   gap: 0.45rem;
   align-items: baseline;
   font-size: 0.86rem;
+  min-width: 0;
 }
 
 .country-card {
@@ -332,8 +341,22 @@ select {
 .metric-row header {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
   gap: 0.6rem;
   font-size: 0.82rem;
+}
+
+.metric-row header span {
+  min-width: 0;
+}
+
+.metric-row header span:first-child {
+  flex: 1 1 12rem;
+}
+
+.metric-row header .muted {
+  flex: 0 1 auto;
 }
 
 .metric-bar-track {
@@ -388,6 +411,43 @@ select {
   color: #f6f2ea;
 }
 
+@media (max-width: 1360px) {
+  :root {
+    --sheet-max-height: clamp(230px, 32vh, 340px);
+  }
+
+  .topbar {
+    grid-template-columns: minmax(220px, 1fr);
+  }
+
+  .controls {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hero-stats,
+  .ranking-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .metric-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1180px) {
+  :root {
+    --sheet-max-height: clamp(250px, 36vh, 380px);
+  }
+
+  .controls {
+    grid-template-columns: 1fr;
+  }
+
+  .legend-card {
+    width: min(320px, calc(100vw - (var(--shell-gap) * 2)));
+  }
+}
+
 @media (max-width: 1100px) {
   body {
     overflow: auto;
@@ -417,6 +477,7 @@ select {
     bottom: auto;
     width: auto;
     margin: 0 1rem 1rem;
+    max-width: none;
   }
 
   .controls {
@@ -427,5 +488,21 @@ select {
   .ranking-list,
   .metric-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .title-block,
+  .controls {
+    border-radius: 22px;
+  }
+
+  .tab-button {
+    font-size: 0.78rem;
+    padding: 0.42rem 0.62rem;
+  }
+
+  .sheet-content {
+    padding-inline: 0.6rem;
   }
 }
