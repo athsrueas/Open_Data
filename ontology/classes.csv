@@ -1,0 +1,17 @@
+class_id,label,description,phase1_priority,implemented_now,notes
+Jurisdiction,Jurisdiction,Geographic or administrative education system,high,yes,Country first with path to subnational later
+Metric,Metric,Measurable education concept,high,yes,Separate concept from source-specific definition
+Observation,Observation,Time-scoped measured value,high,yes,Primary fact entity for country-year comparisons
+Dataset,Dataset,Logical public dataset or source system,high,yes,Publisher-level source object
+DatasetRelease,DatasetRelease,Versioned dataset snapshot or release,high,yes,Needed for reproducibility and manifests
+IndicatorDefinition,IndicatorDefinition,Source-published definition of a metric,high,yes,Allows multiple source definitions to point to one metric
+PopulationGroup,PopulationGroup,Reusable slice such as rural girls or school-age children,medium,partial,Keep simple in Phase 1
+DemographicDimension,DemographicDimension,Atomic disaggregation dimension like sex or residence,medium,partial,Useful for future equity slices
+GeographyGeometry,GeographyGeometry,Geometry asset for mapping,medium,partial,Needed once boundary layers are ingested
+School,School,Individual school or campus,low,no,Defer until school-level ingestion is ready
+FundingFlow,FundingFlow,Financial transfer or spend event,low,no,Do not force aggregate finance indicators into flow structure yet
+EducationProgram,EducationProgram,Named policy or intervention,low,no,Future causal and program tracking
+SourceDocument,SourceDocument,Method note report metadata page or source file,medium,partial,Can be added from docs and release notes
+DataGap,DataGap,Known missingness or comparability issue,medium,partial,Useful for explicit quality tracking
+CompositeIndex,CompositeIndex,Derived comparison or ranking index,low,no,Only after base metrics are stable
+Claim,Claim,Derived descriptive or comparative assertion,low,no,Downstream analytic layer not base ontology

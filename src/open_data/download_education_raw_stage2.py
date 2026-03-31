@@ -6,6 +6,7 @@ in manifests when a source requires human interaction.
 
 from __future__ import annotations
 
+import argparse
 import datetime as dt
 import json
 from pathlib import Path
@@ -25,10 +26,10 @@ UIS_RESOURCES = [
         "kind": "html",
     },
     {
-        "name": "uis_bulk_uis_zip",
-        "url": "https://download.uis.unesco.org/bdds/202602/UIS",
-        "relative_path": Path("unesco_uis") / "downloads" / "UIS_202602.zip",
-        "kind": "binary",
+        "name": "uis_background_doc_pdf",
+        "url": "https://download.uis.unesco.org/bdds/202602/UIS - Data Release Background Doc -EN-Feb 2026.pdf",
+        "relative_path": Path("unesco_uis") / "downloads" / "UIS_background_doc_EN_Feb_2026.pdf",
+        "kind": "pdf",
     },
     {
         "name": "uis_bulk_sdg_zip",
@@ -261,6 +262,26 @@ OECD_RESOURCES = [
 ]
 
 
+GROUP_RESOURCES = {
+    "unesco_uis": UIS_RESOURCES,
+    "giga": GIGA_RESOURCES,
+    "worldbank_research": WORLD_BANK_EXTRA_RESOURCES,
+    "oecd_pisa": OECD_RESOURCES,
+}
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--groups",
+        nargs="+",
+        choices=sorted(GROUP_RESOURCES),
+        default=["unesco_uis", "giga", "worldbank_research"],
+        help="Source groups to stage. OECD PISA is opt-in to avoid duplicate large downloads by default.",
+    )
+    return parser.parse_args()
+
+
 def fetch_bytes(url: str) -> bytes:
     request = Request(url, headers={"User-Agent": USER_AGENT, "Accept-Language": "en-US,en;q=0.9"})
     with urlopen(request, timeout=120) as response:
@@ -384,6 +405,7 @@ def write_oecd_notes(base_dir: Path) -> None:
 
 
 def run() -> None:
+    args = parse_args()
     snapshot = dt.date.today().isoformat()
     base_dir = RAW_ROOT / snapshot
 
@@ -392,14 +414,15 @@ def run() -> None:
         "snapshot_date": snapshot,
         "mode": "raw_landing_zone_stage2",
         "status": "provisional_pending_armando_review",
+        "groups_requested": args.groups,
         "groups": {},
     }
 
-    summary["groups"]["unesco_uis"] = download_group(base_dir, "unesco_uis", UIS_RESOURCES)
-    summary["groups"]["giga"] = download_group(base_dir, "giga", GIGA_RESOURCES)
-    summary["groups"]["worldbank_research"] = download_group(base_dir, "worldbank_research", WORLD_BANK_EXTRA_RESOURCES)
-    summary["groups"]["oecd_pisa"] = download_group(base_dir, "oecd_pisa", OECD_RESOURCES)
-    write_oecd_notes(base_dir)
+    for group_name in args.groups:
+        summary["groups"][group_name] = download_group(base_dir, group_name, GROUP_RESOURCES[group_name])
+
+    if "oecd_pisa" in args.groups:
+        write_oecd_notes(base_dir)
 
     write_json(base_dir / "stage2_manifest.json", summary)
     print(f"Wrote additional raw education sources to {base_dir}")

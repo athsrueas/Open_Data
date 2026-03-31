@@ -1,0 +1,6 @@
+from_node_id,relationship_type,to_node_id,notes
+release/worldbank/edstats_phase1/2026-03-30,RELEASE_OF,dataset/worldbank/edstats_phase1_api,Release belongs to dataset
+jurisdiction/KEN,HAS_OBSERVATION,observation/jurisdiction-KEN/adult_literacy_rate_15_plus/2020/all,Country-year fact
+observation/jurisdiction-KEN/adult_literacy_rate_15_plus/2020/all,MEASURES,metric/adult_literacy_rate_15_plus,Fact measures metric
+metric/adult_literacy_rate_15_plus,HAS_DEFINITION,indicator_definition/worldbank/SE.ADT.LITR.ZS,Metric mapped to source definition
+observation/jurisdiction-KEN/adult_literacy_rate_15_plus/2020/all,FROM_RELEASE,release/worldbank/edstats_phase1/2026-03-30,Fact provenance

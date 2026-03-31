@@ -1,0 +1,7 @@
+node_type,node_id,label,key_property_1,key_value_1,key_property_2,key_value_2,notes
+Dataset,dataset/worldbank/edstats_phase1_api,World Bank Education Indicators API,source_system,WorldBank_EdStats,coverage_scope,global,Phase 1 source
+DatasetRelease,release/worldbank/edstats_phase1/2026-03-30,World Bank API snapshot 2026-03-30,dataset_id,dataset/worldbank/edstats_phase1_api,snapshot_date,2026-03-30,Versioned release
+Jurisdiction,jurisdiction/KEN,Kenya,iso3_code,KEN,jurisdiction_type,country,Example country
+Metric,metric/adult_literacy_rate_15_plus,Adult literacy rate 15+,domain,outcomes,unit_type,percentage,Example Phase 1 metric
+IndicatorDefinition,indicator_definition/worldbank/SE.ADT.LITR.ZS,WB literacy definition,source_indicator_code,SE.ADT.LITR.ZS,metric_id,adult_literacy_rate_15_plus,Source-specific definition
+Observation,observation/jurisdiction-KEN/adult_literacy_rate_15_plus/2020/all,Kenya adult literacy 2020,year,2020,value_numeric,82.3,Example fact row
