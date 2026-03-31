@@ -1,8 +1,10 @@
 from __future__ import annotations
 
 import csv
+import io
 import json
 import re
+import zipfile
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
@@ -23,6 +25,7 @@ LITERACY_CAVEATS_PATH = ROOT / "outputs" / "educational_inequality_map" / "resea
 RESEARCH_DIR = ROOT / "outputs" / "educational_inequality_map" / "research"
 MISSING_METRICS_CSV_PATH = RESEARCH_DIR / "viewer_missing_metrics_audit.csv"
 MISSING_METRICS_MD_PATH = RESEARCH_DIR / "viewer_missing_metrics_audit.md"
+UIS_DOWNLOADS_DIR = RAW_DIR / "unesco_uis" / "downloads"
 
 WANTED_METRICS = {
     "adult_literacy_rate_15_plus": {
@@ -143,6 +146,15 @@ def thin_coordinates(value: Any) -> Any:
 def read_csv_rows(path: Path) -> list[dict[str, str]]:
     with path.open(encoding="utf-8", newline="") as handle:
         return list(csv.DictReader(handle))
+
+
+def iter_zip_csv_rows(zip_path: Path, member_name: str) -> Any:
+    with zipfile.ZipFile(zip_path) as archive:
+        with archive.open(member_name) as raw_handle:
+            text_handle = io.TextIOWrapper(raw_handle, encoding="utf-8-sig", errors="ignore")
+            reader = csv.DictReader(text_handle)
+            for row in reader:
+                yield row
 
 
 def load_jurisdictions() -> dict[str, dict[str, Any]]:
@@ -279,6 +291,70 @@ def load_adult_skills_equivalent_backfills(countries: dict[str, dict[str, Any]])
                 "displayNote": " ".join(note_parts),
                 "sourceUrl": row.get("source_url"),
             }
+
+
+def load_uis_backfills(countries: dict[str, dict[str, Any]]) -> None:
+    sdg_zip = UIS_DOWNLOADS_DIR / "SDG_202602.zip"
+    if not sdg_zip.exists():
+        return
+
+    indicator_specs = {
+        "LR.AG15T99": {
+            "metricKey": "literacyRate",
+            "label": "Adult literacy",
+            "unit": "%",
+        },
+        "CR.1": {
+            "metricKey": "primaryCompletionRate",
+            "label": "Primary completion",
+            "unit": "%",
+        },
+    }
+
+    latest_by_country_indicator: dict[tuple[str, str], dict[str, Any]] = {}
+    for row in iter_zip_csv_rows(sdg_zip, "SDG_DATA_NATIONAL.csv"):
+        indicator_id = row["INDICATOR_ID"]
+        if indicator_id not in indicator_specs:
+            continue
+
+        iso3 = row["COUNTRY_ID"]
+        if iso3 not in countries or row["VALUE"] in ("", None):
+            continue
+
+        year = int(row["YEAR"])
+        key = (iso3, indicator_id)
+        current = latest_by_country_indicator.get(key)
+        if current is None or year > current["year"]:
+            latest_by_country_indicator[key] = {
+                "year": year,
+                "value": float(row["VALUE"]),
+                "qualifier": row.get("QUALIFIER", "").strip(),
+            }
+
+    for (iso3, indicator_id), payload in latest_by_country_indicator.items():
+        metric_spec = indicator_specs[indicator_id]
+        metric_key = metric_spec["metricKey"]
+        if metric_key in countries[iso3]["metrics"]:
+            continue
+
+        countries[iso3]["metrics"][metric_key] = {
+            "value": payload["value"],
+            "year": payload["year"],
+            "label": metric_spec["label"],
+            "unit": metric_spec["unit"],
+        }
+
+        display_note = None
+        if payload["qualifier"]:
+            display_note = f"UIS qualifier: {payload['qualifier']}."
+
+        countries[iso3]["sources"][metric_key] = {
+            "dataset": "UNESCO UIS SDG bulk 2026-02",
+            "indicator": indicator_id,
+            "comparability": "partially_comparable",
+            "quality": "published",
+            **({"displayNote": display_note} if display_note else {}),
+        }
 
 
 def apply_literacy_caveats(countries: dict[str, dict[str, Any]]) -> None:
@@ -646,6 +722,7 @@ def build_payload() -> dict[str, Any]:
     load_world_bank_metrics(countries)
     load_us_piaac_literacy_equivalent(countries)
     load_adult_skills_equivalent_backfills(countries)
+    load_uis_backfills(countries)
     load_giga_metrics(countries)
     load_learning_poverty(countries)
     load_hlo(countries)
