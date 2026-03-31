@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-03-30T23:32:02.954175+00:00",
+  "snapshot_date": "2026-03-30",
+  "source_system": "WorldBank_EdStats",
+  "mode": "raw_landing_zone",
+  "status": "provisional_pending_armando_review",
+  "downloads": [
+    {
+      "name": "country_metadata",
+      "path": "country",
+      "pages": 1,
+      "total_rows_reported": 296,
+      "output_dir": "outputs/educational_inequality_map/raw/worldbank/2026-03-30/country"
+    },
+    {
+      "name": "indicator_SE.XPD.TOTL.GD.ZS",
+      "indicator_code": "SE.XPD.TOTL.GD.ZS",
+      "path": "country/all/indicator/SE.XPD.TOTL.GD.ZS",
+      "pages": 1,
+      "total_rows_reported": 17556,
+      "output_dir": "outputs/educational_inequality_map/raw/worldbank/2026-03-30/indicator/SE.XPD.TOTL.GD.ZS"
+    },
+    {
+      "name": "indicator_SE.XPD.TOTL.GB.ZS",
+      "indicator_code": "SE.XPD.TOTL.GB.ZS",
+      "path": "country/all/indicator/SE.XPD.TOTL.GB.ZS",
+      "pages": 1,
+      "total_rows_reported": 17556,
+      "output_dir": "outputs/educational_inequality_map/raw/worldbank/2026-03-30/indicator/SE.XPD.TOTL.GB.ZS"
+    },
+    {
+      "name": "indicator_SE.ADT.LITR.ZS",
+      "indicator_code": "SE.ADT.LITR.ZS",
+      "path": "country/all/indicator/SE.ADT.LITR.ZS",
+      "pages": 1,
+      "total_rows_reported": 17556,
+      "output_dir": "outputs/educational_inequality_map/raw/worldbank/2026-03-30/indicator/SE.ADT.LITR.ZS"
+    },
+    {
+      "name": "indicator_SE.PRM.CMPT.ZS",
+      "indicator_code": "SE.PRM.CMPT.ZS",
+      "path": "country/all/indicator/SE.PRM.CMPT.ZS",
+      "pages": 1,
+      "total_rows_reported": 17556,
+      "output_dir": "outputs/educational_inequality_map/raw/worldbank/2026-03-30/indicator/SE.PRM.CMPT.ZS"
+    },
+    {
+      "name": "indicator_SP.POP.TOTL",
+      "indicator_code": "SP.POP.TOTL",
+      "path": "country/all/indicator/SP.POP.TOTL",
+      "pages": 1,
+      "total_rows_reported": 17556,
+      "output_dir": "outputs/educational_inequality_map/raw/worldbank/2026-03-30/indicator/SP.POP.TOTL"
+    },
+    {
+      "name": "indicator_NY.GDP.PCAP.KD",
+      "indicator_code": "NY.GDP.PCAP.KD",
+      "path": "country/all/indicator/NY.GDP.PCAP.KD",
+      "pages": 1,
+      "total_rows_reported": 17556,
+      "output_dir": "outputs/educational_inequality_map/raw/worldbank/2026-03-30/indicator/NY.GDP.PCAP.KD"
+    }
+  ]
+}

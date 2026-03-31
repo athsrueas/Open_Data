@@ -2,6 +2,14 @@
 
 Use this checklist to pick small, discrete tasks inspired by `docs/PD-Initiatives-for-Public-Good.md`.
 
+## Active bounty
+- [ ] Educational Inequality Map is the active bounty for current research and source discovery.
+- [ ] Meet with Armando on March 31, 2026 and get the real ontology before locking the graph model.
+- [ ] Keep ontology work provisional until Armando's ontology guidance is captured in-repo.
+- [ ] Build `docs/Bounties/educational-inequality-map-sources.md` into a Phase 1 ingest plan.
+- [ ] Define the minimum country-year schema for access, funding, literacy, and outcomes.
+- [ ] Choose the first comparison-ready indicator set and extraction order.
+
 ## Metadata & Cataloging
 - [ ] Normalize a dataset catalog to a minimal metadata shape (`id`, `title`, `description`, `license`, `resources`).
 - [ ] Build a CSV index of datasets with `id`, `title`, `license`, and resource count.
@@ -19,6 +27,12 @@ Use this checklist to pick small, discrete tasks inspired by `docs/PD-Initiative
 - [ ] Harmonize 10 indicators into `education-indicators.csv`.
 - [ ] Visualize access gaps in `access-gaps.png`.
 - [ ] Review education facilities datasets (NCES School Locations, NCES CCD, state school facility inventories) and log sources in `education-sources.md`.
+- [ ] Ingest Giga school map coverage with country and subnational joins.
+- [ ] Add UNESCO UIS bulk indicators for literacy, completion, out-of-school, and finance.
+- [ ] Add World Bank EdStats indicators for spending, enrollment, pupil-teacher ratio, and context variables.
+- [ ] Add OECD PISA and World Bank learning-poverty/HLO sources for outcomes coverage.
+- [ ] Add UNICEF MICS-EAGLE or DHS survey sources for equity and within-country disparity slices.
+- [ ] Add boundary and school-age population layers for map denominators and choropleths.
 - [ ] Gather public construction datasets (USASpending construction awards, State DOT/school capital plans, municipal open data capital project lists) in `construction-sources.md`.
 
 ## World Affairs

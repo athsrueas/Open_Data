@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-03-30T23:30:57.103643+00:00",
+  "snapshot_date": "2026-03-30",
+  "source": "World Bank API",
+  "ontology_status": "provisional_pending_armando_review",
+  "outputs": {
+    "jurisdictions": 217,
+    "metrics": 6,
+    "datasets": 1,
+    "dataset_releases": 1,
+    "indicator_definitions": 6,
+    "observations": 40435
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-03-31T01:21:20.087996+00:00",
+  "source": "OECD PISA 2022 direct webfs index",
+  "status": "provisional_pending_armando_review",
+  "resources": [
+    {
+      "name": "index_html",
+      "url": "https://webfs.oecd.org/pisa2022/index.html",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/oecd_pisa/index.html",
+      "status": "skipped_existing",
+      "bytes": 35764
+    },
+    {
+      "name": "school_questionnaire_sas",
+      "url": "https://webfs.oecd.org/pisa2022/SCH_QQQ_SAS.zip",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/oecd_pisa/downloads/SCH_QQQ_SAS.zip",
+      "status": "skipped_existing",
+      "bytes": 7586157
+    },
+    {
+      "name": "student_questionnaire_sas",
+      "url": "https://webfs.oecd.org/pisa2022/STU_QQQ_SAS.zip",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/oecd_pisa/downloads/STU_QQQ_SAS.zip",
+      "status": "skipped_existing",
+      "bytes": 773382315
+    },
+    {
+      "name": "teacher_questionnaire_sas",
+      "url": "https://webfs.oecd.org/pisa2022/TCH_QQQ_SAS.zip",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/oecd_pisa/downloads/TCH_QQQ_SAS.zip",
+      "status": "skipped_existing",
+      "bytes": 30654669
+    }
+  ]
+}

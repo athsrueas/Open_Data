@@ -103,6 +103,7 @@ StyleCopReport.xml
 *.tlh
 *.tmp
 *.tmp_proj
+*.zip
 *_wpftmp.csproj
 *.log
 *.tlog

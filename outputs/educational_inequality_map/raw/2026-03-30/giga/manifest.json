@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-03-30T23:45:20.760796+00:00",
+  "group": "giga",
+  "status": "provisional_pending_armando_review",
+  "resources": [
+    {
+      "name": "giga_open_data_page",
+      "url": "https://giga.global/what-we-do/our-solutions/open-data/",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/giga/open_data_page.html",
+      "bytes": 209420,
+      "status": "downloaded",
+      "kind": "html"
+    },
+    {
+      "name": "giga_explore_api_docs",
+      "url": "https://maps.giga.global/docs/explore-api",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/giga/explore_api_docs.html",
+      "bytes": 1403,
+      "status": "downloaded",
+      "kind": "html"
+    },
+    {
+      "name": "giga_locations_countries",
+      "url": "https://uni-ooi-giga-backend-hjekcuagasashucv.a03.azurefd.net/api/locations/countries/",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/giga/api/locations_countries.json",
+      "bytes": 216395,
+      "status": "downloaded",
+      "kind": "json"
+    },
+    {
+      "name": "giga_published_layers",
+      "url": "https://uni-ooi-giga-backend-hjekcuagasashucv.a03.azurefd.net/api/accounts/layers/PUBLISHED/?expand=created_by,last_modified_by,published_by&ordering=-last_modified_at",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/giga/api/published_layers.json",
+      "bytes": 81508,
+      "status": "downloaded",
+      "kind": "json"
+    },
+    {
+      "name": "giga_global_stats",
+      "url": "https://uni-ooi-giga-backend-hjekcuagasashucv.a03.azurefd.net/api/statistics/global-stat/",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/giga/api/global_stat.json",
+      "bytes": 293,
+      "status": "downloaded",
+      "kind": "json"
+    }
+  ]
+}

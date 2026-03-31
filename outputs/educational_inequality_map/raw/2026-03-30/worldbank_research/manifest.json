@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-03-30T23:45:27.174570+00:00",
+  "group": "worldbank_research",
+  "status": "provisional_pending_armando_review",
+  "resources": [
+    {
+      "name": "worldbank_hlo_catalog_page",
+      "url": "https://datacatalog.worldbank.org/search/dataset/0038001/harmonized-learning-outcomes-hlo-database",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/worldbank_research/hlo_catalog_page.html",
+      "bytes": 91214,
+      "status": "downloaded",
+      "kind": "html"
+    },
+    {
+      "name": "worldbank_hlo_xlsx",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0038001/1/DR0046131/hlo_database.xlsx",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/worldbank_research/downloads/hlo_database.xlsx",
+      "bytes": 231125,
+      "status": "downloaded",
+      "kind": "binary"
+    },
+    {
+      "name": "worldbank_learning_poverty_catalog_page",
+      "url": "https://datacatalog.worldbank.org/search/dataset/0038947/learning-poverty-global-database-historical-data-and-sub-components",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/worldbank_research/learning_poverty_catalog_page.html",
+      "bytes": 112848,
+      "status": "downloaded",
+      "kind": "html"
+    },
+    {
+      "name": "worldbank_learning_poverty_2024_xls",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0038947/8/DR0094223/lpv_edstats_1303.xls",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/worldbank_research/downloads/lpv_edstats_1303_2024.xls",
+      "bytes": 1371136,
+      "status": "downloaded",
+      "kind": "binary"
+    },
+    {
+      "name": "worldbank_learning_poverty_2022_xls",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0038947/8/DR0090187/lpv_edstats_1205.xls",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/worldbank_research/downloads/lpv_edstats_1205_2022.xls",
+      "bytes": 1853440,
+      "status": "downloaded",
+      "kind": "binary"
+    },
+    {
+      "name": "worldbank_learning_poverty_2021_xls",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0038947/8/DR0054368/lpv_edstats_update2021.xls",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/worldbank_research/downloads/lpv_edstats_update2021.xls",
+      "bytes": 358912,
+      "status": "downloaded",
+      "kind": "binary"
+    },
+    {
+      "name": "worldbank_learning_poverty_2019_xls",
+      "url": "https://datacatalogfiles.worldbank.org/ddh-published/0038947/8/DR0048277/lpv_edstats.xls",
+      "saved_to": "outputs/educational_inequality_map/raw/2026-03-30/worldbank_research/downloads/lpv_edstats_2019.xls",
+      "bytes": 275456,
+      "status": "downloaded",
+      "kind": "binary"
+    }
+  ]
+}

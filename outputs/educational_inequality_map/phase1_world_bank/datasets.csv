@@ -1,0 +1,2 @@
+dataset_id,name,publisher,source_system,description,homepage_url,api_url,license_name,coverage_scope,update_cadence,data_format,access_constraints
+dataset/worldbank/edstats_phase1_api,World Bank Education / Development Indicators API (Phase 1 extract),World Bank,WorldBank_EdStats,Country-year indicators pulled from the World Bank API for the Educational Inequality Map Phase 1 extract.,https://data.worldbank.org/topic/education,https://api.worldbank.org/v2/,World Bank Open Data Terms,global,periodic,json,open
