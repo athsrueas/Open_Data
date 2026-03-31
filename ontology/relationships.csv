@@ -3,13 +3,15 @@ PART_OF,Jurisdiction,Jurisdiction,high,Administrative hierarchy relation,Country
 HAS_OBSERVATION,Jurisdiction,Observation,high,Observation belongs to a jurisdiction,Core country-year pattern
 MEASURES,Observation,Metric,high,Observation measures a metric,Core fact-to-metric relation
 FROM_RELEASE,Observation,DatasetRelease,high,Observation originated from a specific release,Supports provenance and reproducibility
-HAS_DEFINITION,Metric,IndicatorDefinition,high,Metric has one or more source definitions,Allows harmonized metric mapping
+DEFINED_BY,Observation,IndicatorDefinition,high,Observation tied to exact published definition,Keeps harmonized metric separate from source-native indicator semantics
+HAS_DEFINITION,Metric,IndicatorDefinition,high,Metric has one or more source definitions,Allows harmonized metric mapping across UIS World Bank and later OECD
 RELEASE_OF,DatasetRelease,Dataset,high,Release belongs to dataset,Required for version lineage
+HAS_GEOMETRY,Jurisdiction,GeographyGeometry,high,Geometry assigned to jurisdiction,Required for choropleth and country highlight layers
+GEOMETRY_FROM_RELEASE,GeographyGeometry,DatasetRelease,high,Geometry came from a specific boundary release,Supports boundary provenance and refreshes
 FOR_POPULATION_GROUP,Observation,PopulationGroup,medium,Observation applies to a reusable slice,Important for equity expansion
 DISAGGREGATED_BY,Observation,DemographicDimension,medium,Observation tagged by dimension,Useful when source gives disaggregation categories
-HAS_GEOMETRY,Jurisdiction,GeographyGeometry,medium,Geometry assigned to jurisdiction,Needed for map layers
-DOCUMENTED_BY,Dataset,SourceDocument,medium,Dataset linked to supporting documentation,Good for source audits
-DEFINED_BY,Observation,IndicatorDefinition,medium,Observation tied to exact published definition,Helpful when sources diverge
+DOCUMENTED_BY,DatasetRelease,SourceDocument,medium,Release linked to supporting documentation,Good for codebooks compendia release notes and PDFs
+HAS_DATA_GAP,Observation,DataGap,medium,Observation linked to a known comparability or missingness note,Makes quality warnings explicit instead of implicit
 HAS_OBSERVATION,School,Observation,low,School-level observation relation,Defer until school processing exists
 OFFERS_SERVICE,School,ServiceType,low,School provides a service or infrastructure category,Not in Phase 1 CSV starter
 RECEIVES_FUNDING,Jurisdiction,FundingFlow,low,Jurisdiction receives a funding flow,Only for later finance event modeling

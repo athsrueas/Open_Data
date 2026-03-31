@@ -34,6 +34,61 @@ this folder should be treated as irreversible schema truth.
 - `example_edges.csv`
   - Small example edge rows showing how core provenance and observation links may look
 
+## Recent update
+
+These starter files were updated after inspecting the raw source payloads now
+staged under `outputs/educational_inequality_map/`.
+
+The important shift is that the ontology is now more explicitly
+GeoBrowser-oriented and map-first:
+
+- `Observation` is treated as the canonical fact object
+  - This matches the structure we now see in the existing World Bank Phase 1
+    outputs and in the raw UNESCO UIS tables, which are already close to
+    `jurisdiction + indicator + year + value`.
+- `GeographyGeometry` is promoted into the high-priority core
+  - We now have geoBoundaries ADM0 assets staged, so geometry is no longer just
+    theoretical support data.
+- `IndicatorDefinition` is kept separate from `Metric`
+  - This is important because UIS, World Bank, HLO, Learning Poverty, and later
+    OECD PISA may describe related concepts with different native indicator
+    codes, units, and methodological notes.
+- `DatasetRelease` is emphasized as the provenance anchor
+  - The downloader and manifest outputs are now strong enough that reproducible
+    release lineage should be part of the working model, not an afterthought.
+- `Giga` and `OECD PISA` are intentionally not forced into the center of the
+  model yet
+  - Giga currently looks more like country metadata plus layer definitions than
+    a ready country-year fact table.
+  - OECD PISA is rich and useful, but its raw microdata and codebooks are still
+    better treated as source, release, and definition assets until we choose an
+    explicit country-year aggregation strategy.
+
+## What changed and why
+
+- `classes.csv`
+  - `GeographyGeometry` moved to high priority because boundary assets are now
+    staged and needed for the map itself.
+  - Core class notes were rewritten to reflect a map-first,
+    observation-centric design.
+- `relationships.csv`
+  - Added explicit geometry provenance and observation-to-definition links so
+    GeoBrowser can keep map assets and source semantics traceable.
+  - Shifted documentation linkage toward `DatasetRelease`, which better matches
+    how codebooks, PDFs, and compendia are actually versioned in the repo.
+- `phase1_metrics.csv`
+  - Notes now distinguish between metrics that are ready to harmonize soon
+    versus metrics that remain deferred because the source data is not yet in a
+    stable country-year observation shape.
+- `properties_phase1.csv`
+  - Added concrete geometry properties and stronger provenance properties for
+    observations and indicator definitions.
+  - This should make it easier to move from ontology discussion to a practical
+    GeoBrowser CSV contract later.
+- `example_nodes.csv` and `example_edges.csv`
+  - Examples now include a geometry node and geometry-related edges so the
+    starter graph better reflects the actual map product we are building.
+
 ## Related ontology information elsewhere in the repo
 
 The main ontology-related references currently live outside this folder too:

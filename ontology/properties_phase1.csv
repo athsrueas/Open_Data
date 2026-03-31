@@ -4,18 +4,22 @@ Jurisdiction,name,string,yes,Kenya,Display label
 Jurisdiction,jurisdiction_type,string,yes,country,Controlled vocabulary
 Jurisdiction,iso3_code,string,yes,KEN,Primary country join key
 Jurisdiction,status,string,yes,active,Active historical provisional
+Jurisdiction,default_geometry_id,string,no,geometry/geoboundaries/KEN/ADM0/2023,Optional pointer for GeoBrowser map joins
 Metric,metric_id,string,yes,adult_literacy_rate_15_plus,Stable canonical metric ID
 Metric,display_name,string,yes,Adult literacy rate age 15+,Human-readable label
 Metric,domain,string,yes,outcomes,Access funding outcomes context equity infrastructure derived
 Metric,metric_family,string,yes,literacy,Family-level grouping
 Metric,unit_type,string,yes,percentage,Use controlled unit family
+Metric,unit_label,string,yes,% of population age 15+,Preferred display unit for harmonized comparisons
 Metric,source_metric_code,string,no,SE.ADT.LITR.ZS,Source-native code where available
 Observation,observation_id,string,yes,observation/jurisdiction-KEN/adult_literacy_rate_15_plus/2020/all,Derived deterministic ID
+Observation,subject_id,string,yes,jurisdiction/KEN,Usually a jurisdiction in Phase 1
 Observation,value_numeric,number,yes,82.3,Preferred numeric field for country-year facts
 Observation,year,integer,yes,2020,Annual grain for Phase 1
 Observation,time_granularity,string,yes,annual,Annual quarterly monthly snapshot
 Observation,quality_flag,string,yes,unknown,High medium low unknown
 Observation,comparability_flag,string,yes,partially_comparable,Important for mixed-source comparisons
+Observation,indicator_definition_id,string,yes,indicator_definition/worldbank/SE.ADT.LITR.ZS,Bind each fact to a source-native definition
 Observation,source_indicator_code,string,no,SE.ADT.LITR.ZS,Helpful for debugging mappings
 Dataset,dataset_id,string,yes,dataset/worldbank/edstats_phase1_api,Canonical dataset identifier
 Dataset,name,string,yes,World Bank Education Indicators API,Logical dataset name
@@ -24,8 +28,16 @@ Dataset,source_system,string,yes,WorldBank_EdStats,Controlled source system labe
 DatasetRelease,dataset_release_id,string,yes,release/worldbank/edstats_phase1/2026-03-30,Versioned release key
 DatasetRelease,version_label,string,yes,worldbank_api_snapshot_2026-03-30,Human-readable release label
 DatasetRelease,snapshot_date,date,yes,2026-03-30,Snapshot date for reproducibility
+DatasetRelease,release_scope,string,no,country_year_metrics,Useful distinction between metric releases boundary releases and codebooks
 IndicatorDefinition,indicator_definition_id,string,yes,indicator_definition/worldbank/SE.ADT.LITR.ZS,Canonical definition key
 IndicatorDefinition,source_indicator_code,string,yes,SE.ADT.LITR.ZS,Source-native code
+IndicatorDefinition,metric_id,string,yes,adult_literacy_rate_15_plus,Maps source definition to harmonized metric
 IndicatorDefinition,official_unit,string,yes,% of population age 15+,Published unit text
+IndicatorDefinition,source_dataset_id,string,yes,dataset/worldbank/edstats_phase1_api,Connect definition to logical source
+GeographyGeometry,geometry_id,string,yes,geometry/geoboundaries/KEN/ADM0/2023,Stable geometry asset ID
+GeographyGeometry,jurisdiction_id,string,yes,jurisdiction/KEN,Target jurisdiction join key
+GeographyGeometry,geometry_level,string,yes,ADM0,Boundary level for map rendering
+GeographyGeometry,source_system,string,yes,geoBoundaries,Boundary source system label
+GeographyGeometry,geometry_path,string,yes,outputs/educational_inequality_map/raw/2026-03-30/geoboundaries/downloads/ADM0_simplified/KEN.geojson,Stored geometry asset path
 PopulationGroup,population_group_id,string,no,population_group/all_students,Optional in first country-year slice
 PopulationGroup,name,string,no,All students,Use when disaggregated metrics arrive

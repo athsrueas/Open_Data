@@ -5,12 +5,12 @@ adult_literacy_rate_15_plus,Adult literacy rate age 15+,outcomes,literacy,percen
 completion_rate_primary,Primary completion rate,access,completion,percentage,% of relevant age group,higher_is_better,WorldBank_EdStats,ready,Already present in Phase 1 extract
 total_population,Total population,context,population_context,count,people,neutral,WorldBank_EdStats,ready,Base denominator/context metric
 gdp_per_capita_constant_usd,GDP per capita constant 2015 USD,context,population_context,currency,constant 2015 US$,context_dependent,WorldBank_EdStats,ready,Useful comparison context
-out_of_school_rate_primary_age,Out-of-school rate primary age,access,access,percentage,% of primary-age population,lower_is_better,UNESCO_UIS,planned,Good candidate from UIS SDG bundle
-net_enrollment_rate_primary,Net enrollment rate primary,access,participation,percentage,% of official age cohort,higher_is_better,UNESCO_UIS,planned,Likely better sourced from UIS than World Bank starter slice
-gender_parity_index_primary_enrollment,Gender parity index primary enrollment,equity,equity_gap,index,GPI,context_dependent,UNESCO_UIS,planned,Useful early equity indicator
-pupil_teacher_ratio_primary,Pupil-teacher ratio primary,context,teacher_capacity,ratio,students per teacher,lower_is_better,WorldBank_EdStats,planned,Good next World Bank or UIS expansion metric
-harmonized_learning_outcome_score,Harmonized learning outcome score,outcomes,learning_outcome,standardized_score,HLO score,higher_is_better,WorldBank_HLO,planned,Country-year outcome layer before microdata-heavy PISA processing
-learning_poverty_rate,Learning poverty rate,outcomes,learning_outcome,percentage,% of children,lower_is_better,WorldBank_LearningPoverty,planned,Good outcome metric for broad coverage
-pisa_reading_score,PISA reading score,outcomes,learning_outcome,standardized_score,PISA score,higher_is_better,OECD_PISA,deferred,Need explicit aggregation strategy before processing
-pisa_math_score,PISA math score,outcomes,learning_outcome,standardized_score,PISA score,higher_is_better,OECD_PISA,deferred,Prefer published/derived country-year approach later
-schools_with_internet_pct,Schools with internet access,infrastructure,school_infrastructure,percentage,% of mapped schools,higher_is_better,Giga,planned,Depends on choosing exact Giga layer definitions
+out_of_school_rate_primary_age,Out-of-school rate primary age,access,access,percentage,% of primary-age population,lower_is_better,UNESCO_UIS,planned,Good candidate from UIS national country-year tables
+net_enrollment_rate_primary,Net enrollment rate primary,access,participation,percentage,% of official age cohort,higher_is_better,UNESCO_UIS,planned,Likely better sourced from UIS than the initial World Bank starter slice
+gender_parity_index_primary_enrollment,Gender parity index primary enrollment,equity,equity_gap,index,GPI,context_dependent,UNESCO_UIS,planned,Useful early equity indicator once UIS definitions are mapped
+pupil_teacher_ratio_primary,Pupil-teacher ratio primary,context,teacher_capacity,ratio,students per teacher,lower_is_better,UNESCO_UIS,planned,Probably easiest to harmonize from UIS or EdStats after indicator inventory
+harmonized_learning_outcome_score,Harmonized learning outcome score,outcomes,learning_outcome,standardized_score,HLO score,higher_is_better,WorldBank_HLO,planned,HLO workbook already looks like a clean country-year fact table
+learning_poverty_rate,Learning poverty rate,outcomes,learning_outcome,percentage,% of children,lower_is_better,WorldBank_LearningPoverty,planned,Learning poverty files already expose indicator metadata separately from observations
+pisa_reading_score,PISA reading score,outcomes,learning_outcome,standardized_score,PISA score,higher_is_better,OECD_PISA,deferred,Do not promote to core GeoBrowser metric until aggregation and weighting strategy is chosen
+pisa_math_score,PISA math score,outcomes,learning_outcome,standardized_score,PISA score,higher_is_better,OECD_PISA,deferred,Prefer published or derived country-year approach later not raw microdata-first
+schools_with_internet_pct,Schools with internet access,infrastructure,school_infrastructure,percentage,% of mapped schools,higher_is_better,Giga,deferred,Giga currently gives layer definitions and country metadata more than ready country-year facts
