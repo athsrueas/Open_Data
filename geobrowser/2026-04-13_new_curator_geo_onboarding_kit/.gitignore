@@ -1,0 +1,8 @@
+.env
+node_modules/
+.DS_Store
+dist/
+coverage/
+*.log
+data_to_delete/*.txt
+other

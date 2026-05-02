@@ -1,0 +1,51 @@
+{
+  "priority": "high",
+  "count": 2,
+  "results": [
+    {
+      "source_id": "src_mississippi_primary_mde_lbpa",
+      "initiative_id": "mississippi-miracle",
+      "initiative": "Mississippi Miracle",
+      "replace_original_row": "no",
+      "source_role": "primary",
+      "source_tier": "official",
+      "source_type": "program_page",
+      "source_title": "Literacy-Based Promotion Act",
+      "source_org": "Mississippi Department of Education",
+      "publication_year": "2026",
+      "repository": "official_state_agency",
+      "url": "https://mdek12.org/literacy/lbpa/",
+      "retrieval_mode": "manual_html_capture",
+      "target_relpath": "raw/official/mississippi/mde_lbpa.html",
+      "extraction_priority": "high",
+      "status": "queued",
+      "notes": "Primary implementation source for policy details and current guidance.",
+      "run_status": "downloaded",
+      "saved_paths": [
+        "outputs\\us_education_initiatives\\sources\\raw\\official\\mississippi\\mde_lbpa.html"
+      ],
+      "detail": "html captured"
+    },
+    {
+      "source_id": "src_mississippi_eval_spencer_eer",
+      "initiative_id": "mississippi-miracle",
+      "initiative": "Mississippi Miracle",
+      "replace_original_row": "no",
+      "source_role": "evaluation",
+      "source_tier": "scholarly",
+      "source_type": "metadata_record",
+      "source_title": "Comprehensive early literacy policy and the \"Mississippi Miracle\"",
+      "source_org": "EconBiz / Economics of Education Review metadata",
+      "publication_year": "2024",
+      "repository": "econbiz",
+      "url": "https://www.econbiz.de/Record/comprehensive-early-literacy-policy-and-the-mississippi-miracle-spencer-noah/10015358187",
+      "retrieval_mode": "manual_html_capture",
+      "target_relpath": "raw/scholarly/mississippi/spencer_2024_mississippi_miracle.html",
+      "extraction_priority": "high",
+      "status": "queued",
+      "notes": "Use a stable metadata page for the article while direct PDF acquisition remains blocked.",
+      "run_status": "failed",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    }
+  ]
+}

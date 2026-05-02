@@ -1,0 +1,15 @@
+{
+  "name": "adam-geo-contributor-starter",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check:setup": "node scripts/check-geo-setup.mjs",
+    "query:space": "node scripts/query-space-schema.mjs"
+  },
+  "dependencies": {
+    "@geoprotocol/geo-sdk": "^0.16.0",
+    "@geoprotocol/grc-20": "^0.4.1",
+    "dotenv": "^17.4.1",
+    "viem": "^2.45.3"
+  }
+}

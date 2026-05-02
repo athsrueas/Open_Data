@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://open-data.local/us_education_initiatives/initiative_record.schema.json",
+  "title": "U.S. Education Initiative Record",
+  "type": "object",
+  "required": [
+    "id",
+    "initiative",
+    "category",
+    "entityType",
+    "theme",
+    "timeline",
+    "locationScope",
+    "locationLabel",
+    "evidence",
+    "continuums",
+    "source"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "initiative": { "type": "string" },
+    "category": { "type": "string" },
+    "entityType": { "type": "string" },
+    "theme": { "type": "string" },
+    "coreFocus": { "type": "string" },
+    "focusTags": { "type": "array", "items": { "type": "string" } },
+    "keyFigures": { "type": "array", "items": { "type": "string" } },
+    "timeline": {
+      "type": "object",
+      "required": ["label", "isOngoing", "era"],
+      "properties": {
+        "label": { "type": "string" },
+        "startYear": { "type": ["integer", "null"] },
+        "endYear": { "type": ["integer", "null"] },
+        "isOngoing": { "type": "boolean" },
+        "era": { "type": "string" }
+      }
+    },
+    "locationScope": { "type": "string" },
+    "locationLabel": { "type": "string" },
+    "locationTags": { "type": "array", "items": { "type": "string" } },
+    "policies": { "type": "array", "items": { "type": "string" } },
+    "outcomes": { "type": "array", "items": { "type": "string" } },
+    "outcomeSummary": { "type": "string" },
+    "source": { "type": "string" },
+    "sourceHost": { "type": "string" },
+    "score": { "type": "integer" },
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "researchStatus": { "type": "string" },
+        "evidenceScore": { "type": "string" },
+        "consensusDirection": { "type": "string" },
+        "confidenceLabel": { "type": "string" },
+        "qualityNotes": { "type": "string" },
+        "scholarlySourcesReviewed": { "type": "string" },
+        "journalisticSourcesReviewed": { "type": "string" },
+        "lastReviewed": { "type": "string" }
+      }
+    },
+    "continuums": {
+      "type": "object",
+      "properties": {
+        "technologyPosition": { "type": "string" },
+        "technologyComparison": { "type": "string" },
+        "testingIntensity": { "type": "string" },
+        "workBasedLearningIntensity": { "type": "string" },
+        "outdoorLearningIntensity": { "type": "string" }
+      }
+    }
+  }
+}

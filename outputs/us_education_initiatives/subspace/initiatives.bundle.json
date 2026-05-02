@@ -1,0 +1,2354 @@
+{
+  "title": "U.S. Education Initiatives Atlas",
+  "subtitle": "A reusable initiative dataset and browser for education reforms, programs, and policy movements across the United States.",
+  "generatedAt": "2026-05-02T05:27:55.316627+00:00",
+  "summary": {
+    "initiativeCount": 13,
+    "categoryCount": 13,
+    "latestStartYear": 2023,
+    "activeNowCount": 10,
+    "evidenceStatuses": {
+      "orientation_complete": 2,
+      "scholarly_reviewed": 11
+    }
+  },
+  "featuredInitiativeIds": [
+    "career-academies",
+    "school-garden-interventions",
+    "science-of-reading-sor"
+  ],
+  "categoryCounts": [
+    {
+      "label": "College-to-career pathway model",
+      "count": 1
+    },
+    {
+      "label": "District accountability reform",
+      "count": 1
+    },
+    {
+      "label": "Federal accountability policy",
+      "count": 1
+    },
+    {
+      "label": "Instructional paradigm",
+      "count": 1
+    },
+    {
+      "label": "Integrated secondary-postsecondary model",
+      "count": 1
+    },
+    {
+      "label": "Policy category",
+      "count": 1
+    },
+    {
+      "label": "Reduced-tech school policy",
+      "count": 1
+    },
+    {
+      "label": "Scholarship program",
+      "count": 1
+    },
+    {
+      "label": "School-based enrichment intervention",
+      "count": 1
+    },
+    {
+      "label": "Standards initiative",
+      "count": 1
+    },
+    {
+      "label": "State accountability system",
+      "count": 1
+    },
+    {
+      "label": "State reform model",
+      "count": 1
+    },
+    {
+      "label": "Youth apprenticeship program",
+      "count": 1
+    }
+  ],
+  "locationCounts": [
+    {
+      "scope": "national",
+      "count": 5
+    },
+    {
+      "scope": "state",
+      "count": 5
+    },
+    {
+      "scope": "multi_state",
+      "count": 3
+    }
+  ],
+  "eraCounts": [
+    {
+      "era": "1990s",
+      "count": 3
+    },
+    {
+      "era": "2000s",
+      "count": 1
+    },
+    {
+      "era": "2010s",
+      "count": 6
+    },
+    {
+      "era": "2020s",
+      "count": 1
+    },
+    {
+      "era": "Unknown",
+      "count": 2
+    }
+  ],
+  "topTags": [
+    {
+      "label": "advising support",
+      "count": 2
+    },
+    {
+      "label": "sanctions",
+      "count": 2
+    },
+    {
+      "label": "employer partnerships",
+      "count": 2
+    },
+    {
+      "label": "Early literacy",
+      "count": 1
+    },
+    {
+      "label": "accountability",
+      "count": 1
+    },
+    {
+      "label": "retention policy",
+      "count": 1
+    },
+    {
+      "label": "Literacy-Based Promotion Act",
+      "count": 1
+    },
+    {
+      "label": "reading coaches",
+      "count": 1
+    },
+    {
+      "label": "structured literacy alignment",
+      "count": 1
+    },
+    {
+      "label": "grade 3 promotion gate",
+      "count": 1
+    },
+    {
+      "label": "Evidence-based reading instruction",
+      "count": 1
+    },
+    {
+      "label": "structured literacy",
+      "count": 1
+    }
+  ],
+  "stateMap": {
+    "layoutKind": "state_tilegrid_with_insets",
+    "metrics": [
+      {
+        "key": "directAnchorCount",
+        "label": "Direct evidence anchors"
+      },
+      {
+        "key": "testingAnchorCount",
+        "label": "Testing-heavy anchors"
+      },
+      {
+        "key": "workBasedAnchorCount",
+        "label": "Work-based learning anchors"
+      },
+      {
+        "key": "outdoorAnchorCount",
+        "label": "Outdoor learning anchors"
+      },
+      {
+        "key": "reducedTechnologyAnchorCount",
+        "label": "Reduced-tech anchors"
+      },
+      {
+        "key": "combinedCount",
+        "label": "Direct plus national context"
+      }
+    ],
+    "summary": {
+      "stateCount": 50,
+      "statesWithDirectAnchors": 9,
+      "nationalInitiativeCount": 5,
+      "directAnchorRowCount": 13
+    },
+    "states": [
+      {
+        "code": "WA",
+        "name": "Washington",
+        "tileCol": 0,
+        "tileRow": 0,
+        "insetGroup": "main",
+        "directAnchorCount": 1,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 1,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [
+          "school-garden-interventions"
+        ],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": [
+          {
+            "initiativeId": "school-garden-interventions",
+            "initiative": "School garden interventions",
+            "anchorType": "evaluation_sample",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_school_garden_eval_science"
+            ],
+            "evidenceBasis": "School garden science trial included Washington sites",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "code": "ID",
+        "name": "Idaho",
+        "tileCol": 1,
+        "tileRow": 0,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "MT",
+        "name": "Montana",
+        "tileCol": 2,
+        "tileRow": 0,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "ND",
+        "name": "North Dakota",
+        "tileCol": 4,
+        "tileRow": 0,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "MN",
+        "name": "Minnesota",
+        "tileCol": 5,
+        "tileRow": 0,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "WI",
+        "name": "Wisconsin",
+        "tileCol": 6,
+        "tileRow": 0,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "MI",
+        "name": "Michigan",
+        "tileCol": 7,
+        "tileRow": 0,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "NY",
+        "name": "New York",
+        "tileCol": 9,
+        "tileRow": 0,
+        "insetGroup": "main",
+        "directAnchorCount": 1,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 1,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [
+          "school-garden-interventions"
+        ],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": [
+          {
+            "initiativeId": "school-garden-interventions",
+            "initiative": "School garden interventions",
+            "anchorType": "evaluation_sample",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_school_garden_eval_science"
+            ],
+            "evidenceBasis": "School garden science trial included New York sites",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "code": "VT",
+        "name": "Vermont",
+        "tileCol": 10,
+        "tileRow": 0,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "NH",
+        "name": "New Hampshire",
+        "tileCol": 11,
+        "tileRow": 0,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "ME",
+        "name": "Maine",
+        "tileCol": 12,
+        "tileRow": 0,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "OR",
+        "name": "Oregon",
+        "tileCol": 0,
+        "tileRow": 1,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "NV",
+        "name": "Nevada",
+        "tileCol": 1,
+        "tileRow": 1,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "WY",
+        "name": "Wyoming",
+        "tileCol": 2,
+        "tileRow": 1,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "SD",
+        "name": "South Dakota",
+        "tileCol": 4,
+        "tileRow": 1,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "IA",
+        "name": "Iowa",
+        "tileCol": 5,
+        "tileRow": 1,
+        "insetGroup": "main",
+        "directAnchorCount": 1,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 1,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [
+          "school-garden-interventions"
+        ],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": [
+          {
+            "initiativeId": "school-garden-interventions",
+            "initiative": "School garden interventions",
+            "anchorType": "evaluation_sample",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_school_garden_eval_science"
+            ],
+            "evidenceBasis": "School garden science trial included Iowa sites",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "code": "IL",
+        "name": "Illinois",
+        "tileCol": 6,
+        "tileRow": 1,
+        "insetGroup": "main",
+        "directAnchorCount": 1,
+        "nationalContextCount": 5,
+        "combinedCount": 6,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 1,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [
+          "chicago-test-based-promotion-and-accountability-reforms"
+        ],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": [
+          {
+            "initiativeId": "chicago-test-based-promotion-and-accountability-reforms",
+            "initiative": "Chicago test-based promotion and accountability reforms",
+            "anchorType": "district_anchor",
+            "anchorStrength": "strong",
+            "sourceIds": [
+              "src_chicago_eval_jacob_testing",
+              "src_chicago_eval_jacob_lefgren"
+            ],
+            "evidenceBasis": "Chicago Public Schools reforms anchor to Illinois",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "name": "Indiana",
+        "tileCol": 7,
+        "tileRow": 1,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "OH",
+        "name": "Ohio",
+        "tileCol": 8,
+        "tileRow": 1,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "PA",
+        "name": "Pennsylvania",
+        "tileCol": 9,
+        "tileRow": 1,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "NJ",
+        "name": "New Jersey",
+        "tileCol": 10,
+        "tileRow": 1,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "MA",
+        "name": "Massachusetts",
+        "tileCol": 11,
+        "tileRow": 1,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "RI",
+        "name": "Rhode Island",
+        "tileCol": 12,
+        "tileRow": 1,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "CA",
+        "name": "California",
+        "tileCol": 0,
+        "tileRow": 2,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "UT",
+        "name": "Utah",
+        "tileCol": 1,
+        "tileRow": 2,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "CO",
+        "name": "Colorado",
+        "tileCol": 2,
+        "tileRow": 2,
+        "insetGroup": "main",
+        "directAnchorCount": 1,
+        "nationalContextCount": 5,
+        "combinedCount": 6,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 1,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [
+          "careerwise-colorado-youth-apprenticeship"
+        ],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": [
+          {
+            "initiativeId": "careerwise-colorado-youth-apprenticeship",
+            "initiative": "CareerWise Colorado youth apprenticeship",
+            "anchorType": "program_anchor",
+            "anchorStrength": "strong",
+            "sourceIds": [
+              "src_careerwise_primary_site",
+              "src_careerwise_eval_mdrc",
+              "src_careerwise_eval_harvard"
+            ],
+            "evidenceBasis": "Colorado youth apprenticeship model anchor",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "code": "NE",
+        "name": "Nebraska",
+        "tileCol": 4,
+        "tileRow": 2,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "MO",
+        "name": "Missouri",
+        "tileCol": 5,
+        "tileRow": 2,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "KY",
+        "name": "Kentucky",
+        "tileCol": 6,
+        "tileRow": 2,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "WV",
+        "name": "West Virginia",
+        "tileCol": 7,
+        "tileRow": 2,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "VA",
+        "name": "Virginia",
+        "tileCol": 8,
+        "tileRow": 2,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "MD",
+        "name": "Maryland",
+        "tileCol": 9,
+        "tileRow": 2,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "DE",
+        "name": "Delaware",
+        "tileCol": 10,
+        "tileRow": 2,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "CT",
+        "name": "Connecticut",
+        "tileCol": 11,
+        "tileRow": 2,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "AZ",
+        "name": "Arizona",
+        "tileCol": 1,
+        "tileRow": 3,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "NM",
+        "name": "New Mexico",
+        "tileCol": 2,
+        "tileRow": 3,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "KS",
+        "name": "Kansas",
+        "tileCol": 4,
+        "tileRow": 3,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "AR",
+        "name": "Arkansas",
+        "tileCol": 5,
+        "tileRow": 3,
+        "insetGroup": "main",
+        "directAnchorCount": 1,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 1,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [
+          "school-garden-interventions"
+        ],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": [
+          {
+            "initiativeId": "school-garden-interventions",
+            "initiative": "School garden interventions",
+            "anchorType": "evaluation_sample",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_school_garden_eval_science"
+            ],
+            "evidenceBasis": "School garden science trial included Arkansas sites",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "code": "TN",
+        "name": "Tennessee",
+        "tileCol": 6,
+        "tileRow": 3,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "NC",
+        "name": "North Carolina",
+        "tileCol": 8,
+        "tileRow": 3,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "SC",
+        "name": "South Carolina",
+        "tileCol": 9,
+        "tileRow": 3,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "TX",
+        "name": "Texas",
+        "tileCol": 3,
+        "tileRow": 4,
+        "insetGroup": "main",
+        "directAnchorCount": 3,
+        "nationalContextCount": 5,
+        "combinedCount": 7,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 1,
+        "workBasedAnchorCount": 1,
+        "outdoorAnchorCount": 1,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [
+          "literacy-based-promotion-laws",
+          "p-tech-9-14",
+          "school-garden-interventions"
+        ],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": [
+          {
+            "initiativeId": "literacy-based-promotion-laws",
+            "initiative": "Literacy-Based Promotion Laws",
+            "anchorType": "evaluation_sample",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_literacy_promotion_eval_texas_retention"
+            ],
+            "evidenceBasis": "Texas retention study anchor for the broader policy family",
+            "notes": ""
+          },
+          {
+            "initiativeId": "p-tech-9-14",
+            "initiative": "P-TECH 9-14",
+            "anchorType": "implementation_anchor",
+            "anchorStrength": "strong",
+            "sourceIds": [
+              "src_ptech_primary_tea",
+              "src_ptech_eval_mdrc"
+            ],
+            "evidenceBasis": "Texas P-TECH implementation blueprint anchor",
+            "notes": ""
+          },
+          {
+            "initiativeId": "school-garden-interventions",
+            "initiative": "School garden interventions",
+            "anchorType": "evaluation_sample",
+            "anchorStrength": "strong",
+            "sourceIds": [
+              "src_school_garden_eval_academic"
+            ],
+            "evidenceBasis": "Texas cluster randomized TX Sprouts study anchor",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "code": "OK",
+        "name": "Oklahoma",
+        "tileCol": 4,
+        "tileRow": 4,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "LA",
+        "name": "Louisiana",
+        "tileCol": 5,
+        "tileRow": 4,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "MS",
+        "name": "Mississippi",
+        "tileCol": 6,
+        "tileRow": 4,
+        "insetGroup": "main",
+        "directAnchorCount": 2,
+        "nationalContextCount": 5,
+        "combinedCount": 7,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 2,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [
+          "literacy-based-promotion-laws",
+          "mississippi-miracle"
+        ],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": [
+          {
+            "initiativeId": "mississippi-miracle",
+            "initiative": "Mississippi Miracle",
+            "anchorType": "implementation",
+            "anchorStrength": "strong",
+            "sourceIds": [
+              "src_mississippi_primary_mde_lbpa",
+              "src_mississippi_eval_spencer_eer"
+            ],
+            "evidenceBasis": "Statewide Mississippi literacy package and evaluation anchor",
+            "notes": ""
+          },
+          {
+            "initiativeId": "literacy-based-promotion-laws",
+            "initiative": "Literacy-Based Promotion Laws",
+            "anchorType": "policy_family_anchor",
+            "anchorStrength": "strong",
+            "sourceIds": [
+              "src_literacy_promotion_primary_mde_lbpa"
+            ],
+            "evidenceBasis": "Mississippi literacy-promotion implementation anchor",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "code": "AL",
+        "name": "Alabama",
+        "tileCol": 7,
+        "tileRow": 4,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "GA",
+        "name": "Georgia",
+        "tileCol": 8,
+        "tileRow": 4,
+        "insetGroup": "main",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "FL",
+        "name": "Florida",
+        "tileCol": 9,
+        "tileRow": 5,
+        "insetGroup": "main",
+        "directAnchorCount": 2,
+        "nationalContextCount": 5,
+        "combinedCount": 7,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 1,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
+          "florida-a-school-grading-accountability-plan",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": [
+          {
+            "initiativeId": "florida-a-school-grading-accountability-plan",
+            "initiative": "Florida A+ school grading/accountability plan",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "strong",
+            "sourceIds": [
+              "src_florida_a_plus_primary_fldoe",
+              "src_florida_a_plus_eval_figlio_rouse"
+            ],
+            "evidenceBasis": "Florida statewide accountability plan",
+            "notes": ""
+          },
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "evaluation_sample",
+            "anchorStrength": "strong",
+            "sourceIds": [
+              "src_phone_ban_eval_nber",
+              "src_phone_ban_review_scoping"
+            ],
+            "evidenceBasis": "Florida district evidence anchor for school cellphone bans",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "code": "AK",
+        "name": "Alaska",
+        "tileCol": 0,
+        "tileRow": 0,
+        "insetGroup": "alaska",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      },
+      {
+        "code": "HI",
+        "name": "Hawaii",
+        "tileCol": 1,
+        "tileRow": 0,
+        "insetGroup": "hawaii",
+        "directAnchorCount": 0,
+        "nationalContextCount": 5,
+        "combinedCount": 5,
+        "strongestEvidenceScore": 5,
+        "testingAnchorCount": 0,
+        "workBasedAnchorCount": 0,
+        "outdoorAnchorCount": 0,
+        "reducedTechnologyAnchorCount": 0,
+        "anchorInitiativeIds": [],
+        "nationalInitiativeIds": [
+          "career-academies",
+          "gates-millennium-scholars",
+          "no-child-left-behind-annual-testing-accountability",
+          "school-garden-interventions",
+          "science-of-reading-sor"
+        ],
+        "anchorDetails": []
+      }
+    ]
+  },
+  "initiatives": [
+    {
+      "id": "career-academies",
+      "initiative": "Career Academies",
+      "category": "College-to-career pathway model",
+      "entityType": "program",
+      "theme": "career_and_technical_pathways",
+      "coreFocus": "Career pathways, academy structure, labor market transitions",
+      "focusTags": [
+        "Career pathways",
+        "academy structure",
+        "labor market transitions"
+      ],
+      "keyFigures": [
+        "MDRC",
+        "National Career Academy Coalition"
+      ],
+      "timeline": {
+        "label": "1990s-present",
+        "startYear": null,
+        "endYear": null,
+        "isOngoing": true,
+        "era": "Unknown"
+      },
+      "locationLabel": "United States",
+      "locationScope": "national",
+      "locationTags": [
+        "United States"
+      ],
+      "policies": [
+        "Small learning communities",
+        "employer partnerships",
+        "career-themed curricula",
+        "work-based exposure"
+      ],
+      "outcomes": [
+        "Sustained earnings gains without reducing high school completion or college participation"
+      ],
+      "outcomeSummary": "Sustained earnings gains without reducing high school completion or college participation",
+      "source": "https://www.mdrc.org/work/publications/career-academies-long-term-impacts-work-education-and-transitions-adulthood",
+      "sourceHost": "mdrc.org",
+      "score": 9,
+      "evidence": {
+        "researchStatus": "scholarly_reviewed",
+        "evidenceScore": "5",
+        "consensusDirection": "positive",
+        "confidenceLabel": "high",
+        "qualityNotes": "MDRC long-run randomized evidence is unusually strong for a secondary career-pathway model and shows earnings gains without academic harm.",
+        "scholarlySourcesReviewed": "1",
+        "journalisticSourcesReviewed": "0",
+        "lastReviewed": "2026-05-02"
+      },
+      "continuums": {
+        "technologyPosition": "low_tech",
+        "technologyComparison": "applied_learning_vs_general_academics",
+        "testingIntensity": "low",
+        "workBasedLearningIntensity": "high",
+        "outdoorLearningIntensity": "low"
+      }
+    },
+    {
+      "id": "school-garden-interventions",
+      "initiative": "School garden interventions",
+      "category": "School-based enrichment intervention",
+      "entityType": "program",
+      "theme": "outdoor_and_experiential_learning",
+      "coreFocus": "Outdoor learning, nutrition education, hands-on instruction",
+      "focusTags": [
+        "Outdoor learning",
+        "nutrition education",
+        "hands-on instruction"
+      ],
+      "keyFigures": [
+        "TX Sprouts researchers",
+        "school garden educators"
+      ],
+      "timeline": {
+        "label": "2015-present",
+        "startYear": 2015,
+        "endYear": 2026,
+        "isOngoing": true,
+        "era": "2010s"
+      },
+      "locationLabel": "United States",
+      "locationScope": "national",
+      "locationTags": [
+        "United States"
+      ],
+      "policies": [
+        "Outdoor teaching gardens",
+        "cooking lessons",
+        "nutrition curriculum",
+        "hands-on science learning"
+      ],
+      "outcomes": [
+        "Some positive elementary reading and science outcomes with heterogeneity by grade and measure"
+      ],
+      "outcomeSummary": "Some positive elementary reading and science outcomes with heterogeneity by grade and measure",
+      "source": "https://www.txsprouts.com/evaluation",
+      "sourceHost": "txsprouts.com",
+      "score": 9,
+      "evidence": {
+        "researchStatus": "scholarly_reviewed",
+        "evidenceScore": "3",
+        "consensusDirection": "positive",
+        "confidenceLabel": "medium",
+        "qualityNotes": "Randomized and quasi-experimental evidence suggests some academic and science benefits but effects are selective by grade and outcome rather than broad universal gains.",
+        "scholarlySourcesReviewed": "2",
+        "journalisticSourcesReviewed": "0",
+        "lastReviewed": "2026-05-02"
+      },
+      "continuums": {
+        "technologyPosition": "low_tech",
+        "technologyComparison": "low_tech_hands_on_learning",
+        "testingIntensity": "low",
+        "workBasedLearningIntensity": "low",
+        "outdoorLearningIntensity": "very_high"
+      }
+    },
+    {
+      "id": "science-of-reading-sor",
+      "initiative": "Science of Reading (SoR)",
+      "category": "Instructional paradigm",
+      "entityType": "research_movement",
+      "theme": "literacy_instruction",
+      "coreFocus": "Evidence-based reading instruction, structured literacy, early screening",
+      "focusTags": [
+        "Evidence-based reading instruction",
+        "structured literacy",
+        "early screening"
+      ],
+      "keyFigures": [
+        "Louisa Moats",
+        "Tim Shanahan",
+        "state literacy offices"
+      ],
+      "timeline": {
+        "label": "1970s-present; policy surge 2015-present",
+        "startYear": 2015,
+        "endYear": 2026,
+        "isOngoing": true,
+        "era": "2010s"
+      },
+      "locationLabel": "Nationwide",
+      "locationScope": "national",
+      "locationTags": [
+        "United States"
+      ],
+      "policies": [
+        "Explicit phonics",
+        "decoding instruction",
+        "screening and intervention systems",
+        "teacher training"
+      ],
+      "outcomes": [
+        "Adopted widely across states but not a single evaluable program"
+      ],
+      "outcomeSummary": "Adopted widely across states but not a single evaluable program",
+      "source": "https://ies.ed.gov/learn/blog/unpacking-science-reading-dr-tim-shanahan",
+      "sourceHost": "ies.ed.gov",
+      "score": 9,
+      "evidence": {
+        "researchStatus": "orientation_complete",
+        "evidenceScore": "2",
+        "consensusDirection": "unclear",
+        "confidenceLabel": "medium_low",
+        "qualityNotes": "This is a research and policy movement rather than a single intervention so claims should stay descriptive unless tied to specific state implementations.",
+        "scholarlySourcesReviewed": "0",
+        "journalisticSourcesReviewed": "0",
+        "lastReviewed": "2026-05-02"
+      },
+      "continuums": {
+        "technologyPosition": "mixed",
+        "technologyComparison": "high_tech_vs_low_tech_to_be_split",
+        "testingIntensity": "medium",
+        "workBasedLearningIntensity": "none",
+        "outdoorLearningIntensity": "none"
+      }
+    },
+    {
+      "id": "careerwise-colorado-youth-apprenticeship",
+      "initiative": "CareerWise Colorado youth apprenticeship",
+      "category": "Youth apprenticeship program",
+      "entityType": "program",
+      "theme": "youth_apprenticeship",
+      "coreFocus": "Apprenticeship, paid work-based learning, career pathways",
+      "focusTags": [
+        "Apprenticeship",
+        "paid work-based learning",
+        "career pathways"
+      ],
+      "keyFigures": [
+        "CareerWise Colorado",
+        "Noel Ginsburg",
+        "MDRC"
+      ],
+      "timeline": {
+        "label": "2017-present",
+        "startYear": 2017,
+        "endYear": 2026,
+        "isOngoing": true,
+        "era": "2010s"
+      },
+      "locationLabel": "Colorado",
+      "locationScope": "state",
+      "locationTags": [
+        "Colorado"
+      ],
+      "policies": [
+        "Youth apprenticeships",
+        "employer matching",
+        "paid work experience",
+        "advising support"
+      ],
+      "outcomes": [
+        "Strong pathway design and descriptive positive outcomes with limited causal evidence so far"
+      ],
+      "outcomeSummary": "Strong pathway design and descriptive positive outcomes with limited causal evidence so far",
+      "source": "https://www.careerwiseusa.org/research-insights",
+      "sourceHost": "careerwiseusa.org",
+      "score": 7,
+      "evidence": {
+        "researchStatus": "orientation_complete",
+        "evidenceScore": "2",
+        "consensusDirection": "positive",
+        "confidenceLabel": "medium_low",
+        "qualityNotes": "Current open sources document program design and participant pathways better than causal impact so this should remain a promising but lightly evidenced apprenticeship model.",
+        "scholarlySourcesReviewed": "0",
+        "journalisticSourcesReviewed": "0",
+        "lastReviewed": "2026-05-02"
+      },
+      "continuums": {
+        "technologyPosition": "mixed",
+        "technologyComparison": "workplace_learning_vs_school_only",
+        "testingIntensity": "low",
+        "workBasedLearningIntensity": "very_high",
+        "outdoorLearningIntensity": "low"
+      }
+    },
+    {
+      "id": "common-core-state-standards",
+      "initiative": "Common Core State Standards",
+      "category": "Standards initiative",
+      "entityType": "policy_package",
+      "theme": "state_testing_and_standards",
+      "coreFocus": "Academic standards, alignment, college readiness",
+      "focusTags": [
+        "Academic standards",
+        "alignment",
+        "college readiness"
+      ],
+      "keyFigures": [
+        "NGA",
+        "CCSSO",
+        "state education agencies"
+      ],
+      "timeline": {
+        "label": "2010-present",
+        "startYear": 2010,
+        "endYear": 2026,
+        "isOngoing": true,
+        "era": "2010s"
+      },
+      "locationLabel": "Multi-state U.S.",
+      "locationScope": "multi_state",
+      "locationTags": [
+        "Multiple states"
+      ],
+      "policies": [
+        "Shared standards",
+        "aligned assessments",
+        "implementation guidance",
+        "curriculum alignment"
+      ],
+      "outcomes": [
+        "Mixed but measurable achievement effects with subgroup differences"
+      ],
+      "outcomeSummary": "Mixed but measurable achievement effects with subgroup differences",
+      "source": "https://www.thecorestandards.org/assets/ccssi-introduction.pdf",
+      "sourceHost": "thecorestandards.org",
+      "score": 7,
+      "evidence": {
+        "researchStatus": "scholarly_reviewed",
+        "evidenceScore": "3",
+        "consensusDirection": "mixed",
+        "confidenceLabel": "medium",
+        "qualityNotes": "Bleiberg finds positive initial math effects with meaningful heterogeneity and unequal subgroup benefits, so this should be treated as mixed rather than uniformly successful.",
+        "scholarlySourcesReviewed": "1",
+        "journalisticSourcesReviewed": "0",
+        "lastReviewed": "2026-05-02"
+      },
+      "continuums": {
+        "technologyPosition": "mixed",
+        "technologyComparison": "compare_later",
+        "testingIntensity": "high",
+        "workBasedLearningIntensity": "none",
+        "outdoorLearningIntensity": "none"
+      }
+    },
+    {
+      "id": "florida-a-school-grading-accountability-plan",
+      "initiative": "Florida A+ school grading/accountability plan",
+      "category": "State accountability system",
+      "entityType": "policy_package",
+      "theme": "state_testing_and_accountability",
+      "coreFocus": "School grades, accountability pressure, low-performing schools",
+      "focusTags": [
+        "School grades",
+        "accountability pressure",
+        "low-performing schools"
+      ],
+      "keyFigures": [
+        "Florida Department of Education",
+        "David Figlio",
+        "Cecilia Rouse"
+      ],
+      "timeline": {
+        "label": "1999-present",
+        "startYear": 1999,
+        "endYear": 2026,
+        "isOngoing": true,
+        "era": "1990s"
+      },
+      "locationLabel": "Florida (statewide)",
+      "locationScope": "state",
+      "locationTags": [
+        "Florida"
+      ],
+      "policies": [
+        "A-F-style grading",
+        "sanctions",
+        "public labeling",
+        "voucher threat for repeated failure"
+      ],
+      "outcomes": [
+        "Positive math-focused effects with evidence of stigma and test-specific responses"
+      ],
+      "outcomeSummary": "Positive math-focused effects with evidence of stigma and test-specific responses",
+      "source": "https://www.fldoe.org/accountability/accountability-reporting/school-grades/",
+      "sourceHost": "fldoe.org",
+      "score": 7,
+      "evidence": {
+        "researchStatus": "scholarly_reviewed",
+        "evidenceScore": "3",
+        "consensusDirection": "mixed",
+        "confidenceLabel": "medium",
+        "qualityNotes": "Florida A+ shows positive accountability effects especially in math but the mechanism appears tied more to stigma and pressure than to a clean policy channel and test-specific responses remain important.",
+        "scholarlySourcesReviewed": "1",
+        "journalisticSourcesReviewed": "0",
+        "lastReviewed": "2026-05-02"
+      },
+      "continuums": {
+        "technologyPosition": "low_tech",
+        "technologyComparison": "low_tech_testing_regime",
+        "testingIntensity": "very_high",
+        "workBasedLearningIntensity": "none",
+        "outdoorLearningIntensity": "none"
+      }
+    },
+    {
+      "id": "literacy-based-promotion-laws",
+      "initiative": "Literacy-Based Promotion Laws",
+      "category": "Policy category",
+      "entityType": "policy_package",
+      "theme": "state_testing_and_promotion",
+      "coreFocus": "Grade-level reading, early intervention, promotion gates",
+      "focusTags": [
+        "Grade-level reading",
+        "early intervention",
+        "promotion gates"
+      ],
+      "keyFigures": [
+        "State legislatures",
+        "state education agencies"
+      ],
+      "timeline": {
+        "label": "2000s-present",
+        "startYear": null,
+        "endYear": null,
+        "isOngoing": true,
+        "era": "Unknown"
+      },
+      "locationLabel": "Multiple U.S. states",
+      "locationScope": "multi_state",
+      "locationTags": [
+        "Multiple states"
+      ],
+      "policies": [
+        "Grade 3 reading benchmarks",
+        "retention provisions",
+        "mandated interventions",
+        "parent notification"
+      ],
+      "outcomes": [
+        "Mixed evidence with some reading gains and important implementation tradeoffs"
+      ],
+      "outcomeSummary": "Mixed evidence with some reading gains and important implementation tradeoffs",
+      "source": "https://mdek12.org/literacy/lbpa/",
+      "sourceHost": "mdek12.org",
+      "score": 7,
+      "evidence": {
+        "researchStatus": "scholarly_reviewed",
+        "evidenceScore": "3",
+        "consensusDirection": "mixed",
+        "confidenceLabel": "medium",
+        "qualityNotes": "Policy family has supportive evidence from Texas and Mississippi-related work but outcomes vary by design and there are known tradeoffs around retention and implementation.",
+        "scholarlySourcesReviewed": "1",
+        "journalisticSourcesReviewed": "0",
+        "lastReviewed": "2026-05-02"
+      },
+      "continuums": {
+        "technologyPosition": "low_tech",
+        "technologyComparison": "mixed_with_assessment_support",
+        "testingIntensity": "high",
+        "workBasedLearningIntensity": "none",
+        "outdoorLearningIntensity": "none"
+      }
+    },
+    {
+      "id": "mississippi-miracle",
+      "initiative": "Mississippi Miracle",
+      "category": "State reform model",
+      "entityType": "policy_package",
+      "theme": "literacy_and_accountability",
+      "coreFocus": "Early literacy, accountability, retention policy",
+      "focusTags": [
+        "Early literacy",
+        "accountability",
+        "retention policy"
+      ],
+      "keyFigures": [
+        "Phil Bryant",
+        "Rachel Canter",
+        "Mississippi Department of Education"
+      ],
+      "timeline": {
+        "label": "2013-present",
+        "startYear": 2013,
+        "endYear": 2026,
+        "isOngoing": true,
+        "era": "2010s"
+      },
+      "locationLabel": "Mississippi (statewide)",
+      "locationScope": "state",
+      "locationTags": [
+        "Mississippi"
+      ],
+      "policies": [
+        "Literacy-Based Promotion Act",
+        "reading coaches",
+        "structured literacy alignment",
+        "grade 3 promotion gate"
+      ],
+      "outcomes": [
+        "Large grade 4 reading gains and national attention for literacy improvement"
+      ],
+      "outcomeSummary": "Large grade 4 reading gains and national attention for literacy improvement",
+      "source": "https://mdek12.org/literacy/lbpa/",
+      "sourceHost": "mdek12.org",
+      "score": 7,
+      "evidence": {
+        "researchStatus": "scholarly_reviewed",
+        "evidenceScore": "4",
+        "consensusDirection": "positive",
+        "confidenceLabel": "medium_high",
+        "qualityNotes": "State-level literacy package has a credible recent evaluation and a clear official implementation source but still bundles several mechanisms rather than isolating one lever.",
+        "scholarlySourcesReviewed": "1",
+        "journalisticSourcesReviewed": "0",
+        "lastReviewed": "2026-05-02"
+      },
+      "continuums": {
+        "technologyPosition": "low_tech",
+        "technologyComparison": "mixed_with_high_tech_support",
+        "testingIntensity": "high",
+        "workBasedLearningIntensity": "none",
+        "outdoorLearningIntensity": "none"
+      }
+    },
+    {
+      "id": "p-tech-9-14",
+      "initiative": "P-TECH 9-14",
+      "category": "Integrated secondary-postsecondary model",
+      "entityType": "program",
+      "theme": "career_and_technical_pathways",
+      "coreFocus": "Technical pathways, employer partnerships, college credit",
+      "focusTags": [
+        "Technical pathways",
+        "employer partnerships",
+        "college credit"
+      ],
+      "keyFigures": [
+        "IBM",
+        "Texas Education Agency",
+        "MDRC"
+      ],
+      "timeline": {
+        "label": "2011-present",
+        "startYear": 2011,
+        "endYear": 2026,
+        "isOngoing": true,
+        "era": "2010s"
+      },
+      "locationLabel": "Multi-state U.S.",
+      "locationScope": "multi_state",
+      "locationTags": [
+        "Multiple states"
+      ],
+      "policies": [
+        "Six-year diploma-to-degree model",
+        "dual enrollment",
+        "workplace learning",
+        "industry partnerships"
+      ],
+      "outcomes": [
+        "Large internship and dual-enrollment gains with higher associate degree completion"
+      ],
+      "outcomeSummary": "Large internship and dual-enrollment gains with higher associate degree completion",
+      "source": "https://tea.texas.gov/academics/college-career-and-military-prep/career-and-technical-education/appendix-d-ptech-blueprint.pdf",
+      "sourceHost": "tea.texas.gov",
+      "score": 7,
+      "evidence": {
+        "researchStatus": "scholarly_reviewed",
+        "evidenceScore": "4",
+        "consensusDirection": "positive",
+        "confidenceLabel": "medium_high",
+        "qualityNotes": "MDRC lottery-based evidence is strong on internships dual enrollment and associate degree completion though implementation models vary across sites and states.",
+        "scholarlySourcesReviewed": "1",
+        "journalisticSourcesReviewed": "0",
+        "lastReviewed": "2026-05-02"
+      },
+      "continuums": {
+        "technologyPosition": "mixed",
+        "technologyComparison": "blended_pathway_model",
+        "testingIntensity": "medium",
+        "workBasedLearningIntensity": "very_high",
+        "outdoorLearningIntensity": "low"
+      }
+    },
+    {
+      "id": "no-child-left-behind-annual-testing-accountability",
+      "initiative": "No Child Left Behind annual testing/accountability",
+      "category": "Federal accountability policy",
+      "entityType": "policy_package",
+      "theme": "federal_testing_and_accountability",
+      "coreFocus": "Annual state testing, subgroup accountability, sanctions",
+      "focusTags": [
+        "Annual state testing",
+        "subgroup accountability",
+        "sanctions"
+      ],
+      "keyFigures": [
+        "George W. Bush",
+        "U.S. Department of Education",
+        "Congress"
+      ],
+      "timeline": {
+        "label": "2002-2015",
+        "startYear": 2002,
+        "endYear": 2015,
+        "isOngoing": false,
+        "era": "2000s"
+      },
+      "locationLabel": "United States",
+      "locationScope": "national",
+      "locationTags": [
+        "United States"
+      ],
+      "policies": [
+        "Annual reading and math testing",
+        "adequate yearly progress",
+        "subgroup reporting",
+        "school sanctions"
+      ],
+      "outcomes": [
+        "Clearer gains in math than reading with stronger effects for lower-performing groups"
+      ],
+      "outcomeSummary": "Clearer gains in math than reading with stronger effects for lower-performing groups",
+      "source": "https://www.govinfo.gov/cgiredirects/getdoc.action?dbname=107_cong_bills&docid=f%3Ah1eh.txt.pdf",
+      "sourceHost": "govinfo.gov",
+      "score": 6,
+      "evidence": {
+        "researchStatus": "scholarly_reviewed",
+        "evidenceScore": "4",
+        "consensusDirection": "mixed",
+        "confidenceLabel": "medium_high",
+        "qualityNotes": "National quasi-experimental evidence shows stronger math gains than reading gains with larger benefits for lower-achieving and disadvantaged students.",
+        "scholarlySourcesReviewed": "1",
+        "journalisticSourcesReviewed": "0",
+        "lastReviewed": "2026-05-02"
+      },
+      "continuums": {
+        "technologyPosition": "low_tech",
+        "technologyComparison": "low_tech_testing_regime",
+        "testingIntensity": "very_high",
+        "workBasedLearningIntensity": "none",
+        "outdoorLearningIntensity": "none"
+      }
+    },
+    {
+      "id": "school-cellphone-bans-phone-free-school-policies",
+      "initiative": "School cellphone bans / phone-free school policies",
+      "category": "Reduced-tech school policy",
+      "entityType": "policy_package",
+      "theme": "reduced_technology_and_attention",
+      "coreFocus": "Attention, discipline, classroom technology restriction",
+      "focusTags": [
+        "Attention",
+        "discipline",
+        "classroom technology restriction"
+      ],
+      "keyFigures": [
+        "Florida school districts",
+        "David Figlio",
+        "Umut Ozek"
+      ],
+      "timeline": {
+        "label": "2023-present",
+        "startYear": 2023,
+        "endYear": 2026,
+        "isOngoing": true,
+        "era": "2020s"
+      },
+      "locationLabel": "Florida (statewide)",
+      "locationScope": "state",
+      "locationTags": [
+        "Florida"
+      ],
+      "policies": [
+        "Bell-to-bell phone bans",
+        "device restrictions",
+        "enforcement rules"
+      ],
+      "outcomes": [
+        "Second-year test-score gains and lower absences alongside short-run suspension increases"
+      ],
+      "outcomeSummary": "Second-year test-score gains and lower absences alongside short-run suspension increases",
+      "source": "https://www.nber.org/papers/w34388",
+      "sourceHost": "nber.org",
+      "score": 6,
+      "evidence": {
+        "researchStatus": "scholarly_reviewed",
+        "evidenceScore": "3",
+        "consensusDirection": "mixed",
+        "confidenceLabel": "medium",
+        "qualityNotes": "Recent Florida evidence shows delayed academic gains and lower absences but also short-run discipline costs and the broader literature remains contested.",
+        "scholarlySourcesReviewed": "1",
+        "journalisticSourcesReviewed": "1",
+        "lastReviewed": "2026-05-02"
+      },
+      "continuums": {
+        "technologyPosition": "very_low",
+        "technologyComparison": "high_tech_vs_low_tech",
+        "testingIntensity": "medium",
+        "workBasedLearningIntensity": "none",
+        "outdoorLearningIntensity": "none"
+      }
+    },
+    {
+      "id": "gates-millennium-scholars",
+      "initiative": "Gates Millennium Scholars",
+      "category": "Scholarship program",
+      "entityType": "program",
+      "theme": "college_access",
+      "coreFocus": "College access, persistence, STEM advancement",
+      "focusTags": [
+        "College access",
+        "persistence",
+        "STEM advancement"
+      ],
+      "keyFigures": [
+        "Gates Foundation",
+        "UNCF"
+      ],
+      "timeline": {
+        "label": "1999-2016",
+        "startYear": 1999,
+        "endYear": 2016,
+        "isOngoing": false,
+        "era": "1990s"
+      },
+      "locationLabel": "United States",
+      "locationScope": "national",
+      "locationTags": [
+        "United States"
+      ],
+      "policies": [
+        "Last-dollar scholarships",
+        "leadership development",
+        "advising support"
+      ],
+      "outcomes": [
+        "Reduced debt and work burden with stronger persistence and STEM pathways"
+      ],
+      "outcomeSummary": "Reduced debt and work burden with stronger persistence and STEM pathways",
+      "source": "https://files.eric.ed.gov/fulltext/ED539716.pdf",
+      "sourceHost": "files.eric.ed.gov",
+      "score": 5,
+      "evidence": {
+        "researchStatus": "scholarly_reviewed",
+        "evidenceScore": "4",
+        "consensusDirection": "positive",
+        "confidenceLabel": "medium",
+        "qualityNotes": "Open impact report indicates stronger persistence completion and STEM outcomes but the program combines scholarship and support components and is not a randomized design.",
+        "scholarlySourcesReviewed": "1",
+        "journalisticSourcesReviewed": "0",
+        "lastReviewed": "2026-05-02"
+      },
+      "continuums": {
+        "technologyPosition": "low_tech",
+        "technologyComparison": "non_tech_support_model",
+        "testingIntensity": "low",
+        "workBasedLearningIntensity": "low",
+        "outdoorLearningIntensity": "none"
+      }
+    },
+    {
+      "id": "chicago-test-based-promotion-and-accountability-reforms",
+      "initiative": "Chicago test-based promotion and accountability reforms",
+      "category": "District accountability reform",
+      "entityType": "policy_package",
+      "theme": "district_testing_and_promotion",
+      "coreFocus": "High-stakes testing, promotion policy, remediation",
+      "focusTags": [
+        "High-stakes testing",
+        "promotion policy",
+        "remediation"
+      ],
+      "keyFigures": [
+        "Chicago Public Schools",
+        "Brian Jacob",
+        "Lars Lefgren"
+      ],
+      "timeline": {
+        "label": "1996-2002",
+        "startYear": 1996,
+        "endYear": 2002,
+        "isOngoing": false,
+        "era": "1990s"
+      },
+      "locationLabel": "Chicago Illinois",
+      "locationScope": "state",
+      "locationTags": [
+        "Illinois"
+      ],
+      "policies": [
+        "High-stakes exams",
+        "summer school",
+        "promotional gates",
+        "remediation assignment"
+      ],
+      "outcomes": [
+        "High-stakes score gains plus strategic responses and uneven downstream benefits"
+      ],
+      "outcomeSummary": "High-stakes score gains plus strategic responses and uneven downstream benefits",
+      "source": "https://www.nber.org/papers/w8968",
+      "sourceHost": "nber.org",
+      "score": 4,
+      "evidence": {
+        "researchStatus": "scholarly_reviewed",
+        "evidenceScore": "4",
+        "consensusDirection": "mixed",
+        "confidenceLabel": "high",
+        "qualityNotes": "The Chicago studies provide strong quasi-experimental evidence but also document test-specific gains strategic behavior and uneven benefits across grades and interventions.",
+        "scholarlySourcesReviewed": "2",
+        "journalisticSourcesReviewed": "0",
+        "lastReviewed": "2026-05-02"
+      },
+      "continuums": {
+        "technologyPosition": "low_tech",
+        "technologyComparison": "low_tech_testing_regime",
+        "testingIntensity": "very_high",
+        "workBasedLearningIntensity": "low",
+        "outdoorLearningIntensity": "none"
+      }
+    }
+  ]
+}

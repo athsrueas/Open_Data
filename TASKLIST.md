@@ -45,6 +45,15 @@ Use this checklist to pick small, discrete tasks inspired by `docs/PD-Initiative
 - [ ] Add a missing-vs-stale-vs-equivalent legend treatment to the viewer so proxy literacy values and true no-data states are visually distinct.
 - [ ] Gather public construction datasets (USASpending construction awards, State DOT/school capital plans, municipal open data capital project lists) in `construction-sources.md`.
 
+## U.S. Education Initiatives Subspace
+- [ ] Replace weak seed rows in `Education Initiatives/education_initiatives.csv` with stronger interventions for testing/accountability, work-based learning, outdoor learning, and reduced-tech school policy.
+- [ ] Keep `Education Initiatives/initiative_sources.csv` current for every kept or replacement initiative.
+- [ ] Resolve all `pending_search` official-source rows in the source inventory.
+- [ ] Pull down the first wave of PDFs and HTML captures into `outputs/us_education_initiatives/sources/`.
+- [ ] Extract atomic findings into `Education Initiatives/initiative_claims.csv`.
+- [ ] Upgrade at least five initiative evidence rows out of `seed` in `Education Initiatives/initiative_evidence_reviews.csv`.
+- [ ] Rebuild the subspace bundle and inspect `outputs/us_education_initiatives/subspace/initiatives.flat.csv` for empty evidence fields.
+
 ## World Affairs
 - [ ] Create `crisis-index.csv` for three humanitarian crises.
 - [ ] Audit IATI samples and record missing fields in `aid-audit.md`.

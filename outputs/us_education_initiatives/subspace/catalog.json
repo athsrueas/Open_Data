@@ -1,0 +1,30 @@
+{
+  "subspace": "us_education_initiatives",
+  "title": "U.S. Education Initiatives Atlas",
+  "generatedAt": "2026-05-02T05:27:55.316627+00:00",
+  "sourcePaths": {
+    "initiativesCsv": "Education Initiatives\\education_initiatives.csv",
+    "evidenceCsv": "Education Initiatives\\initiative_evidence_reviews.csv",
+    "stateTileLayoutCsv": "Education Initiatives\\state_tile_layout.csv",
+    "stateAnchorsCsv": "Education Initiatives\\initiative_state_anchors.csv",
+    "manifest": "Education Initiatives\\subspace\\manifest.json",
+    "schema": "Education Initiatives\\subspace\\initiative_record.schema.json"
+  },
+  "outputs": {
+    "bundleJson": "outputs\\us_education_initiatives\\subspace\\initiatives.bundle.json",
+    "flatCsv": "outputs\\us_education_initiatives\\subspace\\initiatives.flat.csv",
+    "statesFlatCsv": "outputs\\us_education_initiatives\\subspace\\states.flat.csv",
+    "catalogJson": "outputs\\us_education_initiatives\\subspace\\catalog.json",
+    "viewerDataJs": "viewer\\us_education_initiatives\\data.js"
+  },
+  "summary": {
+    "initiativeCount": 13,
+    "categoryCount": 13,
+    "latestStartYear": 2023,
+    "activeNowCount": 10,
+    "evidenceStatuses": {
+      "orientation_complete": 2,
+      "scholarly_reviewed": 11
+    }
+  }
+}

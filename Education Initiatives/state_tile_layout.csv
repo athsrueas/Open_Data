@@ -1,0 +1,51 @@
+state_code,state_name,tile_col,tile_row,inset_group
+AK,Alaska,0,0,alaska
+HI,Hawaii,1,0,hawaii
+WA,Washington,0,0,main
+ID,Idaho,1,0,main
+MT,Montana,2,0,main
+ND,North Dakota,4,0,main
+MN,Minnesota,5,0,main
+WI,Wisconsin,6,0,main
+MI,Michigan,7,0,main
+NY,New York,9,0,main
+VT,Vermont,10,0,main
+NH,New Hampshire,11,0,main
+ME,Maine,12,0,main
+OR,Oregon,0,1,main
+NV,Nevada,1,1,main
+WY,Wyoming,2,1,main
+SD,South Dakota,4,1,main
+IA,Iowa,5,1,main
+IL,Illinois,6,1,main
+IN,Indiana,7,1,main
+OH,Ohio,8,1,main
+PA,Pennsylvania,9,1,main
+NJ,New Jersey,10,1,main
+MA,Massachusetts,11,1,main
+RI,Rhode Island,12,1,main
+CA,California,0,2,main
+UT,Utah,1,2,main
+CO,Colorado,2,2,main
+NE,Nebraska,4,2,main
+MO,Missouri,5,2,main
+KY,Kentucky,6,2,main
+WV,West Virginia,7,2,main
+VA,Virginia,8,2,main
+MD,Maryland,9,2,main
+DE,Delaware,10,2,main
+CT,Connecticut,11,2,main
+AZ,Arizona,1,3,main
+NM,New Mexico,2,3,main
+KS,Kansas,4,3,main
+AR,Arkansas,5,3,main
+TN,Tennessee,6,3,main
+NC,North Carolina,8,3,main
+SC,South Carolina,9,3,main
+TX,Texas,3,4,main
+OK,Oklahoma,4,4,main
+LA,Louisiana,5,4,main
+MS,Mississippi,6,4,main
+AL,Alabama,7,4,main
+GA,Georgia,8,4,main
+FL,Florida,9,5,main

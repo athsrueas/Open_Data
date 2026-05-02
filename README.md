@@ -29,6 +29,7 @@ Key project references:
 - Education-source download scripts for raw landing-zone staging
 - A provisional Phase 1 World Bank extract that writes ontology-shaped CSVs
 - A first interactive education viewer under `viewer/educational_inequality_map/`
+- A separate U.S. education initiatives atlas under `viewer/us_education_initiatives/`
 
 ## Education workflows
 
@@ -61,6 +62,11 @@ source collection:
     PIAAC, and provisional adult-skills backfill artifacts
   - Writes a missing-country coverage audit into
     `outputs/educational_inequality_map/research/`
+- `build_us_education_initiatives_subspace.py`
+  - Builds the U.S. education initiatives subspace bundle into
+    `outputs/us_education_initiatives/subspace/`
+  - Writes a normalized flat export, a catalog manifest, and refreshes the
+    `viewer/us_education_initiatives/data.js` payload
 
 ## Try it locally
 
@@ -96,6 +102,24 @@ Build the current education viewer payload and coverage audit:
 python src/open_data/build_education_viewer_data.py
 ```
 
+Build the U.S. education initiatives viewer payload from
+`Education Initiatives/education_initiatives.csv`:
+
+```bash
+python src/open_data/build_us_education_initiatives_viewer_data.py
+```
+
+Build the full U.S. initiatives subspace package:
+
+```bash
+python src/open_data/build_us_education_initiatives_subspace.py
+```
+
+The U.S. initiatives dataset also includes a research workflow starter:
+
+- `Education Initiatives/research_process.md`
+- `Education Initiatives/initiative_evidence_reviews.csv`
+
 Serve the current viewer locally from the repository root:
 
 ```bash
@@ -113,6 +137,12 @@ Then open:
 
 ```text
 http://localhost:8787
+```
+
+The U.S. initiatives viewer is also served from the repo root at:
+
+```text
+http://localhost:8787/viewer/us_education_initiatives/
 ```
 
 Download OECD PISA 2022 files with the default Phase 1 profile

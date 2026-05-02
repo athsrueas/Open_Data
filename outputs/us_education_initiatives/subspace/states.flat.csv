@@ -1,0 +1,51 @@
+state_code,state_name,inset_group,tile_col,tile_row,direct_anchor_count,national_context_count,combined_count,testing_anchor_count,work_based_anchor_count,outdoor_anchor_count,reduced_technology_anchor_count,strongest_evidence_score,anchor_initiative_ids,national_initiative_ids
+WA,Washington,main,0,0,1,5,5,0,0,1,0,5,school-garden-interventions,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+ID,Idaho,main,1,0,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+MT,Montana,main,2,0,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+ND,North Dakota,main,4,0,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+MN,Minnesota,main,5,0,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+WI,Wisconsin,main,6,0,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+MI,Michigan,main,7,0,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+NY,New York,main,9,0,1,5,5,0,0,1,0,5,school-garden-interventions,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+VT,Vermont,main,10,0,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+NH,New Hampshire,main,11,0,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+ME,Maine,main,12,0,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+OR,Oregon,main,0,1,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+NV,Nevada,main,1,1,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+WY,Wyoming,main,2,1,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+SD,South Dakota,main,4,1,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+IA,Iowa,main,5,1,1,5,5,0,0,1,0,5,school-garden-interventions,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+IL,Illinois,main,6,1,1,5,6,1,0,0,0,5,chicago-test-based-promotion-and-accountability-reforms,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+IN,Indiana,main,7,1,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+OH,Ohio,main,8,1,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+PA,Pennsylvania,main,9,1,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+NJ,New Jersey,main,10,1,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+MA,Massachusetts,main,11,1,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+RI,Rhode Island,main,12,1,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+CA,California,main,0,2,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+UT,Utah,main,1,2,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+CO,Colorado,main,2,2,1,5,6,0,1,0,0,5,careerwise-colorado-youth-apprenticeship,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+NE,Nebraska,main,4,2,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+MO,Missouri,main,5,2,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+KY,Kentucky,main,6,2,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+WV,West Virginia,main,7,2,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+VA,Virginia,main,8,2,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+MD,Maryland,main,9,2,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+DE,Delaware,main,10,2,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+CT,Connecticut,main,11,2,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+AZ,Arizona,main,1,3,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+NM,New Mexico,main,2,3,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+KS,Kansas,main,4,3,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+AR,Arkansas,main,5,3,1,5,5,0,0,1,0,5,school-garden-interventions,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+TN,Tennessee,main,6,3,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+NC,North Carolina,main,8,3,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+SC,South Carolina,main,9,3,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+TX,Texas,main,3,4,3,5,7,1,1,1,0,5,literacy-based-promotion-laws|p-tech-9-14|school-garden-interventions,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+OK,Oklahoma,main,4,4,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+LA,Louisiana,main,5,4,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+MS,Mississippi,main,6,4,2,5,7,2,0,0,0,5,literacy-based-promotion-laws|mississippi-miracle,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+AL,Alabama,main,7,4,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+GA,Georgia,main,8,4,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+FL,Florida,main,9,5,2,5,7,1,0,0,1,5,florida-a-school-grading-accountability-plan|school-cellphone-bans-phone-free-school-policies,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+AK,Alaska,alaska,0,0,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor
+HI,Hawaii,hawaii,1,0,0,5,5,0,0,0,0,5,,career-academies|gates-millennium-scholars|no-child-left-behind-annual-testing-accountability|school-garden-interventions|science-of-reading-sor

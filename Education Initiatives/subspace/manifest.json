@@ -1,0 +1,39 @@
+{
+  "id": "us_education_initiatives",
+  "title": "U.S. Education Initiatives Subspace",
+  "scope": "United States education interventions and policy movements",
+  "description": "A reusable subspace for initiative-level education datasets, evidence reviews, and visualization-oriented exports.",
+  "owner": "Open_Data",
+  "status": "provisional",
+  "version": "0.1.0",
+  "source_files": [
+    "../education_initiatives.csv",
+    "../initiative_evidence_reviews.csv",
+    "../research_process.md"
+  ],
+  "generated_outputs": [
+    "../../outputs/us_education_initiatives/subspace/initiatives.bundle.json",
+    "../../outputs/us_education_initiatives/subspace/initiatives.flat.csv",
+    "../../outputs/us_education_initiatives/subspace/catalog.json",
+    "../../viewer/us_education_initiatives/data.js"
+  ],
+  "dimensions": [
+    "initiative identity",
+    "entity type",
+    "theme",
+    "geography",
+    "timeline",
+    "policy mechanism",
+    "outcomes",
+    "research status",
+    "evidence strength",
+    "technology continuum",
+    "testing continuum",
+    "work-based learning continuum",
+    "outdoor learning continuum"
+  ],
+  "build_commands": [
+    "python src/open_data/build_us_education_initiatives_subspace.py",
+    "python src/open_data/build_us_education_initiatives_viewer_data.py"
+  ]
+}
