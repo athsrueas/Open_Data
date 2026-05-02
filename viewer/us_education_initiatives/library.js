@@ -169,8 +169,8 @@
         .then(({ geojson, breaks }) => {
           const panes = [
             mapPane("map-main", Array.from(LOWER_48), [[-125.0, 24.0], [-66.0, 49.8]], 3.1),
-            mapPane("map-ak", ["AK"], [[-170.0, 51.0], [-129.0, 72.0]], 2.2),
-            mapPane("map-hi", ["HI"], [[-161.0, 18.3], [-154.3, 22.6]], 5.2),
+            mapPane("map-ak", ["AK"], [[-179.5, 51.2], [-129.8, 71.8]], 2.2),
+            mapPane("map-hi", ["HI"], [[-160.9, 18.8], [-154.6, 22.5]], 5.2),
           ];
 
           panes.forEach((pane) => {
@@ -187,7 +187,7 @@
             });
             map.on("load", () => {
               map.addSource("states", { type: "geojson", data: geojson });
-              const filter = ["in", ["get", "state_code"], ["literal", pane.filterCodes]];
+              const filter = ["match", ["get", "state_code"], pane.filterCodes, true, false];
               map.addLayer({
                 id: `fill-${pane.containerId}`,
                 type: "fill",
@@ -220,12 +220,15 @@
                 paint: { "line-color": "#b65431", "line-width": 3 },
               });
 
-              map.fitBounds(pane.bounds, { padding: 8, duration: 0 });
-              map.setZoom(pane.zoom);
+              map.fitBounds(pane.bounds, { padding: pane.containerId === "map-main" ? 20 : 10, duration: 0 });
               map.on("click", `fill-${pane.containerId}`, (event) => {
                 const code = event.features?.[0]?.properties?.state_code;
                 if (!code) return;
                 state.selectedStateCode = code;
+                const picked = (data.stateMap?.states || []).find((entry) => entry.code === code);
+                if (picked?.anchorInitiativeIds?.length) {
+                  state.selectedId = picked.anchorInitiativeIds[0];
+                }
                 render();
               });
               map.on("mouseenter", `fill-${pane.containerId}`, () => { map.getCanvas().style.cursor = "pointer"; });
