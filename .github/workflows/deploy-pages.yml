@@ -1,4 +1,4 @@
-name: Deploy Educational Inequality Map
+name: Deploy Education Viewers
 
 on:
   push:
@@ -29,10 +29,18 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Build Pages bundle
+        run: |
+          rm -rf _site
+          mkdir -p _site
+          cp -R viewer/educational_inequality_map _site/educational_inequality_map
+          cp -R viewer/us_education_initiatives _site/us_education_initiatives
+          cp viewer/index.html _site/index.html
+
       - name: Upload static viewer artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: viewer/educational_inequality_map
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment

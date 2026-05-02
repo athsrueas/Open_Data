@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education Viewers</title>
+    <style>
+      :root {
+        --bg: #f1ece2;
+        --ink: #161616;
+        --muted: #5f5a52;
+        --line: rgba(22, 22, 22, 0.12);
+        --card: rgba(255, 250, 242, 0.86);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        padding: 24px;
+        font-family: "Manrope", system-ui, sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 0% 0%, rgba(31, 111, 120, 0.13), transparent 30%),
+          radial-gradient(circle at 100% 0%, rgba(182, 84, 49, 0.11), transparent 30%),
+          var(--bg);
+      }
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        display: grid;
+        gap: 14px;
+      }
+      h1 {
+        margin: 0;
+        font-size: clamp(1.8rem, 4vw, 3rem);
+        line-height: 1.04;
+      }
+      p { margin: 0; color: var(--muted); }
+      .links {
+        margin-top: 8px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 12px;
+      }
+      a {
+        display: block;
+        padding: 16px;
+        border-radius: 14px;
+        border: 1px solid var(--line);
+        background: var(--card);
+        text-decoration: none;
+        color: inherit;
+      }
+      a:hover { border-color: rgba(182, 84, 49, 0.35); }
+      a strong { display: block; margin-bottom: 6px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Education Data Viewers</h1>
+      <p>Open the global inequality map or the U.S. initiatives atlas.</p>
+      <div class="links">
+        <a href="./educational_inequality_map/">
+          <strong>Educational Inequality Map (Global)</strong>
+          <span>Country comparisons for access, funding, and outcomes.</span>
+        </a>
+        <a href="./us_education_initiatives/">
+          <strong>U.S. Education Initiatives Atlas</strong>
+          <span>State-level initiative anchors with Alaska and Hawaii insets.</span>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
