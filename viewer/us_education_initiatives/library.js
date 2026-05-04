@@ -1,5 +1,5 @@
 (function () {
-  const US_STATES_GEOJSON_URL = "https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json";
+  const US_STATES_GEOJSON_URL = "./us_states.geojson";
   const LOWER_48 = new Set([
     "AL", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME",
     "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK",
@@ -114,6 +114,31 @@
       return { min: sorted[0], max: sorted[sorted.length - 1], q1: at(0.25), q2: at(0.5), q3: at(0.75) };
     }
 
+    function buildFillColorExpression(breaks) {
+      const EPSILON = 1e-6;
+      const min = Number.isFinite(breaks.min) ? breaks.min : 0;
+      const max = Number.isFinite(breaks.max) ? breaks.max : min;
+      if (max <= min + EPSILON) {
+        return "#79b1ce";
+      }
+
+      const q1 = Math.max(min + EPSILON, Number.isFinite(breaks.q1) ? breaks.q1 : min + EPSILON);
+      const q2 = Math.max(q1 + EPSILON, Number.isFinite(breaks.q2) ? breaks.q2 : q1 + EPSILON);
+      const q3 = Math.max(q2 + EPSILON, Number.isFinite(breaks.q3) ? breaks.q3 : q2 + EPSILON);
+      const hi = Math.max(q3 + EPSILON, max);
+
+      return [
+        "interpolate",
+        ["linear"],
+        ["coalesce", ["get", "metric_value"], 0],
+        min, "#f3f4f7",
+        q1, "#c5dceb",
+        q2, "#79b1ce",
+        q3, "#3f7fa9",
+        hi, "#1f4f72",
+      ];
+    }
+
     function destroyMaps() {
       mapViews.forEach((entry) => entry.map.remove());
       mapViews = [];
@@ -197,23 +222,14 @@
             });
             map.on("load", () => {
               map.addSource("states", { type: "geojson", data: geojson });
-              const filter = ["in", ["get", "state_code"], ["literal", pane.filterCodes]];
+              const filter = buildStateFilter(pane.filterCodes);
               map.addLayer({
                 id: `fill-${pane.containerId}`,
                 type: "fill",
                 source: "states",
                 filter,
                 paint: {
-                  "fill-color": [
-                    "interpolate",
-                    ["linear"],
-                    ["coalesce", ["get", "metric_value"], 0],
-                    breaks.min, "#f3f4f7",
-                    breaks.q1, "#c5dceb",
-                    breaks.q2, "#79b1ce",
-                    breaks.q3, "#3f7fa9",
-                    breaks.max, "#1f4f72",
-                  ],
+                  "fill-color": buildFillColorExpression(breaks),
                   "fill-opacity": 0.96,
                 },
               });
@@ -453,3 +469,9 @@
 
   window.InitiativeAtlas = { create: createInitiativeAtlas };
 })();
+    function buildStateFilter(codes) {
+      const comparisons = codes.map((code) => ["==", ["get", "state_code"], code]);
+      if (!comparisons.length) return ["==", ["get", "state_code"], "__none__"];
+      if (comparisons.length === 1) return comparisons[0];
+      return ["any", ...comparisons];
+    }
