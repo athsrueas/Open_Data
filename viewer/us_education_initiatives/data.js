@@ -1,7 +1,7 @@
 window.US_EDUCATION_INITIATIVES_DATA = {
   "title": "U.S. Education Initiatives Atlas",
   "subtitle": "A reusable initiative dataset and browser for education reforms, programs, and policy movements across the United States.",
-  "generatedAt": "2026-05-04T17:27:34.347864+00:00",
+  "generatedAt": "2026-05-04T17:31:16.669221+00:00",
   "summary": {
     "initiativeCount": 17,
     "categoryCount": 17,
@@ -177,6 +177,10 @@ window.US_EDUCATION_INITIATIVES_DATA = {
     "layoutKind": "state_tilegrid_with_insets",
     "metrics": [
       {
+        "key": "continuumBalanceScore",
+        "label": "Low-tech to high-tech continuum score"
+      },
+      {
         "key": "directAnchorCount",
         "label": "Direct evidence anchors"
       },
@@ -222,6 +226,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 1,
         "reducedTechnologyAnchorCount": 0,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 66,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-garden-interventions"
@@ -277,6 +283,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -332,6 +340,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -387,6 +397,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -442,6 +454,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -497,6 +511,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -552,6 +568,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -607,6 +625,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 1,
         "outdoorAnchorCount": 1,
         "reducedTechnologyAnchorCount": 0,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 80,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "p-tech-9-14",
@@ -675,6 +695,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -730,6 +752,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -785,6 +809,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -840,6 +866,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -895,6 +923,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -950,6 +980,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -1005,6 +1037,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -1060,6 +1094,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 1,
         "reducedTechnologyAnchorCount": 0,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 66,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-garden-interventions"
@@ -1115,6 +1151,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 0,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 52,
         "anchorInitiativeIds": [
           "chicago-test-based-promotion-and-accountability-reforms",
           "no-child-left-behind-annual-testing-accountability"
@@ -1171,6 +1209,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -1226,6 +1266,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -1281,6 +1323,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -1336,6 +1380,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -1391,6 +1437,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -1446,6 +1494,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -1501,6 +1551,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -1556,6 +1608,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -1611,6 +1665,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 1,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 0,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 68,
         "anchorInitiativeIds": [
           "careerwise-colorado-youth-apprenticeship",
           "no-child-left-behind-annual-testing-accountability"
@@ -1668,6 +1724,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -1723,6 +1781,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -1778,6 +1838,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -1833,6 +1895,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -1888,6 +1952,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -1943,6 +2009,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -1998,6 +2066,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -2053,6 +2123,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -2108,6 +2180,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -2163,6 +2237,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -2218,6 +2294,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -2273,6 +2351,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 1,
         "reducedTechnologyAnchorCount": 0,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 66,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-garden-interventions"
@@ -2328,6 +2408,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -2383,6 +2465,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -2438,6 +2522,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -2493,6 +2579,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 1,
         "outdoorAnchorCount": 1,
         "reducedTechnologyAnchorCount": 0,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 78,
         "anchorInitiativeIds": [
           "literacy-based-promotion-laws",
           "no-child-left-behind-annual-testing-accountability",
@@ -2573,6 +2661,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -2628,6 +2718,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -2683,6 +2775,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 0,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 50,
         "anchorInitiativeIds": [
           "literacy-based-promotion-laws",
           "mississippi-miracle",
@@ -2751,6 +2845,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -2806,6 +2902,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -2861,6 +2959,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 70,
         "anchorInitiativeIds": [
           "florida-a-school-grading-accountability-plan",
           "no-child-left-behind-annual-testing-accountability",
@@ -2930,6 +3030,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
@@ -2985,6 +3087,8 @@ window.US_EDUCATION_INITIATIVES_DATA = {
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
+        "highTechnologyAnchorCount": 0,
+        "continuumBalanceScore": 72,
         "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"

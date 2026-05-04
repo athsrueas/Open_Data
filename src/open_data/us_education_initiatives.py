@@ -297,6 +297,25 @@ def build_state_map(initiatives: list[dict[str, object]]) -> dict[str, object]:
             if str(item.get("theme")) == "reduced_technology_and_attention"
             or str(item["continuums"].get("technologyComparison")) == "high_tech_vs_low_tech"
         )
+        high_tech_count = sum(
+            1
+            for item in direct_items
+            if str(item["continuums"].get("technologyPosition")) == "high_tech"
+            or str(item.get("theme")) == "ai_enabled_instruction_and_operations"
+        )
+
+        # Composite continuum score to give the map a stronger, interpretable gradient.
+        # Higher = comparatively more low-tech/work-based/outdoor emphasis; lower = comparatively more high-tech/testing-heavy emphasis.
+        continuum_score_raw = (
+            50
+            + (reduced_tech_count * 14)
+            + (work_based_count * 10)
+            + (outdoor_count * 8)
+            - (high_tech_count * 14)
+            - (max(0, testing_count - 1) * 6)
+            + (direct_anchor_count * 4)
+        )
+        continuum_score = max(0, min(100, int(continuum_score_raw)))
 
         states.append(
             {
@@ -313,6 +332,8 @@ def build_state_map(initiatives: list[dict[str, object]]) -> dict[str, object]:
                 "workBasedAnchorCount": work_based_count,
                 "outdoorAnchorCount": outdoor_count,
                 "reducedTechnologyAnchorCount": reduced_tech_count,
+                "highTechnologyAnchorCount": high_tech_count,
+                "continuumBalanceScore": continuum_score,
                 "anchorInitiativeIds": direct_ids,
                 "nationalInitiativeIds": national_ids,
                 "anchorDetails": [
@@ -336,6 +357,7 @@ def build_state_map(initiatives: list[dict[str, object]]) -> dict[str, object]:
     return {
         "layoutKind": "state_tilegrid_with_insets",
         "metrics": [
+            {"key": "continuumBalanceScore", "label": "Low-tech to high-tech continuum score"},
             {"key": "directAnchorCount", "label": "Direct evidence anchors"},
             {"key": "testingAnchorCount", "label": "Testing-heavy anchors"},
             {"key": "workBasedAnchorCount", "label": "Work-based learning anchors"},
@@ -556,6 +578,8 @@ def build_state_flat_rows(dataset: dict[str, object]) -> list[dict[str, str]]:
                 "work_based_anchor_count": str(item["workBasedAnchorCount"]),
                 "outdoor_anchor_count": str(item["outdoorAnchorCount"]),
                 "reduced_technology_anchor_count": str(item["reducedTechnologyAnchorCount"]),
+                "high_technology_anchor_count": str(item["highTechnologyAnchorCount"]),
+                "continuum_balance_score": str(item["continuumBalanceScore"]),
                 "strongest_evidence_score": str(item["strongestEvidenceScore"]),
                 "anchor_initiative_ids": "|".join(str(value) for value in item["anchorInitiativeIds"]),
                 "national_initiative_ids": "|".join(str(value) for value in item["nationalInitiativeIds"]),

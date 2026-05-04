@@ -21,6 +21,7 @@
   let mapViews = [];
 
   const PUBLIC_METRIC_LABELS = {
+    continuumBalanceScore: "Continuum score (low-tech to high-tech)",
     directAnchorCount: "State-linked initiatives",
     testingAnchorCount: "Testing-focused initiatives",
     workBasedAnchorCount: "Work-based learning initiatives",
@@ -204,14 +205,16 @@
                 filter,
                 paint: {
                   "fill-color": [
-                    "step",
-                    ["get", "metric_value"],
-                    "#e8e5dd",
-                    breaks.q1, "#b9d8d8",
-                    breaks.q2, "#7db9ba",
-                    breaks.q3, "#3f8f92",
+                    "interpolate",
+                    ["linear"],
+                    ["coalesce", ["get", "metric_value"], 0],
+                    breaks.min, "#f3f4f7",
+                    breaks.q1, "#c5dceb",
+                    breaks.q2, "#79b1ce",
+                    breaks.q3, "#3f7fa9",
+                    breaks.max, "#1f4f72",
                   ],
-                  "fill-opacity": 0.9,
+                  "fill-opacity": 0.96,
                 },
               });
               map.addLayer({
@@ -297,7 +300,6 @@
               <div class="map-panel-head">
                 <div>
                   <p class="panel-label">Geographic view</p>
-                  <h2>Lower 48 plus Alaska and Hawaii insets</h2>
                 </div>
                 <label class="control metric-control">
                   <span>Map metric</span>
