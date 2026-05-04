@@ -21,7 +21,7 @@
   let mapViews = [];
 
   const PUBLIC_METRIC_LABELS = {
-    continuumBalanceScore: "Continuum score (low-tech to high-tech)",
+    continuumBalanceScore: "Low-Tech to High-Tech",
     directAnchorCount: "State-linked initiatives",
     testingAnchorCount: "Testing-focused initiatives",
     workBasedAnchorCount: "Work-based learning initiatives",
@@ -29,6 +29,7 @@
     reducedTechnologyAnchorCount: "Low-tech policy initiatives",
     combinedCount: "State-linked + nationwide initiatives",
   };
+  const COLOR_STOPS = ["#f3f4f7", "#c5dceb", "#79b1ce", "#3f7fa9", "#1f4f72"];
 
   function createInitiativeAtlas(root, data) {
     if (!root) throw new Error("Root element is required.");
@@ -131,12 +132,45 @@
         "interpolate",
         ["linear"],
         ["coalesce", ["get", "metric_value"], 0],
-        min, "#f3f4f7",
-        q1, "#c5dceb",
-        q2, "#79b1ce",
-        q3, "#3f7fa9",
-        hi, "#1f4f72",
+        min, COLOR_STOPS[0],
+        q1, COLOR_STOPS[1],
+        q2, COLOR_STOPS[2],
+        q3, COLOR_STOPS[3],
+        hi, COLOR_STOPS[4],
       ];
+    }
+
+    function buildLegendRows(breaks) {
+      const fmt = (value) => Number(value).toFixed(Number.isInteger(value) ? 0 : 1);
+      const min = Number.isFinite(breaks.min) ? breaks.min : 0;
+      const q1 = Number.isFinite(breaks.q1) ? breaks.q1 : min;
+      const q2 = Number.isFinite(breaks.q2) ? breaks.q2 : q1;
+      const q3 = Number.isFinite(breaks.q3) ? breaks.q3 : q2;
+      const max = Number.isFinite(breaks.max) ? breaks.max : q3;
+      return [
+        { color: COLOR_STOPS[0], label: `${fmt(min)} to ${fmt(q1)}` },
+        { color: COLOR_STOPS[1], label: `${fmt(q1)} to ${fmt(q2)}` },
+        { color: COLOR_STOPS[2], label: `${fmt(q2)} to ${fmt(q3)}` },
+        { color: COLOR_STOPS[3], label: `${fmt(q3)} to ${fmt(max)}` },
+        { color: COLOR_STOPS[4], label: `>= ${fmt(max)}` },
+      ];
+    }
+
+    function buildStateFilter(codes) {
+      const comparisons = codes.map((code) => ["==", ["get", "state_code"], code]);
+      if (!comparisons.length) return ["==", ["get", "state_code"], "__none__"];
+      if (comparisons.length === 1) return comparisons[0];
+      return ["any", ...comparisons];
+    }
+
+    function applyStateSelection(code) {
+      if (!code) return;
+      state.selectedStateCode = code;
+      const picked = (data.stateMap?.states || []).find((entry) => entry.code === code);
+      if (picked?.anchorInitiativeIds?.length) {
+        state.selectedId = picked.anchorInitiativeIds[0];
+      }
+      render();
     }
 
     function destroyMaps() {
@@ -202,6 +236,17 @@
 
       loadStateGeojson(state.mapMetric)
         .then(({ geojson, breaks }) => {
+          const legendContainer = root.querySelector("#map-legend");
+          if (legendContainer) {
+            const metricLabel = PUBLIC_METRIC_LABELS[state.mapMetric] || state.mapMetric;
+            const scaleNote = state.mapMetric === "continuumBalanceScore" ? " (0-100 scale)" : "";
+            const rows = buildLegendRows(breaks);
+            legendContainer.innerHTML = `
+              <p class="legend-title">${escapeHtml(metricLabel + scaleNote)}</p>
+              ${rows.map((row) => `<div class="legend-row"><span class="legend-swatch" style="background:${row.color};"></span><span>${escapeHtml(row.label)}</span></div>`).join("")}
+            `;
+          }
+
           const panes = [
             mapPane("map-main", Array.from(LOWER_48), [[-125.0, 24.0], [-66.0, 49.8]], 3.1),
             mapPane("map-ak", ["AK"], [[-179.5, 51.2], [-129.8, 71.8]], 2.2),
@@ -251,13 +296,12 @@
               map.fitBounds(pane.bounds, { padding: pane.containerId === "map-main" ? 20 : 10, duration: 0 });
               map.on("click", `fill-${pane.containerId}`, (event) => {
                 const code = event.features?.[0]?.properties?.state_code;
-                if (!code) return;
-                state.selectedStateCode = code;
-                const picked = (data.stateMap?.states || []).find((entry) => entry.code === code);
-                if (picked?.anchorInitiativeIds?.length) {
-                  state.selectedId = picked.anchorInitiativeIds[0];
-                }
-                render();
+                applyStateSelection(code);
+              });
+              map.on("click", (event) => {
+                const features = map.queryRenderedFeatures(event.point, { layers: [`fill-${pane.containerId}`] });
+                const code = features?.[0]?.properties?.state_code;
+                applyStateSelection(code);
               });
               map.on("mouseenter", `fill-${pane.containerId}`, () => { map.getCanvas().style.cursor = "pointer"; });
               map.on("mouseleave", `fill-${pane.containerId}`, () => { map.getCanvas().style.cursor = ""; });
@@ -282,6 +326,11 @@
       const scopes = scopeBars(items);
       const selectedState = selectedStateRecord();
       const stateOptions = (data.stateMap?.states || []).slice().sort((a, b) => a.name.localeCompare(b.name));
+      const metricRows = (data.stateMap?.metrics || []).map((metric) => ({
+        key: metric.key,
+        label: PUBLIC_METRIC_LABELS[metric.key] || metric.label || metric.key,
+        value: selectedState ? selectedState[metric.key] : "",
+      }));
 
       root.innerHTML = `
         <main class="atlas-shell">
@@ -340,6 +389,7 @@
                     <div class="inset-wrap"><span>Alaska</span><div id="map-ak" class="geo-map inset"></div></div>
                     <div class="inset-wrap"><span>Hawaii</span><div id="map-hi" class="geo-map inset"></div></div>
                   </div>
+                  <div id="map-legend" class="map-legend"></div>
                   <p class="map-fallback-note"></p>
                 </div>
                 <aside class="state-detail-panel">
@@ -351,6 +401,12 @@
                       <div><span class="detail-label">Nationwide initiatives</span><strong>${selectedState.nationalContextCount}</strong></div>
                       <div><span class="detail-label">Strongest evidence</span><strong>${selectedState.strongestEvidenceScore}/5</strong></div>
                     </div>
+                    <section class="detail-section">
+                      <span class="detail-label">State metric values</span>
+                      <div class="state-metric-list">
+                        ${metricRows.map((metric) => `<div class="state-metric-row ${metric.key === state.mapMetric ? "is-active" : ""}"><span>${metric.label}</span><strong>${metric.value}</strong></div>`).join("")}
+                      </div>
+                    </section>
                     <section class="detail-section">
                       <span class="detail-label">Documented initiatives in this state</span>
                       <div class="state-anchor-list">
@@ -469,9 +525,3 @@
 
   window.InitiativeAtlas = { create: createInitiativeAtlas };
 })();
-    function buildStateFilter(codes) {
-      const comparisons = codes.map((code) => ["==", ["get", "state_code"], code]);
-      if (!comparisons.length) return ["==", ["get", "state_code"], "__none__"];
-      if (comparisons.length === 1) return comparisons[0];
-      return ["any", ...comparisons];
-    }

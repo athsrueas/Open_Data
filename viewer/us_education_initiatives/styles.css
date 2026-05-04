@@ -286,6 +286,45 @@ button {
   font-size: 0.84rem;
 }
 
+.map-legend {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  min-width: 190px;
+  max-width: 250px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(25, 25, 25, 0.12);
+  background: rgba(255, 250, 242, 0.92);
+  backdrop-filter: blur(8px);
+  display: grid;
+  gap: 6px;
+}
+
+.legend-title {
+  margin: 0 0 2px;
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.legend-row {
+  display: grid;
+  grid-template-columns: 12px minmax(0, 1fr);
+  gap: 8px;
+  align-items: center;
+  font-size: 0.76rem;
+}
+
+.legend-swatch {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  border: 1px solid rgba(25, 25, 25, 0.16);
+}
+
 .state-anchor-button {
   border: 1px solid rgba(25, 25, 25, 0.08);
   border-radius: 18px;
@@ -325,6 +364,32 @@ button {
 .state-anchor-list {
   display: grid;
   gap: 10px;
+}
+
+.state-metric-list {
+  display: grid;
+  gap: 6px;
+}
+
+.state-metric-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: baseline;
+  padding: 7px 9px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: 0.87rem;
+}
+
+.state-metric-row strong {
+  font-family: "Fraunces", serif;
+  font-size: 1rem;
+}
+
+.state-metric-row.is-active {
+  border: 1px solid rgba(31, 111, 120, 0.34);
+  background: rgba(140, 212, 218, 0.16);
 }
 
 .state-anchor-button {
