@@ -2,11 +2,18 @@ from __future__ import annotations
 
 import csv
 import json
+import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from src.open_data.us_education_initiatives import OUTPUT_DIR as SUBSPACE_OUTPUT_DIR
+from src.open_data.us_education_initiatives import build_dataset, write_json
+
 SUBSPACE_BUNDLE_PATH = ROOT / "outputs" / "us_education_initiatives" / "subspace" / "initiatives.bundle.json"
 SOURCES_CSV_PATH = ROOT / "Education Initiatives" / "initiative_sources.csv"
 ANCHORS_CSV_PATH = ROOT / "Education Initiatives" / "initiative_state_anchors.csv"
@@ -18,6 +25,11 @@ ANCHOR_EXPANSION_PATH = OUTPUT_DIR / "anchor_expansion_seed.csv"
 
 def load_bundle() -> dict[str, object]:
     return json.loads(SUBSPACE_BUNDLE_PATH.read_text(encoding="utf-8"))
+
+
+def rebuild_subspace_bundle() -> None:
+    dataset = build_dataset()
+    write_json(SUBSPACE_OUTPUT_DIR / "initiatives.bundle.json", dataset)
 
 
 def load_csv(path: Path) -> list[dict[str, str]]:
@@ -138,6 +150,7 @@ def build_anchor_expansion_seed(bundle: dict[str, object], anchor_rows: list[dic
 
 
 def main() -> None:
+    rebuild_subspace_bundle()
     bundle = load_bundle()
     source_rows = load_csv(SOURCES_CSV_PATH)
     anchor_rows = load_csv(ANCHORS_CSV_PATH)
@@ -153,6 +166,7 @@ def main() -> None:
     print(f"Wrote {STATE_GAPS_PATH}")
     print(f"Wrote {SOURCE_BACKLOG_PATH}")
     print(f"Wrote {ANCHOR_EXPANSION_PATH}")
+    print(f"Refreshed {SUBSPACE_BUNDLE_PATH}")
     print(f"State gaps rows: {len(state_gaps)}")
     print(f"Source backlog rows: {len(source_backlog)}")
     print(f"Anchor expansion seed rows: {len(anchor_expansion_seed)}")
@@ -160,4 +174,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

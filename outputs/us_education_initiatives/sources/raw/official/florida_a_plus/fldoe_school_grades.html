@@ -23,7 +23,7 @@
   <meta name="keywords" content="Florida School Accountability Reports" />
   <meta name="author" content="Solodev" />
   <meta name="https" content="1" />
-  <meta name="DC.Date" content="2026-05-02T01:02:53-04:00" />
+  <meta name="DC.Date" content="2026-05-04T14:03:01-04:00" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="" />
   <meta name="twitter:title" content="Florida School Accountability Reports" />
@@ -556,7 +556,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       setTimeout(async () => {
         try {
           if (!document.querySelector("input[name='csrf_token']")) return;
-          const response = await fetch('/sys/csrf?refresh=1777698173');
+          const response = await fetch('/sys/csrf?refresh=1777917781');
           if (!response.ok) throw new Error('Failed to fetch CSRF tokens');
           const { key: csrfName, value: csrfValue } = await response.json();
           document.querySelectorAll("input[name='csrf_token']").forEach(input => {

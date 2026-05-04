@@ -1,15 +1,15 @@
 window.US_EDUCATION_INITIATIVES_DATA = {
   "title": "U.S. Education Initiatives Atlas",
   "subtitle": "A reusable initiative dataset and browser for education reforms, programs, and policy movements across the United States.",
-  "generatedAt": "2026-05-04T17:31:16.669221+00:00",
+  "generatedAt": "2026-05-04T18:13:28.252397+00:00",
   "summary": {
     "initiativeCount": 17,
     "categoryCount": 17,
     "latestStartYear": 2025,
     "activeNowCount": 14,
     "evidenceStatuses": {
-      "orientation_complete": 5,
-      "scholarly_reviewed": 12
+      "orientation_complete": 4,
+      "scholarly_reviewed": 13
     }
   },
   "featuredInitiativeIds": [
@@ -3294,14 +3294,14 @@ window.US_EDUCATION_INITIATIVES_DATA = {
       "sourceHost": "ies.ed.gov",
       "score": 9,
       "evidence": {
-        "researchStatus": "orientation_complete",
-        "evidenceScore": "2",
-        "consensusDirection": "unclear",
-        "confidenceLabel": "medium_low",
-        "qualityNotes": "This is a research and policy movement rather than a single intervention so claims should stay descriptive unless tied to specific state implementations.",
-        "scholarlySourcesReviewed": "0",
+        "researchStatus": "scholarly_reviewed",
+        "evidenceScore": "3",
+        "consensusDirection": "mixed",
+        "confidenceLabel": "medium",
+        "qualityNotes": "Science of Reading is still a broad research movement rather than one intervention but core evidence-synthesis and federal guidance sources now support structured claims with implementation caveats.",
+        "scholarlySourcesReviewed": "1",
         "journalisticSourcesReviewed": "0",
-        "lastReviewed": "2026-05-02"
+        "lastReviewed": "2026-05-04"
       },
       "continuums": {
         "technologyPosition": "mixed",

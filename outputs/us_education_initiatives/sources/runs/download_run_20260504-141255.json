@@ -1,0 +1,55 @@
+{
+  "priority": "high",
+  "count": 2,
+  "results": [
+    {
+      "source_id": "src_sor_primary_ies_practice_guide",
+      "initiative_id": "science-of-reading-sor",
+      "initiative": "Science of Reading (SoR)",
+      "replace_original_row": "no",
+      "source_role": "primary",
+      "source_tier": "official",
+      "source_type": "practice_guide",
+      "source_title": "Foundational Skills to Support Reading for Understanding in Kindergarten Through 3rd Grade",
+      "source_org": "Institute of Education Sciences",
+      "publication_year": "2016",
+      "repository": "ies",
+      "url": "https://ies.ed.gov/ncee/wwc/PracticeGuide/21",
+      "retrieval_mode": "direct_pdf",
+      "target_relpath": "raw/official/sor/ies_foundational_skills_practice_guide.pdf",
+      "extraction_priority": "high",
+      "status": "queued",
+      "notes": "Core federal evidence-based reading practice guide frequently used to operationalize SoR-aligned instruction.",
+      "run_status": "downloaded",
+      "saved_paths": [
+        "outputs\\us_education_initiatives\\sources\\raw\\official\\sor\\ies_foundational_skills_practice_guide.pdf",
+        "outputs\\us_education_initiatives\\sources\\raw\\official\\sor\\ies_foundational_skills_practice_guide.html"
+      ],
+      "detail": "landing page parsed; pdf downloaded from https://ies.ed.gov/ncee/WWC/Docs/PracticeGuide/wwc_foundationalreading_040717.pdf"
+    },
+    {
+      "source_id": "src_sor_eval_nrp_report",
+      "initiative_id": "science-of-reading-sor",
+      "initiative": "Science of Reading (SoR)",
+      "replace_original_row": "no",
+      "source_role": "evaluation",
+      "source_tier": "technical",
+      "source_type": "evidence_synthesis",
+      "source_title": "Teaching Children to Read: An Evidence-Based Assessment of the Scientific Research Literature on Reading and Its Implications for Reading Instruction",
+      "source_org": "National Reading Panel",
+      "publication_year": "2000",
+      "repository": "nichd",
+      "url": "https://www.nichd.nih.gov/sites/default/files/publications/pubs/nrp/Documents/report.pdf",
+      "retrieval_mode": "direct_pdf",
+      "target_relpath": "raw/technical/sor/nrp_teaching_children_to_read_2000.pdf",
+      "extraction_priority": "high",
+      "status": "queued",
+      "notes": "Landmark evidence synthesis used as a foundational source in the science-of-reading evidence lineage.",
+      "run_status": "downloaded",
+      "saved_paths": [
+        "outputs\\us_education_initiatives\\sources\\raw\\technical\\sor\\nrp_teaching_children_to_read_2000.pdf"
+      ],
+      "detail": "pdf downloaded"
+    }
+  ]
+}

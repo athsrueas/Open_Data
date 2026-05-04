@@ -1,16 +1,13 @@
 state_code,state_name,initiative_id,anchor_type,anchor_strength,source_ids,evidence_basis,status,notes
 AL,Alabama,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-AL,Alabama,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 AL,Alabama,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 AL,Alabama,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 AL,Alabama,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 AK,Alaska,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-AK,Alaska,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 AK,Alaska,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 AK,Alaska,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 AK,Alaska,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 AZ,Arizona,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-AZ,Arizona,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 AZ,Arizona,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 AZ,Arizona,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 AZ,Arizona,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
@@ -20,7 +17,6 @@ AR,Arkansas,florida-a-school-grading-accountability-plan,pending_research,unknow
 AR,Arkansas,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 AR,Arkansas,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 CA,California,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-CA,California,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 CA,California,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 CA,California,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 CA,California,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
@@ -29,12 +25,10 @@ CO,Colorado,school-cellphone-bans-phone-free-school-policies,pending_research,un
 CO,Colorado,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 CO,Colorado,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 CT,Connecticut,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-CT,Connecticut,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 CT,Connecticut,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 CT,Connecticut,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 CT,Connecticut,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 DE,Delaware,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-DE,Delaware,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 DE,Delaware,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 DE,Delaware,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 DE,Delaware,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
@@ -42,17 +36,14 @@ FL,Florida,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add whe
 FL,Florida,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 FL,Florida,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 GA,Georgia,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-GA,Georgia,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 GA,Georgia,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 GA,Georgia,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 GA,Georgia,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 HI,Hawaii,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-HI,Hawaii,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 HI,Hawaii,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 HI,Hawaii,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 HI,Hawaii,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 ID,Idaho,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-ID,Idaho,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 ID,Idaho,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 ID,Idaho,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 ID,Idaho,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
@@ -62,7 +53,6 @@ IL,Illinois,florida-a-school-grading-accountability-plan,pending_research,unknow
 IL,Illinois,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 IL,Illinois,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 IN,Indiana,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-IN,Indiana,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 IN,Indiana,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 IN,Indiana,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 IN,Indiana,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
@@ -72,42 +62,34 @@ IA,Iowa,florida-a-school-grading-accountability-plan,pending_research,unknown,,,
 IA,Iowa,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 IA,Iowa,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 KS,Kansas,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-KS,Kansas,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 KS,Kansas,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 KS,Kansas,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 KS,Kansas,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 KY,Kentucky,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-KY,Kentucky,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 KY,Kentucky,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 KY,Kentucky,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 KY,Kentucky,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 LA,Louisiana,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-LA,Louisiana,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 LA,Louisiana,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 LA,Louisiana,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 LA,Louisiana,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 ME,Maine,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-ME,Maine,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 ME,Maine,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 ME,Maine,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 ME,Maine,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MD,Maryland,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-MD,Maryland,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MD,Maryland,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MD,Maryland,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MD,Maryland,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MA,Massachusetts,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-MA,Massachusetts,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MA,Massachusetts,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MA,Massachusetts,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MA,Massachusetts,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MI,Michigan,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-MI,Michigan,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MI,Michigan,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MI,Michigan,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MI,Michigan,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MN,Minnesota,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-MN,Minnesota,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MN,Minnesota,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MN,Minnesota,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MN,Minnesota,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
@@ -116,37 +98,30 @@ MS,Mississippi,florida-a-school-grading-accountability-plan,pending_research,unk
 MS,Mississippi,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MS,Mississippi,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MO,Missouri,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-MO,Missouri,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MO,Missouri,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MO,Missouri,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MO,Missouri,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MT,Montana,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-MT,Montana,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MT,Montana,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MT,Montana,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 MT,Montana,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NE,Nebraska,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-NE,Nebraska,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NE,Nebraska,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NE,Nebraska,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NE,Nebraska,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NV,Nevada,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-NV,Nevada,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NV,Nevada,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NV,Nevada,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NV,Nevada,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NH,New Hampshire,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-NH,New Hampshire,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NH,New Hampshire,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NH,New Hampshire,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NH,New Hampshire,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NJ,New Jersey,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-NJ,New Jersey,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NJ,New Jersey,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NJ,New Jersey,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NJ,New Jersey,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NM,New Mexico,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-NM,New Mexico,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NM,New Mexico,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NM,New Mexico,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NM,New Mexico,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
@@ -154,54 +129,43 @@ NY,New York,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add wh
 NY,New York,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NY,New York,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NY,New York,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-NY,New York,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NC,North Carolina,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-NC,North Carolina,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NC,North Carolina,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NC,North Carolina,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 NC,North Carolina,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 ND,North Dakota,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-ND,North Dakota,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 ND,North Dakota,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 ND,North Dakota,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 ND,North Dakota,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 OH,Ohio,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-OH,Ohio,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 OH,Ohio,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 OH,Ohio,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 OH,Ohio,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 OK,Oklahoma,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-OK,Oklahoma,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 OK,Oklahoma,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 OK,Oklahoma,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 OK,Oklahoma,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 OR,Oregon,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-OR,Oregon,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 OR,Oregon,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 OR,Oregon,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 OR,Oregon,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 PA,Pennsylvania,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-PA,Pennsylvania,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 PA,Pennsylvania,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 PA,Pennsylvania,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 PA,Pennsylvania,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 RI,Rhode Island,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-RI,Rhode Island,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 RI,Rhode Island,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 RI,Rhode Island,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 RI,Rhode Island,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 SC,South Carolina,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-SC,South Carolina,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 SC,South Carolina,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 SC,South Carolina,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 SC,South Carolina,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 SD,South Dakota,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-SD,South Dakota,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 SD,South Dakota,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 SD,South Dakota,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 SD,South Dakota,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 TN,Tennessee,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-TN,Tennessee,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 TN,Tennessee,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 TN,Tennessee,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 TN,Tennessee,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
@@ -209,17 +173,14 @@ TX,Texas,school-cellphone-bans-phone-free-school-policies,pending_research,unkno
 TX,Texas,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 TX,Texas,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 UT,Utah,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-UT,Utah,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 UT,Utah,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 UT,Utah,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 UT,Utah,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 VT,Vermont,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-VT,Vermont,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 VT,Vermont,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 VT,Vermont,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 VT,Vermont,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 VA,Virginia,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-VA,Virginia,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 VA,Virginia,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 VA,Virginia,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 VA,Virginia,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
@@ -229,17 +190,14 @@ WA,Washington,florida-a-school-grading-accountability-plan,pending_research,unkn
 WA,Washington,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 WA,Washington,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 WV,West Virginia,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-WV,West Virginia,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 WV,West Virginia,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 WV,West Virginia,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 WV,West Virginia,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 WI,Wisconsin,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-WI,Wisconsin,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 WI,Wisconsin,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 WI,Wisconsin,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 WI,Wisconsin,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 WY,Wyoming,literacy-based-promotion-laws,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
-WY,Wyoming,school-cellphone-bans-phone-free-school-policies,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 WY,Wyoming,florida-a-school-grading-accountability-plan,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 WY,Wyoming,careerwise-colorado-youth-apprenticeship,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.
 WY,Wyoming,p-tech-9-14,pending_research,unknown,,,todo,Add when official state implementation or strong evaluation evidence is identified.

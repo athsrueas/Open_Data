@@ -5,21 +5,24 @@
     "queueCsv": "outputs\\us_education_initiatives\\sources\\download_queue.csv"
   },
   "counts": {
-    "rows": 37,
+    "rows": 39,
     "repositories": {
       "annenberg": 1,
       "apprenticeship_gov": 1,
+      "consortium_uchicago": 1,
       "digital_commons": 1,
       "econbiz": 1,
       "ecs": 1,
-      "ed_gov": 5,
+      "ed_gov": 4,
       "ed_gov_archive": 1,
-      "eric": 3,
+      "eric": 2,
+      "federal_register": 1,
       "govinfo": 1,
       "govtech": 1,
+      "ies": 1,
       "mdrc": 3,
       "nber": 4,
-      "official_district_archive": 1,
+      "nichd": 1,
       "official_program_archive": 1,
       "official_program_site": 3,
       "official_standards_site": 1,
@@ -27,11 +30,11 @@
       "open_pdf_mirror": 1,
       "pubmed": 1,
       "sage": 1,
-      "state_program_overview": 1
+      "state_program_overview": 1,
+      "taylor_francis": 1
     },
     "statuses": {
-      "pending_search": 2,
-      "queued": 35
+      "downloaded": 39
     }
   },
   "sources": [
@@ -43,7 +46,7 @@
       "url": "https://mdek12.org/literacy/lbpa/",
       "retrievalMode": "manual_html_capture",
       "targetRelpath": "raw/official/mississippi/mde_lbpa.html",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_mississippi_eval_spencer_eer",
@@ -53,7 +56,7 @@
       "url": "https://www.econbiz.de/Record/comprehensive-early-literacy-policy-and-the-mississippi-miracle-spencer-noah/10015358187",
       "retrievalMode": "manual_html_capture",
       "targetRelpath": "raw/scholarly/mississippi/spencer_2024_mississippi_miracle.html",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_literacy_promotion_primary_mde_lbpa",
@@ -63,7 +66,7 @@
       "url": "https://mdek12.org/literacy/lbpa/",
       "retrievalMode": "manual_html_capture",
       "targetRelpath": "raw/official/literacy_promotion/mississippi_lbpa.html",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_literacy_promotion_eval_texas_retention",
@@ -73,7 +76,7 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/25131271/",
       "retrievalMode": "manual_html_capture",
       "targetRelpath": "raw/scholarly/literacy_promotion/texas_retention_study.html",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_commoncore_primary_ccss_intro",
@@ -83,7 +86,7 @@
       "url": "https://www.thecorestandards.org/assets/ccssi-introduction.pdf",
       "retrievalMode": "direct_pdf",
       "targetRelpath": "raw/official/common_core/ccss_intro.pdf",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_commoncore_eval_bleiberg",
@@ -93,7 +96,7 @@
       "url": "https://files.eric.ed.gov/fulltext/EJ1323929.pdf",
       "retrievalMode": "direct_pdf",
       "targetRelpath": "raw/scholarly/common_core/bleiberg_2021_common_core.pdf",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_nclb_primary_congress",
@@ -103,7 +106,7 @@
       "url": "https://www.govinfo.gov/cgiredirects/getdoc.action?dbname=107_cong_bills&docid=f%3Ah1eh.txt.pdf",
       "retrievalMode": "direct_pdf",
       "targetRelpath": "raw/official/nclb/nclb_statute.pdf",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_nclb_eval_dee_jacob",
@@ -113,17 +116,17 @@
       "url": "https://www.nber.org/papers/w15531",
       "retrievalMode": "direct_pdf",
       "targetRelpath": "raw/scholarly/nclb/dee_jacob_2009_nclb.pdf",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_chicago_primary_accountability",
       "initiativeId": "chicago-test-based-promotion-and-accountability-reforms",
       "role": "primary",
-      "repository": "official_district_archive",
-      "url": "",
-      "retrievalMode": "manual_archive_search",
-      "targetRelpath": "raw/official/chicago/chicago_accountability_policy_pending.txt",
-      "status": "pending_search"
+      "repository": "consortium_uchicago",
+      "url": "https://consortium.uchicago.edu/sites/default/files/2018-10/p70.pdf",
+      "retrievalMode": "direct_pdf",
+      "targetRelpath": "raw/technical/chicago/consortium_ending_social_promotion_p70.pdf",
+      "status": "downloaded"
     },
     {
       "sourceId": "src_chicago_eval_jacob_testing",
@@ -133,7 +136,7 @@
       "url": "https://www.nber.org/papers/w8968",
       "retrievalMode": "direct_pdf",
       "targetRelpath": "raw/scholarly/chicago/jacob_2002_high_stakes_testing.pdf",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_chicago_eval_jacob_lefgren",
@@ -143,7 +146,7 @@
       "url": "https://www.nber.org/papers/w8918",
       "retrievalMode": "direct_pdf",
       "targetRelpath": "raw/scholarly/chicago/jacob_lefgren_2002_remedial_education.pdf",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_florida_a_plus_primary_fldoe",
@@ -153,7 +156,7 @@
       "url": "https://www.fldoe.org/accountability/accountability-reporting/school-grades/",
       "retrievalMode": "manual_html_capture",
       "targetRelpath": "raw/official/florida_a_plus/fldoe_school_grades.html",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_florida_a_plus_eval_figlio_rouse",
@@ -163,7 +166,7 @@
       "url": "https://law.yale.edu/sites/default/files/documents/pdf/Do_Accountability_and_Voucher_Threats.pdf",
       "retrievalMode": "direct_pdf",
       "targetRelpath": "raw/scholarly/florida_a_plus/figlio_rouse_2006_accountability.pdf",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_career_academies_primary_ncac",
@@ -173,7 +176,7 @@
       "url": "https://www.ncacinc.com/",
       "retrievalMode": "manual_html_capture",
       "targetRelpath": "raw/official/career_academies/ncac_homepage.html",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_career_academies_eval_mdrc",
@@ -183,7 +186,7 @@
       "url": "https://www.mdrc.org/work/publications/career-academies-long-term-impacts-work-education-and-transitions-adulthood",
       "retrievalMode": "direct_pdf",
       "targetRelpath": "raw/technical/career_academies/mdrc_career_academies_2008.pdf",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_ptech_primary_tea",
@@ -193,7 +196,7 @@
       "url": "https://tea.texas.gov/academics/college-career-and-military-prep/career-and-technical-education/appendix-d-ptech-blueprint.pdf",
       "retrievalMode": "direct_pdf",
       "targetRelpath": "raw/official/ptech/tea_ptech_blueprint.pdf",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_ptech_eval_mdrc",
@@ -203,7 +206,7 @@
       "url": "https://www.mdrc.org/sites/default/files/P-TECH_Final_Report.pdf",
       "retrievalMode": "direct_pdf",
       "targetRelpath": "raw/technical/ptech/mdrc_ptech_final_report.pdf",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_ptech_primary_nystate",
@@ -213,7 +216,7 @@
       "url": "https://ppinys.org/about-p-tech",
       "retrievalMode": "manual_html_capture",
       "targetRelpath": "raw/official/ptech/ny_ptech_overview.html",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_careerwise_primary_site",
@@ -223,7 +226,7 @@
       "url": "https://www.careerwiseusa.org/research-insights",
       "retrievalMode": "manual_html_capture",
       "targetRelpath": "raw/official/careerwise/careerwise_research_archive.html",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_careerwise_eval_mdrc",
@@ -233,7 +236,7 @@
       "url": "https://www.mdrc.org/node/16615",
       "retrievalMode": "manual_html_capture",
       "targetRelpath": "raw/technical/careerwise/mdrc_careerwise_study_page.html",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_careerwise_eval_harvard",
@@ -243,7 +246,7 @@
       "url": "https://www.apprenticeship.gov/sites/default/files/Harvard%20Business%20School%20Study%20of%20CareerWise%20Apprenticeships.pdf",
       "retrievalMode": "direct_pdf",
       "targetRelpath": "raw/technical/careerwise/harvard_careerwise_options_multiplier.pdf",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_school_garden_primary_txsprouts",
@@ -253,7 +256,7 @@
       "url": "https://www.txsprouts.com/evaluation",
       "retrievalMode": "manual_html_capture",
       "targetRelpath": "raw/official/school_gardens/txsprouts_evaluation.html",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_school_garden_eval_academic",
@@ -263,17 +266,17 @@
       "url": "https://digitalcommons.library.tmc.edu/uthsph_docs/1321/",
       "retrievalMode": "manual_html_capture",
       "targetRelpath": "raw/scholarly/school_gardens/txsprouts_academic_performance_2023.html",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_school_garden_eval_science",
       "initiativeId": "school-garden-interventions",
       "role": "evaluation",
-      "repository": "eric",
-      "url": "https://eric.ed.gov/?id=EJ1083156",
-      "retrievalMode": "eric_record_plus_pdf_search",
-      "targetRelpath": "raw/scholarly/school_gardens/school_garden_science_knowledge_2015.txt",
-      "status": "queued"
+      "repository": "taylor_francis",
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/09500693.2015.1112048?journalCode=tse",
+      "retrievalMode": "manual_html_capture",
+      "targetRelpath": "raw/scholarly/school_gardens/school_garden_science_knowledge_2015.html",
+      "status": "downloaded"
     },
     {
       "sourceId": "src_phone_ban_eval_nber",
@@ -283,7 +286,7 @@
       "url": "https://www.nber.org/papers/w34388",
       "retrievalMode": "direct_pdf",
       "targetRelpath": "raw/scholarly/phone_bans/figlio_ozek_2025_phone_bans.pdf",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_phone_ban_review_scoping",
@@ -291,9 +294,9 @@
       "role": "review",
       "repository": "sage",
       "url": "https://journals.sagepub.com/doi/10.1177/20556365241270394",
-      "retrievalMode": "landing_page_plus_pdf",
-      "targetRelpath": "raw/scholarly/phone_bans/scoping_review_2024_phone_policies.pdf",
-      "status": "queued"
+      "retrievalMode": "manual_html_capture",
+      "targetRelpath": "raw/scholarly/phone_bans/scoping_review_2024_phone_policies.html",
+      "status": "downloaded"
     },
     {
       "sourceId": "src_phone_policy_ecs_state_scan",
@@ -303,7 +306,7 @@
       "url": "https://www.ecs.org/wp-content/uploads/Cell-Phone-Policies-State-Information-Request-2025.pdf",
       "retrievalMode": "manual_html_capture",
       "targetRelpath": "raw/official/phone_bans/ecs_state_info_request_2025.pdf",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_tutoring_primary_ed_brief",
@@ -313,7 +316,7 @@
       "url": "https://www.ed.gov/sites/ed/files/2024/06/High-Dosage-Tutoring.pdf",
       "retrievalMode": "direct_pdf",
       "targetRelpath": "raw/official/tutoring/high_dosage_tutoring_ed_2024.pdf",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_tutoring_eval_annenberg",
@@ -323,7 +326,7 @@
       "url": "https://annenberg.brown.edu/news/addressing-unfinished-learning-targeted-help-and-high-dosage-tutoring",
       "retrievalMode": "manual_html_capture",
       "targetRelpath": "raw/scholarly/tutoring/annenberg_high_dosage_tutoring_2021.html",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_ai_primary_ed_priorities",
@@ -333,7 +336,7 @@
       "url": "https://www.ed.gov/about/news/press-release/us-department-of-education-releases-secretary-mcmahons-meaningful-learning-and-workforce-readiness-supplemental-priorities",
       "retrievalMode": "manual_html_capture",
       "targetRelpath": "raw/official/ai/ed_ai_priorities_2025.html",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_ai_context_ed_initiatives",
@@ -343,7 +346,7 @@
       "url": "https://www.ed.gov/about/initiatives",
       "retrievalMode": "manual_html_capture",
       "targetRelpath": "raw/official/ai/ed_initiatives_overview.html",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_raise_bar_career_primary",
@@ -353,7 +356,7 @@
       "url": "https://learnworkecosystemlibrary.com/archive/Raise%20the%20Bar-Postsecondary%20and%20Career%20Pathways.html",
       "retrievalMode": "manual_html_capture",
       "targetRelpath": "raw/official/raise_bar/raise_bar_career_pathways.html",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_raise_bar_career_supporting",
@@ -363,7 +366,7 @@
       "url": "https://www.govtech.com/education/k-12/what-does-federal-raise-the-bar-initiative-mean-for-cte",
       "retrievalMode": "manual_html_capture",
       "targetRelpath": "raw/technical/raise_bar/govtech_raise_bar_cte.html",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_literacy_priority_primary",
@@ -373,27 +376,27 @@
       "url": "https://www.ed.gov/about/news/press-release/us-department-of-education-releases-secretary-mcmahons-meaningful-learning-and-workforce-readiness-supplemental-priorities",
       "retrievalMode": "manual_html_capture",
       "targetRelpath": "raw/official/literacy/ed_literacy_priority_2025.html",
-      "status": "queued"
+      "status": "downloaded"
     },
     {
       "sourceId": "src_literacy_priority_supporting",
       "initiativeId": "evidence-based-literacy-priority",
       "role": "review",
-      "repository": "ed_gov",
-      "url": "https://www.ed.gov/sites/ed/files/about/inits/ed/raise-the-bar/1_9_AcademicSuccessBookletResource_v2_508_v3rev59.pdf",
-      "retrievalMode": "direct_pdf",
-      "targetRelpath": "raw/official/literacy/ed_academic_success_strategies.pdf",
-      "status": "queued"
+      "repository": "federal_register",
+      "url": "https://www.federalregister.gov/documents/2025/09/09/2025-17310/final-priorities-and-definitions-secretarys-supplemental-priorities-and-definitions-on",
+      "retrievalMode": "manual_html_capture",
+      "targetRelpath": "raw/official/literacy/federal_register_evidence_based_literacy_2025.html",
+      "status": "downloaded"
     },
     {
       "sourceId": "src_gates_millennium_primary_archive",
       "initiativeId": "gates-millennium-scholars",
       "role": "primary",
       "repository": "official_program_archive",
-      "url": "",
-      "retrievalMode": "manual_archive_search",
-      "targetRelpath": "raw/official/gms/gms_program_archive_pending.txt",
-      "status": "pending_search"
+      "url": "https://gmsp.org/docs/reports/R6_FINAL_Gates_2014_AR.PDF",
+      "retrievalMode": "direct_pdf",
+      "targetRelpath": "raw/official/gms/gms_annual_report_2014.pdf",
+      "status": "downloaded"
     },
     {
       "sourceId": "src_gates_millennium_eval_desjardins",
@@ -403,7 +406,27 @@
       "url": "https://files.eric.ed.gov/fulltext/ED539716.pdf",
       "retrievalMode": "direct_pdf",
       "targetRelpath": "raw/scholarly/gms/expanding_access_gms_2010.pdf",
-      "status": "queued"
+      "status": "downloaded"
+    },
+    {
+      "sourceId": "src_sor_primary_ies_practice_guide",
+      "initiativeId": "science-of-reading-sor",
+      "role": "primary",
+      "repository": "ies",
+      "url": "https://ies.ed.gov/ncee/wwc/PracticeGuide/21",
+      "retrievalMode": "direct_pdf",
+      "targetRelpath": "raw/official/sor/ies_foundational_skills_practice_guide.pdf",
+      "status": "downloaded"
+    },
+    {
+      "sourceId": "src_sor_eval_nrp_report",
+      "initiativeId": "science-of-reading-sor",
+      "role": "evaluation",
+      "repository": "nichd",
+      "url": "https://www.nichd.nih.gov/sites/default/files/publications/pubs/nrp/Documents/report.pdf",
+      "retrievalMode": "direct_pdf",
+      "targetRelpath": "raw/technical/sor/nrp_teaching_children_to_read_2000.pdf",
+      "status": "downloaded"
     }
   ]
 }
