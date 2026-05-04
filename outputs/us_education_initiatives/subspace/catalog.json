@@ -1,7 +1,7 @@
 {
   "subspace": "us_education_initiatives",
   "title": "U.S. Education Initiatives Atlas",
-  "generatedAt": "2026-05-02T05:27:55.316627+00:00",
+  "generatedAt": "2026-05-04T17:27:34.347864+00:00",
   "sourcePaths": {
     "initiativesCsv": "Education Initiatives\\education_initiatives.csv",
     "evidenceCsv": "Education Initiatives\\initiative_evidence_reviews.csv",
@@ -18,13 +18,13 @@
     "viewerDataJs": "viewer\\us_education_initiatives\\data.js"
   },
   "summary": {
-    "initiativeCount": 13,
-    "categoryCount": 13,
-    "latestStartYear": 2023,
-    "activeNowCount": 10,
+    "initiativeCount": 17,
+    "categoryCount": 17,
+    "latestStartYear": 2025,
+    "activeNowCount": 14,
     "evidenceStatuses": {
-      "orientation_complete": 2,
-      "scholarly_reviewed": 11
+      "orientation_complete": 5,
+      "scholarly_reviewed": 12
     }
   }
 }

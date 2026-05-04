@@ -63,13 +63,13 @@ button {
 }
 
 .hero {
-  min-height: calc(100svh - 48px);
+  min-height: 0;
   border-radius: 32px;
-  padding: clamp(24px, 4vw, 52px);
+  padding: clamp(16px, 2.2vw, 28px);
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.7fr);
   gap: 24px;
-  align-items: end;
+  align-items: start;
 }
 
 .eyebrow,
@@ -128,7 +128,7 @@ button {
   display: grid;
   gap: 10px;
   align-self: stretch;
-  align-content: end;
+  align-content: start;
 }
 
 .feature-button,

@@ -1,15 +1,15 @@
 {
   "title": "U.S. Education Initiatives Atlas",
   "subtitle": "A reusable initiative dataset and browser for education reforms, programs, and policy movements across the United States.",
-  "generatedAt": "2026-05-02T05:27:55.316627+00:00",
+  "generatedAt": "2026-05-04T17:27:34.347864+00:00",
   "summary": {
-    "initiativeCount": 13,
-    "categoryCount": 13,
-    "latestStartYear": 2023,
-    "activeNowCount": 10,
+    "initiativeCount": 17,
+    "categoryCount": 17,
+    "latestStartYear": 2025,
+    "activeNowCount": 14,
     "evidenceStatuses": {
-      "orientation_complete": 2,
-      "scholarly_reviewed": 11
+      "orientation_complete": 5,
+      "scholarly_reviewed": 12
     }
   },
   "featuredInitiativeIds": [
@@ -19,6 +19,14 @@
   ],
   "categoryCounts": [
     {
+      "label": "Academic recovery initiative",
+      "count": 1
+    },
+    {
+      "label": "Career-connected learning initiative",
+      "count": 1
+    },
+    {
       "label": "College-to-career pathway model",
       "count": 1
     },
@@ -27,7 +35,15 @@
       "count": 1
     },
     {
+      "label": "Education technology policy initiative",
+      "count": 1
+    },
+    {
       "label": "Federal accountability policy",
+      "count": 1
+    },
+    {
+      "label": "Federal literacy priority",
       "count": 1
     },
     {
@@ -74,7 +90,7 @@
   "locationCounts": [
     {
       "scope": "national",
-      "count": 5
+      "count": 9
     },
     {
       "scope": "state",
@@ -100,7 +116,7 @@
     },
     {
       "era": "2020s",
-      "count": 1
+      "count": 5
     },
     {
       "era": "Unknown",
@@ -114,6 +130,10 @@
     },
     {
       "label": "sanctions",
+      "count": 2
+    },
+    {
+      "label": "Career pathways",
       "count": 2
     },
     {
@@ -151,10 +171,6 @@
     {
       "label": "Evidence-based reading instruction",
       "count": 1
-    },
-    {
-      "label": "structured literacy",
-      "count": 1
     }
   ],
   "stateMap": {
@@ -187,9 +203,9 @@
     ],
     "summary": {
       "stateCount": 50,
-      "statesWithDirectAnchors": 9,
-      "nationalInitiativeCount": 5,
-      "directAnchorRowCount": 13
+      "statesWithDirectAnchors": 50,
+      "nationalInitiativeCount": 9,
+      "directAnchorRowCount": 105
     },
     "states": [
       {
@@ -198,21 +214,26 @@
         "tileCol": 0,
         "tileRow": 0,
         "insetGroup": "main",
-        "directAnchorCount": 1,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 9,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 1,
         "reducedTechnologyAnchorCount": 0,
         "anchorInitiativeIds": [
+          "no-child-left-behind-annual-testing-accountability",
           "school-garden-interventions"
         ],
         "nationalInitiativeIds": [
+          "advancing-ai-in-education",
           "career-academies",
+          "evidence-based-literacy-priority",
           "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
           "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
@@ -227,6 +248,18 @@
             ],
             "evidenceBasis": "School garden science trial included Washington sites",
             "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
           }
         ]
       },
@@ -236,23 +269,54 @@
         "tileCol": 1,
         "tileRow": 0,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Idaho state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "MT",
@@ -260,23 +324,54 @@
         "tileCol": 2,
         "tileRow": 0,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Montana state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "ND",
@@ -284,23 +379,54 @@
         "tileCol": 4,
         "tileRow": 0,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "North Dakota state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "MN",
@@ -308,23 +434,54 @@
         "tileCol": 5,
         "tileRow": 0,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Minnesota state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "WI",
@@ -332,23 +489,54 @@
         "tileCol": 6,
         "tileRow": 0,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Wisconsin state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "MI",
@@ -356,23 +544,54 @@
         "tileCol": 7,
         "tileRow": 0,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Michigan state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "NY",
@@ -380,25 +599,43 @@
         "tileCol": 9,
         "tileRow": 0,
         "insetGroup": "main",
-        "directAnchorCount": 1,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 3,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
-        "workBasedAnchorCount": 0,
+        "testingAnchorCount": 1,
+        "workBasedAnchorCount": 1,
         "outdoorAnchorCount": 1,
         "reducedTechnologyAnchorCount": 0,
         "anchorInitiativeIds": [
+          "no-child-left-behind-annual-testing-accountability",
+          "p-tech-9-14",
           "school-garden-interventions"
         ],
         "nationalInitiativeIds": [
+          "advancing-ai-in-education",
           "career-academies",
+          "evidence-based-literacy-priority",
           "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
           "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
         "anchorDetails": [
+          {
+            "initiativeId": "p-tech-9-14",
+            "initiative": "P-TECH 9-14",
+            "anchorType": "implementation_anchor",
+            "anchorStrength": "strong",
+            "sourceIds": [
+              "src_ptech_primary_nystate",
+              "src_ptech_eval_mdrc"
+            ],
+            "evidenceBasis": "New York statewide P-TECH implementation anchor",
+            "notes": ""
+          },
           {
             "initiativeId": "school-garden-interventions",
             "initiative": "School garden interventions",
@@ -409,6 +646,18 @@
             ],
             "evidenceBasis": "School garden science trial included New York sites",
             "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
           }
         ]
       },
@@ -418,23 +667,54 @@
         "tileCol": 10,
         "tileRow": 0,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Vermont state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "NH",
@@ -442,23 +722,54 @@
         "tileCol": 11,
         "tileRow": 0,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "New Hampshire state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "ME",
@@ -466,23 +777,54 @@
         "tileCol": 12,
         "tileRow": 0,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Maine state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "OR",
@@ -490,23 +832,54 @@
         "tileCol": 0,
         "tileRow": 1,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Oregon state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "NV",
@@ -514,23 +887,54 @@
         "tileCol": 1,
         "tileRow": 1,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Nevada state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "WY",
@@ -538,23 +942,54 @@
         "tileCol": 2,
         "tileRow": 1,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Wyoming state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "SD",
@@ -562,23 +997,54 @@
         "tileCol": 4,
         "tileRow": 1,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "South Dakota state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "IA",
@@ -586,21 +1052,26 @@
         "tileCol": 5,
         "tileRow": 1,
         "insetGroup": "main",
-        "directAnchorCount": 1,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 9,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 1,
         "reducedTechnologyAnchorCount": 0,
         "anchorInitiativeIds": [
+          "no-child-left-behind-annual-testing-accountability",
           "school-garden-interventions"
         ],
         "nationalInitiativeIds": [
+          "advancing-ai-in-education",
           "career-academies",
+          "evidence-based-literacy-priority",
           "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
           "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
@@ -615,6 +1086,18 @@
             ],
             "evidenceBasis": "School garden science trial included Iowa sites",
             "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
           }
         ]
       },
@@ -624,21 +1107,26 @@
         "tileCol": 6,
         "tileRow": 1,
         "insetGroup": "main",
-        "directAnchorCount": 1,
-        "nationalContextCount": 5,
-        "combinedCount": 6,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 1,
+        "testingAnchorCount": 2,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 0,
         "anchorInitiativeIds": [
-          "chicago-test-based-promotion-and-accountability-reforms"
+          "chicago-test-based-promotion-and-accountability-reforms",
+          "no-child-left-behind-annual-testing-accountability"
         ],
         "nationalInitiativeIds": [
+          "advancing-ai-in-education",
           "career-academies",
+          "evidence-based-literacy-priority",
           "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
           "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
@@ -654,6 +1142,18 @@
             ],
             "evidenceBasis": "Chicago Public Schools reforms anchor to Illinois",
             "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
           }
         ]
       },
@@ -663,23 +1163,54 @@
         "tileCol": 7,
         "tileRow": 1,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Indiana state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "OH",
@@ -687,23 +1218,54 @@
         "tileCol": 8,
         "tileRow": 1,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Ohio state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "PA",
@@ -711,23 +1273,54 @@
         "tileCol": 9,
         "tileRow": 1,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Pennsylvania state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "NJ",
@@ -735,23 +1328,54 @@
         "tileCol": 10,
         "tileRow": 1,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "New Jersey state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "MA",
@@ -759,23 +1383,54 @@
         "tileCol": 11,
         "tileRow": 1,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Massachusetts state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "RI",
@@ -783,23 +1438,54 @@
         "tileCol": 12,
         "tileRow": 1,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Rhode Island state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "CA",
@@ -807,23 +1493,54 @@
         "tileCol": 0,
         "tileRow": 2,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "California state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "UT",
@@ -831,23 +1548,54 @@
         "tileCol": 1,
         "tileRow": 2,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Utah state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "CO",
@@ -855,21 +1603,26 @@
         "tileCol": 2,
         "tileRow": 2,
         "insetGroup": "main",
-        "directAnchorCount": 1,
-        "nationalContextCount": 5,
-        "combinedCount": 6,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 1,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 0,
         "anchorInitiativeIds": [
-          "careerwise-colorado-youth-apprenticeship"
+          "careerwise-colorado-youth-apprenticeship",
+          "no-child-left-behind-annual-testing-accountability"
         ],
         "nationalInitiativeIds": [
+          "advancing-ai-in-education",
           "career-academies",
+          "evidence-based-literacy-priority",
           "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
           "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
@@ -886,6 +1639,18 @@
             ],
             "evidenceBasis": "Colorado youth apprenticeship model anchor",
             "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
           }
         ]
       },
@@ -895,23 +1660,54 @@
         "tileCol": 4,
         "tileRow": 2,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Nebraska state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "MO",
@@ -919,23 +1715,54 @@
         "tileCol": 5,
         "tileRow": 2,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Missouri state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "KY",
@@ -943,23 +1770,54 @@
         "tileCol": 6,
         "tileRow": 2,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Kentucky state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "WV",
@@ -967,23 +1825,54 @@
         "tileCol": 7,
         "tileRow": 2,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "West Virginia state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "VA",
@@ -991,23 +1880,54 @@
         "tileCol": 8,
         "tileRow": 2,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Virginia state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "MD",
@@ -1015,23 +1935,54 @@
         "tileCol": 9,
         "tileRow": 2,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Maryland state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "DE",
@@ -1039,23 +1990,54 @@
         "tileCol": 10,
         "tileRow": 2,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Delaware state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "CT",
@@ -1063,23 +2045,54 @@
         "tileCol": 11,
         "tileRow": 2,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Connecticut state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "AZ",
@@ -1087,23 +2100,54 @@
         "tileCol": 1,
         "tileRow": 3,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Arizona state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "NM",
@@ -1111,23 +2155,54 @@
         "tileCol": 2,
         "tileRow": 3,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "New Mexico state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "KS",
@@ -1135,23 +2210,54 @@
         "tileCol": 4,
         "tileRow": 3,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Kansas state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "AR",
@@ -1159,21 +2265,26 @@
         "tileCol": 5,
         "tileRow": 3,
         "insetGroup": "main",
-        "directAnchorCount": 1,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 9,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 1,
         "reducedTechnologyAnchorCount": 0,
         "anchorInitiativeIds": [
+          "no-child-left-behind-annual-testing-accountability",
           "school-garden-interventions"
         ],
         "nationalInitiativeIds": [
+          "advancing-ai-in-education",
           "career-academies",
+          "evidence-based-literacy-priority",
           "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
           "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
@@ -1188,6 +2299,18 @@
             ],
             "evidenceBasis": "School garden science trial included Arkansas sites",
             "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
           }
         ]
       },
@@ -1197,23 +2320,54 @@
         "tileCol": 6,
         "tileRow": 3,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Tennessee state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "NC",
@@ -1221,23 +2375,54 @@
         "tileCol": 8,
         "tileRow": 3,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "North Carolina state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "SC",
@@ -1245,23 +2430,54 @@
         "tileCol": 9,
         "tileRow": 3,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "South Carolina state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "TX",
@@ -1269,23 +2485,28 @@
         "tileCol": 3,
         "tileRow": 4,
         "insetGroup": "main",
-        "directAnchorCount": 3,
-        "nationalContextCount": 5,
-        "combinedCount": 7,
+        "directAnchorCount": 4,
+        "nationalContextCount": 9,
+        "combinedCount": 11,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 1,
+        "testingAnchorCount": 2,
         "workBasedAnchorCount": 1,
         "outdoorAnchorCount": 1,
         "reducedTechnologyAnchorCount": 0,
         "anchorInitiativeIds": [
           "literacy-based-promotion-laws",
+          "no-child-left-behind-annual-testing-accountability",
           "p-tech-9-14",
           "school-garden-interventions"
         ],
         "nationalInitiativeIds": [
+          "advancing-ai-in-education",
           "career-academies",
+          "evidence-based-literacy-priority",
           "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
           "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
@@ -1323,6 +2544,18 @@
             ],
             "evidenceBasis": "Texas cluster randomized TX Sprouts study anchor",
             "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
           }
         ]
       },
@@ -1332,23 +2565,54 @@
         "tileCol": 4,
         "tileRow": 4,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Oklahoma state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "LA",
@@ -1356,23 +2620,54 @@
         "tileCol": 5,
         "tileRow": 4,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Louisiana state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "MS",
@@ -1380,22 +2675,27 @@
         "tileCol": 6,
         "tileRow": 4,
         "insetGroup": "main",
-        "directAnchorCount": 2,
-        "nationalContextCount": 5,
-        "combinedCount": 7,
+        "directAnchorCount": 3,
+        "nationalContextCount": 9,
+        "combinedCount": 11,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 2,
+        "testingAnchorCount": 3,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 0,
         "anchorInitiativeIds": [
           "literacy-based-promotion-laws",
-          "mississippi-miracle"
+          "mississippi-miracle",
+          "no-child-left-behind-annual-testing-accountability"
         ],
         "nationalInitiativeIds": [
+          "advancing-ai-in-education",
           "career-academies",
+          "evidence-based-literacy-priority",
           "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
           "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
@@ -1422,6 +2722,18 @@
             ],
             "evidenceBasis": "Mississippi literacy-promotion implementation anchor",
             "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
           }
         ]
       },
@@ -1431,23 +2743,54 @@
         "tileCol": 7,
         "tileRow": 4,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Alabama state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "GA",
@@ -1455,23 +2798,54 @@
         "tileCol": 8,
         "tileRow": 4,
         "insetGroup": "main",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Georgia state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "FL",
@@ -1479,22 +2853,27 @@
         "tileCol": 9,
         "tileRow": 5,
         "insetGroup": "main",
-        "directAnchorCount": 2,
-        "nationalContextCount": 5,
-        "combinedCount": 7,
+        "directAnchorCount": 3,
+        "nationalContextCount": 9,
+        "combinedCount": 11,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 1,
+        "testingAnchorCount": 2,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
         "reducedTechnologyAnchorCount": 1,
         "anchorInitiativeIds": [
           "florida-a-school-grading-accountability-plan",
+          "no-child-left-behind-annual-testing-accountability",
           "school-cellphone-bans-phone-free-school-policies"
         ],
         "nationalInitiativeIds": [
+          "advancing-ai-in-education",
           "career-academies",
+          "evidence-based-literacy-priority",
           "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
           "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
@@ -1522,6 +2901,18 @@
             ],
             "evidenceBasis": "Florida district evidence anchor for school cellphone bans",
             "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
           }
         ]
       },
@@ -1531,23 +2922,54 @@
         "tileCol": 0,
         "tileRow": 0,
         "insetGroup": "alaska",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Alaska state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       },
       {
         "code": "HI",
@@ -1555,23 +2977,54 @@
         "tileCol": 1,
         "tileRow": 0,
         "insetGroup": "hawaii",
-        "directAnchorCount": 0,
-        "nationalContextCount": 5,
-        "combinedCount": 5,
+        "directAnchorCount": 2,
+        "nationalContextCount": 9,
+        "combinedCount": 10,
         "strongestEvidenceScore": 5,
-        "testingAnchorCount": 0,
+        "testingAnchorCount": 1,
         "workBasedAnchorCount": 0,
         "outdoorAnchorCount": 0,
-        "reducedTechnologyAnchorCount": 0,
-        "anchorInitiativeIds": [],
-        "nationalInitiativeIds": [
-          "career-academies",
-          "gates-millennium-scholars",
+        "reducedTechnologyAnchorCount": 1,
+        "anchorInitiativeIds": [
           "no-child-left-behind-annual-testing-accountability",
+          "school-cellphone-bans-phone-free-school-policies"
+        ],
+        "nationalInitiativeIds": [
+          "advancing-ai-in-education",
+          "career-academies",
+          "evidence-based-literacy-priority",
+          "gates-millennium-scholars",
+          "high-dosage-tutoring-engage-every-student",
+          "no-child-left-behind-annual-testing-accountability",
+          "raise-the-bar-career-pathways",
           "school-garden-interventions",
           "science-of-reading-sor"
         ],
-        "anchorDetails": []
+        "anchorDetails": [
+          {
+            "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+            "initiative": "School cellphone bans / phone-free school policies",
+            "anchorType": "state_policy_anchor",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_phone_policy_ecs_state_scan"
+            ],
+            "evidenceBasis": "Hawaii state policy entry in ECS state information request for school cellphone policies",
+            "notes": ""
+          },
+          {
+            "initiativeId": "no-child-left-behind-annual-testing-accountability",
+            "initiative": "No Child Left Behind annual testing/accountability",
+            "anchorType": "federal_policy_implementation",
+            "anchorStrength": "medium",
+            "sourceIds": [
+              "src_nclb_primary_congress",
+              "src_nclb_eval_dee_jacob"
+            ],
+            "evidenceBasis": "Federal annual testing and accountability requirements were implemented through state systems under NCLB.",
+            "notes": "Baseline state-level anchor for accountability/testing comparisons; not a claim of uniform local effect size."
+          }
+        ]
       }
     ]
   },
@@ -1752,6 +3205,242 @@
         "testingIntensity": "medium",
         "workBasedLearningIntensity": "none",
         "outdoorLearningIntensity": "none"
+      }
+    },
+    {
+      "id": "advancing-ai-in-education",
+      "initiative": "Advancing AI in Education",
+      "category": "Education technology policy initiative",
+      "entityType": "policy_package",
+      "theme": "ai_enabled_instruction_and_operations",
+      "coreFocus": "Responsible AI use, instructional support, teacher productivity",
+      "focusTags": [
+        "Responsible AI use",
+        "instructional support",
+        "teacher productivity"
+      ],
+      "keyFigures": [
+        "U.S. Department of Education",
+        "state education agencies",
+        "district leaders"
+      ],
+      "timeline": {
+        "label": "2025-present",
+        "startYear": 2025,
+        "endYear": 2026,
+        "isOngoing": true,
+        "era": "2020s"
+      },
+      "locationLabel": "United States",
+      "locationScope": "national",
+      "locationTags": [
+        "United States"
+      ],
+      "policies": [
+        "AI-enabled instructional support",
+        "teacher workflow tools",
+        "AI literacy guidance"
+      ],
+      "outcomes": [
+        "Evidence is emerging and mixed with high policy attention"
+      ],
+      "outcomeSummary": "Evidence is emerging and mixed with high policy attention",
+      "source": "https://www.ed.gov/about/news/press-release/us-department-of-education-releases-secretary-mcmahons-meaningful-learning-and-workforce-readiness-supplemental-priorities",
+      "sourceHost": "ed.gov",
+      "score": 8,
+      "evidence": {
+        "researchStatus": "orientation_complete",
+        "evidenceScore": "2",
+        "consensusDirection": "mixed",
+        "confidenceLabel": "medium_low",
+        "qualityNotes": "National policy attention is high but K-12 outcome evidence is still emerging and context dependent with real implementation and equity risk variance.",
+        "scholarlySourcesReviewed": "0",
+        "journalisticSourcesReviewed": "1",
+        "lastReviewed": "2026-05-04"
+      },
+      "continuums": {
+        "technologyPosition": "high_tech",
+        "technologyComparison": "high_tech_vs_low_tech",
+        "testingIntensity": "low",
+        "workBasedLearningIntensity": "none",
+        "outdoorLearningIntensity": "none"
+      }
+    },
+    {
+      "id": "evidence-based-literacy-priority",
+      "initiative": "Evidence-based literacy priority",
+      "category": "Federal literacy priority",
+      "entityType": "policy_package",
+      "theme": "literacy_instruction_priority",
+      "coreFocus": "Science of Reading alignment, literacy intervention, implementation quality",
+      "focusTags": [
+        "Science of Reading alignment",
+        "literacy intervention",
+        "implementation quality"
+      ],
+      "keyFigures": [
+        "U.S. Department of Education",
+        "state literacy offices",
+        "district curriculum leaders"
+      ],
+      "timeline": {
+        "label": "2025-present",
+        "startYear": 2025,
+        "endYear": 2026,
+        "isOngoing": true,
+        "era": "2020s"
+      },
+      "locationLabel": "United States",
+      "locationScope": "national",
+      "locationTags": [
+        "United States"
+      ],
+      "policies": [
+        "SoR-aligned literacy supports",
+        "professional learning",
+        "targeted interventions"
+      ],
+      "outcomes": [
+        "High policy momentum with effectiveness dependent on implementation quality"
+      ],
+      "outcomeSummary": "High policy momentum with effectiveness dependent on implementation quality",
+      "source": "https://www.ed.gov/about/news/press-release/us-department-of-education-releases-secretary-mcmahons-meaningful-learning-and-workforce-readiness-supplemental-priorities",
+      "sourceHost": "ed.gov",
+      "score": 8,
+      "evidence": {
+        "researchStatus": "orientation_complete",
+        "evidenceScore": "3",
+        "consensusDirection": "positive",
+        "confidenceLabel": "medium",
+        "qualityNotes": "The federal literacy priority emphasizes science-of-reading aligned practice and evidence use but effects depend on state and district implementation quality.",
+        "scholarlySourcesReviewed": "1",
+        "journalisticSourcesReviewed": "0",
+        "lastReviewed": "2026-05-04"
+      },
+      "continuums": {
+        "technologyPosition": "mixed",
+        "technologyComparison": "high_tech_vs_low_tech_to_be_split",
+        "testingIntensity": "medium",
+        "workBasedLearningIntensity": "none",
+        "outdoorLearningIntensity": "none"
+      }
+    },
+    {
+      "id": "high-dosage-tutoring-engage-every-student",
+      "initiative": "High-dosage tutoring (Engage Every Student)",
+      "category": "Academic recovery initiative",
+      "entityType": "program",
+      "theme": "academic_recovery_and_tutoring",
+      "coreFocus": "Targeted tutoring, accelerated learning, implementation support",
+      "focusTags": [
+        "Targeted tutoring",
+        "accelerated learning",
+        "implementation support"
+      ],
+      "keyFigures": [
+        "U.S. Department of Education",
+        "state education agencies",
+        "district tutoring providers"
+      ],
+      "timeline": {
+        "label": "2021-present",
+        "startYear": 2021,
+        "endYear": 2026,
+        "isOngoing": true,
+        "era": "2020s"
+      },
+      "locationLabel": "United States",
+      "locationScope": "national",
+      "locationTags": [
+        "United States"
+      ],
+      "policies": [
+        "Frequent small-group tutoring",
+        "in-school tutoring models",
+        "evidence-based implementation guidance"
+      ],
+      "outcomes": [
+        "Strong evidence base for learning recovery with scaling and cost challenges"
+      ],
+      "outcomeSummary": "Strong evidence base for learning recovery with scaling and cost challenges",
+      "source": "https://www.ed.gov/sites/ed/files/2024/06/High-Dosage-Tutoring.pdf",
+      "sourceHost": "ed.gov",
+      "score": 8,
+      "evidence": {
+        "researchStatus": "scholarly_reviewed",
+        "evidenceScore": "4",
+        "consensusDirection": "positive",
+        "confidenceLabel": "medium_high",
+        "qualityNotes": "High-dosage tutoring has one of the strongest evidence bases for near-term academic recovery although implementation quality staffing and cost remain key constraints.",
+        "scholarlySourcesReviewed": "2",
+        "journalisticSourcesReviewed": "0",
+        "lastReviewed": "2026-05-04"
+      },
+      "continuums": {
+        "technologyPosition": "mixed",
+        "technologyComparison": "high_tech_vs_low_tech_to_be_split",
+        "testingIntensity": "medium",
+        "workBasedLearningIntensity": "low",
+        "outdoorLearningIntensity": "none"
+      }
+    },
+    {
+      "id": "raise-the-bar-career-pathways",
+      "initiative": "Raise the Bar career pathways",
+      "category": "Career-connected learning initiative",
+      "entityType": "policy_package",
+      "theme": "career_connected_learning",
+      "coreFocus": "Career pathways, CTE expansion, work-based learning",
+      "focusTags": [
+        "Career pathways",
+        "CTE expansion",
+        "work-based learning"
+      ],
+      "keyFigures": [
+        "U.S. Department of Education",
+        "state CTE leaders",
+        "employer partners"
+      ],
+      "timeline": {
+        "label": "2021-present",
+        "startYear": 2021,
+        "endYear": 2026,
+        "isOngoing": true,
+        "era": "2020s"
+      },
+      "locationLabel": "United States",
+      "locationScope": "national",
+      "locationTags": [
+        "United States"
+      ],
+      "policies": [
+        "Career-connected pathways",
+        "work-based learning expansion",
+        "secondary-to-postsecondary alignment"
+      ],
+      "outcomes": [
+        "Expanded national attention to pathway models with uneven state implementation depth"
+      ],
+      "outcomeSummary": "Expanded national attention to pathway models with uneven state implementation depth",
+      "source": "https://learnworkecosystemlibrary.com/archive/Raise%20the%20Bar-Postsecondary%20and%20Career%20Pathways.html",
+      "sourceHost": "learnworkecosystemlibrary.com",
+      "score": 8,
+      "evidence": {
+        "researchStatus": "orientation_complete",
+        "evidenceScore": "3",
+        "consensusDirection": "positive",
+        "confidenceLabel": "medium",
+        "qualityNotes": "Raise the Bar career pathways has broad federal and state momentum and aligns with evidence-backed career-connected learning models but local implementation strength varies widely.",
+        "scholarlySourcesReviewed": "1",
+        "journalisticSourcesReviewed": "0",
+        "lastReviewed": "2026-05-04"
+      },
+      "continuums": {
+        "technologyPosition": "mixed",
+        "technologyComparison": "pathway_models_vs_traditional_academics",
+        "testingIntensity": "medium",
+        "workBasedLearningIntensity": "high",
+        "outdoorLearningIntensity": "low"
       }
     },
     {

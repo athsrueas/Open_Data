@@ -5,13 +5,18 @@
     "queueCsv": "outputs\\us_education_initiatives\\sources\\download_queue.csv"
   },
   "counts": {
-    "rows": 27,
+    "rows": 37,
     "repositories": {
+      "annenberg": 1,
       "apprenticeship_gov": 1,
       "digital_commons": 1,
       "econbiz": 1,
+      "ecs": 1,
+      "ed_gov": 5,
+      "ed_gov_archive": 1,
       "eric": 3,
       "govinfo": 1,
+      "govtech": 1,
       "mdrc": 3,
       "nber": 4,
       "official_district_archive": 1,
@@ -21,11 +26,12 @@
       "official_state_agency": 4,
       "open_pdf_mirror": 1,
       "pubmed": 1,
-      "sage": 1
+      "sage": 1,
+      "state_program_overview": 1
     },
     "statuses": {
       "pending_search": 2,
-      "queued": 25
+      "queued": 35
     }
   },
   "sources": [
@@ -200,6 +206,16 @@
       "status": "queued"
     },
     {
+      "sourceId": "src_ptech_primary_nystate",
+      "initiativeId": "p-tech-9-14",
+      "role": "primary",
+      "repository": "state_program_overview",
+      "url": "https://ppinys.org/about-p-tech",
+      "retrievalMode": "manual_html_capture",
+      "targetRelpath": "raw/official/ptech/ny_ptech_overview.html",
+      "status": "queued"
+    },
+    {
       "sourceId": "src_careerwise_primary_site",
       "initiativeId": "careerwise-colorado-youth-apprenticeship",
       "role": "primary",
@@ -277,6 +293,96 @@
       "url": "https://journals.sagepub.com/doi/10.1177/20556365241270394",
       "retrievalMode": "landing_page_plus_pdf",
       "targetRelpath": "raw/scholarly/phone_bans/scoping_review_2024_phone_policies.pdf",
+      "status": "queued"
+    },
+    {
+      "sourceId": "src_phone_policy_ecs_state_scan",
+      "initiativeId": "school-cellphone-bans-phone-free-school-policies",
+      "role": "primary",
+      "repository": "ecs",
+      "url": "https://www.ecs.org/wp-content/uploads/Cell-Phone-Policies-State-Information-Request-2025.pdf",
+      "retrievalMode": "manual_html_capture",
+      "targetRelpath": "raw/official/phone_bans/ecs_state_info_request_2025.pdf",
+      "status": "queued"
+    },
+    {
+      "sourceId": "src_tutoring_primary_ed_brief",
+      "initiativeId": "high-dosage-tutoring-engage-every-student",
+      "role": "primary",
+      "repository": "ed_gov",
+      "url": "https://www.ed.gov/sites/ed/files/2024/06/High-Dosage-Tutoring.pdf",
+      "retrievalMode": "direct_pdf",
+      "targetRelpath": "raw/official/tutoring/high_dosage_tutoring_ed_2024.pdf",
+      "status": "queued"
+    },
+    {
+      "sourceId": "src_tutoring_eval_annenberg",
+      "initiativeId": "high-dosage-tutoring-engage-every-student",
+      "role": "evaluation",
+      "repository": "annenberg",
+      "url": "https://annenberg.brown.edu/news/addressing-unfinished-learning-targeted-help-and-high-dosage-tutoring",
+      "retrievalMode": "manual_html_capture",
+      "targetRelpath": "raw/scholarly/tutoring/annenberg_high_dosage_tutoring_2021.html",
+      "status": "queued"
+    },
+    {
+      "sourceId": "src_ai_primary_ed_priorities",
+      "initiativeId": "advancing-ai-in-education",
+      "role": "primary",
+      "repository": "ed_gov",
+      "url": "https://www.ed.gov/about/news/press-release/us-department-of-education-releases-secretary-mcmahons-meaningful-learning-and-workforce-readiness-supplemental-priorities",
+      "retrievalMode": "manual_html_capture",
+      "targetRelpath": "raw/official/ai/ed_ai_priorities_2025.html",
+      "status": "queued"
+    },
+    {
+      "sourceId": "src_ai_context_ed_initiatives",
+      "initiativeId": "advancing-ai-in-education",
+      "role": "review",
+      "repository": "ed_gov",
+      "url": "https://www.ed.gov/about/initiatives",
+      "retrievalMode": "manual_html_capture",
+      "targetRelpath": "raw/official/ai/ed_initiatives_overview.html",
+      "status": "queued"
+    },
+    {
+      "sourceId": "src_raise_bar_career_primary",
+      "initiativeId": "raise-the-bar-career-pathways",
+      "role": "primary",
+      "repository": "ed_gov_archive",
+      "url": "https://learnworkecosystemlibrary.com/archive/Raise%20the%20Bar-Postsecondary%20and%20Career%20Pathways.html",
+      "retrievalMode": "manual_html_capture",
+      "targetRelpath": "raw/official/raise_bar/raise_bar_career_pathways.html",
+      "status": "queued"
+    },
+    {
+      "sourceId": "src_raise_bar_career_supporting",
+      "initiativeId": "raise-the-bar-career-pathways",
+      "role": "evaluation",
+      "repository": "govtech",
+      "url": "https://www.govtech.com/education/k-12/what-does-federal-raise-the-bar-initiative-mean-for-cte",
+      "retrievalMode": "manual_html_capture",
+      "targetRelpath": "raw/technical/raise_bar/govtech_raise_bar_cte.html",
+      "status": "queued"
+    },
+    {
+      "sourceId": "src_literacy_priority_primary",
+      "initiativeId": "evidence-based-literacy-priority",
+      "role": "primary",
+      "repository": "ed_gov",
+      "url": "https://www.ed.gov/about/news/press-release/us-department-of-education-releases-secretary-mcmahons-meaningful-learning-and-workforce-readiness-supplemental-priorities",
+      "retrievalMode": "manual_html_capture",
+      "targetRelpath": "raw/official/literacy/ed_literacy_priority_2025.html",
+      "status": "queued"
+    },
+    {
+      "sourceId": "src_literacy_priority_supporting",
+      "initiativeId": "evidence-based-literacy-priority",
+      "role": "review",
+      "repository": "ed_gov",
+      "url": "https://www.ed.gov/sites/ed/files/about/inits/ed/raise-the-bar/1_9_AcademicSuccessBookletResource_v2_508_v3rev59.pdf",
+      "retrievalMode": "direct_pdf",
+      "targetRelpath": "raw/official/literacy/ed_academic_success_strategies.pdf",
       "status": "queued"
     },
     {

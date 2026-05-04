@@ -1,0 +1,5 @@
+initiative_id,initiative,research_status,sources_total,primary_sources,evaluation_sources,review_sources,official_sources,scholarly_sources,technical_sources,pending_search_sources,missing_primary_source,missing_evaluation_source,priority
+chicago-test-based-promotion-and-accountability-reforms,Chicago test-based promotion and accountability reforms,scholarly_reviewed,3,1,2,0,1,2,0,1,no,no,high
+gates-millennium-scholars,Gates Millennium Scholars,scholarly_reviewed,2,1,1,0,1,0,1,1,no,no,high
+school-cellphone-bans-phone-free-school-policies,School cellphone bans / phone-free school policies,scholarly_reviewed,2,0,1,1,0,2,0,0,yes,no,medium
+science-of-reading-sor,Science of Reading (SoR),orientation_complete,0,0,0,0,0,0,0,0,yes,yes,high

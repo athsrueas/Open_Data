@@ -20,6 +20,15 @@
   let geojsonPromise = null;
   let mapViews = [];
 
+  const PUBLIC_METRIC_LABELS = {
+    directAnchorCount: "State-linked initiatives",
+    testingAnchorCount: "Testing-focused initiatives",
+    workBasedAnchorCount: "Work-based learning initiatives",
+    outdoorAnchorCount: "Outdoor learning initiatives",
+    reducedTechnologyAnchorCount: "Low-tech policy initiatives",
+    combinedCount: "State-linked + nationwide initiatives",
+  };
+
   function createInitiativeAtlas(root, data) {
     if (!root) throw new Error("Root element is required.");
     if (!data || !Array.isArray(data.initiatives)) throw new Error("Atlas data not found.");
@@ -187,7 +196,7 @@
             });
             map.on("load", () => {
               map.addSource("states", { type: "geojson", data: geojson });
-              const filter = ["match", ["get", "state_code"], ["literal", pane.filterCodes], true, false];
+              const filter = ["in", ["get", "state_code"], ["literal", pane.filterCodes]];
               map.addLayer({
                 id: `fill-${pane.containerId}`,
                 type: "fill",
@@ -292,7 +301,7 @@
                 </div>
                 <label class="control metric-control">
                   <span>Map metric</span>
-                  <select id="map-metric-select">${(data.stateMap?.metrics || []).map((metric) => `<option value="${escapeAttr(metric.key)}" ${state.mapMetric === metric.key ? "selected" : ""}>${metric.label}</option>`).join("")}</select>
+                  <select id="map-metric-select">${(data.stateMap?.metrics || []).map((metric) => `<option value="${escapeAttr(metric.key)}" ${state.mapMetric === metric.key ? "selected" : ""}>${PUBLIC_METRIC_LABELS[metric.key] || metric.label}</option>`).join("")}</select>
                 </label>
                 <label class="control metric-control">
                   <span>State</span>
@@ -320,16 +329,16 @@
                     <p class="panel-label">State detail</p>
                     <h3>${selectedState.name}</h3>
                     <div class="state-metrics">
-                      <div><span class="detail-label">Direct anchors</span><strong>${selectedState.directAnchorCount}</strong></div>
-                      <div><span class="detail-label">National context</span><strong>${selectedState.nationalContextCount}</strong></div>
+                      <div><span class="detail-label">State-linked initiatives</span><strong>${selectedState.directAnchorCount}</strong></div>
+                      <div><span class="detail-label">Nationwide initiatives</span><strong>${selectedState.nationalContextCount}</strong></div>
                       <div><span class="detail-label">Strongest evidence</span><strong>${selectedState.strongestEvidenceScore}/5</strong></div>
                     </div>
                     <section class="detail-section">
-                      <span class="detail-label">Direct anchors in this state</span>
+                      <span class="detail-label">Documented initiatives in this state</span>
                       <div class="state-anchor-list">
                         ${selectedState.anchorDetails.length
                           ? selectedState.anchorDetails.map((anchor) => `<button class="state-anchor-button" data-select-id="${anchor.initiativeId}"><strong>${anchor.initiative}</strong><small>${anchor.anchorType.replaceAll("_", " ")}</small></button>`).join("")
-                          : `<p class="detail-summary">No direct anchor rows are loaded yet for this state.</p>`}
+                          : `<p class="detail-summary">No state-specific initiative links are loaded yet for this state.</p>`}
                       </div>
                     </section>` : ""}
                 </aside>

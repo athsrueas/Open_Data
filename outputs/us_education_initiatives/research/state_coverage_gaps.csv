@@ -1,0 +1,51 @@
+state_code,state_name,inset_group,direct_anchor_count,national_context_count,combined_count,priority,needs_direct_anchor
+AL,Alabama,main,0,5,5,high,yes
+AK,Alaska,alaska,0,5,5,high,yes
+AZ,Arizona,main,0,5,5,high,yes
+AR,Arkansas,main,1,5,5,medium,no
+CA,California,main,0,5,5,high,yes
+CO,Colorado,main,1,5,6,medium,no
+CT,Connecticut,main,0,5,5,high,yes
+DE,Delaware,main,0,5,5,high,yes
+FL,Florida,main,2,5,7,low,no
+GA,Georgia,main,0,5,5,high,yes
+HI,Hawaii,hawaii,0,5,5,high,yes
+ID,Idaho,main,0,5,5,high,yes
+IL,Illinois,main,1,5,6,medium,no
+IN,Indiana,main,0,5,5,high,yes
+IA,Iowa,main,1,5,5,medium,no
+KS,Kansas,main,0,5,5,high,yes
+KY,Kentucky,main,0,5,5,high,yes
+LA,Louisiana,main,0,5,5,high,yes
+ME,Maine,main,0,5,5,high,yes
+MD,Maryland,main,0,5,5,high,yes
+MA,Massachusetts,main,0,5,5,high,yes
+MI,Michigan,main,0,5,5,high,yes
+MN,Minnesota,main,0,5,5,high,yes
+MS,Mississippi,main,2,5,7,low,no
+MO,Missouri,main,0,5,5,high,yes
+MT,Montana,main,0,5,5,high,yes
+NE,Nebraska,main,0,5,5,high,yes
+NV,Nevada,main,0,5,5,high,yes
+NH,New Hampshire,main,0,5,5,high,yes
+NJ,New Jersey,main,0,5,5,high,yes
+NM,New Mexico,main,0,5,5,high,yes
+NY,New York,main,1,5,5,medium,no
+NC,North Carolina,main,0,5,5,high,yes
+ND,North Dakota,main,0,5,5,high,yes
+OH,Ohio,main,0,5,5,high,yes
+OK,Oklahoma,main,0,5,5,high,yes
+OR,Oregon,main,0,5,5,high,yes
+PA,Pennsylvania,main,0,5,5,high,yes
+RI,Rhode Island,main,0,5,5,high,yes
+SC,South Carolina,main,0,5,5,high,yes
+SD,South Dakota,main,0,5,5,high,yes
+TN,Tennessee,main,0,5,5,high,yes
+TX,Texas,main,3,5,7,low,no
+UT,Utah,main,0,5,5,high,yes
+VT,Vermont,main,0,5,5,high,yes
+VA,Virginia,main,0,5,5,high,yes
+WA,Washington,main,1,5,5,medium,no
+WV,West Virginia,main,0,5,5,high,yes
+WI,Wisconsin,main,0,5,5,high,yes
+WY,Wyoming,main,0,5,5,high,yes
