@@ -187,7 +187,7 @@
             });
             map.on("load", () => {
               map.addSource("states", { type: "geojson", data: geojson });
-              const filter = ["match", ["get", "state_code"], pane.filterCodes, true, false];
+              const filter = ["match", ["get", "state_code"], ["literal", pane.filterCodes], true, false];
               map.addLayer({
                 id: `fill-${pane.containerId}`,
                 type: "fill",
@@ -253,6 +253,7 @@
       const timeline = histogram(items);
       const scopes = scopeBars(items);
       const selectedState = selectedStateRecord();
+      const stateOptions = (data.stateMap?.states || []).slice().sort((a, b) => a.name.localeCompare(b.name));
 
       root.innerHTML = `
         <main class="atlas-shell">
@@ -292,6 +293,17 @@
                 <label class="control metric-control">
                   <span>Map metric</span>
                   <select id="map-metric-select">${(data.stateMap?.metrics || []).map((metric) => `<option value="${escapeAttr(metric.key)}" ${state.mapMetric === metric.key ? "selected" : ""}>${metric.label}</option>`).join("")}</select>
+                </label>
+                <label class="control metric-control">
+                  <span>State</span>
+                  <select id="state-select">
+                    ${stateOptions
+                      .map(
+                        (item) =>
+                          `<option value="${item.code}" ${state.selectedStateCode === item.code ? "selected" : ""}>${item.name}</option>`
+                      )
+                      .join("")}
+                  </select>
                 </label>
               </div>
               <div class="map-layout">
@@ -390,11 +402,18 @@
       const scopeSelect = root.querySelector("#scope-select");
       const sortSelect = root.querySelector("#sort-select");
       const mapMetricSelect = root.querySelector("#map-metric-select");
+      const stateSelect = root.querySelector("#state-select");
       if (searchInput) searchInput.addEventListener("input", (event) => { state.search = event.target.value; render(); });
       if (categorySelect) categorySelect.addEventListener("change", (event) => { state.category = event.target.value; render(); });
       if (scopeSelect) scopeSelect.addEventListener("change", (event) => { state.scope = event.target.value; render(); });
       if (sortSelect) sortSelect.addEventListener("change", (event) => { state.sort = event.target.value; render(); });
       if (mapMetricSelect) mapMetricSelect.addEventListener("change", (event) => { state.mapMetric = event.target.value; render(); });
+      if (stateSelect) {
+        stateSelect.addEventListener("change", (event) => {
+          state.selectedStateCode = event.target.value;
+          render();
+        });
+      }
       root.querySelectorAll("[data-select-id]").forEach((button) => {
         button.addEventListener("click", () => { state.selectedId = button.dataset.selectId; render(); });
       });
