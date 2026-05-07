@@ -1,0 +1,624 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+    <!-- Standardizes the "Top" Icon  -->
+
+
+
+
+<!-- General Title and Meta Info -->
+
+
+<!-- Layout for the Meta information -->
+
+
+
+
+<link href="/js/bootstrap/css/bootstrap.css" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+<link rel="stylesheet" href="/programs/slds/font-awesome/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="/ccd/inc/style.css">
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+  <script src="/programs/SLDS/js/jquery-3.6.0.js"></script>
+    <script src="/programs/SLDS/js/SLDSmenu.js"></script>
+	<script src="/js/bootstrap/js/bootstrap.js"></script>
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META http-equiv='Content-Type' content='text/html; charset=ISO-8859-1' />
+<META NAME='keywords' content='Common Core of Data, CCD, Education, Elementary, Secondary, education statistics, data, data sets, districts, public agencies, schools, longitudinal study, financial, nonfiscal, locator, names and addresses, data tables, Common Core of Data, CCD, Education, Elementary, Secondary, education statistics, data, data sets, districts, public agencies, schools, longitudinal study, financial, nonfiscal' />
+<META NAME='description' content='Provides access to downloadable CCD data files and documentation' />
+<META NAME='rating' CONTENT='General' />
+<META NAME='ROBOTS' CONTENT='ALL' />
+<META NAME='DC.Title' CONTENT='Common Core of Data (CCD)' />
+<META NAME='DC.Description' CONTENT='Provides access to downloadable CCD data files and documentation' />
+<META NAME='DC.Publisher' CONTENT='National Center for Education Statistics' />
+<META NAME='DC.Language' SCHEME='RFC1766' CONTENT='EN' />
+<title>Common Core of Data (CCD) - CCD Data Files</title>
+
+<link rel="stylesheet" type="text/css" href="/css/pubs2.css" />
+<style type="text/css">
+.fileSearch {
+    font-size: 2em;
+}
+select.disabled {
+    border: 1px solid #199abf;
+}
+.selectionGroup {
+    padding: 4px 8px 20px 8px;
+}
+/*.selectionGroup:nth-child(even) {
+        background: #eee;
+      }*/
+
+.MainContent a.clearBtn {
+    cursor: pointer;
+    background: #199abf;
+    color: #fff !important;
+    text-decoration: none !important;
+    padding: 4px;
+    border-radius: 4px;
+}
+.MainContent .elementGroup h4 {
+    color: #199abf !important;
+    font-size: 1.2em !important;
+    font-weight: bold;
+    border-bottom: 1px dotted #199abf;
+}
+.MainContent .titleGroup .col-md-12 {
+    height: auto;
+}
+.MainContent .componentGroup .col-md-12 {
+    height: 7.2rem;
+}
+.MainContent .componentGroup h5 {
+    color: #666 !important;
+    font-size: 1em !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    margin: 10px auto 0 auto !important;
+    border: none !important;
+}
+.MainContent .fileGroup a {
+    color: #199abf !important;
+    /*font-size: .9em !important;*/
+    text-decoration: none !important;
+}
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    background-color: #199abf !important;
+    border-color: #199abf !important;
+    color: #fff !important;
+}
+.pagination > li > a, .pagination > li > span {
+    color: #199abf !important;
+}
+.yearHdr {
+    color: #808080;
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: 1px solid #808080;
+    height: auto;
+    display: table;
+    font-size: 1.25em;
+}
+.modal-body {
+    font-size: 1.2em;
+}
+.panel-heading, .panel-body a {
+    cursor: pointer;
+}
+.ccdTbl {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+.ccdTbl th, .ccdTbl td {
+    padding: 4px;
+    border-bottom: 1px solid #bbb;
+}
+.ccdTbl th {
+    text-transform: uppercase;
+    text-align: right;
+}
+.ccdTbl tr.hdrRw {
+    background: #19bfb5;
+    color: #fff;
+    font-weight: bold;
+}
+.ccdTbl td + td {
+    width: 15%;
+    text-align: right;
+}
+</style>
+<script src="datatables/Scripts/angular.min.js"></script> 
+<script src="datatables/Scripts/angular-mocks.js"></script> 
+<script src="datatables/Scripts/app/file-controller.js"></script> 
+<script src="datatables/Scripts/angular-ui/ui-bootstrap.min.js"></script> 
+<script src="datatables/Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script> 
+<script src="datatables/Scripts/ui-bootstrap-tpls-1.0.3.min.js"></script>
+<script src="datatables/Scripts/angular-animate.min.js"></script> 
+
+<!--<script src="Scripts/bootstrap.min.js"></script>-->
+<link href="datatables/Content/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body bgcolor="#ffffff" text="#000000">
+<div role="main">
+  <!-- Start Header -->
+
+<div class="headContents">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/IESfavicon_32px.png">
+	<link rel="icon" type="image/png" sizes="128x128" href="/images/favicons/IESfavicon_128px.png">
+	<link rel="icon" type="image/png" sizes="152x152" href="/images/favicons/IESfavicon_152px.png">
+	<link rel="icon" type="image/png" sizes="167x167" href="/images/favicons/IESfavicon_167px.png">
+	<link rel="icon" type="image/png" sizes="180x180" href="/images/favicons/IESfavicon_180px.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/images/favicons/IESfavicon_192px.png">
+	<link rel="icon" type="image/png" sizes="196x196" href="/images/favicons/IESfavicon_196px.png">
+	<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href="/css/main.css" rel="stylesheet" type="text/css" />
+	<link href="/css/IES_Core_0004.css" rel="stylesheet" type="text/css" />
+	<link href="/css/IES_Mobile_0004.css" rel="stylesheet" type="text/css" />
+</div>
+
+	<!-- Google Tag Manager (GTM, the new way to manage tags and analytics) -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-KLQ8LQNJ');
+	</script>
+</div>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLQ8LQNJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<script type="text/javascript" src="/js/customevents.js"></script>
+
+<script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	//<![CDATA[
+	var $$i = jQuery.noConflict(true);
+	//]]>
+</script>
+<script type="text/javascript" src="/js/hfsNav.js?v=02"></script>
+<script type="text/javascript" src="/js/nav_0005.js"></script>
+<script type="text/javascript" src="/js/importBlogPosts.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+<link href="https://ies.ed.gov/sites/default/files/assets/legacy-override-nces.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://ies.ed.gov/sites/default/files/assets/ies-header-footer-elements.js"></script>
+
+<div class="nces">
+
+<ies-header></ies-header>
+
+<!-- End Header -->
+
+<!-- Start Body -->
+  <div class="MainContent">
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+{'gtm.start': new Date().getTime(),event:'gtm.js'}
+);var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N5LN7CH');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5LN7CH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script type="text/javascript">
+
+    function showWarning(link) {
+
+       window.open('bat/slfs_nces_warning.asp?file=' + link.href, 'showWarningWindow', 'scrollbars=yes,top=0,left=0,screenX=0,screenY=0,width=500,height=560');
+
+	   //showWarning = false;
+
+	   return (false);
+	}
+
+</script>
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="row">
+		
+   <a name="section01"></a><div id='topSide'><a href='#section01'><i class='fa fa-arrow-up' title='Scroll Top'></i> TOP</a></div>
+      <div class="CCDHdr col-md-5"><a href="/ccd/" style="color: #575757 !important; text-decoration: none !important;"><h1 label="Common Core of Data icon">CCD</h1>
+      <div style="padding-top: 10px;">Common Core of Data<br /><span class="subHdr">America's Public Schools</span></div></a>
+    </div>
+      <div class="col-md-7 pull-right text-right">
+          <button type="button" class="btn btn-info btn-sm idBtn" data-toggle="modal" data-target="#myModal"><span class="fa fa-search"></span> Find your NCES ID Number
+</button>
+      </div>
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="ccdM container">
+  <nav class="navbar">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="home">
+          <a href="/ccd/" role="button" aria-expanded="false">Home</a>
+          
+        </li>
+      </ul>
+      <ul class="nav navbar-nav">
+        
+        <li class="dropdown1 about">
+          <a href="javascript:location.href='/ccd/aboutccd.asp'" class="dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About CCD</a>
+          <ul class="dropdown-menu mega-dropdown-menu">
+            <li class="col-md-6">
+              	<a href="/ccd/ccddata.asp">Data Files</a> 
+                <a href="/ccd/data_tables.asp">Data Tables</a>
+				<a href="/ccd/ccd_publications.asp">Publications</a>
+                <a href="/ccd/quickfacts.asp">FAQs</a>
+			</li>
+            
+            <li class="col-md-6">
+                
+                <a href="/edfin/">EDFin</a>
+               <a href="/ccd/corner.asp">State Coordinator's Corner</a>
+				<a href="/ncestaff/survdetl.asp?surveyid=001">Contact Information</a>
+                </li>
+          </ul>
+        </li>
+      </ul>
+      
+      
+       
+        <ul class="nav navbar-nav">
+        
+        <li class="dropdown1 data">
+          <a href="javascript:location.href='/ccd/ccddata.asp'" class="dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CCD Data Files</a>
+          <ul class="dropdown-menu mega-dropdown-menu">
+          
+              <li class="col-md-6">
+                  <a href="/ccd/files.asp">CCD Data File Tool</a>
+                  <a href="/ccd/reference_library.asp">Reference Library</a>
+                  <a href="/ccd/online_documentation.asp">Online Documentation</a> 
+                  
+            </li>
+          </ul>
+        </li>
+        </ul>
+         <ul class="nav navbar-nav navbar-right pull-left">
+        <li class="dropdown1 tools">
+          <a href="javascript:location.href='/ccd/search.asp'" class="dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Tools</a>
+            <ul class="dropdown-menu mega-dropdown-menu">
+              <li class="col-md-6 pull-left">
+              
+              <a href="/ccd/schoolsearch/" target="_blank">School Locator&mdash;NCES ID</a>
+<a href="/ccd/districtsearch/" target="_blank">District Locator&mdash;NCES ID</a>
+<a href="/ccd/elsi/">Data Query Tool</a>
+          
+        </li>
+                 <li class="col-md-6">
+                     <a href="/ccd/finance_data.asp">Finance Data Visualization</a>
+                     <a href="/ccd/schoolmap/">Mapping Tool</a>
+                     <a href="/edfin/search/search_intro.asp">Peer Search</a>
+
+          
+        </li>
+      </ul>
+     
+        </li>
+      </ul>
+</div>
+</div>
+</nav>
+</div>
+
+<script type="text/javascript">
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+    });
+                $('#topSide').css("display", "none");
+                $(window).scroll(function () { // when the page is scrolled run this
+                    if ($(this).scrollTop() != 0) { // if you're NOT at the top
+                        $('#topSide').fadeIn("fast"); // fade in
+                    } else { // else
+                        $('#topSide').css("display", "none"); // fade out
+                    }
+                });
+
+                $('#topSide').click(function () { // when the button is clicked
+                    $('body,html').animate({ scrollTop: 0 }, 500); // return to the top with a nice animation
+                });
+            </script>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Find your NCES ID Number</h4>
+        </div>
+        <div class="modal-body">
+        
+        <p>Look up your school district�s NCES ID number <a href="/ccd/districtsearch/" target="_blank">here</a>, or your school�s ID <a href="/ccd/schoolsearch/" target="_blank">here</a>.</p>�
+
+<p>If you don�t find your ID in these tools then email: <a href="mailto:edfacts@ed.gov">edfacts@ed.gov</a>.</p>
+            <p><a href="quickfacts.asp">ED Public Data Frequently Asked Questions (FAQs)</a></p>
+      </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+    <!--<div class="pull-right" style="padding-top: 20px;"><a href="#yearModal" data-target="#yearModal" role="button" data-toggle="modal"><span class="fa fa-folder-open"></span> Survey years available</a></div>-->
+    <h2 class="bgcolor">CCD Data Files</h2>
+    <h3><strong>Information on the Common Core of Data (CCD)</strong></h3>
+    <p>The primary purpose of the CCD is to provide basic information on public elementary and secondary schools, local education agencies (LEAs), and state education agencies (SEAs) for each state, the District of Columbia, and the outlying territories with a U.S. relationship. </p>
+    <p>CCD is composed of two components: Nonfiscal CCD and Fiscal CCD. To see what years are available for each component, click here: </p>
+    <p style="margin-bottom: -10px;"> <a href="#yearModal" data-target="#yearModal" role="button" data-toggle="modal"><span class="fa fa-folder-open"></span>Years Available</a> </p>
+    <hr />
+    <div class="col-md-12" ng-app="FilesApp" style="margin: -10px 0 -15px 0;">
+      <div ng-controller="FilesController">
+        <div class="tab-content fileTabs"> 
+          <!--Search controls-->
+          <div class="row" style="border-bottom: none; background: #eee; padding: 10px; margin-bottom: -10px;">
+            <div class="pubSearch"> 
+              
+              <!--Fiscal-->
+              <div class="col-md-4"> <strong>Fiscal/Nonfiscal</strong> <a href="#fiscalModal" data-target="#fiscalModal" role="button" data-toggle="modal"><span class="fa fa-info-circle"></span></a><br />
+                <div class="dropdown">
+                  <select class="form-control"
+                    ng-model="Fiscal"
+                    ng-options='option.value as option.name for option in FiscalOptions'
+                    ng-change="searchDataChanging()">
+                  </select>
+                </div>
+              </div>
+              <!--Level-->
+              <div class="col-md-3"> <strong>Level</strong><br />
+                <div class="dropdown">
+                  <select class="form-control {{Fiscal==0 ? 'disabled' : 'enabled'}}"
+                    ng-model="LevelId"
+                    ng-options='option.value as option.name for option in LevelOptions'
+                    ng-change="searchDataChanging()"
+                    ng-disabled="Fiscal==0">
+                  </select>
+                </div>
+              </div>
+              <!--Collection Years-->
+              <div class="col-md-3"> <strong>School Year</strong><br />
+                <div class="dropdown">
+                  <select class="form-control {{Fiscal==0 ? 'disabled' : 'enabled'}}"
+                    ng-model="SchoolYearId"
+                    ng-options='option.id as option.name for option in SchoolYearOptions'
+                    ng-change="searchDataChanging()"
+                    ng-disabled="Fiscal==0">
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-2"> <br />
+                <a ng-click="clearSelectionsAndRun()" class="btn clearBtn"><span class="fas fa-times" aria-hidden="true"></span> Clear</a> </div>
+            </div>
+          </div>
+          <!--Load Data Tables-->
+          
+          <div class="row" style="border-bottom: none">
+            <div class="fileSearch col-md-12 pull-right" style="margin: 15px 0 -22px 0;">
+              <div style="border-bottom: none;">
+                <uib-pagination items-per-page="itemsPerPage"
+                      ng-show="returnedSelectionGroups && returnedSelectionGroups.length > 5 && !boundaryLinks"
+                      total-items="returnedSelectionGroups.length"
+                      ng-model="Page"
+                      max-size="5"
+                      class="pagination-sm"
+                      boundary-links="true"
+                      rotate="false"
+                      ng-click="setPagedData(Page)"
+                      style="margin: 0; float: right;"> </uib-pagination>
+              </div>
+            </div>
+            <div class="col-md-12" style="margin-bottom: -33px;">
+              <div ng-show="IsSearching" class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-2 "> <span class="fas fa-spinner fa-spin fa-2x" aria-hidden="true"></span> </div>
+                <div class="col-md-5"></div>
+              </div>
+              <div ng-repeat="selection in elementsGroupedBySelection" class="row selectionGroup">
+                <div ng-repeat="titleGroup in selection.titleGroups" class="titleGroup">
+                  <div class="yearHdr">{{titleGroup.schoolYear}}, {{titleGroup.level}}</div>
+                  <div class="col-md-12">
+                    <h3> {{titleGroup.title}} {{titleGroup.version}} </h3>
+                    <div ng-repeat="element in titleGroup.elementGroups" class="elementGroup">
+                      <div class="col-md-4">
+                        <h4 class=""> {{element.elementType}} </h4>
+                        <div ng-repeat="component in element.componentGroups" class="componentGroup">
+                          <div class="col-md-12">
+                            <h5 class=""> {{component.component}} </h5>
+                            <div ng-repeat="file in component.files" class="fileGroup"> <a href="{{file.fileURL}}" ng-show="{{file.fileId}}" ng-bind-html="toTrustedHTML(file.description)"></a> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br />
+                  </div>
+                  <div class="text-center col-md-12" style="margin-top: 40px;"><a class="btn clearBtn" ng-show="{{titleGroup.archiveURL.length > 0}}" href="{{titleGroup.archiveURL}}">Prior released data and documentation</a></div>
+                </div>
+              </div>
+              <hr />
+            </div>
+          </div>
+          <div ng-show="returnedSelectionGroups.length == 0"> No results were found. </div>
+          <div class="fileSearch col-md-12 pull-right" style="margin: 20px auto;">
+            <div style="border-bottom: none;">
+              <uib-pagination items-per-page="itemsPerPage"
+                    ng-show="returnedSelectionGroups && returnedSelectionGroups.length > 5 && !boundaryLinks"
+                    total-items="returnedSelectionGroups.length"
+                    ng-model="Page"
+                    max-size="5"
+                    class="pagination-sm"
+                    boundary-links="true"
+                    rotate="false"
+                    ng-click="setPagedData(Page)"
+                    style="margin: 0; float: right;"> </uib-pagination>
+            </div>
+          </div>
+          
+          <!-- New filename/year/version functionality--> 
+          <!-- Survey Years Modal -->
+          <div class="modal fade" id="yearModal" tabindex="-1" role="dialog" aria-labelledby="Surveys by Year" aria-hidden="true">
+            <div class="modal-dialog" role="document" style="width: 685px;">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true" class="fa fa-times-circle"></span> </button>
+                  <br />
+                  <br />
+                  <div class="panel-group" id="accordion">
+                    <div class="panel panel-default" ng-repeat="fileNameModel in returnedFileNameYearVersions">
+                      <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#{{fileNameModel.fileName.fileNameId}}"> {{fileNameModel.fileName.name}}</div>
+                      <div id="{{fileNameModel.fileName.fileNameId}}" class="collapse">
+                        <div class="panel-body">
+                          <div class="col-md-4" ng-repeat="yearVersion in fileNameModel.yearVersionModels" style="height: 50px; margin-bottom: 25px;"> <a ng-click="fileLinkClicked(fileNameModel.fileName.fileNameId, yearVersion.versionId, yearVersion.schoolYearId)">{{yearVersion.schoolYearLong}} ({{yearVersion.versionName}})</a> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fiscal Modal -->
+    <div class="modal fade" id="fiscalModal" tabindex="-1" role="dialog" aria-labelledby="Fiscal/Nonfiscal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true" class="fa fa-times-circle"></span> </button
+    
+    
+          
+          
+            <p><strong>The following information is provided by Nonfiscal CCD:</strong></p>
+            <ul>
+              <li>Directory data (schools, LEAs, SEAs)</li>
+              <li>State-level student membership counts disaggregated by grade, race/ethnicity and sex (schools, LEAs, SEAs)</li>
+              <li>Teacher FTE counts (schools, LEAs, SEAs)</li>
+              <li>Staff FTE counts by professional category (LEAs, SEAs)</li>
+              <li>Counts of Children with disabilities and English learners (LEA)</li>
+              <li>Counts of students eligible for free and reduced-price lunches (school)</li>
+            </ul>
+            <p>If you have any questions concerning Nonfiscal CCD, please contact the <a href="mailto:EDFacts@ed.gov">ED<em>Facts</em> team</a>.</p>
+            <p><strong>The following information is provided by Fiscal CCD:</strong></p>
+            <ul>
+              <li>Revenues (local, state and federal sources)</li>
+              <li>Expenditures by function and object</li>
+              <li>General administration, School administration, Operations and maintenance, and Facilities acquisition and construction expenditures)</li>
+              <li>Average Daily attendance (SEA level)</li>
+              <li>Student membership (LEA and SEA level)</li>
+            </ul>
+            <p>The fiscal year (FY) is the 12-month period to which the annual operating budget applies. For example, FY18 would correspond to the 2017-18 school year.</p>
+            <p>If you have any questions for Fiscal CCD, please contact <a href="/ncestaff/StaffDetl.asp?empid=609">Stephen Cornman</a> or <a href="/ncestaff/StaffDetl.asp?empid=629">Patrick Keaton</a>.</p>
+            <!--<p>The annual reports using Fiscal CCD file's data are the <a href="pub_pubdistricts.asp">District Fiscal Reports</a>.</p>--> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 ng-scope" style="background-color:#19bfb5; padding: 10px; color: white; margin-bottom: 15px;">
+      <p><span class="fa fa-lightbulb-o"></span> Hint: Working with the raw data files can be tedious and time-consuming. Some data file sizes, especially for student membership data, may be over 1GB. You may find it easier to get the data you need from the <a href="https://nces.ed.gov/ccd/elsi/" style="color: #fff !important;">Table Generator</a>. The table generator provides access to all the years, levels and components of CCD data in an easy-to-use process you control. No programming required.</p>
+    </div>
+    <p>For nonfiscal CCD, refer to the <a href="online_documentation.asp">Online Documentation</a> for more information about how the CCD data are collected and processed. Documentation of data issues spanning multiple years, levels or components of CCD is available in the <a href="reference_library.asp">CCD Reference Library</a>. For questions or concerns regarding nonfiscal CCD, please email ED<em>Facts</em> Partner Support Center (<a href="mailto:EDFacts@ed.gov">EDFacts@ed.gov</a>).</p>
+    <p>NCES forecasts the release of statistics and statistical products in the <a href="https://ies.ed.gov/nces-statistical-products-release-calendar">Statistical Products Release Calendar</a>.</p>
+    <!-- <table class="ccdTbl" style="margin-top:-15px;">
+      <thead>
+        <tr>
+          <th scope="col" colspan="2">Actual or Anticipated Release Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hdrRw">
+          <td scope="row" colspan="2">Nonfiscal</td>
+        </tr>
+        <tr>
+          <td scope="row">SY 2021-22 Preliminary Data Release - Revised<br />
+            <div style="margin-left: 15px;">Includes preliminary release of Directory, CCD School, and Student Membership data. The Student Membership data include detailed data (i.e., student counts by grade, race/ethnicity, and sex) at the SEA level and total membership minus adult education at the district and school levels.</div></td>
+          <td scope="row">August, 2022</td>
+        </tr>
+        <tr>
+          <td scope="row">SY 2024-25 version 1a Data Release<br>
+            <div style="margin-left: 15px;">Includes staff counts by professional category, and student membership disaggregated by grade, race/ethnicity, and sex.<br />
+              Also included are school-level counts of student eligible for free and reduced-price lunches.</div></td>
+          <td scope="row">December, 2025</td>
+        </tr>
+		<tr>
+          <td scope="row">SY 2024&ndash;25 Geographical Data </td>
+          <td scope="row">December, 2025</td>
+        </tr>
+	    <tr>
+          <td scope="row">SY 2025-26 Preliminary Directory Data<br>
+            <div style="margin-left: 15px;">Includes basic identifying information for each public school and local education agency (LEA), including the NCES<br />
+              ID numbers, location and mailing address and some limited attributes about the school or LEA, such as type, operational<br />
+              status, the highest and lowest grade offered.</div></td>
+          <td scope="row" style="width: 17%;">August, 2026</td>
+        </tr>
+        <tr class="hdrRw">
+          <td scope="row" colspan="2">Fiscal</td>
+        </tr>
+        <tr>
+          <td scope="row">SY 2021&ndash;22 School District Finance Survey (F-33)</td>
+          <td scope="row">July, 2024</td>
+        </tr>
+        <tr>
+          <td scope="row">SY 2021&ndash;22 National Public Education Financial Survey (NPEFS)</td>
+          <td scope="row">May, 2024</td>
+        </tr>
+        <tr>
+          <td scope="row">SY 2021&ndash;22 School Level Finance Survey</td>
+          <td scope="row">November, 2024</td>
+        </tr>
+      </tbody>
+    </table> -->
+    <!--<div style="padding: 0px 10px 10px 10px;"><a href="#yearModal" data-target="#yearModal" role="button" data-toggle="modal"><span class="fa fa-folder-open"></span>Years Available</a></div>-->
+    
+    
+  </div>
+  
+  <br />
+  <div style="clear: both;"> 
+    <!-- End Body -->
+
+
+</div>
+
+
+<ies-footer></ies-footer> 
+  </div>
+</div>
+</body>
+</html>
+<script id="f5_cspm">(function(){var f5_cspm={f5_p:'HPALLFFINHKABDFECDAFGANMHOGBIGGABMEECBALDPAFOBNOPKLNCCFKDODDJLMIFCEBPLMFAAFCGLFLCMGAGGKCAAPNPIDIKKHMAOBHNLDGBOIFNOEOBIJNEKONAJOJ',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,40,(latency>>8));str=f5_cspm.set_byte(str,41,(latency&0xff));str=f5_cspm.set_byte(str,35,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr1018983446aaaaaaaaaaaaaaaa_cspm_='+encodeURIComponent(cookie_val)+';path=/;'+'';}
+return;}}
+catch(err){return;}
+setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')
+{var d=new Date();d.setTime(d.getTime()-1000);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;'+';';setTimeout(f5_cspm.wait_perf_data,100);}}}}
+f5_cspm.go();}());</script>

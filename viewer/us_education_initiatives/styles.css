@@ -47,6 +47,67 @@ button {
   gap: 18px;
 }
 
+.story-lead {
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow: var(--shadow);
+  border-radius: 28px;
+  padding: 18px 20px;
+  display: grid;
+  gap: 12px;
+}
+
+.story-lead h2 {
+  margin: 0;
+  font-family: "Fraunces", serif;
+  font-size: clamp(1.5rem, 2.7vw, 2.4rem);
+  line-height: 1.05;
+}
+
+.story-blurb {
+  margin: 0;
+  color: var(--muted);
+  max-width: 70ch;
+}
+
+.story-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.preset-btn {
+  border: 1px solid rgba(25, 25, 25, 0.12);
+  background: rgba(255, 255, 255, 0.86);
+  border-radius: 999px;
+  padding: 8px 12px;
+}
+
+.insight-callouts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.insight-callout {
+  background: rgba(255, 250, 242, 0.82);
+  border: 1px solid rgba(25, 25, 25, 0.08);
+  border-radius: 14px;
+  padding: 10px 12px;
+}
+
+.insight-callout h3 {
+  margin: 0;
+  font-family: "Fraunces", serif;
+  font-size: 1rem;
+}
+
+.insight-callout p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
 .hero,
 .workspace,
 .insight-panel,
@@ -238,6 +299,25 @@ button {
 .map-layout {
   grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.72fr);
   align-items: start;
+}
+
+.compare-panel {
+  border: 1px solid rgba(25, 25, 25, 0.08);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+}
+
+.compare-row {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.compare-metric {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
 }
 
 .geo-map-shell {
@@ -557,7 +637,9 @@ button {
   .map-layout,
   .content-grid,
   .detail-grid,
-  .initiative-meta {
+  .initiative-meta,
+  .insight-callouts,
+  .compare-row {
     grid-template-columns: 1fr;
   }
 

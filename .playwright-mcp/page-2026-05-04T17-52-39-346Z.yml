@@ -1,0 +1,399 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - paragraph [ref=e6]: U.S. Education Initiatives Atlas
+      - heading "U.S. Education Initiatives by State" [level=1] [ref=e7]
+      - paragraph [ref=e8]: A reusable initiative dataset and browser for education reforms, programs, and policy movements across the United States.
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - strong [ref=e11]: "17"
+          - text: Visible initiatives
+        - generic [ref=e12]:
+          - strong [ref=e13]: "14"
+          - text: Still active
+        - generic [ref=e14]:
+          - strong [ref=e15]: "17"
+          - text: Category lenses
+        - generic [ref=e16]:
+          - strong [ref=e17]: "3"
+          - text: Geography modes
+    - generic [ref=e18]:
+      - paragraph [ref=e19]: Featured
+      - button "Career Academies United States" [ref=e20] [cursor=pointer]:
+        - generic [ref=e21]: Career Academies
+        - generic [ref=e22]: United States
+      - button "School garden interventions United States" [ref=e23] [cursor=pointer]:
+        - generic [ref=e24]: School garden interventions
+        - generic [ref=e25]: United States
+      - button "Science of Reading (SoR) Nationwide" [ref=e26] [cursor=pointer]:
+        - generic [ref=e27]: Science of Reading (SoR)
+        - generic [ref=e28]: Nationwide
+  - generic [ref=e29]:
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e32]: Search
+        - searchbox "Search" [ref=e33]
+      - generic [ref=e34]:
+        - generic [ref=e35]: Category
+        - combobox "Category" [ref=e36]:
+          - option "All categories" [selected]
+          - option "Academic recovery initiative"
+          - option "Career-connected learning initiative"
+          - option "College-to-career pathway model"
+          - option "District accountability reform"
+          - option "Education technology policy initiative"
+          - option "Federal accountability policy"
+          - option "Federal literacy priority"
+          - option "Instructional paradigm"
+          - option "Integrated secondary-postsecondary model"
+          - option "Policy category"
+          - option "Reduced-tech school policy"
+          - option "Scholarship program"
+          - option "School-based enrichment intervention"
+          - option "Standards initiative"
+          - option "State accountability system"
+          - option "State reform model"
+          - option "Youth apprenticeship program"
+      - generic [ref=e37]:
+        - generic [ref=e38]: Geography
+        - combobox "Geography" [ref=e39]:
+          - option "All scopes" [selected]
+          - option "National"
+          - option "State"
+          - option "Region"
+          - option "Multi-state"
+          - option "Mixed"
+          - option "Other"
+      - generic [ref=e40]:
+        - generic [ref=e41]: Sort
+        - combobox "Sort" [ref=e42]:
+          - option "Editorial relevance" [selected]
+          - option "Latest start year"
+          - option "Alphabetical"
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - paragraph [ref=e46]: Geographic view
+        - generic [ref=e47]:
+          - generic [ref=e48]: Map metric
+          - combobox "Map metric" [ref=e49]:
+            - option "Continuum score (low-tech to high-tech)" [selected]
+            - option "State-linked initiatives"
+            - option "Testing-focused initiatives"
+            - option "Work-based learning initiatives"
+            - option "Outdoor learning initiatives"
+            - option "Low-tech policy initiatives"
+            - option "State-linked + nationwide initiatives"
+        - generic [ref=e50]:
+          - generic [ref=e51]: State
+          - combobox "State" [ref=e52]:
+            - option "Alabama"
+            - option "Alaska"
+            - option "Arizona"
+            - option "Arkansas"
+            - option "California"
+            - option "Colorado"
+            - option "Connecticut"
+            - option "Delaware"
+            - option "Florida"
+            - option "Georgia"
+            - option "Hawaii"
+            - option "Idaho"
+            - option "Illinois"
+            - option "Indiana"
+            - option "Iowa"
+            - option "Kansas"
+            - option "Kentucky"
+            - option "Louisiana"
+            - option "Maine"
+            - option "Maryland"
+            - option "Massachusetts"
+            - option "Michigan"
+            - option "Minnesota"
+            - option "Mississippi"
+            - option "Missouri"
+            - option "Montana"
+            - option "Nebraska"
+            - option "Nevada"
+            - option "New Hampshire"
+            - option "New Jersey"
+            - option "New Mexico"
+            - option "New York"
+            - option "North Carolina"
+            - option "North Dakota"
+            - option "Ohio"
+            - option "Oklahoma"
+            - option "Oregon"
+            - option "Pennsylvania"
+            - option "Rhode Island"
+            - option "South Carolina"
+            - option "South Dakota"
+            - option "Tennessee"
+            - option "Texas"
+            - option "Utah"
+            - option "Vermont"
+            - option "Virginia"
+            - option "Washington" [selected]
+            - option "West Virginia"
+            - option "Wisconsin"
+            - option "Wyoming"
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - region "Map" [ref=e56]
+          - generic [ref=e57]:
+            - generic [ref=e58]:
+              - generic [ref=e59]: Alaska
+              - region "Map" [ref=e61]
+            - generic [ref=e62]:
+              - generic [ref=e63]: Hawaii
+              - region "Map" [ref=e65]
+          - paragraph
+        - complementary [ref=e66]:
+          - paragraph [ref=e67]: State detail
+          - heading "Washington" [level=3] [ref=e68]
+          - generic [ref=e69]:
+            - generic [ref=e70]:
+              - generic [ref=e71]: State-linked initiatives
+              - strong [ref=e72]: "2"
+            - generic [ref=e73]:
+              - generic [ref=e74]: Nationwide initiatives
+              - strong [ref=e75]: "9"
+            - generic [ref=e76]:
+              - generic [ref=e77]: Strongest evidence
+              - strong [ref=e78]: 5/5
+          - generic [ref=e79]:
+            - generic [ref=e80]: Documented initiatives in this state
+            - generic [ref=e81]:
+              - button "School garden interventions evaluation sample" [ref=e82] [cursor=pointer]:
+                - strong [ref=e83]: School garden interventions
+                - generic [ref=e84]: evaluation sample
+              - button "No Child Left Behind annual testing/accountability federal policy implementation" [ref=e85] [cursor=pointer]:
+                - strong [ref=e86]: No Child Left Behind annual testing/accountability
+                - generic [ref=e87]: federal policy implementation
+    - generic [ref=e88]:
+      - article [ref=e89]:
+        - paragraph [ref=e90]: Timeline spread
+        - generic [ref=e91]:
+          - generic [ref=e92]:
+            - generic [ref=e93]: 1990s
+            - strong [ref=e96]: "3"
+          - generic [ref=e97]:
+            - generic [ref=e98]: 2000s
+            - strong [ref=e101]: "1"
+          - generic [ref=e102]:
+            - generic [ref=e103]: 2010s
+            - strong [ref=e106]: "6"
+          - generic [ref=e107]:
+            - generic [ref=e108]: 2020s
+            - strong [ref=e111]: "5"
+          - generic [ref=e112]:
+            - generic [ref=e113]: Unknown
+            - strong [ref=e116]: "2"
+      - article [ref=e117]:
+        - paragraph [ref=e118]: Geography mix
+        - generic [ref=e119]:
+          - generic [ref=e120]:
+            - generic [ref=e121]: national
+            - strong [ref=e124]: "9"
+          - generic [ref=e125]:
+            - generic [ref=e126]: state
+            - strong [ref=e129]: "5"
+          - generic [ref=e130]:
+            - generic [ref=e131]: multi state
+            - strong [ref=e134]: "3"
+    - generic [ref=e135]:
+      - generic [ref=e136]:
+        - generic [ref=e137]:
+          - paragraph [ref=e138]: Explorer
+          - generic [ref=e139]: 17 shown
+        - generic [ref=e140]:
+          - button "College-to-career pathway model national Career Academies Career pathways, academy structure, labor market transitions 1990s-present United States" [ref=e141] [cursor=pointer]:
+            - generic [ref=e142]:
+              - generic [ref=e143]: College-to-career pathway model
+              - generic [ref=e144]: national
+            - heading "Career Academies" [level=2] [ref=e145]
+            - paragraph [ref=e146]: Career pathways, academy structure, labor market transitions
+            - generic [ref=e147]:
+              - generic [ref=e148]: 1990s-present
+              - generic [ref=e149]: United States
+          - button "School-based enrichment intervention national School garden interventions Outdoor learning, nutrition education, hands-on instruction 2015-present United States" [ref=e150] [cursor=pointer]:
+            - generic [ref=e151]:
+              - generic [ref=e152]: School-based enrichment intervention
+              - generic [ref=e153]: national
+            - heading "School garden interventions" [level=2] [ref=e154]
+            - paragraph [ref=e155]: Outdoor learning, nutrition education, hands-on instruction
+            - generic [ref=e156]:
+              - generic [ref=e157]: 2015-present
+              - generic [ref=e158]: United States
+          - button "Instructional paradigm national Science of Reading (SoR) Evidence-based reading instruction, structured literacy, early screening 1970s-present; policy surge 2015-present Nationwide" [ref=e159] [cursor=pointer]:
+            - generic [ref=e160]:
+              - generic [ref=e161]: Instructional paradigm
+              - generic [ref=e162]: national
+            - heading "Science of Reading (SoR)" [level=2] [ref=e163]
+            - paragraph [ref=e164]: Evidence-based reading instruction, structured literacy, early screening
+            - generic [ref=e165]:
+              - generic [ref=e166]: 1970s-present; policy surge 2015-present
+              - generic [ref=e167]: Nationwide
+          - button "Education technology policy initiative national Advancing AI in Education Responsible AI use, instructional support, teacher productivity 2025-present United States" [ref=e168] [cursor=pointer]:
+            - generic [ref=e169]:
+              - generic [ref=e170]: Education technology policy initiative
+              - generic [ref=e171]: national
+            - heading "Advancing AI in Education" [level=2] [ref=e172]
+            - paragraph [ref=e173]: Responsible AI use, instructional support, teacher productivity
+            - generic [ref=e174]:
+              - generic [ref=e175]: 2025-present
+              - generic [ref=e176]: United States
+          - button "Federal literacy priority national Evidence-based literacy priority Science of Reading alignment, literacy intervention, implementation quality 2025-present United States" [ref=e177] [cursor=pointer]:
+            - generic [ref=e178]:
+              - generic [ref=e179]: Federal literacy priority
+              - generic [ref=e180]: national
+            - heading "Evidence-based literacy priority" [level=2] [ref=e181]
+            - paragraph [ref=e182]: Science of Reading alignment, literacy intervention, implementation quality
+            - generic [ref=e183]:
+              - generic [ref=e184]: 2025-present
+              - generic [ref=e185]: United States
+          - button "Academic recovery initiative national High-dosage tutoring (Engage Every Student) Targeted tutoring, accelerated learning, implementation support 2021-present United States" [ref=e186] [cursor=pointer]:
+            - generic [ref=e187]:
+              - generic [ref=e188]: Academic recovery initiative
+              - generic [ref=e189]: national
+            - heading "High-dosage tutoring (Engage Every Student)" [level=2] [ref=e190]
+            - paragraph [ref=e191]: Targeted tutoring, accelerated learning, implementation support
+            - generic [ref=e192]:
+              - generic [ref=e193]: 2021-present
+              - generic [ref=e194]: United States
+          - button "Career-connected learning initiative national Raise the Bar career pathways Career pathways, CTE expansion, work-based learning 2021-present United States" [ref=e195] [cursor=pointer]:
+            - generic [ref=e196]:
+              - generic [ref=e197]: Career-connected learning initiative
+              - generic [ref=e198]: national
+            - heading "Raise the Bar career pathways" [level=2] [ref=e199]
+            - paragraph [ref=e200]: Career pathways, CTE expansion, work-based learning
+            - generic [ref=e201]:
+              - generic [ref=e202]: 2021-present
+              - generic [ref=e203]: United States
+          - button "Youth apprenticeship program state CareerWise Colorado youth apprenticeship Apprenticeship, paid work-based learning, career pathways 2017-present Colorado" [ref=e204] [cursor=pointer]:
+            - generic [ref=e205]:
+              - generic [ref=e206]: Youth apprenticeship program
+              - generic [ref=e207]: state
+            - heading "CareerWise Colorado youth apprenticeship" [level=2] [ref=e208]
+            - paragraph [ref=e209]: Apprenticeship, paid work-based learning, career pathways
+            - generic [ref=e210]:
+              - generic [ref=e211]: 2017-present
+              - generic [ref=e212]: Colorado
+          - button "Standards initiative multi state Common Core State Standards Academic standards, alignment, college readiness 2010-present Multi-state U.S." [ref=e213] [cursor=pointer]:
+            - generic [ref=e214]:
+              - generic [ref=e215]: Standards initiative
+              - generic [ref=e216]: multi state
+            - heading "Common Core State Standards" [level=2] [ref=e217]
+            - paragraph [ref=e218]: Academic standards, alignment, college readiness
+            - generic [ref=e219]:
+              - generic [ref=e220]: 2010-present
+              - generic [ref=e221]: Multi-state U.S.
+          - button "State accountability system state Florida A+ school grading/accountability plan School grades, accountability pressure, low-performing schools 1999-present Florida (statewide)" [ref=e222] [cursor=pointer]:
+            - generic [ref=e223]:
+              - generic [ref=e224]: State accountability system
+              - generic [ref=e225]: state
+            - heading "Florida A+ school grading/accountability plan" [level=2] [ref=e226]
+            - paragraph [ref=e227]: School grades, accountability pressure, low-performing schools
+            - generic [ref=e228]:
+              - generic [ref=e229]: 1999-present
+              - generic [ref=e230]: Florida (statewide)
+          - button "Policy category multi state Literacy-Based Promotion Laws Grade-level reading, early intervention, promotion gates 2000s-present Multiple U.S. states" [ref=e231] [cursor=pointer]:
+            - generic [ref=e232]:
+              - generic [ref=e233]: Policy category
+              - generic [ref=e234]: multi state
+            - heading "Literacy-Based Promotion Laws" [level=2] [ref=e235]
+            - paragraph [ref=e236]: Grade-level reading, early intervention, promotion gates
+            - generic [ref=e237]:
+              - generic [ref=e238]: 2000s-present
+              - generic [ref=e239]: Multiple U.S. states
+          - button "State reform model state Mississippi Miracle Early literacy, accountability, retention policy 2013-present Mississippi (statewide)" [ref=e240] [cursor=pointer]:
+            - generic [ref=e241]:
+              - generic [ref=e242]: State reform model
+              - generic [ref=e243]: state
+            - heading "Mississippi Miracle" [level=2] [ref=e244]
+            - paragraph [ref=e245]: Early literacy, accountability, retention policy
+            - generic [ref=e246]:
+              - generic [ref=e247]: 2013-present
+              - generic [ref=e248]: Mississippi (statewide)
+          - button "Integrated secondary-postsecondary model multi state P-TECH 9-14 Technical pathways, employer partnerships, college credit 2011-present Multi-state U.S." [ref=e249] [cursor=pointer]:
+            - generic [ref=e250]:
+              - generic [ref=e251]: Integrated secondary-postsecondary model
+              - generic [ref=e252]: multi state
+            - heading "P-TECH 9-14" [level=2] [ref=e253]
+            - paragraph [ref=e254]: Technical pathways, employer partnerships, college credit
+            - generic [ref=e255]:
+              - generic [ref=e256]: 2011-present
+              - generic [ref=e257]: Multi-state U.S.
+          - button "Federal accountability policy national No Child Left Behind annual testing/accountability Annual state testing, subgroup accountability, sanctions 2002-2015 United States" [ref=e258] [cursor=pointer]:
+            - generic [ref=e259]:
+              - generic [ref=e260]: Federal accountability policy
+              - generic [ref=e261]: national
+            - heading "No Child Left Behind annual testing/accountability" [level=2] [ref=e262]
+            - paragraph [ref=e263]: Annual state testing, subgroup accountability, sanctions
+            - generic [ref=e264]:
+              - generic [ref=e265]: 2002-2015
+              - generic [ref=e266]: United States
+          - button "Reduced-tech school policy state School cellphone bans / phone-free school policies Attention, discipline, classroom technology restriction 2023-present Florida (statewide)" [ref=e267] [cursor=pointer]:
+            - generic [ref=e268]:
+              - generic [ref=e269]: Reduced-tech school policy
+              - generic [ref=e270]: state
+            - heading "School cellphone bans / phone-free school policies" [level=2] [ref=e271]
+            - paragraph [ref=e272]: Attention, discipline, classroom technology restriction
+            - generic [ref=e273]:
+              - generic [ref=e274]: 2023-present
+              - generic [ref=e275]: Florida (statewide)
+          - button "Scholarship program national Gates Millennium Scholars College access, persistence, STEM advancement 1999-2016 United States" [ref=e276] [cursor=pointer]:
+            - generic [ref=e277]:
+              - generic [ref=e278]: Scholarship program
+              - generic [ref=e279]: national
+            - heading "Gates Millennium Scholars" [level=2] [ref=e280]
+            - paragraph [ref=e281]: College access, persistence, STEM advancement
+            - generic [ref=e282]:
+              - generic [ref=e283]: 1999-2016
+              - generic [ref=e284]: United States
+          - button "District accountability reform state Chicago test-based promotion and accountability reforms High-stakes testing, promotion policy, remediation 1996-2002 Chicago Illinois" [ref=e285] [cursor=pointer]:
+            - generic [ref=e286]:
+              - generic [ref=e287]: District accountability reform
+              - generic [ref=e288]: state
+            - heading "Chicago test-based promotion and accountability reforms" [level=2] [ref=e289]
+            - paragraph [ref=e290]: High-stakes testing, promotion policy, remediation
+            - generic [ref=e291]:
+              - generic [ref=e292]: 1996-2002
+              - generic [ref=e293]: Chicago Illinois
+      - complementary [ref=e294]:
+        - paragraph [ref=e295]: Detail
+        - heading "Career Academies" [level=2] [ref=e296]
+        - paragraph [ref=e297]: Career pathways, academy structure, labor market transitions
+        - generic [ref=e298]:
+          - generic [ref=e299]:
+            - generic [ref=e300]: Category
+            - strong [ref=e301]: College-to-career pathway model
+          - generic [ref=e302]:
+            - generic [ref=e303]: Location
+            - strong [ref=e304]: United States
+          - generic [ref=e305]:
+            - generic [ref=e306]: Timeline
+            - strong [ref=e307]: 1990s-present
+          - generic [ref=e308]:
+            - generic [ref=e309]: Source
+            - strong [ref=e310]: mdrc.org
+        - generic [ref=e311]:
+          - generic [ref=e312]: Research status
+          - generic [ref=e313]:
+            - generic [ref=e314]: scholarly_reviewed
+            - generic [ref=e315]: positive
+            - generic [ref=e316]: high
+            - generic [ref=e317]: evidence 5/5
+          - paragraph [ref=e318]: MDRC long-run randomized evidence is unusually strong for a secondary career-pathway model and shows earnings gains without academic harm.
+        - generic [ref=e319]:
+          - generic [ref=e320]: Policies and mechanisms
+          - list [ref=e321]:
+            - listitem [ref=e322]: Small learning communities
+            - listitem [ref=e323]: employer partnerships
+            - listitem [ref=e324]: career-themed curricula
+            - listitem [ref=e325]: work-based exposure
+        - generic [ref=e326]:
+          - generic [ref=e327]: Observed outcomes
+          - list [ref=e328]:
+            - listitem [ref=e329]: Sustained earnings gains without reducing high school completion or college participation
+        - link "Open source reference" [ref=e330] [cursor=pointer]:
+          - /url: https://www.mdrc.org/work/publications/career-academies-long-term-impacts-work-education-and-transitions-adulthood

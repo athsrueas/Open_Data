@@ -46,13 +46,21 @@ Use this checklist to pick small, discrete tasks inspired by `docs/PD-Initiative
 - [ ] Gather public construction datasets (USASpending construction awards, State DOT/school capital plans, municipal open data capital project lists) in `construction-sources.md`.
 
 ## U.S. Education Initiatives Subspace
-- [ ] Replace weak seed rows in `Education Initiatives/education_initiatives.csv` with stronger interventions for testing/accountability, work-based learning, outdoor learning, and reduced-tech school policy.
+- [ ] Implement the stakeholder change plan in `docs/Bounties/education-dashboard-change-requests-2026-05.md` before public launch.
+- [ ] Add a publication-readiness gate report that blocks release until indicator coverage and comparability thresholds are met.
+- [ ] Redesign viewer UX for journalists/citizens/parents with headline-first storytelling, short map explanations, and evidence callouts.
+- [ ] Add side-by-side comparative map views (state vs state, period vs period, and pre/post initiative windows).
+- [ ] Add trend-change analysis tied to initiative adoption dates with explicit negative/null finding support.
+- [ ] Prepare a dedicated education-data repository split plan from the general open-data repository.
+- [ ] Download and organize all identified benchmark/peer datasets (Education Recovery Scorecard, SEDA, Urban Education Data Portal, NAEP state trend tools, SAT/ACT state reports, ECS policy scans, CTE/work-based learning dashboards), and maintain a complete source record (URL, publisher, retrieval date, license/terms, geography, year coverage, and field-level provenance notes) for every ingested file.
+- [x] Replace weak seed rows in `Education Initiatives/education_initiatives.csv` with stronger interventions for testing/accountability, work-based learning, outdoor learning, and reduced-tech school policy.
 - [ ] Keep `Education Initiatives/initiative_sources.csv` current for every kept or replacement initiative.
-- [ ] Resolve all `pending_search` official-source rows in the source inventory.
-- [ ] Pull down the first wave of PDFs and HTML captures into `outputs/us_education_initiatives/sources/`.
-- [ ] Extract atomic findings into `Education Initiatives/initiative_claims.csv`.
-- [ ] Upgrade at least five initiative evidence rows out of `seed` in `Education Initiatives/initiative_evidence_reviews.csv`.
-- [ ] Rebuild the subspace bundle and inspect `outputs/us_education_initiatives/subspace/initiatives.flat.csv` for empty evidence fields.
+- [x] Resolve all `pending_search` official-source rows in the source inventory.
+- [x] Pull down the first wave of PDFs and HTML captures into `outputs/us_education_initiatives/sources/`.
+- [x] Extract atomic findings into `Education Initiatives/initiative_claims.csv`.
+- [x] Upgrade at least five initiative evidence rows out of `seed` in `Education Initiatives/initiative_evidence_reviews.csv`.
+- [x] Rebuild the subspace bundle and inspect `outputs/us_education_initiatives/subspace/initiatives.flat.csv` for empty evidence fields.
+- [ ] Add longitudinal state performance datasets for reading, math, SAT, and other top score types (ACT, NAEP, AP where available), going as far back as reliable state-level series allow; include source provenance, year coverage metadata, and comparability notes for score-scale differences.
 
 ## World Affairs
 - [ ] Create `crisis-index.csv` for three humanitarian crises.

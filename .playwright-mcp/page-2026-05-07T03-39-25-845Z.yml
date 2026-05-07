@@ -1,0 +1,312 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Geo Bounty · Knowledge Graph
+      - heading "200 Most Influential AI Papers as a Knowledge Graph" [level=1] [ref=e5]:
+        - text: 200 Most Influential
+        - emphasis [ref=e6]: AI Papers
+        - text: as a Knowledge Graph
+      - paragraph [ref=e7]: From Turing's 1936 paper to GPT-3 — 88 years of AI research published as structured, linked, on-chain data on Geo.
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - generic [ref=e10]: "200"
+          - generic [ref=e11]: Papers · 1936–2024
+        - generic [ref=e12]:
+          - generic [ref=e13]: "887"
+          - generic [ref=e14]: Authors mapped
+        - generic [ref=e15]:
+          - generic [ref=e16]: "97"
+          - generic [ref=e17]: Concepts
+        - generic [ref=e18]:
+          - generic [ref=e19]: 1015+
+          - generic [ref=e20]: Graph links
+    - generic [ref=e21]: scroll
+  - generic [ref=e23]:
+    - generic [ref=e24]: 01 · Motivation
+    - heading "A list answers what. A graph answers why." [level=2] [ref=e25]:
+      - text: A list answers
+      - emphasis [ref=e26]: what
+      - text: .
+      - text: A graph answers
+      - emphasis [ref=e27]: why
+      - text: .
+    - paragraph [ref=e28]:
+      - text: "Every few years someone publishes a \"Top AI papers\" list. Usually it's a flat ranking — a table with titles, authors, and citation counts. Useful for a quick overview, but not useful if you want to ask:"
+      - emphasis [ref=e29]: Which researchers co-authored papers that introduced both a new architecture and a benchmark? Which concepts from the 1980s showed up again in the Transformer era?
+    - paragraph [ref=e30]:
+      - text: This project publishes 200 influential AI papers not as a list, but as a structured knowledge graph on
+      - strong [ref=e31]: Geo
+      - text: — a decentralized protocol for on-chain knowledge. Every entity is linked by typed relations. The result is traversable, not just searchable.
+  - generic [ref=e33]:
+    - generic [ref=e34]: 02 · Dataset
+    - heading "Starting from 600 candidates" [level=2] [ref=e35]:
+      - text: Starting from
+      - emphasis [ref=e36]: 600 candidates
+    - paragraph [ref=e37]: "The dataset started with roughly 600 candidates assembled from five sources: PaperDigest top-cited lists, ZetaAlpha AI rankings, OpenAlex metadata, Semantic Scholar cross-checks, and a hand-curated list of foundational pre-arXiv works — Shannon's information theory, McCulloch-Pitts neurons, Wiener's Cybernetics."
+    - paragraph [ref=e38]:
+      - text: Citation counts were fetched automatically via the OpenAlex API using paper IDs in the format
+      - code [ref=e39]: W1234567890
+      - text: . This gave the
+      - code [ref=e40]: cited_by_count
+      - text: field — the backbone of the scoring.
+  - generic [ref=e42]:
+    - generic [ref=e43]: 03 · Scoring algorithm
+    - heading "How 600 became 200" [level=2] [ref=e44]:
+      - text: How
+      - emphasis [ref=e45]: 600 became 200
+    - generic [ref=e46]:
+      - text: Score =
+      - text: 0.55 × log(citations + 1)
+      - text: 0.20 × code_present
+      - text: 0.15 × benchmark_present
+      - text: 0.10 × award_flag
+    - paragraph [ref=e47]:
+      - strong [ref=e48]: Log scale
+      - text: prevents a paper with 80,000 citations from completely crowding out one with 8,000.
+      - strong [ref=e49]: Code presence
+      - text: is a reproducibility signal.
+      - strong [ref=e50]: Benchmarks
+      - text: have outsized structural influence — they define how the field measures progress.
+      - strong [ref=e51]: Year normalization
+      - text: corrects for citation accumulation time so 2022 papers compete fairly against 2012 ones.
+    - paragraph [ref=e52]: "Raw scoring was combined with domain quotas (Deep Learning ≤ 50, NLP ≤ 30, etc.), then augmented with 26 foundational pre-arXiv works and ~24 modern papers the algorithm missed — AlphaGo, AlphaFold, NeRF, FlashAttention — each included for a specific reason: structural transformation, community consensus, or filling a domain gap visible only after applying quotas."
+  - generic [ref=e54]:
+    - generic [ref=e55]: 04 · Data enrichment
+    - heading "What each paper contains" [level=2] [ref=e56]:
+      - text: What each paper
+      - emphasis [ref=e57]: contains
+    - paragraph [ref=e58]:
+      - text: Each paper entity was enriched from multiple sources. Here's the concrete breakdown using
+      - emphasis [ref=e59]: Attention Is All You Need
+      - text: "as an example:"
+    - generic [ref=e60]:
+      - generic [ref=e61]:
+        - generic [ref=e62]: 📄
+        - generic [ref=e63]:
+          - generic [ref=e64]: Attention Is All You Need
+          - generic [ref=e65]: Vaswani et al. · 2017 · NeurIPS
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - generic [ref=e69]: Citations
+            - generic [ref=e70]: 100,000+
+          - generic [ref=e71]:
+            - generic [ref=e72]: Era
+            - generic [ref=e73]: Transformer Era
+          - generic [ref=e74]:
+            - generic [ref=e75]: Domain
+            - generic [ref=e76]: Language Models
+          - generic [ref=e77]:
+            - generic [ref=e78]: arXiv
+            - generic [ref=e79]: "1706.03762"
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - generic [ref=e82]: Authors → Person
+            - generic [ref=e83]:
+              - generic [ref=e84]: Ashish Vaswani
+              - generic [ref=e85]: Noam Shazeer
+              - generic [ref=e86]: Niki Parmar
+              - generic [ref=e87]: +5 more
+          - generic [ref=e88]:
+            - generic [ref=e89]: Concepts → Topic
+            - generic [ref=e90]:
+              - generic [ref=e91]: Transformer
+              - generic [ref=e92]: Self-Attention
+              - generic [ref=e93]: Multi-Head Attention
+              - generic [ref=e94]: Positional Encoding
+          - generic [ref=e95]:
+            - generic [ref=e96]: Related projects
+            - generic [ref=e97]:
+              - generic [ref=e98]: Google Brain
+              - generic [ref=e99]: Google
+      - generic [ref=e100]:
+        - link "arXiv →" [ref=e101] [cursor=pointer]:
+          - /url: https://arxiv.org/abs/1706.03762
+        - link "Code →" [ref=e102] [cursor=pointer]:
+          - /url: https://github.com/tensorflow/tensor2tensor
+        - generic [ref=e103]: published_in relation
+    - paragraph [ref=e104]:
+      - text: Authors came from OpenAlex API automatically. Domain (
+      - emphasis [ref=e105]: Language Models & Transformers
+      - text: ) was assigned manually. Era (
+      - emphasis [ref=e106]: Transformer Era
+      - text: ) from a fixed year-to-era table. Concepts chosen from a controlled vocabulary of 97 terms. Cover images — deterministic Pillow renders, color-coded by domain, no AI generation.
+  - generic [ref=e108]:
+    - generic [ref=e109]: 05 · Data model
+    - heading "The full dataset" [level=2] [ref=e110]:
+      - text: The
+      - emphasis [ref=e111]: full dataset
+    - table [ref=e112]:
+      - rowgroup [ref=e113]:
+        - row "Entity type Count" [ref=e114]:
+          - columnheader "Entity type" [ref=e115]
+          - columnheader "Count" [ref=e116]
+      - rowgroup [ref=e117]:
+        - row "Papers 200" [ref=e118]:
+          - cell "Papers" [ref=e119]
+          - cell "200" [ref=e120]
+        - row "Authors 887" [ref=e121]:
+          - cell "Authors" [ref=e122]
+          - cell "887" [ref=e123]
+        - row "Concepts 97" [ref=e124]:
+          - cell "Concepts" [ref=e125]
+          - cell "97" [ref=e126]
+        - row "Datasets 31" [ref=e127]:
+          - cell "Datasets" [ref=e128]
+          - cell "31" [ref=e129]
+        - row "Organizations 28" [ref=e130]:
+          - cell "Organizations" [ref=e131]
+          - cell "28" [ref=e132]
+        - row "Publication venues 24" [ref=e133]:
+          - cell "Publication venues" [ref=e134]
+          - cell "24" [ref=e135]
+        - row "Eras 8" [ref=e136]:
+          - cell "Eras" [ref=e137]
+          - cell "8" [ref=e138]
+        - row "Domains 11" [ref=e139]:
+          - cell "Domains" [ref=e140]
+          - cell "11" [ref=e141]
+    - paragraph [ref=e142]: Everything lives in a 17-sheet Excel file — entity sheets on one side, relation tables on the other. A Python export script reads it with pandas, normalizes venue names, and produces 15 JSON files ready for publishing.
+    - img "Geo_papers_schema_v2.xlsx — Papers sheet" [ref=e144]
+    - paragraph [ref=e146]: Geo_papers_schema_v2.xlsx · Papers sheet · 200 rows · 20 columns
+  - generic [ref=e148]:
+    - generic [ref=e149]: 06 · Technical pipeline
+    - heading "From spreadsheet to chain" [level=2] [ref=e150]:
+      - text: From spreadsheet
+      - emphasis [ref=e151]: to chain
+    - generic [ref=e152]:
+      - generic [ref=e153]:
+        - generic [ref=e154]: ⬛
+        - generic [ref=e155]: Excel
+        - generic [ref=e156]: 17 sheets
+      - generic [ref=e157]: →
+      - generic [ref=e158]:
+        - generic [ref=e159]: ⬛
+        - generic [ref=e160]: Python
+        - generic [ref=e161]: pandas + Pillow
+      - generic [ref=e162]: →
+      - generic [ref=e163]:
+        - generic [ref=e164]: ⬛
+        - generic [ref=e165]: JSON
+        - generic [ref=e166]: 15 files
+      - generic [ref=e167]: →
+      - generic [ref=e168]:
+        - generic [ref=e169]: ⬛
+        - generic [ref=e170]: TypeScript
+        - generic [ref=e171]: Geo SDK · Bun
+      - generic [ref=e172]: →
+      - generic [ref=e173]:
+        - generic [ref=e174]: ⬛
+        - generic [ref=e175]: On-chain
+        - generic [ref=e176]: 16 transactions
+    - paragraph [ref=e177]:
+      - text: Four TypeScript scripts cover 50 papers each, in batches of 15 (~650 ops/batch). Each paper entity gets typed graph relations —
+      - code [ref=e178]: authors → Person
+      - text: ","
+      - code [ref=e179]: published_in relation
+      - text: ","
+      - code [ref=e180]: related_topics → Topic
+      - text: — plus space-specific properties.
+    - paragraph [ref=e181]:
+      - text: "Ontology decisions, aligned with the Geo team so far: Era, Domain, and Concept all use"
+      - code [ref=e182]: TYPES.topic
+      - text: — semantically distinct but unified to avoid type proliferation. ArXiv preprints don't get a venue entity — just a
+      - code [ref=e183]: web_url
+      - text: property.
+  - generic [ref=e185]:
+    - generic [ref=e186]: 07 · Code review
+    - heading "From review to production-ready" [level=2] [ref=e187]:
+      - text: From review to
+      - emphasis [ref=e188]: production-ready
+    - paragraph [ref=e189]:
+      - text: "The Geo team ran a full code review. Most striking finding:"
+      - code [ref=e190]: SPACE_PROPS
+      - text: — 15 carefully-researched space-specific property IDs, documented as
+      - emphasis [ref=e191]: "\"Discovered via introspect on real paper entity\""
+      - text: — had never been imported or used. All that research was dead code while the pipeline wrote to generic root IDs. One root cause, several cascading problems.
+    - generic [ref=e192]:
+      - generic [ref=e193]: Publish pipeline
+      - generic [ref=e194]:
+        - generic [ref=e195]: ✓
+        - generic [ref=e196]: Paper type + space-specific schema (SPACE_PROPS)
+        - generic [ref=e197]: closed
+      - generic [ref=e198]:
+        - generic [ref=e199]: ✓
+        - generic [ref=e200]: "Dataset type: TYPES.dataset instead of TYPES.project"
+        - generic [ref=e201]: closed
+      - generic [ref=e202]:
+        - generic [ref=e203]: ✓
+        - generic [ref=e204]: Authors, Published in, Related projects as direct typed relations
+        - generic [ref=e205]: closed
+      - generic [ref=e206]:
+        - generic [ref=e207]: ✓
+        - generic [ref=e208]: "Rich paper fields: arxiv_url, code_url, citation_count, cover"
+        - generic [ref=e209]: closed
+      - generic [ref=e210]:
+        - generic [ref=e211]: ✓
+        - generic [ref=e212]: Paper dedup, SPACE_ID from env variable, pagination in fetchExistingMap
+        - generic [ref=e213]: closed
+      - generic [ref=e214]:
+        - generic [ref=e215]: ✓
+        - generic [ref=e216]: Venue name normalization (NeurIPS, ICML, arXiv...)
+        - generic [ref=e217]: closed
+      - generic [ref=e218]: Infrastructure
+      - generic [ref=e219]:
+        - generic [ref=e220]: ✓
+        - generic [ref=e221]: generate_images.py — deterministic Pillow render, pushed to repo
+        - generic [ref=e222]: closed
+      - generic [ref=e223]:
+        - generic [ref=e224]: ◷
+        - generic [ref=e225]: chore/sdk-upgrade-0-13 — typecheck passes, deleteEntity adapted
+        - generic [ref=e226]: not merged
+      - generic [ref=e227]: Data quality
+      - generic [ref=e228]:
+        - generic [ref=e229]: ✓
+        - generic [ref=e230]: Semantic Scholar verifier MVP — full run on all 200 papers
+        - generic [ref=e231]: closed
+      - generic [ref=e232]:
+        - generic [ref=e233]: ✓
+        - generic [ref=e234]: SS URL enrichment + citation cross-check + peer-reviewed candidate flag
+        - generic [ref=e235]: implemented
+      - generic [ref=e236]:
+        - generic [ref=e237]: ◷
+        - generic [ref=e238]: Editorial layer (Key contribution) — main remaining gap
+        - generic [ref=e239]: in progress
+    - generic [ref=e240]:
+      - strong [ref=e241]: "Open:"
+      - text: waiting on
+      - code [ref=e242]: TYPES.journal
+      - text: UUID from the Geo team to finalize publication venue typing and replace the current temporary model.
+  - generic [ref=e244]:
+    - generic [ref=e245]: 08 · What it enables
+    - heading "Queryable by relation, not keyword" [level=2] [ref=e246]:
+      - text: Queryable by
+      - emphasis [ref=e247]: relation
+      - text: ", not keyword"
+    - paragraph [ref=e248]: "Once published, the graph is traversable by type and relation. Not just searchable by keyword. You can ask:"
+    - list [ref=e249]:
+      - listitem [ref=e250]: All papers by a specific author
+      - listitem [ref=e251]: All papers introducing a concept in the Transformer Era
+      - listitem [ref=e252]: All organizations affiliated with Reinforcement Learning papers
+      - listitem [ref=e253]: All datasets introduced before 2010 still referenced after 2020
+    - paragraph [ref=e254]: This is the difference between a list and a graph.
+  - generic [ref=e256]:
+    - generic [ref=e257]: 09 · 3D graph
+    - heading "Explore the graph as an interactive field" [level=2] [ref=e258]:
+      - text: Explore the graph as an
+      - emphasis [ref=e259]: interactive field
+    - paragraph [ref=e260]: Alongside the main write-up, I also prepared a 3D view of the Top-200 AI papers graph. It gives a more spatial sense of the corpus — clusters, bridges between domains, and the density of historical connections.
+    - generic [ref=e261]:
+      - iframe [ref=e262]
+      - generic [ref=e263]:
+        - generic [ref=e264]: Interactive 3D preview embedded directly into the page.
+        - link "Open full-screen →" [ref=e265] [cursor=pointer]:
+          - /url: graph3d-v2.html
+  - contentinfo [ref=e266]:
+    - generic [ref=e267]:
+      - generic [ref=e268]:
+        - link "GitHub →" [ref=e269] [cursor=pointer]:
+          - /url: https://github.com/Levash0v/Top-200-AI-papers
+        - link "Geo Space →" [ref=e270] [cursor=pointer]:
+          - /url: https://geobrowser.io/space/41e851610e13a19441c4d980f2f2ce6b
+      - paragraph [ref=e271]: Geo Bounty · Evolution of Intelligence Space

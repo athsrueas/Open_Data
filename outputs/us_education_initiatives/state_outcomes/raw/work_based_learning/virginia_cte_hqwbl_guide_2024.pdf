@@ -1,0 +1,136 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-E5G7880415"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-E5G7880415');
+        </script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=windows-1251">
+<meta name="description" content="Virginia Regulatory Town Hall Activity Report">
+<link rel="stylesheet" type="text/css" href="../styles.css"><link rel="stylesheet" type="text/css" href="../print.css" media="print"><link rel="shortcut icon" href="../townhall.ico"><link rel="P3Pv1" href=../"w3c/p3p.xml"><title>Virginia Regulatory Town Hall Show Message</title>
+</head>
+
+<body>
+
+
+
+
+<script src="https://www.developer.virginia.gov/media/developer/resources/branding-bar/brandingbar.php" data-item="va_aabrandingbar" aaname="Department of Planning and Budget" aatheme="aatheme-black" defer="" ></script>
+
+<div id="agencybanner" title="Virginia Regulatory Town Hall">
+
+  
+ 
+  
+  <div class="agency-logo">
+    <img src="../graphics/townhallimage.gif" alt="Virginia Regulatory Town Hall" style="max-width: 100%; height: 100%; object-fit: contain;">
+  </div>
+
+</div>
+
+
+<div id="breadcrumb">
+  
+<div id="sitesearch">
+  
+   	 <form action="../L/search.cfm" method="post">
+        <input type="text" name="keyword" 
+               style="vertical-align: middle; height: 18px; font-size: .85em; width: 140px; background-color: #feffff; padding: 0px; border: 0px; border-top: 1px solid #D5D5D5; border-bottom: 1px solid #D5D5D5;"
+               onclick="javaScript: if (this.value=='Search the TownHall')this.value=''" onkeypress="javaScript: if (this.value=='Search the TownHall')this.value=''" value="Search the TownHall"               
+        ><input type="image" src="../Graphics/MagnifyGlassSearch.gif" style="vertical-align: middle; height: 20px;">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="../L/search.cfm" alt="search page" style="font-size: .9em;">Search Options</a>
+   	  </form>
+   		 
+</div>
+
+
+  <div id="breadcrumblinks"><a href="../index.cfm">Home</a> &gt; </div>
+</div>
+
+
+
+  <div id="sidebar">
+    
+    
+
+    
+
+    
+    <div id="menu8"><a>&nbsp;</a></div>
+
+    <ul class="menu">
+      <li><a href="../L/ListBoards.cfm" title="Browse Regulations">Find a Regulation</a></li>
+      <li><a href="../L/NowInProgress.cfm" title="Regulatory Activity">Regulatory Activity</a>
+        <ul>
+          <li><a href="../L/NowInProgress.cfm" title="Actions Underway">Actions Underway</a></li>
+          <li><a href="../L/petitions.cfm" title="Petitions for Rulemaking">Petitions</a></li>
+          <li><a href="../L/previews.cfm" title="Periodic Reviews">Periodic Reviews</a></li>
+          <li><a href="../L/generalnotice.cfm" title="General Notices">General Notices</a></li>
+        </ul>
+      </li>
+
+      <li><a href="../L/meetings.cfm?time=today" title="Meetings">Meetings</a></li>
+      <li><a href="../L/GDocs.cfm" title="Guidance Documents">Guidance Documents</a></li>
+      <li><a href="../L/Forums.cfm" title="Comment Forums">Comment Forums</a></li>
+    </ul>
+
+    
+      <div class="navTR">Sign in</div>
+      <div id="menu6"><a href="../L/statelogin.cfm" title="State agency login">State User</a></div>
+      <div id="menu7"><a href="../L/publiclogin.cfm" title="Public user Login">Registered Public</a></div>
+      <div id="menu13"><a href="../L/Register.cfm" title="Register as a public user">Public Sign up</a></div>
+    
+
+    
+    <div id="menu12"><a>&nbsp;</a></div>
+
+    
+
+    
+    
+  </div>
+
+
+
+<div id="content">
+
+
+<div>
+  
+    Please <a href="#" onClick="history.go(-1);return true;">Go Back</a> to the previous page 
+    and correct the following condition or notify the Town Hall administrators of the problem.
+  
+</div>
+
+<div style="margin-top: 20px; padding: 9px; border: 2px solid crimson; background-color: #fafafa">
+  
+  	<b>Message!</b>
+    <div style="height: 6px"></div>
+   	Error 404 (not found) - Unable to display document C:\TownHall\docroot\GuidanceDocs\201\GDoc_DOE_6795_v5.pdf.  This file could not be found on the server. 
+
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<div>
+</div>
+<br>
+
+
+</div>
+
+</body>
+</html> 

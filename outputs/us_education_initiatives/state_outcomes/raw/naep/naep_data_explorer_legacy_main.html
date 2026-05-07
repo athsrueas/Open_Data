@@ -1,0 +1,611 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1"><title>
+	NAEP Data Explorer.net
+</title><meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" /><meta http-equiv="content-type" content="text/html;charset=iso-8859-1" /><meta name="robots" content="index,nofollow" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/surveys/international/assets/bootstrap-3.4.1/css/bootstrap.min.css" /><link rel="stylesheet" href="/surveys/international/assets/css/iap-common.css" /><link href="/surveys/international/assets/css/navbar.css" rel="stylesheet" type="text/css" /><link href="/surveys/international/css/main.css" rel="stylesheet" type="text/css" /><link rel="Stylesheet" type="text/css" href="inc/css/nde2.css" />
+
+    <style type="text/css">
+        @media (min-width: 1000px) {
+            .varieties > div.col-lg-1 {
+                width: 11.9%;
+            }
+
+            .iap-wrap .varieties > div:last-child {
+                border-right: none;
+            }
+        }
+
+        ul#slick {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .slick-list, .slick-track {
+            height: 100%;
+        }
+
+        .iap-wrap img {
+            object-fit: cover;
+        }
+
+        @media (max-width: 1000px) {
+            .iap-wrap .carousel {
+                position: relative;
+                top: -1px;
+            }
+
+            .iap-wrap .carousel .carousel-item {
+                height: 100%;
+            }
+
+            .iap-wrap .carousel .right-arrow, .iap-wrap .carousel .left-arrow {
+                width: 22px;
+            }
+
+            .iap-wrap .carousel .carousel-wrap {
+                font-size: 13px !important;
+                top: 20px;
+                right: 0px;
+                left: auto;
+            }
+
+            .iap-wrap .carousel .carousel-wrap .bg-color {
+                padding: 10px 14px;
+            }
+
+            .iap-wrap .carousel .carousel-wrap.right {
+                right: 40px;
+            }
+
+            .iap-wrap .carousel .carousel-wrap.left {
+                right: auto;
+                left: 30px;
+            }
+
+            .iap-wrap .carousel .carousel-wrap h4 {
+                font-size: 15px !important;
+                margin: 0;
+                font-weight: 700;
+            }
+
+            .iap-wrap .carousel .carousel-wrap div {
+                margin-top: 10px;
+                font-size: 13px !important;
+                line-height: 18px !important;
+            }
+
+            .state-county-btn {
+                right: 10% !important;
+            }
+
+
+
+            .iap-wrap .carousel .carousel-wrap .read-more-button {
+                padding: 5px 42px 5px 12px;
+                width: auto;
+            }
+
+            .iap-wrap .carousel .carousel-wrap .read-more-button a:link,
+            .iap-wrap .carousel .carousel-wrap .read-more-button a:visited,
+            .iap-wrap .carousel .carousel-wrap .read-more-button a:hover {
+                font-size: 14px;
+            }
+
+            .iap-wrap .carousel .read-more-button:after {
+                zoom: 0.8;
+                top: 5px !important;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .iap-wrap .carousel {
+                height: 190px;
+            }
+
+            .iap-wrap .carousel .w-75 {
+                width: 85% !important;
+            }
+
+            .iap-wrap .carousel .w-65 {
+                width: 75% !important;
+            }
+
+            .iap-wrap .carousel .w-50 {
+                width: 70% !important;
+            }
+
+            .iap-wrap .carousel .m-explorer {
+                width: 80% !important;
+                margin-top: -13px !important;
+            }
+
+            .iap-wrap .carousel .w-55 {
+                width: 70% !important;
+            }
+
+            .iap-wrap .carousel .w-40 {
+                width: 70% !important;
+            }
+
+            .iap-wrap .carousel .carousel-item {
+                height: 100%;
+            }
+
+            .iap-wrap .carousel .right-arrow, .iap-wrap .carousel .left-arrow {
+                width: 22px;
+            }
+
+            .iap-wrap .carousel .carousel-wrap {
+                font-size: 13px !important;
+                top: 5px;
+                right: 0px;
+                left: auto;
+            }
+
+            .iap-wrap .carousel .carousel-wrap .bg-color {
+                padding: 8px 10px;
+            }
+
+            .iap-wrap .carousel .carousel-wrap.right {
+                right: 30px;
+                left: auto;
+            }
+
+            .iap-wrap .carousel .carousel-wrap.left {
+                right: auto;
+                left: 30px;
+            }
+
+            .iap-wrap .carousel .carousel-wrap h4 {
+                font-size: 13px !important;
+                margin: 0;
+                font-weight: 700;
+            }
+
+            .iap-wrap .carousel .carousel-wrap div {
+                margin-top: 10px;
+                font-size: 11px !important;
+                line-height: 14px !important;
+            }
+
+            .state-county-btn {
+                right: 10% !important;
+            }
+
+            .iap-wrap .carousel .carousel-wrap .read-more-button {
+                padding: 5px 42px 5px 12px;
+                width: auto;
+            }
+
+            .iap-wrap .carousel .carousel-wrap .read-more-button a:link,
+            .iap-wrap .carousel .carousel-wrap .read-more-button a:visited,
+            .iap-wrap .carousel .carousel-wrap .read-more-button a:hover {
+                font-size: 12px;
+            }
+
+            .iap-wrap .carousel .read-more-button:after {
+                top: 2px;
+            }
+
+            .iap-wrap .carousel .carousel-wrap.piaac-center-button {
+                top: 35px;
+                right: 54px;
+            }
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .w-25p {
+            width: 25%;
+            border-right: 1px solid #eee;
+            padding: 0 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .w-25p div:first-child {
+            border: 0px solid #eee;
+            height: 70px;
+            margin-bottom: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .w-25p div:nth-child(2) {
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+        }
+
+        .w-25p.no-border {
+            border-right: 1px solid #fff;
+        }
+
+        .w-25p a:link {
+            text-decoration: none;
+        }
+
+        .studies img {
+            width: 85px;
+        }
+
+        .studies img.w-70 {
+            width: 70px;
+        }
+
+        .studies img.h-25 {
+            height: 25px;
+        }
+
+        .mt-20 {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 500px) {
+            .w-25p {
+                width: 47%;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .w-25p {
+                width: 55%;
+            }
+
+            .d-flex {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+    <link href="App_Themes/MainTheme/mainnde.css" type="text/css" rel="stylesheet" /><link rel="shortcut icon" href="images/favicon_star.ico" /></head>
+
+<body onload="" rightmargin="0" topmargin="0" leftmargin="0" bottommargin="0" marginwidth ="0" marginwidth="0">
+
+<script type="text/javascript">
+//<![CDATA
+function openWin(theURL,theWidth,theHeight)
+{
+    aWindow=window.open(theURL,"popupwin","width="+((theWidth!=null)?theWidth:455)+",height="+((theHeight!=null)?theHeight:300)+",scrollbars=no,resizable=yes,screenX=0,screenY=0,top=0,left=0,top=0,left=0, toolbar=yes");
+    aWindow.focus();
+}
+
+function Headerformvalid(temp)
+{
+
+	if(temp.Search.value !== '')
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+
+var DataUseAgree = false;
+var DataUseAgreeURL = '';
+
+function DataUseAgrmnt(temp, temp2, cultureCode)
+{
+	if (DataUseAgree == true)
+	{
+	    return true;
+	}
+	else
+	{
+	    window.open("datausageagreement.aspx?link=" + temp2 + "&Lang=" + cultureCode,  "DataUsageAgreeWindow", "scrollbars=yes,top=0,left=0,screenX=0,screenY=0,width=500,height=620");
+		DataUseAgree = false;
+		DataUseAgreeURL = temp.href;
+		return false;
+	}
+}
+
+function setDataUseAgree(temp)
+{
+	DataUseAgree = true;
+	if (temp == 'true')
+	{
+	    self.location.href = DataUseAgreeURL;
+	}
+}
+//]]>
+</script>
+<a href="#accessiblelink" style="position:absolute;line-height:0px;top: -20px;">Skip to accessible version link</a><a href="#content" style="position:absolute;top: -20px;"><img src="images/shim.gif" border="0" width="1" height="1" alt="Skip navigation" /></a>
+
+<!-- ========================================= hfs header ========================================= -->
+
+<!-- Start Header -->
+
+<div class="headContents">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/IESfavicon_32px.png">
+	<link rel="icon" type="image/png" sizes="128x128" href="/images/favicons/IESfavicon_128px.png">
+	<link rel="icon" type="image/png" sizes="152x152" href="/images/favicons/IESfavicon_152px.png">
+	<link rel="icon" type="image/png" sizes="167x167" href="/images/favicons/IESfavicon_167px.png">
+	<link rel="icon" type="image/png" sizes="180x180" href="/images/favicons/IESfavicon_180px.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/images/favicons/IESfavicon_192px.png">
+	<link rel="icon" type="image/png" sizes="196x196" href="/images/favicons/IESfavicon_196px.png">
+	<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href="/css/main.css" rel="stylesheet" type="text/css" />
+	<link href="/css/IES_Core_0004.css" rel="stylesheet" type="text/css" />
+	<link href="/css/IES_Mobile_0004.css" rel="stylesheet" type="text/css" />
+</div>
+
+	<!-- Google Tag Manager (GTM, the new way to manage tags and analytics) -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-KLQ8LQNJ');
+	</script>
+</div>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLQ8LQNJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<script type="text/javascript" src="/js/customevents.js"></script>
+
+<script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	//<![CDATA[
+	var $$i = jQuery.noConflict(true);
+	//]]>
+</script>
+<script type="text/javascript" src="/js/hfsNav.js?v=02"></script>
+<script type="text/javascript" src="/js/nav_0005.js"></script>
+<script type="text/javascript" src="/js/importBlogPosts.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+<link href="https://ies.ed.gov/sites/default/files/assets/legacy-override-nces.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://ies.ed.gov/sites/default/files/assets/ies-header-footer-elements.js"></script>
+
+<div class="nces">
+
+<ies-header></ies-header>
+
+<!-- End Header -->
+
+<!-- Start Body -->
+
+
+<!-- ========================================= end hfs header ========================================= -->
+
+    
+
+    <div class="MainContent">
+        <div style="BACKGROUND-IMAGE: url(images/banner_linework.gif); WIDTH: 780px; BORDER-BOTTOM: #a7b7d6 1px solid; BACKGROUND-REPEAT: repeat-x; HEIGHT: 56px; TEXT-ALIGN: left">
+            <table height="56" cellspacing="0" cellpadding="0" width="780" border="0" align="center">
+                <tbody>
+                    <tr>
+                        <!-- Program/Survey Area Icon----------------------------------------- -->
+                        <td valign="top" width="57">
+                            <div style="border-right: #a7b7d6 1px solid">
+                                <a id="ctl13_hlMainLinkImage" href="/nationsreportcard/"><img height="56" alt="National Assessment of Educational Progress (NAEP)" src="images/naep_icon.jpg" width="56" align="middle" border="0" /></a>
+                            </div>
+                        </td>
+                        <td valign="top">
+                            <table cellspacing="0" cellpadding="0" width="723" border="0" style="height: 56px">
+                                <tbody>
+                                    <tr>
+                                        <td valign="top">
+                                            <!-- Name of Program or Survey Area-------------------------->
+                                            <div>
+                                                <a id="ctl13_hlMainLink" class="BannerTitling" href="/nationsreportcard/naepdata/" style="color: #000000">NAEP Data Explorer</a><br />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top">
+                                            <!-- Subtitle/Tagline for Program or Survey Area---------- -->
+                                            <div>
+                                                <a class="BannerTagLine" style="color: #333333" href="/nationsreportcard/"></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="bottom">
+                                            <!-- Banner Navigation Links (change id number at the end of the Publications and Prodeucts link as well as the staff link------------------------------ -->
+                                            <div class="BannerMenu">
+                                                <a id="ctl13_hlMainLinkSub" title="Analyze NAEP data and create tables and graphics." href="/nationsreportcard/naepdata/" style="color: #052a69">Analyze Data</a>|
+                                                <a id="ctl13_hlNQTLink" title="Search, sort, and print sample NAEP questions." href="/nationsreportcard/itmrlsx/" style="color: #052a69">Sample Questions</a>|
+                                                <a id="ctl13_hlStateCompLink" title="Compare state performance by various demographic groups." href="/nationsreportcard/statecomparisons/" style="color:#052a69">State Comparisons</a>|
+                                                <a id="ctl13_hlStateProfilesLink" title="See NAEP performance results and student demographics for each state." href="/nationsreportcard/states/" style="color: #052a69">State Profiles</a>|
+                                                <a id="ctl13_hlDistrictProfilesLink" title="See NAEP performance results and student demographics for each district." href="/nationsreportcard/districts/" style="color: #052a69">District Profiles</a>
+                                                
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+        
+<script type="text/javascript" language="JavaScript" src="inc/js/nde_utilities.js" ></script> 
+ 
+<form method="post" action="./" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE2Njc3MDEwNDBkZOTh/l3YreuDKY2EJa2PDF2xkRyfYODIsHCLV08ZzodV" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/NationsReportCard/naepdata_legacy/WebResource.axd?d=uK9F9k9_21qRl4aPoFwYv5OhuYOCVH4iuPZsmact5JK_YbOxPRVLh0p8dfY8NHuU823ztIzu9bnViQ8571d2psp1Vm9llBphSMZV8I-s2H81&amp;t=638901392248157332" type="text/javascript"></script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="8F7D68C0" />
+	<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="6rLsPc_x3w8fES-E3yv3Wnc-80_hJMEd7_OOwDcy8coMM-kSjwMROgD4gML0nzcTZk5vx0m7Jvs9io7_QDT4hYHmLUAZzD7ssbTibiVN04NO4L__hVg7Kjph_U1UQJm_vn6UWAUN56_M3g4B_dJowA2" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAlTWsOwgz4HMGpFqqYIPix+rjygqIfUlx2FQ8ycdsizeE3rD2SuXIVb9nPemIBk+wp5zZTavtrQe9jjpGUWhyisZy70PsGucRxg8M6xuDDf94JHM8S3yDX35wtkooQTNl4TDP+lvIKwFsaLlsx9arDC2f3NjiN26nFPlZfvCdkmn18upD5PfHhlR7/9dzLKXCTBvFtc6Ew6GBZAjXR7IpcJCyRLLUQjeS1RUTiyAg13vw==" />
+</div>
+
+    <table width="895" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td height="60" align="center" valign="top">
+		    </td>
+        </tr>
+        <tr>
+            <td><img src="images/shim.gif" width="1" height="10" /></td>
+        </tr>  
+    </table>
+
+    <table width="895" border="0" align="center" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="10"><img src="images/shim.gif" width="1" height="1" /></td>
+            <td width="320" align="left" valign="top">
+                <span class="homepage">Do you have questions about what the nation's students know and can do?</span>
+                    <p>With the <span class="tB">NAEP Data Explorer (NDE)</span> you can create statistical tables, charts, and maps to help you find answers. Explore the results of decades of assessment of students' academic performance, as well as information about factors that may be related to their learning.</p>
+                    <p>For help using NDE, <a href="#" onclick="openWin('/nationsreportcard/ndehelp/tutorial/lesson1.asp','1010','700')">view the tutorial</a>, visit the <a target="_blank" href="/nationsreportcard/pdf/NDEQuickReferenceGuideWebVersion05.18.09.pdf">Quick Reference Guide</a> (596K <a href="http://nces.ed.gov/nationsreportcard/help.asp#pdf">PDF</a>) or use the <a href="#" onclick="openWin('/nationsreportcard/NDEHelp/WebHelp/NDE_Help_Main.htm', '960', '655')"> NDE help</a> button available at the top of every page.</p>
+                <span class="tB">System Requirements:</span>
+
+                <ul> 
+                    <li>Target screen resolution is 1024x768.</li>
+                    <li>Internet Explorer 7 or Higher.</li>
+                    <li>Firefox 3.0 or higher.</li>
+                    <li>Google Chrome or Safari.</li>
+                    <li>Enable JavaScript and pop-ups in your browser.</li>
+                </ul>
+            
+                <table width="320" border="0" align="center" cellspacing="0" cellpadding="0" class="border-bottom">
+                    <tr>
+                        <td height="46" align="left" valign="top">
+                            <img src="images/handicap.gif" alt="Disability Accessible" align="middle" width="40" height="40" />
+                            <span class="t12pxB">Accessible version:</span>
+                            <input name="accessibility" id="accesson" type="radio" value="on" /> 
+                            <label for="accesson">ON</label> 
+                            <input name="accessibility" type="radio" value="off" checked="checked" id="accessoff" /> 
+                            <label for="accessoff">OFF</label>
+                            <br /><br />
+                        </td>
+                    </tr>   
+                </table>
+            </td>
+            <td width="10"><img src="images/shim.gif" width="1" height="1" alt="" /></td>
+            <td align="left" valign="top">
+                <table border="0" align="center" cellspacing="12" cellpadding="0" class="border">
+                    <tr> 
+                        <td width="195" height="90">
+                            <a onclick="return DataUseAgrmnt(this,true,&#39;en-US&#39;);" id="cphNCES_LinkButton1" oncontextmenu="return DataUseAgrmnt(this,false,&#39;en-US&#39;);" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphNCES$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;dataset.aspx&quot;, false, true))">
+                                <img src="images/main_bg_up.gif" alt="Enter Main NDE" name="Image101" width="195" height="90" border="0" id="Img2"/>
+                            </a>
+                        </td>
+                        <td width="345" >
+                            The Data Explorer for 
+                            <a onclick="return DataUseAgrmnt(this,true,&#39;en-US&#39;);" id="cphNCES_LinkButton2" class="bt12pxB" oncontextmenu="return DataUseAgrmnt(this,false,&#39;en-US&#39;);" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphNCES$LinkButton2&quot;, &quot;&quot;, false, &quot;&quot;, &quot;dataset.aspx&quot;, false, true))">Main NAEP</a> 
+                            provides national and state results in 10 subject areas, including mathematics, reading, writing, and science. Results have been produced for the nation and participating states and other jurisdictions since 1990, and for selected urban districts (on a trial basis) since 2002.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="90">
+                            <a onclick="return DataUseAgrmnt(this,true,&#39;en-US&#39;);" id="cphNCES_LinkButton3" class="bt12pxB" oncontextmenu="return DataUseAgrmnt(this,false,&#39;en-US&#39;);" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphNCES$LinkButton3&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/nationsreportcard/lttdata/&quot;, false, true))">
+                                <img src="images/ltt_bg_up.gif" alt="Enter LTT NDE" name="Image111" width="195" height="90" border="0" id="Img3" />
+                            </a>
+                        </td>
+                        <td align="left" valign="middle">
+                            The Data Explorer for  
+                            <a onclick="return DataUseAgrmnt(this,true,&#39;en-US&#39;);" id="cphNCES_LinkButton4" class="bt12pxB" oncontextmenu="return DataUseAgrmnt(this,false,&#39;en-US&#39;);" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphNCES$LinkButton4&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/nationsreportcard/lttdata/&quot;, false, true))">Long-Term Trend</a> 
+                            provides national mathematics and reading results dating from the 1970s.
+                        </td>
+                    </tr>  
+                    <tr>
+                        <td height="90">
+                            <a onclick="return DataUseAgrmnt(this,true,&#39;en-US&#39;);" id="cphNCES_lbHSTSLink1" oncontextmenu="return DataUseAgrmnt(this,false,&#39;en-US&#39;);" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphNCES$lbHSTSLink1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/nationsreportcard/hstsdata/&quot;, false, true))">
+                                <img src="images/hsts_bg_up.gif" alt="Enter HSTS NDE" name="Image121" width="195" height="90" border="0" id="Img4" />
+                            </a>
+                        </td>
+                        <td align="left" valign="middle">
+                            The Data Explorer for the  
+                            <a onclick="return DataUseAgrmnt(this,true,&#39;en-US&#39;);" id="cphNCES_lbHSTSLink2" oncontextmenu="return DataUseAgrmnt(this,false,&#39;en-US&#39;);" class="bt12pxB" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphNCES$lbHSTSLink2&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/nationsreportcard/hstsdata/&quot;, false, true))">High School Transcript Study</a> 
+                            provides data such as course-taking and grade point average for students who graduated high school in 1990, 2000, 2005, and 2009. For 2005 and 2009 graduates, these data are also linked to NAEP grade 12 mathematics and science results.
+                        </td>
+                    </tr>
+                    <tr id="cphNCES_NIESEntry">
+	<td height="90" align="center" valign="middle">
+                            <a onclick="return DataUseAgrmnt(this,true,&#39;en-US&#39;);" id="cphNCES_lbNIESLink1" oncontextmenu="return DataUseAgrmnt(this,false,&#39;en-US&#39;);" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphNCES$lbNIESLink1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/nationsreportcard/niesdata/&quot;, false, true))">
+                                <img src="images/nies_bg_up.gif" alt="Enter NIES NDE" name="Image122" width="195" height="90" border="0" id="Img6" />
+                            </a>
+                        </td>
+	<td align="left" valign="middle">
+                            The Data Explorer for the  
+                            <a onclick="return DataUseAgrmnt(this,true,&#39;en-US&#39;);" id="cphNCES_lbNIESLink2" oncontextmenu="return DataUseAgrmnt(this,false,&#39;en-US&#39;);" class="bt12pxB" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphNCES$lbNIESLink2&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/nationsreportcard/niesdata/&quot;, false, true))">National Indian Education Study</a> 
+                            provides NAEP grade 4 and 8 results from the mathematics and reading assessments for American Indian and Alaska Native students since 2005. Results are also available for a special survey that explored the educational experiences of the participating students, their teachers, and their schools. Read more about the NIES survey <a href="/nationsreportcard/nies/about_survey.aspx">here</a>. 
+                        </td>
+</tr>
+
+                </table>
+
+                <table width="555" border="0" bgcolor="#EAF2F8" align="center" cellspacing="0" cellpadding="5">
+                    <tr>
+                        <td width="212" class="borderLB"><img src="images/shim.gif" width="1" height="1" alt="" /></td>
+                        <td width="343" class="borderRB">
+                            <span class="t12pxB">NOTE:</span> The <a href="/nationsreportcard/tables/art1997/" class="bt12pxB" target="blank">1997 Arts Assessment</a> data are only available in PDF format.
+                        </td>
+                    </tr>
+                </table>  
+            </td>
+        </tr>
+    </table>  
+
+</form>
+
+ 
+ 
+<!-- ========================================= hfs footer ========================================= -->
+
+
+<!-- End Body -->
+
+
+</div>
+
+
+<ies-footer></ies-footer>
+
+
+
+<!-- ========================================= end hfs footer ========================================= -->        
+    
+</body>
+</html>

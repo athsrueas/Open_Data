@@ -1,0 +1,191 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head id="ctl00_Head1"><title>
+	
+
+</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Expires" content="0" />
+
+	<!-- Google Tag Manager -->
+    <script type="text/javascript">
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N6K3L68');
+    </script>
+    <!-- End Google Tag Manager -->
+    
+    
+    <link rel="stylesheet" type="text/css" href="/adminonly/themes/theme_main/css/tabsWithinContent.css" /><link rel="stylesheet" type="text/css" href="/adminonly/themes/theme_main/css/PlainWithLeftNav.css" /><link rel="stylesheet" type="text/css" href="/adminonly/themes/theme_main/css/NRCNavLeft.css" /><link rel="stylesheet" type="text/css" href="/adminonly/themes/theme_main/css/NRCNavDropDown.css" /><link rel="stylesheet" type="text/css" href="/adminonly/themes/theme_main/css/NRC_main.css" /><link rel="stylesheet" type="text/css" href="/adminonly/themes/theme_main/css/NRC_2009.css" /><link rel="stylesheet" type="text/css" href="/adminonly/themes/theme_main/css/NRCUserSelectableStyle.css" />
+ 	
+       	
+    <script src="/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.cookie.js" type="text/javascript"></script>
+    <script src="/adminonly/themes/theme_main/scripts/LeftNavDropdown.js" type="text/javascript"></script>
+
+	
+	<link rel="stylesheet" href="/shared/shared/fancybox2/source/jquery.fancybox.css?v=2.0.6" type="text/css" media="screen" /><link rel="stylesheet" href="/shared/shared/fancybox2/source/helpers/jquery.fancybox-buttons.css?v=1.0.2" type="text/css" media="screen" /><link rel="stylesheet" href="/shared/shared/fancybox2/source/helpers/jquery.fancybox-thumbs.css?v=2.0.6" type="text/css" media="screen" />
+	<script type="text/javascript" src="/shared/shared/fancybox2/lib/jquery-1.7.2.min.js"></script>	
+	<script type="text/javascript" src="/shared/shared/fancybox2/source/jquery.fancybox.js?v=2.0.6"></script>
+	<script type="text/javascript" src="/shared/shared/fancybox2/lib/jquery.easing.1.3.js"></script>	
+	<script type="text/javascript" src="/shared/shared/fancybox2/source/helpers/jquery.fancybox-buttons.js?v=1.0.2"></script>
+	<script type="text/javascript" src="/shared/shared/fancybox2/source/helpers/jquery.fancybox-media.js?v=1.0.0"></script>	
+	<script type="text/javascript" src="/shared/shared/fancybox2/source/helpers/jquery.fancybox-thumbs.js?v=2.0.6"></script>
+	<script type="text/javascript" src="/shared/shared/fancybox2/naepfancybox.js"></script>
+	<script type="text/javascript" src="/adminonly/scripts/GlossaryMigratedPageFix.js"></script>
+	<script type="text/javascript" src="/adminonly/themes/theme_main/scripts/nrcmain.js"></script>	
+    <script type="text/javascript" src="/adminonly/scripts/urlDecode.js"></script>	
+
+    
+    <script src="/shared/shared/js/swfobject.js" type="text/javascript"></script>
+
+	<style type="text/css">
+		/* Bookmarks */
+		.bookmark-anchor-text { display: none; }
+	</style>
+	<script type="text/javascript">
+	    $(function () {
+	        // remove saved complex 508 table header metadata from SP.
+	        $("table .complex-table-headers-metadata").remove();
+			
+			// span tag around of .BackToTop that is added via reusable content in CF.
+			// this span tag prevents from align to right in IE7.
+			// so remove the span.
+			var backtotop = $(".BackToTop").parent();	//<p align="right"> tag
+				if (backtotop.parent().is("span.ms-reusableTextView")) {
+				backtotop.unwrap();
+			}
+	    });
+	</script>
+	
+    
+
+    <style type="text/css">
+        .error { text-align:center; margin:30px auto; }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6K3L68" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- =====  Start Scrolling Body Area ============================================================ -->
+
+    <!-- these two div id's are used to setup the main scrolling page area, they should stay if you are sticking the ribbon to the top -->
+    <!--<div id="s4-workspace" class="s4-nosetwidth">   NOTE: s4-nosetwidth is used when you are setting a fixed page width in css, remove for 100% -->
+    <div id="s4-bodyContainer" class="nrc_bodyContainer" style="left: 0px; top: 0px">
+        <map id="nrcBannerImageMap" name="nrcBannerImageMap">
+            <area href="/" alt="Nation's Report Card Home" shape="rect" coords="0,0,127,75" />
+        </map>
+        <form action="/search/">
+            <div id="header" class="nrc_header">
+
+                <img src="/Images/nrcbanner.jpg" usemap="#nrcBannerImageMap" alt="Nation's Report Card Banner" height="75" width="984" />
+                <div id="headerLinks">
+                    <a href="/">Home</a>&nbsp;|&nbsp;<a href="/about.aspx">About The Nation's Report Card</a>&nbsp;|&nbsp;<a onclick="javascript:openWin('/help.aspx', 600, 560); return false;" href="/help.aspx" target="helpwindow">Help</a>
+                    <span id="searchArea">
+                        <input id="searchBox" name="q" maxlength="256" title="Search Box" type="text" />
+                        <input id="searchButton" value="Search" title="Search Button" type="submit" />
+                        <input name="output" value="xml_no_dtd" type="hidden" />
+                        <input name="client" value="nationsreportcard" type="hidden" />
+                        <input name="sort" value="date:D:L:d1" type="hidden" />
+                        <input name="entqr" value="3" type="hidden" />
+                        <input name="site" value="nationsreportcard" type="hidden" />
+                    </span>
+                </div>
+                <div id="tagLine">
+                    <a href="http://nces.ed.gov/nationsreportcard/">...the official site for results from the National Assessment of Educational Progress</a>
+                </div>
+            </div>
+        </form>
+
+        <form name="aspnetForm" method="post" action="friendlyerrorpage.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTg4MTAyMTU0OGRkGuW3IdJvCVN/4rPzUp37I/ct2Cs=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=6VsoErym15UsLg7ZryWghwmXEYpfZ5lHxx5DmJHvC8rcj1qS6M_FHN_ejgH-tb7KDPlTTp3N8yYleDDgxtj4FZslVYE1&amp;t=638313619312541215" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=yNF7lUc16oMrht1Hg50nqzAzQ816vl2dGSK0eAGpR-ogfnsUWRl0jHopJMT5Qhi_8Ih7xhrGzNZHCiMmg_AfTYZuv-smL9RpukeVjVGZkevTD5ox_5_cf0icGjr_FEpNK8jtlCoTEwu-Uz3lHjs9wC21LzY1&amp;t=ffffffffa50b82b2" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=O8Mt_ZPvqIi7kpw_nkZ3jWG2EUz3K3Uq-xSYyP9EjJAOzWRDfDzMX4o4LU9MVf7FBOs-MNzOWNnYzTXVaRUa2R6ddyjBBJn2UVMQoZ-bq-hk8KAgNo3DYidOwGRSRe1ZqeoGbevUbg5pK8DBCqe43AiiBS2wppP-CYU-3m_4bg0MCbOr0&amp;t=ffffffffa50b82b2" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="61A47720" />
+</div>
+            <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls([], [], [], 90);
+//]]>
+</script>
+
+
+            <div id="body" class="nrc_body">
+                
+    <div class="error">
+        An error has occurred. Visit the <a href="/" title="Nation's Report Card home page">Nation's Report Card home page</a>.
+    </div>
+
+            </div>
+
+            <div id="footer" class="nrc_footer">
+                <img src="/Images/bottomRule.jpg" alt="Separator between content and footer sections" height="2" width="100%" /><br />
+                <a href="http://nces.ed.gov/nationsreportcard/">National Assessment of Educational Progress</a>,
+					<a href="http://nces.ed.gov/">National Center for Education Statistics</a><br />
+                <a href="http://www.nagb.org/">National Assessment Governing Board</a><br />
+                <a href="http://ies.ed.gov/">Institute of Education Sciences</a>, 
+					<a href="http://ed.gov/">U.S. Department of Education </a>
+            </div>
+        
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+    </div>
+    <!--/div			
+		</div>-->
+    <!-- =====  End scrolling body area with these two previous div's ============================================================ -->
+
+    <!-- Handle Search "enter" key and back button -->
+    <input type="text" name="__spDummyText1" style="display: none;" size="1" />
+    <input type="text" name="__spDummyText2" style="display: none;" size="1" />
+    
+
+
+    <script type="text/javascript" src="/js/federated-analytics.all.min.js"></script>
+</body>
+
+</html>

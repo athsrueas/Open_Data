@@ -1,0 +1,157 @@
+{
+  "priority": "all",
+  "count": 20,
+  "results": [
+    {
+      "source_id": "src_naep_data_explorer_main",
+      "run_status": "downloaded",
+      "saved_paths": [
+        "outputs\\us_education_initiatives\\state_outcomes\\raw\\naep\\naep_data_explorer_legacy_main.html"
+      ],
+      "detail": "html captured"
+    },
+    {
+      "source_id": "src_naep_research_datasets",
+      "run_status": "downloaded",
+      "saved_paths": [
+        "outputs\\us_education_initiatives\\state_outcomes\\raw\\naep\\naep_research_data_tools.html"
+      ],
+      "detail": "html captured"
+    },
+    {
+      "source_id": "src_collegeboard_reports",
+      "run_status": "downloaded",
+      "saved_paths": [
+        "outputs\\us_education_initiatives\\state_outcomes\\raw\\sat\\collegeboard_program_results_portal.html"
+      ],
+      "detail": "html captured"
+    },
+    {
+      "source_id": "src_collegeboard_sat_annual_2025",
+      "run_status": "downloaded",
+      "saved_paths": [
+        "outputs\\us_education_initiatives\\state_outcomes\\raw\\sat\\sat_suite_annual_report_2025.pdf"
+      ],
+      "detail": "pdf downloaded"
+    },
+    {
+      "source_id": "src_act_data_portal",
+      "run_status": "downloaded",
+      "saved_paths": [
+        "outputs\\us_education_initiatives\\state_outcomes\\raw\\act\\act_data_visualization_portal.html"
+      ],
+      "detail": "html captured"
+    },
+    {
+      "source_id": "src_nces_ccd_tables",
+      "run_status": "failed",
+      "detail": "The read operation timed out"
+    },
+    {
+      "source_id": "src_nces_frpl_indicator",
+      "run_status": "downloaded",
+      "saved_paths": [
+        "outputs\\us_education_initiatives\\state_outcomes\\raw\\frpl\\nces_frpl_indicator.html"
+      ],
+      "detail": "html captured"
+    },
+    {
+      "source_id": "src_edfacts_chronic_absenteeism",
+      "run_status": "downloaded",
+      "saved_paths": [
+        "outputs\\us_education_initiatives\\state_outcomes\\raw\\attendance\\ed_chronic_absenteeism.html"
+      ],
+      "detail": "html captured"
+    },
+    {
+      "source_id": "src_eddataexpress_absenteeism_dashboard",
+      "run_status": "failed",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "source_id": "src_acs_computer_internet_2013",
+      "run_status": "downloaded",
+      "saved_paths": [
+        "outputs\\us_education_initiatives\\state_outcomes\\raw\\technology\\census_acs_computer_internet_2013.html"
+      ],
+      "detail": "html captured"
+    },
+    {
+      "source_id": "src_nces_frss_1994_2002",
+      "run_status": "downloaded",
+      "saved_paths": [
+        "outputs\\us_education_initiatives\\state_outcomes\\raw\\technology\\nces_frss_internet_access_1994_2002.html"
+      ],
+      "detail": "html captured"
+    },
+    {
+      "source_id": "src_education_recovery_scorecard",
+      "run_status": "downloaded",
+      "saved_paths": [
+        "outputs\\us_education_initiatives\\state_outcomes\\raw\\recovery\\education_recovery_scorecard_main.html"
+      ],
+      "detail": "html captured"
+    },
+    {
+      "source_id": "src_stanford_edopportunity_downloads",
+      "run_status": "downloaded",
+      "saved_paths": [
+        "outputs\\us_education_initiatives\\state_outcomes\\raw\\recovery\\stanford_edopportunity_downloads.html"
+      ],
+      "detail": "html captured"
+    },
+    {
+      "source_id": "src_urban_education_data_portal",
+      "run_status": "downloaded",
+      "saved_paths": [
+        "outputs\\us_education_initiatives\\state_outcomes\\raw\\recovery\\urban_education_data_portal.html"
+      ],
+      "detail": "html captured"
+    },
+    {
+      "source_id": "src_ers_2025_report_pdf",
+      "run_status": "downloaded",
+      "saved_paths": [
+        "outputs\\us_education_initiatives\\state_outcomes\\raw\\recovery\\ers_2025_pivoting_long_term_reform.pdf"
+      ],
+      "detail": "pdf downloaded"
+    },
+    {
+      "source_id": "src_naep_state_mapping_studies",
+      "run_status": "downloaded",
+      "saved_paths": [
+        "outputs\\us_education_initiatives\\state_outcomes\\raw\\naep\\naep_state_mapping_studies.html"
+      ],
+      "detail": "html captured"
+    },
+    {
+      "source_id": "src_edgap_map_college_readiness",
+      "run_status": "downloaded",
+      "saved_paths": [
+        "outputs\\us_education_initiatives\\state_outcomes\\raw\\college_readiness\\edgap_map.html"
+      ],
+      "detail": "html captured"
+    },
+    {
+      "source_id": "src_ecs_cellphone_scan_2025",
+      "run_status": "downloaded",
+      "saved_paths": [
+        "outputs\\us_education_initiatives\\state_outcomes\\raw\\policy\\ecs_cellphone_policies_2025.pdf"
+      ],
+      "detail": "pdf downloaded"
+    },
+    {
+      "source_id": "src_virginia_cte_wbl_dashboard",
+      "run_status": "failed",
+      "detail": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source_id": "src_act_research_dashboards",
+      "run_status": "downloaded",
+      "saved_paths": [
+        "outputs\\us_education_initiatives\\state_outcomes\\raw\\act\\act_research_dashboards.html"
+      ],
+      "detail": "html captured"
+    }
+  ]
+}

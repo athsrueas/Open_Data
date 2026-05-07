@@ -80,6 +80,11 @@
       return states.find((item) => item.code === state.selectedStateCode) || states[0] || null;
     }
 
+    function stateByCode(code) {
+      const states = data.stateMap?.states || [];
+      return states.find((item) => item.code === code) || null;
+    }
+
     function statCards(items) {
       const activeNowCount = items.filter((item) => item.timeline.isOngoing).length;
       return [
@@ -153,6 +158,34 @@
         { color: COLOR_STOPS[2], label: `${fmt(q2)} to ${fmt(q3)}` },
         { color: COLOR_STOPS[3], label: `${fmt(q3)} to ${fmt(max)}` },
         { color: COLOR_STOPS[4], label: `>= ${fmt(max)}` },
+      ];
+    }
+
+    function buildEditorialInsights() {
+      const states = (data.stateMap?.states || []).slice();
+      if (!states.length) return [];
+      const metric = state.mapMetric;
+      const label = PUBLIC_METRIC_LABELS[metric] || metric;
+      const ranked = states
+        .map((s) => ({ ...s, metricValue: Number(s[metric] || 0) }))
+        .sort((a, b) => b.metricValue - a.metricValue);
+      const top = ranked[0];
+      const bottom = ranked[ranked.length - 1];
+      const median = ranked[Math.floor(ranked.length / 2)];
+      const spread = (top.metricValue - bottom.metricValue).toFixed(Number.isInteger(top.metricValue - bottom.metricValue) ? 0 : 1);
+      return [
+        {
+          title: `${top.name} currently leads on ${label}`,
+          blurb: `Top value: ${top.metricValue}. Compare with ${bottom.name} (${bottom.metricValue}) to see the full spread.`,
+        },
+        {
+          title: `The gap across states is ${spread} on this metric`,
+          blurb: `Median state right now is ${median.name} at ${median.metricValue}, which helps anchor the national middle.`,
+        },
+        {
+          title: `Use this as a reporting starting point, not a final verdict`,
+          blurb: `State metrics are strongest when paired with initiative timing and source-level caveats in the detail panel.`,
+        },
       ];
     }
 
@@ -326,6 +359,15 @@
       const scopes = scopeBars(items);
       const selectedState = selectedStateRecord();
       const stateOptions = (data.stateMap?.states || []).slice().sort((a, b) => a.name.localeCompare(b.name));
+      const insightCards = buildEditorialInsights();
+      const compareLeftCode = selectedState?.code || stateOptions[0]?.code || "";
+      const compareRightCode = stateOptions.find((s) => s.code !== compareLeftCode)?.code || compareLeftCode;
+      const compareLeft = stateByCode(compareLeftCode);
+      const compareRight = stateByCode(compareRightCode);
+      const compareMetric = state.mapMetric;
+      const compareLeftVal = Number(compareLeft?.[compareMetric] || 0);
+      const compareRightVal = Number(compareRight?.[compareMetric] || 0);
+      const compareDelta = compareLeftVal - compareRightVal;
       const metricRows = (data.stateMap?.metrics || []).map((metric) => ({
         key: metric.key,
         label: PUBLIC_METRIC_LABELS[metric.key] || metric.label || metric.key,
@@ -334,6 +376,21 @@
 
       root.innerHTML = `
         <main class="atlas-shell">
+          <section class="story-lead">
+            <p class="eyebrow">Education Story Desk</p>
+            <h2>Where states are diverging, and why that matters</h2>
+            <p class="story-blurb">Start with the headline insights below, then use the map and comparison panels to pressure-test the pattern by state and metric.</p>
+            <div class="story-presets">
+              <button class="preset-btn" data-preset-metric="continuumBalanceScore">Low-Tech vs High-Tech</button>
+              <button class="preset-btn" data-preset-metric="testingAnchorCount">Testing-Heavy States</button>
+              <button class="preset-btn" data-preset-metric="workBasedAnchorCount">Work-Based Learning</button>
+              <button class="preset-btn" data-preset-metric="reducedTechnologyAnchorCount">Phone/Low-Tech Policy</button>
+            </div>
+            <div class="insight-callouts">
+              ${insightCards.map((card) => `<article class="insight-callout"><h3>${card.title}</h3><p>${card.blurb}</p></article>`).join("")}
+            </div>
+          </section>
+
           <section class="hero">
             <div class="hero-copy">
               <p class="eyebrow">U.S. Education Initiatives Atlas</p>
@@ -382,6 +439,24 @@
                   </select>
                 </label>
               </div>
+              <section class="compare-panel">
+                <p class="panel-label">State Contrast</p>
+                <div class="compare-row">
+                  <label class="control">
+                    <span>Left state</span>
+                    <select id="compare-left-select">
+                      ${stateOptions.map((item) => `<option value="${item.code}" ${item.code === compareLeftCode ? "selected" : ""}>${item.name}</option>`).join("")}
+                    </select>
+                  </label>
+                  <label class="control">
+                    <span>Right state</span>
+                    <select id="compare-right-select">
+                      ${stateOptions.map((item) => `<option value="${item.code}" ${item.code === compareRightCode ? "selected" : ""}>${item.name}</option>`).join("")}
+                    </select>
+                  </label>
+                </div>
+                <p class="compare-metric">${PUBLIC_METRIC_LABELS[compareMetric] || compareMetric}: <strong>${compareLeftVal}</strong> vs <strong>${compareRightVal}</strong> (delta: <strong>${compareDelta.toFixed(1)}</strong>)</p>
+              </section>
               <div class="map-layout">
                 <div class="geo-map-shell">
                   <div id="map-main" class="geo-map main"></div>
@@ -486,6 +561,8 @@
       const sortSelect = root.querySelector("#sort-select");
       const mapMetricSelect = root.querySelector("#map-metric-select");
       const stateSelect = root.querySelector("#state-select");
+      const compareLeftSelect = root.querySelector("#compare-left-select");
+      const compareRightSelect = root.querySelector("#compare-right-select");
       if (searchInput) searchInput.addEventListener("input", (event) => { state.search = event.target.value; render(); });
       if (categorySelect) categorySelect.addEventListener("change", (event) => { state.category = event.target.value; render(); });
       if (scopeSelect) scopeSelect.addEventListener("change", (event) => { state.scope = event.target.value; render(); });
@@ -497,6 +574,14 @@
           render();
         });
       }
+      if (compareLeftSelect) compareLeftSelect.addEventListener("change", (event) => { state.selectedStateCode = event.target.value; render(); });
+      if (compareRightSelect) compareRightSelect.addEventListener("change", () => { render(); });
+      root.querySelectorAll("[data-preset-metric]").forEach((button) => {
+        button.addEventListener("click", () => {
+          state.mapMetric = button.dataset.presetMetric || state.mapMetric;
+          render();
+        });
+      });
       root.querySelectorAll("[data-select-id]").forEach((button) => {
         button.addEventListener("click", () => { state.selectedId = button.dataset.selectId; render(); });
       });

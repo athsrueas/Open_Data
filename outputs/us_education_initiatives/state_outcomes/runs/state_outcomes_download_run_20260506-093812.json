@@ -1,0 +1,21 @@
+{
+  "priority": "all",
+  "count": 3,
+  "results": [
+    {
+      "source_id": "src_nces_ccd_tables",
+      "run_status": "failed",
+      "detail": "The read operation timed out"
+    },
+    {
+      "source_id": "src_eddataexpress_absenteeism_dashboard",
+      "run_status": "failed",
+      "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+    },
+    {
+      "source_id": "src_virginia_cte_wbl_dashboard",
+      "run_status": "failed",
+      "detail": "HTTP Error 403: Forbidden"
+    }
+  ]
+}

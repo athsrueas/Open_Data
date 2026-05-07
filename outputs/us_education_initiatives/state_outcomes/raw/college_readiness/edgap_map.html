@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>EdGap.org | SAT/ACT College Readiness Map</title>
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0, user-scalable = no" />
+		<meta name="description" content="EdGap.org is a platform for maps, visualizations, and encouraging discussion on the education gap in the United States" />
+		<meta property="fb:admins" content="11402373" />
+		<meta property="og:image" content="https://www.edgap.org/edgap-opengraph.jpg" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		
+		<!-- Above the Fold CSS all in one minified file, contains the items below it -->
+		<!-- <link rel="stylesheet" href="./css/above-the-fold.css" /> -->
+
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/slicknav.css" />
+		<link rel="stylesheet" href="./css/jquery.modal.css" />
+		<link rel="stylesheet" href="./leaflet-1.3.4/leaflet.css" />
+		<link rel="stylesheet" href="/L.GeoSearch/src/css/l.geosearch.css" />
+		<link rel="stylesheet" href="./css/L.Control.Locate.min.css" />
+		
+		 
+		<link rel="stylesheet" href="./actmap.css?10001" />
+		
+		<!-- This is only here for the blue dot geolocation service.  Remove if unused. -->
+		<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+		
+		<!--[if lte IE 8]>
+		<link rel="stylesheet" href="/static/leaflet/leaflet.ie.css" />
+		<![endif]-->
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=xQd7vkx9mj">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=xQd7vkx9mj">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=xQd7vkx9mj">
+		<link rel="manifest" href="/site.webmanifest?v=xQd7vkx9mj">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg?v=xQd7vkx9mj" color="#5bbad5">
+		<link rel="shortcut icon" href="/favicon.ico?v=xQd7vkx9mj">
+		<meta name="msapplication-TileColor" content="#2d89ef">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="canonical" href="https://www.edgap.org/" />
+		
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		
+		<!-- Critical above the fold js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="./js/jquery.modal.min.js"></script>
+		<script src="./js/css_browser_selector.js"></script>
+		<script src="./js/jquery.slicknav.min.js"></script>
+
+		<style type="text/css">
+			html, body {
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="modal" id="AboutMap" style="display:none;">
+			<h1>About the EdGap Map: Visualizing the Education Gap</h1>
+			<p> <img src="lowerleftscale.png" style="float: right; margin: 0 0px 10px 10px;" id="intro-scale">
+				This map is a visualization of average high-school SAT and ACT scores, median household income, and other socioeconomic indicators.  Each circle on the map is a high school with at least 150 students, and the size and color of the circle give information about the average college-readiness scores at this school.  The circles change from red to green and increase in size as scores go up; the blue background gets darker with increasing household income.  Students are not considered college ready until they have ACT scores of about 21 or higher and/or SAT scores of about 1000 or higher.
+			</p>	
+			<p>
+				This map reminds us that education in our country is still separate and unequal, especially in our large urban centers.  At many public high schools, often in higher-income areas, an average student scores well enough to get into hundreds of colleges across the country.  Yet at many other high schools, especially those in low-income neighborhoods, even the most hardworking and committed students struggle to get a score that meets the <a target='_blank' href="https://collegereadiness.collegeboard.org/pdf/educator-benchmark-brief.pdf">SAT</a> and <a target='_blank' href="https://www.act.org/content/act/en/education-and-career-planning/college-and-career-readiness-standards.html">ACT college readiness benchmarks</a>. This is not only an achievement gap but an opportunity gap.
+			</p>
+			<p>
+				In the interest of promoting awareness and encouraging conversation around educational inequality, we are providing this national map of the educational achievement and opportunity gap.  Information for 31 states are presently available, and more will be added if more states make their ACT or SAT data public.
+			</p>
+			<p>
+				As you explore, the Memphis Teacher Residency would like you to remember that many students in our country do not have access to the educational opportunities of other students born just a few miles away. What will you do about educational inequality? <i><a href="javascript:void(0)" rel="modal:close">Explore the map now.</a></i>
+			</p>
+			<p style="font-weight: 300; margin-top: 2em; font-size: 90%">
+				Learn more about <a href="https://memphistr.org/?utm_source=edgap&utm_medium=referral&utm_campaign=edgap-greeting" target="_blank">Memphis Teacher Residency</a>
+				<div style="font-size:70%;margin-top:-0.3em;">(Comparison of numbers across state lines requires <a onclick="$('#AboutData').modal();" href="javascript:void(0)">some understanding</a> of different universal testing requirements and inclusion rules in average calculations.)</div>
+			</p>
+		</div>
+		
+		<!-- The most critical javascript for getting something on the screen -->
+		<script>
+			setTimeout(function() {
+				// Hide it when doing it on localhost for faster troubleshooting with frequent refreshes
+				if (window.location.hostname != "localhost") {
+					$('#AboutMap').modal();
+				}
+			},100);
+		</script>
+		
+		<div class="modal" id="AboutData" style="display:none;">
+
+			<h1>About the Data</h1>
+
+			<h3>Data Sources</h3>
+			<p>
+				All socioeconomic data (household income, unemployment, adult educational attainment, and family structure) is from the Census Bureau&rsquo;s American Community Survey. You can select between these different data layers using the "options" menu. ACT and SAT score data is from each state&rsquo;s department of education or some other public data release. In many cases, the hardest part of assembling this data was finding each state&#39;s data wherever it was on their website or state education report card and then assimilating this data into a unified data format for the application. The data is not entirely complete, but we have added many of the states that have released public data on ACT or SAT scores. If you want to help add more states, you can search for data and then notify us of its location using the link in the About menu above.
+			</p>
+			
+			<h3>About the SAT and ACT composite scores</h3>
+			<p>
+				For SAT composite, we consistently used only the Critical Reading and Mathematics tests for our composite scores.
+				Each is a scaled score out of 800 allowing a maximum score of 1600 (SAT composites are a sum of component tests).
+				While there is also an optional writing test as part of the SAT, not all schools or states require it, so we ignore writing scores (when SAT composite scores include the writing test, the composite is out of 2400).
+				With the new SAT test data being released in 2016, we will have to begin using this data which goes back to reporting the SAT out of 1600 instead of 2400. This change is still forthcoming.
+			</p>
+			<p>
+				For ACT composite, there are four component tests: English, Math, Reading and Science.  Each is out of 36, and instead of a composite that is a sum, the ACT composite is an average of the component tests.
+				While no conversion is perfect, if you are more familiar with one or the other of these tests, it may be helpful to look at this <a href="https://web.archive.org/web/20160123183428/http://act.org/solutions/college-career-readiness/compare-act-sat/" target="_blank">ACT and SAT Score Equivalency Table</a>.
+			</p>
+
+			<h3>Data Quality and Comparisons Between States</h3>
+			<p>
+				A very important note must be made about comparisons of scores between states: some states require ACT or SAT testing for all students while others do not. This has the general effect of inflating average ACT scores in states that do not require all students to test.  For schools in such states, scores would likely be lower if all students were required to test.  At present students at these schools who are not college-ready may get little encouragement to take the test and are somewhat likely to opt out on their own.
+				Colorado, Illinois, Kentucky, Michigan, and Tennessee are some of the states that require 100% of high school juniors to take the ACT and report this data publicly. In these states there is no opting out of the test and school averages reflect the average college-readiness of <b>all</b> graduates. Please check out this data page for information on <a href="https://www.act.org/content/act/en/research/tableau/2014-act-participation-rate.html">percent of students taking the ACT</a> and this page for <a href="http://www.commonwealthfoundation.org/policyblog/detail/sat-scores-by-state-2013">percent of students taking the SAT</a>.
+			</p>
+
+		</div>
+		<div class="modal" id="WhyaMap" style="display:none;">
+
+			<h1>Why a map to show the educational achievement gap?</h1>
+
+			<h3>
+			EdGap is our attempt to tell a story about the educational achievement gap that is:
+			</h3>
+			<p>
+			<ul>
+				<li>Accessible and easy to understand</li>
+				<li>Anchored to the real world and real neighborhoods: it's a view of cities that users live in and already know something about</li>
+				<li>Shows a correlation between socioeconomic advantages/disadvantages and educational outcomes</li>
+				<li>Useful as a quick reference for those who work in education</li>
+			</ul>
+			Maps can tell a compelling story about educational justice that charts and graphs can't convey in the same way.
+			Each school on the map is a real place you could visit, and there are real students you could meet: each with individual dreams,
+			personalities and backgrounds.  Our push for equal educational opportunity is anchored in the students <a href="https://memphistr.org/mtr-life/?utm_source=edgap&utm_medium=referral" target="_blank">our teachers</a>
+			know personally and work with every day.
+			</p>
+
+		</div>
+		<div class="modal" id="AboutMTR" style="display:none;">
+
+			<h1>About Memphis Teacher Residency</h1>
+
+			<h3>What We Do</h3>
+			<p>
+				We work in public schools in Memphis and prepare teachers using a clinically based residency model in which residents spend a whole year interning in another teacher's classroom while studying to earn a Masters in Urban Education.
+				Most of our graduates teach in the six partner neighborhoods where we focus our efforts.
+				We also run an educational summer camp, MTR Camp, which focuses on preventing summer learning loss
+				for elementary students in several of our partner neighborhoods. This also gives MTR Camp college summer staff an exposure to our work in Memphis and a chance to consider becoming
+				an MTR resident.
+			</p>
+			
+			<h3>Our Vision</h3>
+			<p>
+				The vision of MTR is to use our specific work within education, in partnership with other holistic organizations, to help restore communities so that all individuals can become empowered contributors to our city and people of all races and classes can engage with one another in peace.
+			</p>
+
+			<h3>Our Mission</h3>
+			<p>
+				As a response to the gospel mandate to love our neighbors as ourselves, MTR will partner to provide students in Memphis neighborhoods with the same, or better, quality of education as is available to any student in Memphis by recruiting, training and supporting effective teachers within a Christian context.
+			</p>
+
+		</div>
+		<div class="modal" id="TakeAction" style="display:none;">
+
+			<h1>What Can I Do About Educational Inequality?</h1>
+
+			<h3>Teach</h3>
+			<p>
+				Have you had a feeling that you should consider teaching? Do you see the potential to be a great teacher in someone who may need
+				encouragement to consider becoming a teacher? The single most important school-based factor in student success is teachers: students
+				in under-resourced communities need more teachers who will come, get the training and support they need to be really effective, and
+				stay in teaching long enough to make a real difference. We at <a href="https://memphistr.org/?utm_source=edgap&utm_medium=referral">Memphis Teacher Residency</a> invite you
+				to consider teaching in our city: to express Christian love through equal education.
+				Our vision is "restored communities living with dignity and in peace," and we take a community- and neighborhood-driven approach
+				to training and placing teachers in Memphis schools. If Memphis isn't where you fit, please still <a href="https://memphistr.org/?utm_source=edgap&utm_medium=referral">explore our website</a>,
+				learn about the residency model of teacher training, and explore other <a href="https://nctresidencies.org/become-a-teacher/">National Center for Teacher Residencies</a> sites.
+			</p>
+
+			<h3 id="h3_give">Give</h3>
+			<p>
+				Teachers need resources. Groups that train and support teachers need resources. Schools need resources. Please check out
+				our <a href="http://mtrgive.org/">MTR Give</a> initiative each summer and support our teachers as they procure resources and tools for
+				their classrooms.  Or if you're trying to give closer to home,  check out <a href="https://www.donorschoose.org/">Donors Choose</a> and support a classroom
+				near you.  
+			</p>
+			<p>
+				We also invite you to <a href="https://memphistr.org/?utm_source=edgap&utm_medium=referral">learn more about our work of recruiting, training and supporting effective teachers</a> in Memphis
+				and consider making a gift to support us in our work. Training and supporting a teacher over four years costs MTR about $51,000, a figure that compares
+				favorably to other teacher preparation providers. The generosity of individuals, foundations, and churches in Memphis and throughout the nation makes
+				our work possible, together with support from AmeriCorps.
+			</p>
+			
+			<h3 id="h3_share">Share</h3>
+			<p>
+				Too few Americans know about and care about the need for equal education in our country, especially in our large urban centers. It's among the most important civil-rights issues of our day, yet when it's out of sight, it is out of mind. Help us share these maps with your friends and the country. Click the easy sharing links below or on the right side of the page.
+			</p>
+			<!-- Go to www.addthis.com/dashboard to customize your tools -->
+			<div class="addthis_sharing_toolbox"></div>
+			
+			<h3 id="h3_lsa">Learn, Serve and Advocate</h3>
+			<p>
+				Because students' lives and educational outcomes matter, education policy matters and educational leadership is important.
+				Some issues are simple--others complex--and there is never unanimity on every area of education
+				policy. Yet you can learn and advocate for equal education.
+				As you think about educational equality in your city, focus on and pay attention to
+				the least powerful and the most marginalized students and neighborhoods in our society.
+			</p>
+			<p>
+				Or, get involved close to home: volunteer at a local school, learn what makes today's students tick, help a student become more successful in their studies.
+				The challenges faced by students in under-resourced communities are real, but there is so much hope in their dreams for tomorrow. Find a local mentoring program,
+				or find an after-school tutoring program. You'll learn things from these authentic relationships that you could never learn by only reading about education.
+				A relationship with a student is perhaps the best guide to your further learning and steps toward advocacy. As you think and learn, considering checking out our
+				<a href="https://memphistr.org/blog/?utm_source=edgap&utm_medium=referral">MTR Blog</a>.
+			</p>
+
+		</div>
+		<div class="modal" id="ExampleImg" style="display:none;">
+			<!-- <img src="edgap-opengraph.jpg"> -->
+			<img src="./img/basic/x.png"> <!-- this loads it nice and early -->
+		</div>
+		<!-- <div class="modal" id="StartingCities" style="display:none;">
+			<h1>Let's get started:</h1>
+			<p>
+				At the moment, data is available for 22 states plus NYC and Washington, DC. Explore the map any of these three ways: <ul><li>Zoom in on a city of your choice in one of these states</li><li>Jump directly to a state or city using the menu at the top</li><li>Or go ahead and start where we start: <a rel="modal:close" href="#11/35.1261/-89.9756">Memphis</a></li></ul>
+			</p>
+		</div> -->
+		<div class="modal" id="DontUseIE" style="display:none;">
+			<h1>Browser Compatibility Notice:</h1>
+			<p>
+				It appears you are using Internet Explorer.  Unfortunately, there are significant compatibility issues with Internet Explorer and they often cannot be worked around.  It's recommended that you try a better browser like <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> or <a href="https://www.google.com/chrome/browser/">Chrome</a>.  Features that you'll get if you use those browsers include the ability to click on a circle and see the school name and information.
+			</p>
+		</div>
+		
+		<div id="menu">
+			<a href="javascript:void(0)" onclick="viewNationalMap();"><img src="edgap_logo_retina.png" id="edgap_logo"></a>
+			<a href="https://memphistr.org/?utm_source=edgap&utm_medium=referral&utm_campaign=edgap-upper-right" target="_blank"><img src="mtr-upperleft-2.png" id="mtr_logo"></a>
+		</div>
+		
+		<nav id="top-menu">
+
+			<ul id="slicknav-grab-this">
+				<li style="z-index: 10">
+					About
+					<ul>
+						<li><a onclick="$('#AboutMap').modal();">About This Map</a></li>
+						<li><a onclick="$('#AboutData').modal();">About The Data</a></li>
+						<li><a onclick="$('#WhyaMap').modal();">Why a Map?</a></li>
+						<!-- <li><a onclick="$('#AboutMTR').modal();">About Memphis Teacher Residency</a></li>
+						 -->
+						<li><a href="https://memphistr.org/?utm_source=edgap&utm_medium=referral&utm_campaign=edgap-menu" target="_blank">Memphis Teacher Residency Website</a></li>
+						<!-- <li><a href="https://memphistr.org/yearbook" target="_blank">Community Matters: The MTR Yearbook</a></li>
+						 -->
+						<li><a href="https://docs.google.com/a/memphistr.org/forms/d/1PkqtbCQWetbYCHN0MqfypDIauP8lT0JDIKYCxeb9aJg/viewform" target="_blank">Contact</a></li>
+						<li><a href="https://docs.google.com/a/memphistr.org/forms/d/17uCoI6QvtDuALuercwrWzWprJ-h_NKfK-yqKf0kSnp4/viewform" target="_blank">Request Another State</a></li>
+					</ul>
+				</li>
+				<li style="z-index: 8" id="statesmenu">
+					States <span class="hide_mobile">Covered</span>
+					<ul>
+						
+						<li><a href="#7/32.889/-87.094">Alabama</a></li>
+						<li><a href="#7/34.913/-92.461">Arkansas</a></li>
+						<li><a href="#6/37.064/-119.388">California</a></li>
+						<li><a href="#7/39.151/-105.496">Colorado</a></li>
+						<li><a href="#8/41.636/-72.609">Connecticut</a></li>
+						<li><a href="#8/39.015/-75.471">Delaware</a></li>
+						<li><a href="#7/28.212/-83.568">Florida</a></li>
+						<li><a href="#7/32.806/-83.342">Georgia</a></li>
+						<li><a href="#7/40.242/-88.731">Illinois</a></li>
+						<li><a href="#7/39.851/-86.221">Indiana</a></li>
+						<li><a href="#7/42.178/-93.369">Iowa</a></li>
+						<li><a href="#7/38.557/-98.465">Kansas</a></li>
+						<li><a href="#7/37.523/-85.721">Kentucky</a></li>
+						<li><a href="#7/30.982/-92.005">Louisiana</a></li>
+						<li><a href="#8/42.208/-71.870">Massachusetts</a></li>
+						<li><a href="#7/43.989/-84.809">Michigan</a></li>
+						<li><a href="#6/46.559/-94.834">Minnesota</a></li>
+						<li><a href="#7/32.769/-89.764">Mississippi</a></li>
+						<li><a href="#7/38.625/-92.499">Missouri</a></li>
+						<li><a href="#8/43.936/-71.715">New Hampshire</a></li>
+						<li><a href="#8/40.141/-74.663">New Jersey</a></li>
+						<li><a href="#7/35.420/-79.821">North Carolina</a></li>
+						<li><a href="#7/40.229/-82.793">Ohio</a></li>
+						<li><a href="#7/40.631/-77.064">Pennsylvania</a></li>
+						<li><a href="#9/41.7520/-71.4156">Rhode Island</a></li>
+						<li><a href="#7/33.770/-81.112">South Carolina</a></li>
+						<li><a href="#7/35.496/-86.215">Tennessee</a></li>
+						<li><a href="#6/31.175/-99.283">Texas</a></li>
+						<li><a href="#7/47.279/-120.146">Washington</a></li>
+						<li><a href="#7/44.778/-90.330">Wisconsin</a></li>
+						<li><a href="#7/43.149/-107.776">Wyoming</a></li>
+						
+					</ul>
+				</li>
+				<li style="z-index: 6">
+					<span class="hide_mobile">Selected </span>Cities
+					<ul>
+						<li><a href="#11/35.1261/-89.9756">Memphis</a></li>
+						<li><a href="#11/40.7582/-73.9521">New York City</a></li>
+						<li><a href="#10/33.9365/-118.1799">Los Angeles</a></li>
+						<li><a href="#10/41.8379/-87.7320">Chicago</a></li>
+						<li><a href="#10/32.7700/-96.9063">Dallas</a></li>
+						<li><a href="#11/39.9892/-75.1911">Philadelphia</a></li>
+						<li><a href="#10/29.7358/-95.3984">Houston</a></li>
+						<li><a href="#11/38.9023/-77.0334">Washington, DC</a></li>
+						<li><a href="#10/25.8456/-80.3444">Miami</a></li>
+						<li><a href="#10/33.7946/-84.3743">Atlanta</a></li>
+						<li><a href="#10/42.3281/-71.1008">Boston</a></li>
+						<li><a href="#10/42.4153/-83.1857">Detroit</a></li>
+						<li><a href="#9/47.5913/-122.2641">Seattle</a></li>
+						<li><a href="#10/38.6362/-90.2499">St. Louis</a></li>
+						<li><a href="#10/39.7204/-104.9435">Denver</a></li>
+					</ul>
+				</li>
+				<li style="z-index: 4" class="change-background-options">
+					Options
+					<ul>
+						<li class="bgopts" style="font-weight: bold;" id="med_hh_inc"><a onclick="setBackgroundLayer('med_hh_inc');">Household Income</a></li>
+						<li class="bgopts" id="prop_unemployed"><a onclick="setBackgroundLayer('prop_unemployed');">% Unemployment</a></li>
+						<li class="bgopts" id="prop_25_64_bach_or_higher"><a onclick="setBackgroundLayer('prop_25_64_bach_or_higher');">% of Adults College Educated</a></li>
+						<li class="bgopts" id="prop_children_married_fam"><a onclick="setBackgroundLayer('prop_children_married_fam');">% of Children in Two-Parent Families</a></li>
+						<li class="bgopts" id="prop_priv_enrollment"><a onclick="setBackgroundLayer('prop_priv_enrollment');">% Private School Enrollment</a></li>
+						<li class="schopts" style="font-weight: bold;" id="show-hs"><a onclick="showSchools('hs')">High School Data</a></li>
+						<li class="schopts" id="show-m"><a onclick="schoolDataLayers[0].showSchools('m')">Middle School Data</a></li>
+						<li class="schopts" id="show-e"><a onclick="schoolDataLayers[0].showSchools('e')">Elementary Data</a></li>
+						<li class="hide_circles"><a onclick="hideCircles();">Hide School Circles (Show Only Background)</a></li>
+						<li style="display: none;" class="show_circles"><a onclick="showCircles();">Show School Circles over Background</a></li>
+					</ul>
+				</li>
+				<li style="z-index: 2">
+					Take Action
+					<ul>
+						<li><a onclick="$('#TakeAction').modal();$('.jquery-modal').animate({ scrollTop: 0 }, 500);">Teach</a></li>
+						<li><a onclick="$('#TakeAction').modal();$('.jquery-modal').animate({ scrollTop: $('#h3_give').position().top }, 500);">Give</a></li>
+						<li><a onclick="$('#TakeAction').modal();$('.jquery-modal').animate({ scrollTop: $('#h3_share').position().top }, 500);">Share</a></li>
+						<li><a onclick="$('#TakeAction').modal();$('.jquery-modal').animate({ scrollTop: $('#h3_lsa').position().top }, 500);">Learn, Serve and Advocate</a></li>
+					</ul>
+				</li>
+				
+			</ul>
+		</nav>
+		
+		<div id="map"></div>
+		
+		<!-- All the following commented out are included in this concatenated and deferred javascript -->
+		<!-- <script>
+			$.getScript( "./js/concatenated.js", function( data, textStatus, jqxhr ) {
+				$.getScript( "./actmap.js?10028");
+			});
+		</script> -->
+		
+		<!-- deferred javascript -->
+		<script  src="./leaflet-1.3.4/leaflet-src.js"></script>
+		<script  src="./js/d3.3.4.11.min.js"></script>
+		<script  src="./js/mustache.0.8.1.min.js"></script>
+		<script  src="jquery.csv-0.71.min.js"></script>
+		<script  src="leaflet-hash.min.js"></script>
+		
+		<!-- Leaflet plugins -->
+		<script  src="/L.GeoSearch/src/js/l.control.geosearch.js"></script>
+		<script  src="/L.GeoSearch/src/js/l.geosearch.provider.google.js"></script>
+		<script  src="./js/L.Control.Locate.min.js" charset="utf-8"></script>
+		
+		
+
+		<!-- MapLibre GL JS (handles the rendering) -->
+<script type="text/javascript" src="//unpkg.com/maplibre-gl@3.2.1/dist/maplibre-gl.js"></script>
+<link href="//unpkg.com/maplibre-gl@3.2.1/dist/maplibre-gl.css" rel="stylesheet" />
+
+<!-- Mapbox GL Leaflet -->
+<script src="https://unpkg.com/@maplibre/maplibre-gl-leaflet@0.0.19/leaflet-maplibre-gl.js"></script>
+
+
+		
+		<!-- The custom code behind it all -->
+		<!-- <script src="./js/concatenated.js"></script> -->
+		<script src="actmap.js?1026"></script>
+		
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-54912908-1', 'auto');
+		  ga('send', 'pageview');
+		
+		</script>
+		
+		<!-- Go to www.addthis.com/dashboard to customize your tools -->
+		<script type="text/javascript">
+			var addthis_config = addthis_config||{};
+        	addthis_config.pubid = 'ra-541c751d7f5eaf8b';
+        	
+		    var addthisScript = document.createElement('script');
+		        addthisScript.setAttribute('src', '//s7.addthis.com/js/300/addthis_widget.js#domready=1')
+		        document.body.appendChild(addthisScript)
+		</script>
+	</body>
+</html>
